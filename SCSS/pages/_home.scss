@@ -1,0 +1,25 @@
+@use '../abstracts' as a;
+@use '../abstracts/colors' as c;
+@use '../abstracts/breakpoints' as *;
+//
+.main__container {
+    height: 500px;
+    width: 100%;
+    background-color: c.$t4;
+    
+    
+    @include a.flex-center;
+    
+
+    @include breakpoint(Laptop-M){
+        height: 200px;
+    }
+
+    
+
+    .main__inside {
+        width: 50%;
+        height: 50%;
+        background: c.$t3;;
+    }
+}

@@ -1,0 +1,14 @@
+$breakpoints-down: (
+  "laptop-L": 1400px,
+  "Laptop-M": 1200px,
+  "Tablet-L": 1024px,
+  "Tablet-M": 768px,
+  "Phone-L": 480px,
+  "Phone-M": 400px,
+);
+
+@mixin breakpoint($size) {
+  @media screen and(max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
