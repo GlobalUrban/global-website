@@ -1,0 +1,43 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7959558823529411) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 0 0.5vw;
+    padding-right: 2vw;
+    @include m.flex-between(row);
+
+    img {
+        width: 300px;
+    }
+
+    .nav-right {
+        width: 600px;
+        display: flex;
+        @include m.flexx(row, flex-end, center);
+        gap: 30px;
+        
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
