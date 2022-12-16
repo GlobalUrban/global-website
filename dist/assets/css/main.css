@@ -5,6 +5,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -67,8 +71,14 @@ header img {
 
 .home__about-us {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   background: rgba(94, 190, 94, 0.678);
+}
+.home__about-us img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav {
@@ -76,16 +86,20 @@ nav {
   width: 100%;
   display: flex;
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7959558824) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3869922969) 0%, rgba(0, 0, 0, 0) 89%);
   padding: 0 0.5vw;
   padding-right: 2vw;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
 }
 nav img {
-  width: 300px;
+  width: 350px;
+  transition: all 0.3s;
+  margin-top: 1%;
 }
 nav .nav-right {
   width: 600px;
@@ -102,6 +116,7 @@ nav .nav-right .nav-links {
 }
 nav .nav-right .nav-links li {
   list-style-type: none;
+  transition: all 0.2s;
 }
 nav .nav-right .nav-links li a {
   color: white;
@@ -109,6 +124,32 @@ nav .nav-right .nav-links li a {
 nav .nav-right .social {
   display: flex;
   gap: 10px;
+}
+
+.scroll-down nav {
+  transform: translateY(-100%);
+}
+.scroll-down nav img {
+  transform: scale(0.7) translateX(-20%);
+  margin-top: -1%;
+}
+.scroll-down nav .nav-right {
+  margin-top: -1%;
+}
+
+.scroll-up nav {
+  opacity: 0.3;
+  filter: drop-shadow(0 -10px 20px rgb(61, 61, 61));
+}
+.scroll-up nav img {
+  transform: scale(0.7) translateX(-20%);
+  margin-top: 0;
+}
+.scroll-up nav .nav-right {
+  margin-top: 0;
+}
+.scroll-up nav:hover {
+  opacity: 1;
 }
 
 .social-media-icon {

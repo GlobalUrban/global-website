@@ -3,6 +3,12 @@
 
 .home__about-us {
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background: c.$t3;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
