@@ -61,6 +61,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
 }
 header img {
   width: 100%;
@@ -72,13 +76,57 @@ header img {
 .home__about-us {
   width: 100%;
   height: 100vh;
-  background: rgba(94, 190, 94, 0.678);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
 }
 .home__about-us img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.home__about-us .home__about-us-content {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: white;
+}
+
+.quick-links {
+  width: 100%;
+  height: 100vh;
+  background: red;
+}
+
+.contact-us__container {
+  width: 100%;
+  height: 100vh;
+  background: blue;
+  z-index: -1;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us__container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: white;
 }
 
 nav {
