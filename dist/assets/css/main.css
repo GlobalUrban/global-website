@@ -149,10 +149,80 @@ header img {
 
 .quick-links {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
   background: rgb(255, 114, 114);
   z-index: 1;
   position: relative;
+  overflow: hidden;
+  color: white;
+}
+.quick-links .filter {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.185);
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+}
+.quick-links .quick-links__services {
+  height: 100%;
+  width: 35%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quick-links .quick-links__services:hover .filter {
+  opacity: 1;
+}
+.quick-links .quick-links__services img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.quick-links .quick-links__services h1 {
+  bottom: 2%;
+  left: 1%;
+  position: absolute;
+  color: white;
+}
+.quick-links .quick-links__right {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.quick-links .quick-links__right .quick-links__right-item {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.quick-links .quick-links__right .quick-links__right-item:hover .filter {
+  opacity: 1;
+}
+.quick-links .quick-links__right .quick-links__right-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.quick-links .quick-links__right .quick-links__right-item h1 {
+  bottom: 0;
+  left: 1%;
+  position: absolute;
 }
 
 .contact-us__container {
