@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 /**
@@ -61,10 +62,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: -1;
+  z-index: -3;
 }
 header img {
   width: 100%;
@@ -73,18 +73,23 @@ header img {
      object-fit: cover;
 }
 
+.header-top {
+  width: 100%;
+  height: 100vh;
+}
+
 .home__about-us {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 }
 .home__about-us img {
+  position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -92,21 +97,61 @@ header img {
 }
 .home__about-us .home__about-us-content {
   position: absolute;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  z-index: 0;
+}
+.home__about-us .home__about-us-content .cont-img {
+  width: 40em;
+  height: 30em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-end;
+  position: relative;
+}
+.home__about-us .home__about-us-content .cont-img .background-box {
+  width: 70%;
+  height: 70%;
+  background: #000814;
+}
+.home__about-us .home__about-us-content .cont-img img {
+  justify-self: flex-end;
+  height: 95%;
+  width: 90%;
+  position: absolute;
+}
+.home__about-us .home__about-us-content .about-us__information {
   width: 50%;
-  height: 50%;
-  background: white;
+}
+.home__about-us .home__about-us-content .about-us__information a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.home__about-us .home__about-us-content .about-us__information a:hover {
+  cursor: pointer;
+  transform: translate(1.5);
 }
 
 .quick-links {
   width: 100%;
   height: 100vh;
   background: red;
+  z-index: 10;
 }
 
 .contact-us__container {
   width: 100%;
   height: 100vh;
-  background: blue;
   z-index: -1;
   position: -webkit-sticky;
   position: sticky;

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Global Urban Strategies</title>
 </head>
 
@@ -54,16 +55,32 @@
     <!-- ------------------------------------------------ -->
 
     <!-- header // -------------------------------------- -->
+    <div class="header-top"></div>
     <header>
         <img src="./assets/img/home/header/MicrosoftTeams-image (2).png" alt="">
     </header>
 
     <!-- About Us Section // ---------------------------- -->
     <section class="home__about-us">
+        <!-- Background image // -->
         <img src="./assets/img/home/about-gradiant.png" alt="">
 
+        <!-- About us Front content // -->
         <div class="home__about-us-content">
 
+            <div class="cont-img">
+                <div class="background-box" data-aos="fade-right" data-aos-duration="500"></div>
+                <img src="./assets/img/home/kat_&_hector.png" alt="" data-aos="fade-right" data-aos-duration="1000">
+            </div>
+
+            <div class="about-us__information" data-aos="fade-up-left" data-aos-duration="1000">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit iste facere nihil qui quia
+                    eligendi officia maxime omnis repellat eos saepe mollitia harum, quas soluta suscipit nemo odit cum
+                    explicabo perspiciatis error? Neque, facilis eligendi deleniti consequatur voluptatum dignissimos
+                    veniam? Harum delectus obcaecati atque.</p>
+                    <a href="#">learn more</a>
+            </div>
         </div>
 
     </section>
@@ -83,8 +100,14 @@
     </section>
     <!-- ------------------------------------------------ -->
 
-
+    <!-- Nav animation // -->
     <script src="./assets/js/nav-animation.js"></script>
+
+    <!-- AOS Animation // -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
