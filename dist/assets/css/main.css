@@ -64,7 +64,11 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: -3;
+  z-index: 0;
+}
+header h1 {
+  position: absolute;
+  color: white;
 }
 header img {
   width: 100%;
@@ -84,7 +88,8 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   z-index: 0;
 }
@@ -145,14 +150,15 @@ header img {
 .quick-links {
   width: 100%;
   height: 100vh;
-  background: red;
-  z-index: 10;
+  background: rgb(255, 114, 114);
+  z-index: 1;
+  position: relative;
 }
 
 .contact-us__container {
   width: 100%;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
@@ -202,6 +208,7 @@ nav .nav-right {
   justify-content: flex-end;
   align-items: center;
   gap: 30px;
+  transition: all 0.3s ease-in-out;
 }
 nav .nav-right .nav-links {
   display: flex;
@@ -220,14 +227,15 @@ nav .nav-right .social {
 }
 
 .scroll-down nav {
-  transform: translateY(-100%);
+  opacity: 0;
 }
 .scroll-down nav img {
-  transform: scale(0.7) translateX(-20%);
+  transform: scale(0.7) translateX(-120%);
   margin-top: -1%;
 }
 .scroll-down nav .nav-right {
   margin-top: -1%;
+  transform: translateX(100%);
 }
 
 .scroll-up nav {

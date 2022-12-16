@@ -11,7 +11,14 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: -3;
+    z-index: 0;
+
+    h1 {
+        position: absolute;
+        color: white;
+    }
+
+
 
     img {
         width: 100%;

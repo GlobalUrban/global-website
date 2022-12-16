@@ -24,6 +24,7 @@ nav {
         display: flex;
         @include m.flexx(row, flex-end, center);
         gap: 30px;
+        transition: all 0.3s ease-in-out;
 
         .nav-links {
             display: flex;
@@ -54,15 +55,17 @@ nav {
 // scroll stuff // ---------------- 
 .scroll-down {
     nav {
-        transform: translateY(-100%);
+        // transform: translateY(-100%);
+        opacity: 0;
 
         img {
-            transform: scale(0.7) translateX(-20%);
+            transform: scale(0.7) translateX(-120%);
             margin-top: -1%;
          }
 
          .nav-right {
             margin-top: -1%;
+            transform: translateX(100%);
          }
     }
 
