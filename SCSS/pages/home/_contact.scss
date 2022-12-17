@@ -23,10 +23,12 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    @include flex(column,center);
 
+    // Succes Achived Needed Section --------- //
     .working {
         width: 100%;
-        height: 50%;        
+        height: 60%;        
         @include flex(column, center);
         gap: 5%;
         color: white;
@@ -38,7 +40,9 @@
 
         .working-container {
             @include flex-between(row);
-            width: 60%;
+            width: 50%;
+            min-width: 700px;
+            max-width: 1000px;
             gap: 2%;
 
             .working-item {
@@ -58,11 +62,22 @@
         }
     }
 
+
+    .divider {
+        width: 90%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.459);
+    }
+
+
+    // Contact Container ------------ //
     .container-bottom {
-        width: 100%;
-        height: 50%;
+        width: 90%;
+        height: 40%;
         @include flex-between(row);
 
+
+        // Form Container //
         .cont-form {
             width: 50%;
             height: 100%;
@@ -71,7 +86,8 @@
             color: white;
 
             form {
-                width: 80%;
+                width: 70%;
+                // @include flex(column,center);
 
                 textarea {
                     width: 100%;
@@ -126,10 +142,34 @@
 
         }
 
-        .time-worked {
+
+        // Contact Information //
+        .contact-information {
             width: 50%;
             height: 100%;
-            background: $t3;
+            @include flexx(column, center, flex-start);
+            gap: 10%;
+            padding: 0 5%;
+
+            .contact-information__item {
+                @include flex-center;
+                gap: 5%;
+                img {
+                    width: 70px;
+                }
+
+                .info {
+                    color: white;
+                    font-size: 20px;
+                    h2 {
+                        line-height: 0.9;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    
+                }
+            }
         }
     }
 }
