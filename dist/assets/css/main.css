@@ -193,6 +193,15 @@ header img {
   position: relative;
   overflow: hidden;
   color: white;
+  box-shadow: 0px 13px 11px -7px rgba(0, 0, 0, 0.29);
+}
+@media screen and (max-width: 768px) {
+  .quick-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .quick-links .filter {
   width: 100%;
@@ -209,6 +218,13 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .quick-links .quick-links__services {
+    height: 35%;
+    width: 100%;
+  }
 }
 .quick-links .quick-links__services:hover .filter {
   opacity: 1;
@@ -220,7 +236,7 @@ header img {
      object-fit: cover;
 }
 .quick-links .quick-links__services h1 {
-  bottom: 2%;
+  bottom: 0;
   left: 1%;
   position: absolute;
   color: white;
@@ -233,6 +249,12 @@ header img {
   justify-content: center;
   align-items: center;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .quick-links .quick-links__right {
+    height: 65%;
+    width: 100%;
+  }
 }
 .quick-links .quick-links__right .quick-links__right-item {
   width: 100%;
