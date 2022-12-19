@@ -1,5 +1,6 @@
 @use '../../abstracts/colors' as c;
 @use '../../abstracts/mixins' as m;
+@use '../../abstracts/breakpoints' as b;
 
 .home__about-us {
     width: 100%;
@@ -10,7 +11,12 @@
     position: sticky;
     top: 0;
     z-index: 0;
-    
+
+
+    @include b.breakpoint("Tablet-M") {
+       height: 70vh;
+    }
+
 
     // background img //
     img {
@@ -28,8 +34,12 @@
         display: flex;
         font-size: 20px;
         color: white;
-       @include m.flex-between(row);
-       z-index: 0;
+        @include m.flex-between(row);
+        z-index: 0;
+
+        @include b.breakpoint("Tablet-M") {
+            @include m.flex(column, center);
+        }
 
         .cont-img {
             width: 40em;
@@ -37,6 +47,17 @@
             @include m.flex-between(row);
             align-items: flex-end;
             position: relative;
+
+
+
+            @include b.breakpoint("Tablet-L") {
+                width: 30em;
+                height: 25em;
+            }
+
+            @include b.breakpoint("Tablet-M") {
+                display: none;
+            }
 
             .background-box {
                 width: 70%;
@@ -55,6 +76,16 @@
 
         .about-us__information {
             width: 50%;
+
+            @include b.breakpoint("Tablet-M") {
+              width: 80%;
+            }
+
+            p {
+                @include b.breakpoint("Tablet-M") {
+                    text-align: justify;
+                }
+            }
 
             a {
                 color: white;
