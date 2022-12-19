@@ -322,6 +322,16 @@ header img {
   font-size: 50px;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .container .working h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .working h1 {
+    font-size: 30px;
+  }
+}
 .container .working .working-container {
   display: flex;
   justify-content: space-between;
@@ -332,6 +342,16 @@ header img {
   max-width: 1000px;
   gap: 2%;
 }
+@media screen and (max-width: 768px) {
+  .container .working .working-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 300px;
+    gap: 25px;
+  }
+}
 .container .working .working-container .working-item {
   display: flex;
   flex-direction: column;
@@ -339,16 +359,31 @@ header img {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .container .working .working-container .working-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .container .working .working-container .working-item img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .container .working .working-container .working-item img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .container .working .working-container .working-item .info {
   font-size: 25px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container .working .working-container .working-item .info {
+    text-align: start;
+  }
 }
 .container .divider {
   width: 90%;
@@ -363,6 +398,14 @@ header img {
   flex-direction: row;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .container .container-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .container .container-bottom .cont-form {
   width: 50%;
   height: 100%;
@@ -373,8 +416,30 @@ header img {
   align-items: flex-start;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .container .container-bottom .cont-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .container .container-bottom .cont-form form {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .container .container-bottom .cont-form form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .container-bottom .cont-form form textarea {
   width: 100%;
@@ -408,6 +473,11 @@ header img {
   font-size: 20px;
   transition: 0.2s;
 }
+@media screen and (max-width: 768px) {
+  .container .container-bottom .cont-form form .submit {
+    padding: 2% 15%;
+  }
+}
 .container .container-bottom .cont-form form .submit:hover {
   cursor: pointer;
   /* From https://css.glass */
@@ -426,6 +496,11 @@ header img {
   align-items: flex-start;
   gap: 10%;
   padding: 0 5%;
+}
+@media screen and (max-width: 768px) {
+  .container .container-bottom .contact-information {
+    display: none;
+  }
 }
 .container .container-bottom .contact-information .contact-information__item {
   display: flex;
@@ -447,6 +522,31 @@ header img {
   line-height: 0.9;
   margin: 0;
   padding: 0;
+}
+
+.contact-mobile {
+  width: 70px;
+  height: 70px;
+  bottom: 4%;
+  right: 4%;
+  background: rgb(39, 195, 39);
+  border-radius: 100%;
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  overflow: hidden;
+  background-image: url(../../../dist/assets/img/home/about-gradiant.png);
+}
+@media screen and (max-width: 768px) {
+  .contact-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contact-mobile img {
+  width: 50%;
+  height: 50%;
 }
 
 .nav-desktop {

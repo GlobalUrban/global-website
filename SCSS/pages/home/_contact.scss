@@ -17,6 +17,10 @@
         height: 100%;
         object-fit: cover;
     }
+
+    // @include breakpoint("Tablet-M") {
+    //     height: 150%;
+    // }
 }
 
 .container {
@@ -35,7 +39,16 @@
 
         h1 {
             font-size: 50px;
-            text-align: center
+            text-align: center;
+
+
+            @include breakpoint("Tablet-L") {
+                font-size: 40px
+            }
+
+            @include breakpoint("Tablet-M") {
+                font-size: 30px
+            }
         }
 
         .working-container {
@@ -45,18 +58,36 @@
             max-width: 1000px;
             gap: 2%;
 
+            @include breakpoint("Tablet-M") {
+                @include flexx(column, center, flex-start);
+                min-width: 300px;
+                gap: 25px;
+            }
+
             .working-item {
                 @include flex(column, center);
                 gap: 20px;
 
+                @include breakpoint("Tablet-M") {
+                    @include flex-between(row);
+                }
+
                 img {
-                    @include flex(column, center);
                     width: 150px;
+
+                    @include breakpoint("Tablet-M") {
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
 
                 .info {
                     font-size: 25px;
                     text-align: center;
+
+                    @include breakpoint("Tablet-M") {
+                      text-align: start;
+                    }
                 }
             }
         }
@@ -76,6 +107,10 @@
         height: 40%;
         @include flex-between(row);
 
+        @include breakpoint("Tablet-M") {
+           @include flex(column, flex-start);
+         }
+
 
         // Form Container //
         .cont-form {
@@ -85,9 +120,21 @@
             @include flexx(column, center, flex-start);
             color: white;
 
+            @include breakpoint("Tablet-M") {
+               width: 100%;
+               @include flex(column, center);
+            }
+
             form {
                 width: 70%;
-                // @include flex(column,center);
+                @include flex(column,center);
+
+                @include breakpoint("Tablet-M") {
+                    width: 90%;
+                    @include flex(column, center);
+                 }
+
+
 
                 textarea {
                     width: 100%;
@@ -123,6 +170,10 @@
                     font-size: 20px;
                     transition: 0.2s;
 
+                    @include breakpoint("Tablet-M") {
+                        padding: 2% 15%;
+                     }
+
                     &:hover {
                         cursor: pointer;
                         /* From https://css.glass */
@@ -151,6 +202,10 @@
             gap: 10%;
             padding: 0 5%;
 
+            @include breakpoint("Tablet-M") {
+                display: none
+            }
+
             .contact-information__item {
                 @include flex-center;
                 gap: 5%;
@@ -174,5 +229,29 @@
                 }
             }
         }
+    }
+}
+
+.contact-mobile {
+    width: 70px;
+    height: 70px;
+    bottom: 4%;
+    right: 4%;
+    background: rgb(39, 195, 39);
+    border-radius: 100%;
+    position: fixed;
+    display: none;
+    
+    z-index: 9999;
+    overflow: hidden;
+    background-image: url(../../../dist/assets/img/home/about-gradiant.png);
+    
+    @include breakpoint("Tablet-M"){
+        @include flex-center;
+    }
+
+    img {
+     width: 50%;
+     height: 50%;
     }
 }
