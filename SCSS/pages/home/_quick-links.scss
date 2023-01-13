@@ -95,3 +95,59 @@
         }
     }
 }
+
+.css-animated {
+    &:hover {
+      figure {
+        animation: cyclePhotos 2s linear infinite;
+      }
+    }
+
+
+    figure {
+
+      &:nth-child(1) {
+        opacity: 1;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+      &:nth-child(3) {
+        animation-delay: 1s;
+      }
+      &:nth-child(4) {
+        animation-delay: 1.5s;
+      }
+    }
+  }
+  @keyframes cyclePhotos {
+    0%,
+    25% {
+      opacity: 1;
+    }
+    26%,
+    100% {
+      opacity: 0;
+    }
+  }
+   
+  .image-deck {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    figure {
+      opacity: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }

@@ -281,6 +281,63 @@ header img {
   position: absolute;
 }
 
+.css-animated:hover figure {
+  -webkit-animation: cyclePhotos 2s linear infinite;
+          animation: cyclePhotos 2s linear infinite;
+}
+.css-animated figure:nth-child(1) {
+  opacity: 1;
+}
+.css-animated figure:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.css-animated figure:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.css-animated figure:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes cyclePhotos {
+  0%, 25% {
+    opacity: 1;
+  }
+  26%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cyclePhotos {
+  0%, 25% {
+    opacity: 1;
+  }
+  26%, 100% {
+    opacity: 0;
+  }
+}
+.image-deck {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.image-deck figure {
+  opacity: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.image-deck figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .contact-us {
   width: 100%;
   height: 100vh;
