@@ -2,7 +2,7 @@
 
 .quick-links {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     @include flex-between(row);
     background: rgb(255, 114, 114);
     z-index: 1;
@@ -102,8 +102,6 @@
         animation: cyclePhotos 2s linear infinite;
       }
     }
-
-
     figure {
 
       &:nth-child(1) {

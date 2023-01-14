@@ -20,3 +20,11 @@ window.addEventListener("scroll", () => {
 	}
 	lastScroll = currentScroll;
 });
+
+//Nav mobile animation
+const hamburger = document.getElementById("hamburguer");
+const navContainer = document.getElementById("nav-container");
+
+hamburger.addEventListener("click", ()=> {
+	navContainer.classList.toggle("showNavLinks");
+})

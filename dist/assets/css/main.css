@@ -183,7 +183,7 @@ header img {
 
 .quick-links {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -672,26 +672,27 @@ header img {
   width: 250px;
 }
 .nav-mobile .hambuerguer {
-  width: 50px;
+  width: 47px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   gap: 7px;
+  z-index: 10;
 }
 .nav-mobile .hambuerguer .line1 {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: white;
 }
 .nav-mobile .hambuerguer .line2 {
   width: 120%;
-  height: 4px;
+  height: 3px;
   background: white;
 }
 .nav-mobile .hambuerguer .line3 {
   width: 75%;
-  height: 4px;
+  height: 3px;
   background: white;
 }
 @media screen and (max-width: 1024px) {
@@ -701,6 +702,38 @@ header img {
     flex-direction: row;
     align-items: center;
   }
+}
+
+.nav-mobile__container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  transition: all 0.4s ease-in-out;
+  transform: translateX(100%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10%;
+}
+.nav-mobile__container .nav-links__container {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-mobile__container .nav-links__container a {
+  color: white;
+  font-size: 20px;
+}
+
+.showNavLinks {
+  transform: translateX(0);
 }
 
 .scroll-down nav {

@@ -14,7 +14,7 @@
     transition: all 0.3s ease-in-out;
     z-index: 9999;
 
-    @include b.breakpoint("Tablet-L"){
+    @include b.breakpoint("Tablet-L") {
         display: none;
     }
 
@@ -37,7 +37,7 @@
 
             li {
                 list-style-type: none;
-                transition: all 0.2s ;
+                transition: all 0.2s;
 
                 &:hover {
                     // transform: translateY(7%) scale(1.03);
@@ -74,35 +74,69 @@
     }
 
     .hambuerguer {
-        width: 50px;
+        width: 47px;
         @include m.flexx(column, center, flex-end);
         gap: 7px;
-       
-        .line1{
+        z-index: 10;
+
+        .line1 {
             width: 100%;
-            height: 4px;
+            height: 3px;
             background: white;
         }
 
-        .line2{
+        .line2 {
             width: 120%;
-            height: 4px;
+            height: 3px;
             background: white;
         }
 
-        .line3{
+        .line3 {
             width: 75%;
-            height: 4px;
+            height: 3px;
             background: white;
         }
-
-
     }
 
 
-    @include b.breakpoint("Tablet-L"){
+    @include b.breakpoint("Tablet-L") {
         @include m.flex-between(row);
     }
+
+   
+
+  
+}
+
+.nav-mobile__container {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    transition: all 0.4s ease-in-out;
+    transform: translateX(100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10%;
+
+    .nav-links__container {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        @include m.flexx(column, space-around, center);
+
+        a {
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+
+.showNavLinks {
+    transform: translateX(0) ;
 }
 
 
@@ -115,12 +149,12 @@
         img {
             transform: scale(0.7) translateX(-120%);
             margin-top: -1%;
-         }
+        }
 
-         .nav-right {
+        .nav-right {
             margin-top: -1%;
             transform: translateX(100%);
-         }
+        }
     }
 
 }
@@ -131,13 +165,13 @@
         filter: drop-shadow(0 -10px 20px rgb(61, 61, 61));
 
         img {
-           transform: scale(0.7) translateX(-20%);
-           margin-top: 0;
+            transform: scale(0.7) translateX(-20%);
+            margin-top: 0;
         }
 
         .nav-right {
             margin-top: 0;
-         }
+        }
 
         &:hover {
             opacity: 1;
@@ -146,4 +180,5 @@
 
 
 }
+
 // --------------------------------
