@@ -1,0 +1,53 @@
+@use '../../abstracts/' as *;
+
+.services-options {
+    width: 100%;
+    height: 100vh;
+    @include flex-between(row);
+
+    .option {
+        width: 33.33%;
+        height: 100%;
+        @include flex-center;
+    }
+
+    .option-1 {
+        background: $t1;
+    }
+
+    .option-2 {
+        background: $t2;
+    }
+
+    .option-3 {
+        background: $t3;
+    }
+}
+
+.services-content {
+    width: 300%;
+    height: 100vh;
+    @include flex-between(row);
+   
+
+    .service {
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+        font-size: 50px;
+        color: white;
+
+    }
+
+    .grant-writing {
+        background: $t3;
+    }
+
+    .communications {
+        background: $t2;
+    }
+
+    .digitalPrintDesign {
+        background: $t1;
+    }
+}

@@ -606,6 +606,58 @@ header img {
   height: 50%;
 }
 
+.services-options {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.services-options .option {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-options .option-1 {
+  background: rgba(128, 128, 128, 0.637);
+}
+.services-options .option-2 {
+  background: rgba(255, 0, 0, 0.534);
+}
+.services-options .option-3 {
+  background: rgba(94, 190, 94, 0.678);
+}
+
+.services-content {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.services-content .service {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+}
+.services-content .grant-writing {
+  background: rgba(94, 190, 94, 0.678);
+}
+.services-content .communications {
+  background: rgba(255, 0, 0, 0.534);
+}
+.services-content .digitalPrintDesign {
+  background: rgba(128, 128, 128, 0.637);
+}
+
 .nav-desktop {
   position: fixed;
   width: 100%;
