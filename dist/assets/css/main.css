@@ -702,7 +702,6 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
   position: relative;
   transform: translateX(-33.3333333%);
   transition: all 0.5s ease-in-out;
@@ -711,13 +710,96 @@ header img {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
   color: white;
 }
-.services .services-content .services-scroll .grant-writing {
+.services .services-content .services-scroll .service .service-top {
+  width: 100%;
+  height: 55%;
+  background: rgba(255, 0, 0, 0.534);
+  display: flex;
+}
+.services .services-content .services-scroll .service .service-top .service-info {
+  width: 55%;
+  background: rgba(128, 128, 128, 0.637);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .services-content .services-scroll .service .service-top .service-info img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.services .services-content .services-scroll .service .service-top .service-info .service-info__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  height: 90%;
+}
+.services .services-content .services-scroll .service .service-top .service-info .service-info__content h2 {
+  line-height: 1.8;
+  margin: 0;
+  font-size: 35px;
+}
+.services .services-content .services-scroll .service .service-top .service-info .service-info__content p {
+  margin: 0;
+}
+.services .services-content .services-scroll .service .service-top .service-info .done-projects {
+  position: absolute;
+  align-self: center;
+  padding: 1% 2%;
+  bottom: -3%;
+  font-size: 25px;
+  left: 3%;
+  background: #ED8C23;
+  z-index: 20;
+}
+.services .services-content .services-scroll .service .service-top .service-info .done-projects-blue {
+  background: #2A4083;
+}
+.services .services-content .services-scroll .service .service-top .service-info .done-projects-cyan {
+  background: #94C7CE;
+}
+.services .services-content .services-scroll .service .service-top .service-img {
+  width: 45%;
+  height: 100%;
   background: rgba(94, 190, 94, 0.678);
+}
+.services .services-content .services-scroll .service .service-top .service-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .services-content .services-scroll .service .service-bottom {
+  width: 100%;
+  height: 45%;
+  background: rgba(94, 190, 94, 0.678);
+  display: flex;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333%;
+  overflow: hidden;
+  position: relative;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .services .services-content .services-scroll .communications {
   background: rgba(255, 0, 0, 0.534);
@@ -735,13 +817,20 @@ header img {
 }
 
 .btn-back {
-  width: 50px;
-  height: 50px;
-  background: white;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  fill: rgba(255, 255, 255, 0.651);
   border-radius: 100%;
-  margin-left: 10%;
+  margin-left: 17%;
+  margin-top: 70px;
   cursor: pointer;
-  bottom: 5;
+  transition: all 0.3s;
+}
+.btn-back:hover {
+  transform: scale(1.2);
+  fill: white;
+  box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
 }
 
 .nav-desktop {
@@ -768,6 +857,14 @@ header img {
   width: 350px;
   transition: all 0.3s;
   margin-top: 1%;
+}
+.nav-desktop .img-page {
+  width: 250px;
+}
+@media screen and (max-width: 1024px) {
+  .nav-desktop .img-page {
+    width: 150px;
+  }
 }
 .nav-desktop .nav-right {
   width: 600px;
@@ -802,7 +899,7 @@ header img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3869922969) 0%, rgba(0, 0, 0, 0) 89%);
   z-index: 9999;
   display: none;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-left: 2%;
   padding-right: 3%;
 }

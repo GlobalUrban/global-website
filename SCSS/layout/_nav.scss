@@ -24,6 +24,14 @@
         margin-top: 1%;
     }
 
+    .img-page {
+        width: 250px;  
+
+        @include b.breakpoint(Tablet-L){
+            width: 150px;
+        }
+    }
+
     .nav-right {
         width: 600px;
         display: flex;
@@ -64,7 +72,7 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.38699229691876746) 0%, rgba(0, 0, 0, 0) 89%);
     z-index: 9999;
     display: none;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-left: 2%;
     padding-right: 3%;
 
@@ -138,6 +146,8 @@
 .showNavLinks {
     transform: translateX(0) ;
 }
+
+
 
 
 // scroll stuff // ---------------- 
