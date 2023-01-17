@@ -19,7 +19,7 @@
         transition: all 0.4s ease-in-out;
 
         @include breakpoint(Tablet-M){
-            position: fixed
+            position: fixed;
         }
 
         @include breakpoint(Tablet-L) {
@@ -94,7 +94,6 @@
             background: $t3;
         }
     }
-
     // ----------------------------------------------------------  
 
 
@@ -150,7 +149,6 @@
                             z-index: 10;
                         }
                     }
-
                     // --------------------------------------
 
 
@@ -321,5 +319,9 @@
 
     .btn-back__communications {
         z-index: 20;
+
+        @include breakpoint(laptop-L){
+            margin-left: 14.6%;
+        }
     }
 }
