@@ -1,0 +1,36 @@
+@use '../../abstracts/' as *;
+
+.about-us {
+    .about-us__info {
+        width: 100%;
+        background: $t3;
+        position: relative;
+        display: flex;
+
+        .about-us__info-front {
+            position: absolute;
+            @include flex(column, center);
+            padding: 7% 3%;
+
+            .global-urban__info {
+                @include flex-between(row);
+                gap: 30px;
+                .about__cont-img {
+                    width: 300px;
+                    height: 300px;
+                    background: black;
+    
+                    .img-bg {}
+                }
+
+                .about__cont-info {
+                    width: 60%;
+                    color: white;
+                }
+            }
+        
+        }
+
+
+    }
+}
