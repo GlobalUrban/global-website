@@ -609,6 +609,12 @@ header img {
 .services {
   width: 100%;
   height: 100vh;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .services {
+    height: 1500px;
+  }
 }
 .services .services-options {
   width: 100%;
@@ -620,6 +626,11 @@ header img {
   position: absolute;
   z-index: 20;
   transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .services .services-options {
+    position: fixed;
+  }
 }
 @media screen and (max-width: 1024px) {
   .services .services-options {
@@ -698,7 +709,7 @@ header img {
 }
 .services .services-content .services-scroll {
   width: 300%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -720,6 +731,11 @@ header img {
   height: 55%;
   background: rgba(255, 0, 0, 0.534);
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-top {
+    height: 35%;
+  }
 }
 .services .services-content .services-scroll .service .service-top .communication-order1 {
   order: 1;
@@ -743,6 +759,11 @@ header img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-top .service-info {
+    width: 100%;
+  }
+}
 .services .services-content .services-scroll .service .service-top .service-info img {
   width: 100%;
   height: 100%;
@@ -759,10 +780,19 @@ header img {
   width: 90%;
   height: 90%;
 }
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-top .service-info .service-info__content {
+    padding-top: 5%;
+  }
+}
 .services .services-content .services-scroll .service .service-top .service-info .service-info__content h2 {
   line-height: 1.8;
   margin: 0;
   font-size: 35px;
+}
+.services .services-content .services-scroll .service .service-top .service-info .service-info__content .digital-h2 {
+  line-height: 1.1;
+  margin-bottom: 5px;
 }
 .services .services-content .services-scroll .service .service-top .service-info .service-info__content p {
   margin: 0;
@@ -794,11 +824,29 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-top .service-img {
+    display: none;
+  }
+}
 .services .services-content .services-scroll .service .service-bottom {
   width: 100%;
   height: 45%;
   background: rgba(94, 190, 94, 0.678);
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-bottom {
+    height: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .services .services-content .services-scroll .service .service-bottom .service-project {
   height: 100%;
@@ -809,31 +857,28 @@ header img {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-bottom .service-project {
+    width: 100%;
+  }
+}
 .services .services-content .services-scroll .service .service-bottom .service-project img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.services .services-content .services-scroll .communications {
-  background: rgba(255, 0, 0, 0.534);
-}
-.services .services-content .services-scroll .digitalPrintDesign {
-  background: rgba(128, 128, 128, 0.637);
-}
-
-.services-options__up {
+.services .services-options__up {
   transform: translateY(-100%);
 }
-
-.services-options__down {
+.services .services-options__down {
   transform: translateY(0%);
 }
-
-.btn-back {
+.services .btn-back {
   width: 40px;
   height: 40px;
   position: fixed;
+  z-index: 500;
   fill: rgba(255, 255, 255, 0.651);
   border-radius: 100%;
   margin-left: 17%;
@@ -841,13 +886,18 @@ header img {
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn-back:hover {
+@media screen and (max-width: 768px) {
+  .services .btn-back {
+    margin-left: 15%;
+    margin-top: 90px;
+  }
+}
+.services .btn-back:hover {
   transform: scale(1.2);
   fill: white;
   box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
 }
-
-.btn-back__communications {
+.services .btn-back__communications {
   z-index: 20;
 }
 

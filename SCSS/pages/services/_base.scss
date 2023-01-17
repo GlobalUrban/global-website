@@ -3,6 +3,11 @@
 .services {
     width: 100%;
     height: 100vh;
+    position: relative;
+
+    @include breakpoint(Tablet-M){
+        height: 1500px;
+    }
 
     // Services Front part || Buttons Section -------------------
     .services-options {
@@ -12,6 +17,10 @@
         position: absolute;
         z-index: 20;
         transition: all 0.4s ease-in-out;
+
+        @include breakpoint(Tablet-M){
+            position: fixed
+        }
 
         @include breakpoint(Tablet-L) {
             @include flexx(column, space-between, flex-center);
@@ -85,6 +94,7 @@
             background: $t3;
         }
     }
+
     // ----------------------------------------------------------  
 
 
@@ -97,7 +107,7 @@
         // Services Scroll part //
         .services-scroll {
             width: 300%;
-            height: 100vh;
+            height: 100%;
             @include flex-center;
             position: relative;
             transform: translateX(-33.3333333%);
@@ -110,13 +120,19 @@
                 @include flex(column, center);
                 color: white;
 
-                // Top Part //
+                // Top Part || Information - //
                 .service-top {
                     width: 100%;
                     height: 55%;
                     background: $t2;
                     display: flex;
 
+               
+                    @include breakpoint(Tablet-M){
+                        height: 35%;
+                    }
+
+                    // Communication Change Order ------- //
                     .communication-order1 {
                         order: 1;
                     }
@@ -130,17 +146,25 @@
                             bottom: -3%;
                             right: 0;
                             font-size: 25px;
-                           
-                           z-index: 10;
+
+                            z-index: 10;
                         }
                     }
 
+                    // --------------------------------------
+
+
+                    // Service Information //
                     .service-info {
                         width: 55%;
                         // height: 100%;
                         background: $t1;
                         position: relative;
                         @include flex-center;
+
+                        @include breakpoint(Tablet-M){
+                            width: 100%
+                        }
 
                         img {
                             @include img-cover;
@@ -153,19 +177,27 @@
                             width: 90%;
                             height: 90%;
 
+                            @include breakpoint(Tablet-M){
+                                padding-top: 5%;
+                            }
+
                             h2 {
                                 line-height: 1.8;
                                 margin: 0;
                                 font-size: 35px;
                             }
 
+                            .digital-h2 {
+                                line-height: 1.1;
+                                margin-bottom: 5px;
+                            }
 
                             p {
                                 margin: 0;
                             }
                         }
 
-
+                        // Projects Done Banner -------- //
                         .done-projects {
                             position: absolute;
                             align-self: center;
@@ -173,7 +205,7 @@
                             bottom: -3%;
                             left: 0;
                             font-size: 25px;
-                            
+
                             background: $orange;
                             z-index: 20;
                         }
@@ -185,8 +217,11 @@
                         .done-projects-cyan {
                             background: $cyan;
                         }
+
+                        // --------------------------------
                     }
 
+                    // Service Image //
                     .service-img {
                         width: 45%;
                         height: 100%;
@@ -195,15 +230,29 @@
                         img {
                             @include img-cover;
                         }
+
+                        @include breakpoint(Tablet-M){
+                            display: none;
+                        }
                     }
                 }
 
-                // Bottom Part //
+                // -------------------------
+
+                // Bottom Part || Projects Related ---//
                 .service-bottom {
                     width: 100%;
                     height: 45%;
                     background: $t3;
                     display: flex;
+
+                    @include breakpoint(Tablet-M){
+                        height: 65%;
+                    }
+
+                    @include breakpoint(Tablet-M){
+                        @include flex(column, center);
+                    }
 
                     .service-project {
                         height: 100%;
@@ -212,59 +261,65 @@
                         overflow: hidden;
                         position: relative;
 
+                        @include breakpoint(Tablet-M){
+                           width: 100%
+                        }
+
                         img {
                             @include img-cover;
                         }
                     }
                 }
+
+                // -----------------------------------
             }
 
             // ---------------------------------------- //
-
-            .grant-writing {}
-
-            .communications {
-                background: $t2;
-            }
-
-            .digitalPrintDesign {
-                background: $t1;
-            }
         }
 
+        // ----------------------------------------------------------  
+
     }
-    // ----------------------------------------------------------  
 
-}
 
-.services-options__up {
-    transform: translateY(-100%);
-}
-
-.services-options__down {
-    transform: translateY(0%);
-}
-
-.btn-back {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    fill: rgba(255, 255, 255, 0.651);
-    border-radius: 100%;
-    margin-left: 17%;
-    margin-top: 70px;
-    cursor: pointer;
-    transition: all 0.3s;
-
-    &:hover {
-        transform: scale(1.2);
-        fill: white;
-        -webkit-box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
-        -moz-box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
-        box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+    // Javascript Stuff ----------- //
+    .services-options__up {
+        transform: translateY(-100%);
     }
-}
 
-.btn-back__communications {
-    z-index: 20;
+    .services-options__down {
+        transform: translateY(0%);
+    }
+
+
+    // Button Back || This pull back the services buttons //
+    .btn-back {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        z-index: 500;
+        fill: rgba(255, 255, 255, 0.651);
+        border-radius: 100%;
+        margin-left: 17%;
+        margin-top: 70px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        @include breakpoint(Tablet-M){
+            margin-left: 15%;
+            margin-top: 90px;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            fill: white;
+            -webkit-box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+            box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+        }
+    }
+
+    .btn-back__communications {
+        z-index: 20;
+    }
 }
