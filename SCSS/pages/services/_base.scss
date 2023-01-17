@@ -1,0 +1,327 @@
+@use '../../abstracts/' as *;
+
+.services {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    @include breakpoint(Tablet-M){
+        height: 1500px;
+    }
+
+    // Services Front part || Buttons Section -------------------
+    .services-options {
+        width: 100%;
+        height: 100vh;
+        @include flex-between(row);
+        position: absolute;
+        z-index: 20;
+        transition: all 0.4s ease-in-out;
+
+        @include breakpoint(Tablet-M){
+            position: fixed;
+        }
+
+        @include breakpoint(Tablet-L) {
+            @include flexx(column, space-between, flex-center);
+        }
+
+
+        // Service Option Button //
+        .option {
+            width: 33.33%;
+            height: 100%;
+            position: relative;
+            @include flex-center;
+            overflow: hidden;
+
+            @include breakpoint(Tablet-L) {
+                width: 100%;
+            }
+
+            img {
+                @include img-cover;
+                position: relative;
+            }
+
+            .image-fade {
+                @include img-cover;
+                position: absolute;
+                transition: all 0.5s ease-in;
+            }
+
+            h2 {
+                position: absolute;
+                bottom: 4%;
+                left: 2%;
+                color: white;
+                font-size: 35px;
+                font-weight: 500;
+            }
+
+            .opacity-layer {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: rgba(0, 0, 0, 0.342);
+                opacity: 0;
+                transition: all 0.1s ease-in;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:hover .opacity-layer {
+                opacity: 1;
+            }
+
+            &:hover .image-fade {
+                opacity: 0;
+            }
+        }
+
+        .option-1 {
+            background: $t1;
+
+        }
+
+        .option-2 {
+            background: $t2;
+        }
+
+        .option-3 {
+            background: $t3;
+        }
+    }
+    // ----------------------------------------------------------  
+
+
+
+    // Service Back Part || Information section // --------------
+    .services-content {
+        width: 100%;
+        height: 100%;
+
+        // Services Scroll part //
+        .services-scroll {
+            width: 300%;
+            height: 100%;
+            @include flex-center;
+            position: relative;
+            transform: translateX(-33.3333333%);
+            transition: all 0.5s ease-in-out;
+
+            // Individual Service -------------------- //
+            .service {
+                width: 100%;
+                height: 100%;
+                @include flex(column, center);
+                color: white;
+
+                // Top Part || Information - //
+                .service-top {
+                    width: 100%;
+                    height: 55%;
+                    background: $t2;
+                    display: flex;
+
+               
+                    @include breakpoint(Tablet-M){
+                        height: 35%;
+                    }
+
+                    // Communication Change Order ------- //
+                    .communication-order1 {
+                        order: 1;
+                    }
+
+                    .communication-order2 {
+                        order: 2;
+
+                        .done-projects__communications {
+                            position: absolute;
+                            padding: 1% 3%;
+                            bottom: -3%;
+                            right: 0;
+                            font-size: 25px;
+
+                            z-index: 10;
+                        }
+                    }
+                    // --------------------------------------
+
+
+                    // Service Information //
+                    .service-info {
+                        width: 55%;
+                        // height: 100%;
+                        background: $t1;
+                        position: relative;
+                        @include flex-center;
+
+                        @include breakpoint(Tablet-M){
+                            width: 100%
+                        }
+
+                        img {
+                            @include img-cover;
+                            position: relative;
+                        }
+
+                        .service-info__content {
+                            position: absolute;
+                            @include flexx(column, center, flex-start);
+                            width: 90%;
+                            height: 90%;
+
+                            @include breakpoint(Tablet-M){
+                                padding-top: 5%;
+                            }
+
+                            h2 {
+                                line-height: 1.8;
+                                margin: 0;
+                                font-size: 35px;
+                            }
+
+                            .digital-h2 {
+                                line-height: 1.1;
+                                margin-bottom: 5px;
+                            }
+
+                            p {
+                                margin: 0;
+                            }
+                        }
+
+                        // Projects Done Banner -------- //
+                        .done-projects {
+                            position: absolute;
+                            align-self: center;
+                            padding: 1% 3%;
+                            bottom: -3%;
+                            left: 0;
+                            font-size: 25px;
+
+                            background: $orange;
+                            z-index: 20;
+                        }
+
+                        .done-projects-blue {
+                            background: $blue;
+                        }
+
+                        .done-projects-cyan {
+                            background: $cyan;
+                        }
+
+                        // --------------------------------
+                    }
+
+                    // Service Image //
+                    .service-img {
+                        width: 45%;
+                        height: 100%;
+                        background: $t3;
+
+                        img {
+                            @include img-cover;
+                        }
+
+                        @include breakpoint(Tablet-M){
+                            display: none;
+                        }
+                    }
+                }
+
+                // -------------------------
+
+                // Bottom Part || Projects Related ---//
+                .service-bottom {
+                    width: 100%;
+                    height: 45%;
+                    background: $t3;
+                    display: flex;
+
+                    @include breakpoint(Tablet-M){
+                        height: 65%;
+                    }
+
+                    @include breakpoint(Tablet-M){
+                        @include flex(column, center);
+                    }
+
+                    .service-project {
+                        height: 100%;
+                        @include flex-center;
+                        width: 33.3333%;
+                        overflow: hidden;
+                        position: relative;
+
+                        @include breakpoint(Tablet-M){
+                           width: 100%
+                        }
+
+                        img {
+                            @include img-cover;
+                        }
+                    }
+                }
+
+                // -----------------------------------
+            }
+
+            // ---------------------------------------- //
+        }
+
+        // ----------------------------------------------------------  
+
+    }
+
+
+    // Javascript Stuff ----------- //
+    .services-options__up {
+        transform: translateY(-100%);
+    }
+
+    .services-options__down {
+        transform: translateY(0%);
+    }
+
+
+    // Button Back || This pull back the services buttons //
+    .btn-back {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        z-index: 500;
+        fill: rgba(255, 255, 255, 0.651);
+        border-radius: 100%;
+        margin-left: 17%;
+        margin-top: 70px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        @include breakpoint(Tablet-M){
+            margin-left: 15%;
+            margin-top: 90px;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            fill: white;
+            -webkit-box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+            -moz-box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+            box-shadow: 2px 15px 13px -7px rgba(0, 0, 0, 0.24);
+        }
+    }
+
+    .btn-back__communications {
+        z-index: 20;
+
+        @include breakpoint(laptop-L){
+            margin-left: 14.6%;
+        }
+    }
+}
