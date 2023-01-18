@@ -1049,12 +1049,10 @@ header img {
   position: absolute;
 }
 .about-us .about-us__team .slider-automatic-container {
-  background-color: aqua;
   height: 300px;
-  width: 100vw;
+  width: 100%;
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides {
-  background-color: gray;
   height: 100%;
   overflow-x: hidden;
   display: flex;
