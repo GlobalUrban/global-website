@@ -1090,6 +1090,26 @@ header img {
   background-color: black;
 }
 
+.portfolio {
+  width: 100%;
+}
+.portfolio .portfolio-info {
+  width: 100%;
+  background: rgb(91, 22, 105);
+  background: radial-gradient(circle, rgb(91, 22, 105) 0%, rgb(51, 33, 104) 100%);
+  color: white;
+  padding: 7% 7%;
+  padding-top: 100px;
+  font-size: 20px;
+}
+.portfolio .portfolio-info h1 {
+  line-height: 1.5;
+  margin: 0;
+}
+.portfolio .portfolio-info p {
+  margin: 0;
+}
+
 footer {
   width: 100%;
   height: 400px;
