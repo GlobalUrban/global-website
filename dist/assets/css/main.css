@@ -1107,6 +1107,112 @@ header img {
 .portfolio .portfolio-info p {
   margin: 0;
 }
+.portfolio .portfolio-slider-projects-container {
+  background-color: aqua;
+  height: 400px;
+  width: 100vw;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides {
+  background-color: gray;
+  height: 100%;
+  width: 300%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide {
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  justify-content: center;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-btn {
+  height: 20px;
+  height: 30px;
+  z-index: 50;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides {
+  background-color: gray;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  transition: all 1s;
+  padding-left: 10vw;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides .portfolio-slider-projects-slide-innerslides-slide {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-0 {
+  background-color: gainsboro;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-1 {
+  background-color: pink;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-2 {
+  background-color: cyan;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-3 {
+  background-color: black;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-4 {
+  background-color: goldenrod;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-5 {
+  background-color: blueviolet;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides #p-1 {
+  background-color: blue;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides #p-2 {
+  background-color: orange;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-slides #p-3 {
+  background-color: red;
+}
+.portfolio .portfolio-slider-projects-container .portfolio-slider-projects-btn {
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .portfolio-slider-projects-container .btn-general-pressed {
+  background-color: rgb(78, 78, 78);
+}
+.portfolio .inner-slides-text-styles {
+  color: red;
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+}
+.portfolio .portfolio-external-slider-info-container {
+  width: 100%;
+  height: 200px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .portfolio-external-slider-info-container h2 {
+  color: black;
+}
+.portfolio .portfolio-external-slider-info-container p {
+  color: blue;
+}
+.portfolio .portfolio-external-slider-info-container img {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
 
 footer {
   width: 100%;
