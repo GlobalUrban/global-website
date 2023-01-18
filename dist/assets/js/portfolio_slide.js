@@ -3,6 +3,7 @@
 const projects1 = ['p1', 'p2', 'p3', 'p4', 'p5']
 const projects2 = ['t1', 't2', 't3']
 const projects3 = ['s1', 's2', 's3', 's4', 's5']
+
 // Descriptions
 const d1 = ['mambru se fue a la guerra', 'que dolor qe dolor que pena', 'asdfasdf', 'wqerqwer', 'pzxcvzxcv']
 const d2 = [
@@ -16,6 +17,10 @@ let amountMoved1 = 1;
 let amountMoved2 = 1;
 let amountMoved3 = 1;
 let portfolioSelected = 0;
+
+// Image routes //
+const imgRouteCover = "/dist/assets/img/portfolio/cover/GUS_About_us_"
+const imgRouteContent = "/dist/assets/img/portfolio/content/GUS_About_us_"
 
 // Buttons for general slides
 let btn1 = document.getElementById('btn-1')
@@ -74,7 +79,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = './assets/img/test/GUS_About_us_' + projects1.indexOf(project) + '.png';
+        node_img.src = imgRouteCover + projects1.indexOf(project) + '.png';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -100,7 +105,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = './assets/img/test/GUS_About_us_' + projects2.indexOf(project) + '.png';
+        node_img.src = imgRouteCover + projects2.indexOf(project) + '.png';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -126,7 +131,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = './assets/img/test/GUS_About_us_' + projects3.indexOf(project) + '.png';
+        node_img.src = imgRouteCover + projects3.indexOf(project) + '.png';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -197,19 +202,19 @@ const setOnInfoField = (project, inner) => {
     if (portfolioSelected == 0) {
         tittle.innerHTML = projects1[amountMoved1]
         p.innerHTML = d1[amountMoved1]
-        img.src =  './assets/img/test/GUS_About_us_' + amountMoved1 + '.png';
+        img.src =  imgRouteContent + amountMoved1 + '.png';
     }
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
-        img.src =  './assets/img/test/GUS_About_us_' + amountMoved2 + '.png';
+        img.src =  imgRouteContent + amountMoved2 + '.png';
     }
 
     if (portfolioSelected == 2) {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
-        img.src =  './assets/img/test/GUS_About_us_' + amountMoved3 + '.png';
+        img.src =  imgRouteContent + amountMoved3 + '.png';
     }
 }
 
