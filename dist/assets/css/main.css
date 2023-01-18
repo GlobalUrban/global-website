@@ -906,6 +906,217 @@ header img {
   }
 }
 
+.about-us .about-us__info {
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  display: flex;
+  background-image: url(../../../dist/assets/img/home/about-gradiant.png);
+}
+.about-us .about-us__info .about-us__info-front {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3%;
+  padding-top: 35vh;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front {
+    padding-top: 15vh;
+  }
+}
+.about-us .about-us__info .about-us__info-front .global-urban__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .global-urban__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-img {
+    display: none;
+  }
+}
+.about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-img .img-bg {
+  width: 35vw;
+  height: 400px;
+  background: #000814;
+}
+@media screen and (max-width: 1400px) {
+  .about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-img .img-bg {
+    height: 350px;
+  }
+}
+.about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-img img {
+  position: absolute;
+  width: 40vw;
+  min-width: 460px;
+  max-width: 700px;
+}
+.about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-info {
+  width: 50%;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-info {
+    width: 90%;
+  }
+}
+.about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-info h1 {
+  line-height: 1.3;
+  font-size: 70px;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .global-urban__info .about__cont-info h1 {
+    font-size: 60px;
+  }
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info img {
+  width: 250px;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .dvbe__info img {
+    display: none;
+  }
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info .dvbe__cont-info {
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .dvbe__info .dvbe__cont-info {
+    width: 100%;
+  }
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info .dvbe__cont-info h1 {
+  line-height: 1;
+  margin: 0;
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info .dvbe__cont-info h2 {
+  line-height: 1.9;
+  margin: 0;
+}
+.about-us .about-us__team {
+  width: 100%;
+  background: rgba(255, 0, 0, 0.534);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-us .about-us__team .team__cont-title {
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 0, 0, 0.534);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-us .about-us__team .team__cont-title img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us .about-us__team .team__cont-title h2 {
+  color: white;
+  margin-left: 20px;
+  position: absolute;
+}
+.about-us .about-us__team .slider-automatic-container {
+  background-color: aqua;
+  height: 300px;
+  width: 100vw;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides {
+  background-color: gray;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide {
+  height: 100%;
+  width: 25vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-1 {
+  background-color: blue;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-2 {
+  background-color: orange;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-3 {
+  background-color: green;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-4 {
+  background-color: yellow;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-5 {
+  background-color: pink;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-6 {
+  background-color: brown;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-7 {
+  background-color: black;
+}
+
+.portfolio {
+  width: 100%;
+}
+.portfolio .portfolio-info {
+  width: 100%;
+  background: rgb(91, 22, 105);
+  background: radial-gradient(circle, rgb(91, 22, 105) 0%, rgb(51, 33, 104) 100%);
+  color: white;
+  padding: 7% 7%;
+  padding-top: 100px;
+  font-size: 20px;
+}
+.portfolio .portfolio-info h1 {
+  line-height: 1.5;
+  margin: 0;
+}
+.portfolio .portfolio-info p {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background: rgb(241, 120, 56);
+  background: linear-gradient(319deg, rgb(241, 120, 56) 0%, rgb(248, 141, 5) 100%);
+}
+
 .nav-desktop {
   position: fixed;
   width: 100%;
