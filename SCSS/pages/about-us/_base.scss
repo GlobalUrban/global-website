@@ -47,7 +47,7 @@
                         height: 400px;
                         background: $dark-blue;
 
-                        @include breakpoint(laptop-L){
+                        @include breakpoint(laptop-L) {
                             height: 350px;
                         }
                     }
@@ -147,14 +147,11 @@
 
         // Team Slider ----------------- //
         .slider-automatic-container {
-            background-color: aqua;
             height: 300px;
-            width: 100vw;
+            width: 100%;
 
             .slider-automatic-container-slides {
-                background-color: gray;
                 height: 100%;
-
                 overflow-x: hidden;
                 display: flex;
                 flex-direction: row;
@@ -197,9 +194,6 @@
                 }
             }
         }
-
-
     }
-
     // ------------------------------------- //
 }
