@@ -65,6 +65,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 0;
+  /* buttons styles */
 }
 header h1 {
   position: absolute;
@@ -76,10 +77,92 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+header .home-slider-container {
+  width: 100vw;
+  height: 100%;
+  background-color: aqua;
+  position: relative;
+}
+header .home-slider-container-slides {
+  width: 400vw;
+  height: 100%;
+  background-color: gray;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s;
+}
+header .home-slider-container-slides-slide {
+  width: 100vw;
+  height: 100%;
+  transition: all 1s;
+}
+header .home-slider-container-arrow {
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+header #slide-1 {
+  background-color: blue;
+}
+header #slide-2 {
+  background-color: orange;
+}
+header #slide-3 {
+  background-color: red;
+}
+header #slide-4 {
+  background-color: yellow;
+}
+header .home-slider-container-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3%;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  position: absolute;
+}
+header .home-slider-container-buttons-directions {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  padding: 0 3%;
+  padding-top: 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+header #la {
+  background-color: red;
+}
+header #ra {
+  background-color: green;
+}
+header .home-slider-container-selectors {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
+  align-self: flex-end;
+  padding-right: 3%;
+}
+header .home-slider-container-selectors-selector {
+  height: 10px;
+  width: 50px;
+  background-color: gray;
+  border-radius: 5px;
+}
+header .selector-pressed {
+  background-color: rgb(66, 66, 66);
+}
 
 .header-top {
   width: 100%;
   height: 100vh;
+  background-color: teal;
 }
 
 .home__about-us {
