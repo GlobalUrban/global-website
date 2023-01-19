@@ -40,7 +40,7 @@
 
         // Portfolio Slider Projects Slides Container //
         .portfolio-slider-projects-slides {
-            height: 100%;
+            height: 80%;
             width: 300%;
             overflow-x: hidden;
             display: flex;
@@ -164,19 +164,40 @@
         }
 
         .portfolio-slider__btn-container {
-            @include flex-around(row);
-            padding: 0 15%;
             height: 20%;
-
-            .portfolio-slider-projects-btn {
-              
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                font-size: 20px;
-                font-weight: 600;
+            width: 100%;
+            @include flex(column, center);
+            .portfolio-slider__btn-container-btns{
+                @include flex-around(row);
+                width: 70%;
+                height: 100%;
+                .portfolio-slider-projects-btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
             }
+            .portfolio-slider__btn-container-underline{
+                height: 10px;
+                background-color: tan;
+                transition: all 1s;
+            }
+            .btn-general-pressed-0{
+                width: 15%;
+                transform: translateX(-165%);
+            }
+            .btn-general-pressed-1{
+                width: 20%;
+                transform: translateX(-20%);
+            }
+            .btn-general-pressed-2{
+                width: 15%;
+                transform: translateX(145%);
+            }
+
         }
 
      
