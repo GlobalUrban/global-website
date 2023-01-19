@@ -238,6 +238,8 @@
     }
 }
 
+
+// Phone Icon Fixed on Bottom Right on Mobile //
 .contact-mobile {
     width: 70px;
     height: 70px;
@@ -249,7 +251,9 @@
     background: white;
     z-index: 9999;
     overflow: hidden;
-    // background-image: url(../../../dist/assets/img/home/about-gradiant.png);
+    -webkit-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+    box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
 
     @include breakpoint("Tablet-M") {
         @include flex-center;
@@ -260,3 +264,47 @@
         height: 50%;
     }
 }
+
+.contact-mobile__pop-up {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.479);
+    z-index: 0;
+    @include flex(column, flex-end);
+    padding-bottom: 8vh;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    transition: all 0.3s;
+    opacity: 0;
+
+    .pop-up {
+        width: 0%;
+        height: 0px;
+        background: white;
+        border-radius: 9px;
+        -webkit-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+        box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+        transform: translateY(80%) translateX(80%);
+    }
+}
+
+.pop-move {
+    transform: translateY(0%) translateX(0%);
+    opacity: 1;
+}
+
+
+.mobile-pop-up__show {
+    z-index: 300;
+    opacity: 1;
+}
+
+

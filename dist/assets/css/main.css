@@ -604,6 +604,7 @@ header img {
   background: white;
   z-index: 9999;
   overflow: hidden;
+  box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
 }
 @media screen and (max-width: 768px) {
   .contact-mobile {
@@ -615,6 +616,47 @@ header img {
 .contact-mobile img {
   width: 50%;
   height: 50%;
+}
+
+.contact-mobile__pop-up {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.479);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 8vh;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  transition: all 0.3s;
+  opacity: 0;
+}
+.contact-mobile__pop-up .pop-up {
+  width: 0%;
+  height: 0px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  transform: translateY(80%) translateX(80%);
+}
+
+.pop-move {
+  transform: translateY(0%) translateX(0%);
+  opacity: 1;
+}
+
+.mobile-pop-up__show {
+  z-index: 300;
+  opacity: 1;
 }
 
 .services {
