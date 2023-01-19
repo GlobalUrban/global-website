@@ -1308,6 +1308,12 @@ header img {
     padding-bottom: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
+    padding-bottom: 0;
+    overflow: scroll;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
   display: flex;
   justify-content: space-around;
@@ -1321,6 +1327,17 @@ header img {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
     width: 90%;
     align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
+    width: 700px;
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
+    margin-left: 300px;
   }
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns .portfolio-slider-projects-btn {
@@ -1363,6 +1380,12 @@ header img {
   width: 15%;
   transform: translateX(145%);
 }
+@media screen and (max-width: 1024px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container .btn-general-pressed {
+    background: rgb(36, 36, 36);
+    color: white;
+  }
+}
 .portfolio .portfolio-general-container .inner-slides-text-styles {
   color: white;
   position: absolute;
@@ -1384,6 +1407,11 @@ header img {
   align-self: flex-start;
   width: 60%;
 }
+@media screen and (max-width: 1024px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left {
+    width: 95%;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left h2 {
   color: black;
   line-height: 1.5;
@@ -1396,6 +1424,11 @@ header img {
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container img {
   width: 300px;
   background-color: red;
+}
+@media screen and (max-width: 1024px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container img {
+    display: none;
+  }
 }
 
 footer {
