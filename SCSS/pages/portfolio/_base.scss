@@ -62,6 +62,7 @@
                     height: 100%;
                 }
 
+                // Portfolio Slider Category Buttons //
                 .portfolio-slider-project-slide__cont-btn {
                     position: absolute;
                     transform: translateY(-100%);
@@ -73,10 +74,29 @@
                    
 
                     .portfolio-slider-projects-slide-btn {
-                        height: 20px;
-                        height: 30px;
-                        // position: static;
+                      width: 50px;
+                      background: none;
+                      outline: none;
+                      border: none;
                         z-index: 50;
+                        transition: all 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.2) translateX(-15%);
+                        }
+                        img {
+                            @include img-cover;
+                        }
+                    }
+
+                    .portfolio-btn__right {
+                        &:hover {
+                            transform: scale(1.2) translateX(15%);
+                        }
+                        img {
+                            transform: rotate(180deg);
+                        }
                     }
                 }
 
