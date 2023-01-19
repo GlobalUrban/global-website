@@ -229,6 +229,12 @@ const setPressedStyle = (index) => {
     generalButtons[1].classList.remove('btn-general-pressed')
     generalButtons[2].classList.remove('btn-general-pressed')
     generalButtons[index].classList.add('btn-general-pressed')
+
+    let underlinePressed = document.getElementById('underline-pressed');
+    underlinePressed.classList.remove('btn-general-pressed-0')
+    underlinePressed.classList.remove('btn-general-pressed-1')
+    underlinePressed.classList.remove('btn-general-pressed-2')
+    underlinePressed.classList.add('btn-general-pressed-'+index)
 }
 
 // Geenal buttons
