@@ -52,12 +52,10 @@ let timeoutOnLoad = 2000;
 
 const runSlider = (indexSlider) => {
     console.log({ timeoutOnLoad })
-    for (let i = 0; i < 15; i++) {
-        // clearInterval(slideInverval - i);
-        clearInterval(slideInverval2 - i);
-        clearTimeout(timeout - i);
-    }
     if (indexSlider == 0) {
+        for (let i = 0; i < 10; i++) {
+            clearInterval(slideInverval - i);
+        }
         slideInverval = setInterval(() => {
             if (amountofmoves == teamMembers.length - 4) {
                 console.log('reached'); amountMoved = amountTomoveApply; amountofmoves = -1
@@ -67,6 +65,9 @@ const runSlider = (indexSlider) => {
             slides.style.transform = 'translate(' + amountMoved + 'vw, 0%)'
         }, 3000);
     } else {
+        for (let i = 0; i < 10; i++) {
+            clearInterval(slideInverval2 - i);
+        }
         var timeout = setTimeout(() => {
             slideInverval2 = setInterval(() => {
                 if (amountofmoves2 == teamMembers2.length - 4) {
