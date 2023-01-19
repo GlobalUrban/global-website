@@ -1,11 +1,16 @@
 
 // Projects
-const projects1 = ['p1', 'p2', 'p3', 'p4', 'p5']
+const projects1 = ['p1', 'Lorem Ipsum', 'p3', 'p4', 'p5']
 const projects2 = ['t1', 't2', 't3']
 const projects3 = ['s1', 's2', 's3', 's4', 's5']
 
 // Descriptions
-const d1 = ['mambru se fue a la guerra', 'que dolor qe dolor que pena', 'asdfasdf', 'wqerqwer', 'pzxcvzxcv']
+const d1 = ['mambru se fue a la guerra', 
+'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+, `Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus
+suscipit veniam consequuntur veritatis sit earum consequatur? Corporis voluptatibus soluta
+tenetur suscipit sint iusto nulla pariatur, nihil dolorum recusandae aperiam?`
+, 'wqerqwer', 'pzxcvzxcv']
 const d2 = [
     'I will command a great and terrible army, and we will sail to a billion worlds. We will sail until every light has been extinguished',
      'You are strong, child, but I am beyond strength', 
