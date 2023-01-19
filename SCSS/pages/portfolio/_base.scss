@@ -3,9 +3,9 @@
 .portfolio {
     width: 100%;
 
+    // Portfolio Information // --------------------------
     .portfolio-info {
         width: 100%;
-        
         background: rgb(91, 22, 105);
         background: radial-gradient(circle, rgba(91, 22, 105, 1) 0%, rgba(51, 33, 104, 1) 100%);
         color: white;
@@ -21,7 +21,192 @@
         p {
             margin: 0;
         }
-        
+
 
     }
+
+
+    // Portfolio Slider // --------------------------------
+
+.portfolio-general-container {
+    @include flex(column, center);
+    width: 100%;
+    height: 1000px;
+    gap: 15px;
+
+    .portfolio-slider-projects-container {
+        height: 50%;
+        width: 100vw;
+
+        // Portfolio Slider Projects Slides Container //
+        .portfolio-slider-projects-slides {
+            height: 100%;
+            width: 300%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: row;
+            transition: all 1s;
+            
+
+
+            // Portfolio Slider Category Slider//
+            .portfolio-slider-projects-slide {
+                height: 100%;
+                width: 100%;
+                overflow-x: hidden;
+                position: relative;
+                
+
+                .opacity {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .portfolio-slider-project-slide__cont-btn {
+                    position: absolute;
+                    transform: translateY(-100%);
+                    @include flex-between(row);
+                    padding: 0 5%;
+                    z-index: 100;
+                    width: 100%;
+                    height: 100%;
+                   
+
+                    .portfolio-slider-projects-slide-btn {
+                        height: 20px;
+                        height: 30px;
+                        // position: static;
+                        z-index: 50;
+                    }
+                }
+
+
+                
+
+                .portfolio-slider-projects-slide-innerslides {
+                    background-color: gray;
+                    height: 100%;
+
+                    display: flex;
+                    overflow-x: hidden;
+                    transition: all 1s;
+                    // z-index: 40;
+                    // padding: 10px;
+                    padding-left: 10vw;
+
+
+                    .portfolio-slider-projects-slide-innerslides-slide {
+                        width: 80vw;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                    }
+
+                    #iner-0 {
+                        background-color: gainsboro;
+                    }
+
+                    #iner-1 {
+                        background-color: pink;
+                    }
+
+                    #iner-2 {
+                        background-color: cyan;
+                    }
+
+                    #iner-3 {
+                        background-color: black;
+                    }
+
+                    #iner-4 {
+                        background-color: goldenrod;
+                    }
+
+                    #iner-5 {
+                        background-color: blueviolet;
+                    }
+                }
+            }
+
+            #p-1 {
+                background-color: blue;
+            }
+
+            #p-2 {
+                background-color: orange;
+            }
+
+            #p-3 {
+                background-color: red;
+            }
+        }
+
+        .portfolio-slider__btn-container {
+            @include flex-around(row);
+            padding: 0 15%;
+            height: 20%;
+
+            .portfolio-slider-projects-btn {
+              
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+     
+
+        .btn-general-pressed {
+           text-decoration: underline;
+        }
+    }
+
+    .inner-slides-text-styles {
+        color: white;
+        position: absolute;
+        font-size: 25px;
+        bottom: 3%;
+        left: 3%;
+    }
+
+    .portfolio-external-slider-info-container {
+        width: 100%;
+        height: 50%;
+
+        @include flex-between(row);
+        padding: 0 4%;
+        padding-top: 8%;
+
+        .info-container__left {
+            align-self: flex-start;
+            width: 60%;
+
+            h2 {
+                color: black;
+                line-height: 1.5;
+                margin: 0;
+            }
+    
+            p {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+
+        
+
+        img {
+            width: 300px;
+            background-color: red;
+        }
+    }
+}
+
+
+
 }
