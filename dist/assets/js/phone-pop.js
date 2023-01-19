@@ -11,7 +11,7 @@ mobileBtn.addEventListener("click", ()=> {
 })
 
 contPopUp.addEventListener("click", ()=> {
-    contPopUp.classList.remove("mobile-pop-up__show");
+    contPopUp.classList.remove("mobile-pop-up__show");  
 })
 
 
