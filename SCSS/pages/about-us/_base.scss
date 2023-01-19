@@ -163,6 +163,28 @@
                     overflow: hidden;
                     display: flex;
                     justify-content: center;
+                    position: relative;
+                    .title-hover{
+                        width: 100%;
+                        height: 100%;
+                        @include flexx(column, flex-end, center);
+                        position: absolute;
+                        padding-bottom: 10%;
+                        transition: all 0.4s;
+                        transform: translateY(100%);
+                        
+                        color: white;
+                    }
+                    .title-hover-hover{
+                        transform:translateY(0%)
+                    }
+                }
+                .slider-automatic-container-slide-mobile {
+                    height: 100%;
+                    width: 50vw;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
                 }
 
                 #s-1 {

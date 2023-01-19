@@ -1065,6 +1065,30 @@ header img {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  padding-bottom: 10%;
+  transition: all 0.4s;
+  transform: translateY(100%);
+  color: white;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover-hover {
+  transform: translateY(0%);
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide-mobile {
+  height: 100%;
+  width: 50vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-1 {
   background-color: blue;
