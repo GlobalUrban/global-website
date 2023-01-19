@@ -360,28 +360,38 @@ header img {
   position: absolute;
   width: 100%;
   height: 100%;
+  padding: 3% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .container .working {
-  width: 100%;
+  width: 90%;
   height: 60%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   gap: 5%;
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  .container .working {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .container .working h1 {
-  font-size: 50px;
-  text-align: center;
+  font-size: 70px;
+  text-align: start;
 }
 @media screen and (max-width: 1024px) {
   .container .working h1 {
     font-size: 40px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -529,10 +539,12 @@ header img {
   padding: 1.2% 7%;
   font-size: 20px;
   transition: 0.2s;
+  align-self: flex-start;
 }
 @media screen and (max-width: 768px) {
   .container .container-bottom .cont-form form .submit {
     padding: 2% 15%;
+    align-self: center;
   }
 }
 .container .container-bottom .cont-form form .submit:hover {
@@ -586,13 +598,12 @@ header img {
   height: 70px;
   bottom: 4%;
   right: 4%;
-  background: rgb(39, 195, 39);
   border-radius: 100%;
   position: fixed;
   display: none;
+  background: white;
   z-index: 9999;
   overflow: hidden;
-  background-image: url(../../../dist/assets/img/home/about-gradiant.png);
 }
 @media screen and (max-width: 768px) {
   .contact-mobile {
