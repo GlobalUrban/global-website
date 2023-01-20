@@ -1312,6 +1312,9 @@ header .selector-pressed {
   font-weight: 600;
   color: white;
 }
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover h3 {
+  margin: 0;
+}
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover-hover {
   transform: translateY(0%);
 }

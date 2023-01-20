@@ -20,27 +20,26 @@ let classMobile = 'slider-automatic-container-slide-mobile';
 let classToApply = undefined;
 
 let teamMembers = [
-    'juan0',
-    'juan1',
-    'juan2',
-    'juan3',
-    'juan4',
-    'juan5',
-    'juan6',
-    'juan7',
-    'juan8',
+    {name: 'juan0', charge: 'work0'},
+    {name: 'juan1', charge: 'work1'},
+    {name: 'juan2', charge: 'work2'},
+    {name: 'juan3', charge: 'work3'},
+    {name: 'juan4', charge: 'work4'},
+    {name: 'juan5', charge: 'work5'},
+    {name: 'juan6', charge: 'work6'},
+    {name: 'juan7', charge: 'work7'},
+    {name: 'juan8', charge: 'work8'},
 ]
 
 let teamMembers2 = [
-    'pedro0',
-    'pedro1',
-    'pedro2',
-    'pedro3',
-    'pedro4',
-    'pedro5',
-    'pedro6',
-    'pedro7',
-    'pedro8',
+    {name: 'pedro0', charge: 'work2-0'},
+    {name: 'pedro1', charge: 'work2-1'},
+    {name: 'pedro2', charge: 'work2-2'},
+    {name: 'pedro3', charge: 'work2-3'},
+    {name: 'pedro4', charge: 'work2-4'},
+    {name: 'pedro5', charge: 'work2-5'},
+    {name: 'pedro6', charge: 'work2-6'},
+    {name: 'pedro7', charge: 'work2-7'},
 ]
 
 let children1 = new Array()
@@ -117,13 +116,21 @@ const appendMember = () => {
         node.appendChild(node_img);
 
         // Add title for hover
-        const title = document.createElement("div");
-        title.classList.add('title-hover');
-        title.innerHTML = member
-        // console.log(member);
+        let infoContainer = document.createElement("div");
+        let info = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let br = document.createElement("br");
+        let span = document.createElement("span");
+        infoContainer.classList.add('title-hover');
+        h3.innerHTML = member.name;
+        info.appendChild(h3)
+        info.appendChild(br)
+        info.appendChild(document.createTextNode(member.charge))
+        infoContainer.appendChild(info);
         // console.log(index);
-        node.appendChild(title);
-        children1.push(title)
+        node.appendChild(infoContainer);
+        children1.push(infoContainer)
+        // listeners for hover
         node.addEventListener('mouseover', () => { titleHover(index, true) })
         node.addEventListener('mouseleave', () => { titleHoverLeave(index, true) })
 
@@ -142,13 +149,21 @@ const appendMember = () => {
         node.appendChild(node_img);
 
         // Add title for hover
-        const title = document.createElement("div");
-        title.classList.add('title-hover');
-        title.innerHTML = member
-        // console.log(member);
+        let infoContainer = document.createElement("div");
+        let info = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let br = document.createElement("br");
+        let span = document.createElement("span");
+        infoContainer.classList.add('title-hover');
+        h3.innerHTML = member.name;
+        info.appendChild(h3)
+        info.appendChild(br)
+        info.appendChild(document.createTextNode(member.charge))
+        infoContainer.appendChild(info);
         // console.log(index);
-        node.appendChild(title);
-        children2.push(title)
+        node.appendChild(infoContainer);
+        children2.push(infoContainer)
+        // listeners for hover
         node.addEventListener('mouseover', () => { titleHover(index) })
         node.addEventListener('mouseleave', () => { titleHoverLeave(index) })
 
