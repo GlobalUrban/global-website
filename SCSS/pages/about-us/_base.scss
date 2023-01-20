@@ -175,18 +175,35 @@
                         height: 100%;
                         @include flexx(column, flex-end, center);
                         position: absolute;
-                        padding-bottom: 10%;
+                        padding-bottom: 5%;
                         transition: all 0.4s;
                         transform: translateY(100%);
                         font-size: 18px;
                         background: rgb(0, 0, 0);
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8239670868347339) 100%);
-                        font-size: 20px;
-                        font-weight: 600;
+                        font-weight: 300;
+                        font-size: 18;
                         color: white;
-                        h3{
-                            margin: 0;
+                       
+
+                        div {
+                            h3{
+                                margin: 0;
+                                line-height: 1.9;
+                                margin-bottom: -25px;
+                                font-weight: 600;
+                                font-size: 20px;
+                                color: white;
+                            }
+
+                            span {
+                           
+                                font-size: 18px;
+                            }
+
                         }
+
+                       
                     }
 
 
