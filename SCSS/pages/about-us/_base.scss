@@ -1,6 +1,7 @@
 @use '../../abstracts/' as *;
 
 .about-us {
+    z-index: 10;
 
     // About Us General Information ---------- //
     .about-us__info {
