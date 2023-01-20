@@ -13,7 +13,7 @@ let amountTomoveDesktop = 25;
 let amountTomoveMobile = 50;
 let amountTomoveApply = undefined;
 
-const imgRoute = "/dist/assets/img/about-us/team_members/GUS_About_us_"
+const imgRoute = "../img/about-us/team_members/GUS_About_us_"
 
 let classDesktop = 'slider-automatic-container-slide';
 let classMobile = 'slider-automatic-container-slide-mobile';
