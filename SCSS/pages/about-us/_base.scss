@@ -150,6 +150,7 @@
         .slider-automatic-container {
             height: 300px;
             width: 100%;
+            overflow-x: hidden;
 
             @include breakpoint("Phone-L") {
                 height: 230px;

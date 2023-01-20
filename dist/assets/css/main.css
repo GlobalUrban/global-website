@@ -862,6 +862,7 @@ header .selector-pressed {
   position: absolute;
   z-index: 20;
   transition: all 0.4s ease-in-out;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   .services .services-options {
@@ -942,6 +943,7 @@ header .selector-pressed {
 .services .services-content {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 .services .services-content .services-scroll {
   width: 300%;
@@ -1290,6 +1292,7 @@ header .selector-pressed {
 .about-us .about-us__team .slider-automatic-container {
   height: 300px;
   width: 100%;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 480px) {
   .about-us .about-us__team .slider-automatic-container {
@@ -1399,6 +1402,7 @@ header .selector-pressed {
   width: 100%;
   height: 1000px;
   gap: 15px;
+  overflow-x: hidden;
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container {
   height: 50%;
