@@ -24,8 +24,8 @@ let amountMoved3 = 1;
 let portfolioSelected = 0;
 
 // Image routes //
-const imgRouteCover = "/dist/assets/img/portfolio/cover/GUS_About_us_"
-const imgRouteContent = "/dist/assets/img/portfolio/content/GUS_About_us_"
+const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
+const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
 
 // Buttons for general slides
 let btn1 = document.getElementById('btn-1')

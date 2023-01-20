@@ -1514,6 +1514,14 @@ header .selector-pressed {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container::-webkit-scrollbar {
+  display: none;
+}
+.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 @media screen and (max-width: 1024px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
