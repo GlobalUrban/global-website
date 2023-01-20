@@ -77,3 +77,6 @@ const setNumber2 = () => {
 workingOnScreen.addEventListener('mouseover', setNumber0)
 workingOnScreen.addEventListener('mouseover', setNumber1)
 workingOnScreen.addEventListener('mouseover', setNumber2)
+workingOnScreen.addEventListener('touchstart', setNumber0)
+workingOnScreen.addEventListener('touchstart', setNumber1)
+workingOnScreen.addEventListener('touchstart', setNumber2)
