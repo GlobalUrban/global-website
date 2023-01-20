@@ -12,6 +12,19 @@
 
 <body>
 
+    <!-- Addres & Phone Mobile Pop Up  -->
+    <div class="contact-mobile__pop-up" id="cont-pop-up">
+        <div class="pop-up" id="pop-up">
+            <a href="tel:50376298514" target="_blank" class="call"><img src="./assets/img/home/contact/call-now.png"
+                    alt=""> Call Now</a>
+
+            <div class="divider"></div>
+            <a href="https://goo.gl/maps/QffdHPw9ZoMRdBug8"><a class="call"
+                    href="https://maps.apple.com/?address=2200%20S%20Fremont%20Ave,%20Alhambra,%20CA%20%2091803,%20United%20States&ll=34.067524,-118.148966&q=2200%20S%20Fremont%20Ave"><img
+                        src="./assets/img/home/contact/map-directions.png" alt=""> Get Directions</a></a>
+        </div>
+    </div>
+    </div>
     <!-- nav // ----------------------------------------- -->
     <!-- nav desktop // -->
     <nav class="nav-desktop">
@@ -25,7 +38,7 @@
                 <li><a href="./assets/html/about-us.html">ABOUT US</a></li>
                 <li><a href="./assets/html/services.html"> SERVICES</a></li>
                 <li><a href="./assets/html/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="">CONTACT US</a></li>
+                <li><a id="contact-us" href="#contact-id">CONTACT US</a></li>
 
             </ul>
 
@@ -62,16 +75,15 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-
-       
     </div>
 
+    <!-- Nav Links Container // -->
     <div class="nav-mobile__container" id="nav-container">
         <div class="nav-links__container">
             <a href="./assets/html/about-us.html">ABOUT US</a>
             <a href="./assets/html/services.html">SERVICES</a>
             <a href="./assets/html/portfolio.html">PORTFOLIO</a>
-            <a href="#">CONTACT US</a>
+            <a href="#contact-id-m">CONTACT US</a>
         </div>
     </div>
     <!-- ------------------------------------------------ -->
@@ -79,8 +91,81 @@
     <!-- header // -------------------------------------- -->
     <div class="header-top"></div>
     <header>
-        <img src="./assets/img/home/header/MicrosoftTeams-image (2).png" alt="">
-        <h1>THIS IS THE HEADER</h1>
+        <div class="home-slider-container">
+            <div id="slides" class="home-slider-container-slides">
+
+                <div id="slide-1" class="home-slider-container-slides-slide">
+                    <img src="https://picsum.photos/2002/2000" alt="">
+
+                    <!-- Front Cover // -->
+                    <div class="front-cover">
+                        <div class="item-info">
+                            <h1>Lorem, ipsum.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
+                                sunt
+                                asperiores odit accusantium.</p> <br>
+                            <a href="">see more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-2" class="home-slider-container-slides-slide">
+                    <img src="https://picsum.photos/2002/2001" alt="">
+                    <!-- Front Cover // -->
+                    <div class="front-cover">
+                        <div class="item-info">
+                            <h1>Lorem, ipsum.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
+                                sunt
+                                asperiores odit accusantium.</p> <br>
+                            <a href="">see more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-3" class="home-slider-container-slides-slide">
+                    <img src="https://picsum.photos/2002/2002" alt="">
+                    <!-- Front Cover // -->
+                    <div class="front-cover">
+                        <div class="item-info">
+                            <h1>Lorem, ipsum.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
+                                sunt
+                                asperiores odit accusantium.</p> <br>
+                            <a href="">see more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="slide-4" class="home-slider-container-slides-slide">
+                    <img src="https://picsum.photos/2002/2003" alt="">
+                    <!-- Front Cover // -->
+                    <div class="front-cover">
+                        <div class="item-info">
+                            <h1>Lorem, ipsum.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
+                                sunt
+                                asperiores odit accusantium.</p> <br>
+                            <a href="">see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-slider-container-buttons">
+
+                <div class="home-slider-container-buttons-directions">
+
+                    <img id="la" class="home-slider-container-arrow" src="./assets/img/home/header/arrow.png" alt="">
+                    <img id="ra" class="home-slider-container-arrow" src="./assets/img/home/header/arrow.png" alt="">
+                </div>
+                <div id="sel" class="home-slider-container-selectors">
+                    <div id="s1" class="home-slider-container-selectors-selector "></div>
+                    <div id="s2" class="home-slider-container-selectors-selector "></div>
+                    <div id="s3" class="home-slider-container-selectors-selector"></div>
+                    <div id="s4" class="home-slider-container-selectors-selector"></div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- About Us Section // ---------------------------- -->
@@ -116,25 +201,26 @@
         <!-- Quick Links // ------------------------- -->
         <div class="quick-links">
             <!-- Services // -->
-            <a href="#" target="_blank" class="quick-links__services image-deck css-animated" id="services">
+            <a href="./assets/html/services.html" target="_blank" class="quick-links__services image-deck css-animated"
+                id="services">
                 <!-- <img src="./assets/img/test/test_1.png" alt=""> -->
                 <div class="image-deck">
                     <figure>
                         <img src="https://picsum.photos/2000/2000">
                         <figcaption>1</figcaption>
-                      </figure>
-                      <figure>
+                    </figure>
+                    <figure>
                         <img src="https://picsum.photos/2001/2001">
                         <figcaption>2</figcaption>
-                      </figure>
-                      <figure>
+                    </figure>
+                    <figure>
                         <img src="https://picsum.photos/2002/2002">
                         <figcaption>3</figcaption>
-                      </figure>
-                      <figure>
+                    </figure>
+                    <figure>
                         <img src="https://picsum.photos/2003/2003">
                         <figcaption>4</figcaption>
-                      </figure>
+                    </figure>
                 </div>
                 <div class="filter"></div>
                 <h1>SERVICES</h1>
@@ -143,48 +229,48 @@
             <!-- Right side // -->
             <div class="quick-links__right">
                 <!-- Portfolio // -->
-                <a href="#" class="quick-links__right-item css-animated">
+                <a href="./assets/html/portfolio.html" class="quick-links__right-item css-animated">
                     <div class="image-deck">
                         <figure>
                             <img src="https://picsum.photos/1000/1000">
                             <figcaption>1</figcaption>
-                          </figure>
-                          <figure>
+                        </figure>
+                        <figure>
                             <img src="https://picsum.photos/1001/1001">
                             <figcaption>2</figcaption>
-                          </figure>
-                          <figure>
+                        </figure>
+                        <figure>
                             <img src="https://picsum.photos/1002/1002">
                             <figcaption>3</figcaption>
-                          </figure>
-                          <figure>
+                        </figure>
+                        <figure>
                             <img src="https://picsum.photos/103/103">
                             <figcaption>4</figcaption>
-                          </figure>
+                        </figure>
                     </div>
                     <div class="filter"></div>
                     <h1>PORTFOLIO</h1>
                 </a>
 
                 <!-- Team // -->
-                <a href="#" class="quick-links__right-item css-animated">
+                <a href="./assets/html/about-us.html#team-page" class="quick-links__right-item css-animated">
                     <div class="image-deck">
                         <figure>
                             <img src="https://picsum.photos/800/800">
                             <figcaption>1</figcaption>
-                          </figure>
-                          <figure>
+                        </figure>
+                        <figure>
                             <img src="https://picsum.photos/801/801">
                             <figcaption>2</figcaption>
-                          </figure>
-                          <figure>
+                        </figure>
+                        <figure>
                             <img src="https://picsum.photos/802/802">
                             <figcaption>3</figcaption>
-                          </figure>
-                          <figure>
+                        </figure>
+                        <figure>
                             <img src="https://picsum.photos/803/803">
                             <figcaption>4</figcaption>
-                          </figure>
+                        </figure>
                     </div>
                     <div class="filter"></div>
                     <h1>TEAM</h1>
@@ -193,42 +279,44 @@
         </div>
         <!-- ---------------------------------------- -->
 
-        
+
         <!-- Contact & Footer //--------------------- -->
         <div class="contact-us">
+            <!-- Backgournd // -->
             <img src="./assets/img/home/about-gradiant.png" alt="">
+
+            <!-- Content // -->
             <div class="container">
 
                 <!-- Succes Achived Needed Section // -->
-                <div class="working">
-                    <h1>To achieve great <br> success we have needed</h1>
+                <div class="working" id="working">
+                    <h1 data-aos="fade-right" data-aos-duration="2000">To achieve great <br> success we have needed</h1>
                     <div class="working-container">
 
                         <div class="working-item">
                             <img src="./assets/img/home/contact/calendar.png" alt="">
 
-                            <div class="info">
-                                249 <br> Days
+                            <div id="index-counter-0" class="info">
+
                             </div>
                         </div>
 
                         <div class="working-item">
                             <img src="./assets/img/home/contact/coffee-cup.png" alt="">
 
-                            <div class="info">
-                                39,420 <br> Pots of Coffee
+                            <div id="index-counter-1" class="info">
+                               
                             </div>
                         </div>
 
                         <div class="working-item">
                             <img src="./assets/img/home/contact/rating.png" alt="">
 
-                            <div class="info">
-                                150+ <br> Happy Clients
+                            <div id="index-counter-2" class="info">
+
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="divider"></div>
@@ -239,10 +327,11 @@
                     <div class="cont-form">
                         <h1>How can we help you ? </h1>
                         <form action="">
-                            <textarea maxlength="95" name="" id=""  rows="1" placeholder="how can we help you ?"></textarea>
+                            <textarea maxlength="95" name="" id="" rows="1"
+                                placeholder="how can we help you ?"></textarea>
                             <input class="input" type="text" name="" placeholder="Name..." id="">
                             <input class="input" type="email" name="" placeholder="Email" id="">
-                            <input class="submit" type="submit" value="submit">
+                            <input id="contact-id-m" class="submit" type="submit" value="submit">
                         </form>
                     </div>
 
@@ -259,12 +348,12 @@
                             </div>
                         </div>
 
-                         <!-- Item // -->
-                         <div class="contact-information__item">
+                        <!-- Item // -->
+                        <div class="contact-information__item">
                             <img src="./assets/img/home/contact/location.png" alt="">
 
                             <div class="info">
-                                <h2>Address</h2>
+                                <h2 id="contact-id">Address</h2>
                                 2200 S Fremont Ave, Suite 208 <br>
                                 Alhambra CA 91803
                             </div>
@@ -277,9 +366,11 @@
         </div>
         <!-- ---------------------------------------- -->
 
-        <div class="contact-mobile">
-            <img src="./assets/img/home/contact/phone.png" alt="">
+        <div class="contact-mobile" id="contact-mobile">
+            <img src="./assets/img/home/contact/phone-mobile.png" alt="">
         </div>
+
+
     </section>
     <!-- ------------------------------------------------ -->
 
@@ -291,6 +382,15 @@
 
     <!-- Quick links // -->
     <script src="./assets/js/quick-links.js"></script>
+
+    <!-- Phone Pop -->
+    <script src="./assets/js/phone-pop.js"></script>
+
+    <!-- Home slider -->
+    <script src="./assets/js/home_slider.js"></script>
+
+    <!-- Counter animation -->
+    <script src="./assets/js/achieved_counter.js"></script>
 
     <!-- AOS Animation // -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

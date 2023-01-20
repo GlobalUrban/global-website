@@ -27,23 +27,34 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 3% 0;
     @include flex(column, center);
 
     // Succes Achived Needed Section --------- //
     .working {
-        width: 100%;
+        width: 90%;
         height: 60%;
-        @include flex(column, center);
+        // @include flex(column, center);
+        @include flex-between(row);
         gap: 5%;
         color: white;
 
+        @include breakpoint("Tablet-L") {
+            @include flex(column, center);
+        }
+
         h1 {
-            font-size: 50px;
-            text-align: center;
+            font-size: 70px;
+            text-align: start;
+
+            @include breakpoint("laptop-L"){
+                font-size: 50px;
+            }
 
 
             @include breakpoint("Tablet-L") {
-                font-size: 40px
+                font-size: 40px;
+                text-align: center;
             }
 
             @include breakpoint("Tablet-M") {
@@ -86,7 +97,7 @@
                     text-align: center;
 
                     @include breakpoint("Tablet-M") {
-                      text-align: start;
+                        text-align: start;
                     }
                 }
             }
@@ -108,8 +119,8 @@
         @include flex-between(row);
 
         @include breakpoint("Tablet-M") {
-           @include flex(column, flex-start);
-         }
+            @include flex(column, flex-start);
+        }
 
 
         // Form Container //
@@ -121,18 +132,18 @@
             color: white;
 
             @include breakpoint("Tablet-M") {
-               width: 100%;
-               @include flex(column, center);
+                width: 100%;
+                @include flex(column, center);
             }
 
             form {
                 width: 70%;
-                @include flex(column,center);
+                @include flex(column, center);
 
                 @include breakpoint("Tablet-M") {
                     width: 90%;
                     @include flex(column, center);
-                 }
+                }
 
 
 
@@ -169,10 +180,12 @@
                     padding: 1.2% 7%;
                     font-size: 20px;
                     transition: 0.2s;
+                    align-self: flex-start;
 
                     @include breakpoint("Tablet-M") {
                         padding: 2% 15%;
-                     }
+                        align-self: center;
+                    }
 
                     &:hover {
                         cursor: pointer;
@@ -185,9 +198,6 @@
                         border: 1px solid rgba(255, 255, 255, 0.3);
                     }
                 }
-
-
-
 
             }
 
@@ -232,26 +242,111 @@
     }
 }
 
+
+// Phone Icon Fixed on Bottom Right on Mobile //
 .contact-mobile {
     width: 70px;
     height: 70px;
     bottom: 4%;
     right: 4%;
-    background: rgb(39, 195, 39);
     border-radius: 100%;
     position: fixed;
     display: none;
-    
+    background: white;
     z-index: 9999;
     overflow: hidden;
-    background-image: url(../../../dist/assets/img/home/about-gradiant.png);
-    
-    @include breakpoint("Tablet-M"){
+    -webkit-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+    box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+
+    @include breakpoint("Tablet-M") {
         @include flex-center;
     }
 
     img {
-     width: 50%;
-     height: 50%;
+        width: 50%;
+        height: 50%;
     }
+}
+
+.contact-mobile__pop-up {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.479);
+    z-index: 0;
+    @include flex(column, flex-end);
+    padding-bottom: 8vh;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    transition: all 0.3s;
+    opacity: 0;
+
+    .pop-up {
+        width: 0%;
+        height: 0px;
+        background: white;
+        border-radius: 9px;
+        -webkit-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+        box-shadow: -5px 1px 22px -7px rgba(0, 0, 0, 0.33);
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+        transform: translateY(80%) translateX(80%);
+        @include flex-between(column);
+        
+
+        .call {
+            width: 100%;
+            @include flex-center;
+            height: 50%;
+            gap: 10px;
+            cursor: pointer;
+            img {
+                width: 50px;
+            }
+
+            font-size: 25px;
+        }
+
+        a {
+            .call {
+                width: 100%;
+                @include flex-center;
+                height: 50%;
+                gap: 10px;
+                cursor: pointer;
+                img {
+                    width: 50px;
+                }
+    
+                font-size: 25px;
+            }
+        }
+
+        .divider {
+            width: 80%;
+            height: 0.5px;
+            background: grey;
+        }
+
+        
     }
+}
+
+.pop-move {
+    transform: translateY(0%) translateX(0%);
+    opacity: 1;
+}
+
+
+.mobile-pop-up__show {
+    z-index: 300;
+    opacity: 1;
+}
+
+
