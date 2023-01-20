@@ -47,6 +47,10 @@
             font-size: 70px;
             text-align: start;
 
+            @include breakpoint("laptop-L"){
+                font-size: 50px;
+            }
+
 
             @include breakpoint("Tablet-L") {
                 font-size: 40px;
