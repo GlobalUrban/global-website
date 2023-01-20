@@ -11,6 +11,7 @@
     position: sticky;
     top: 0;
     z-index: 0;
+    overflow-x: hidden;
 
 
     @include b.breakpoint("Tablet-M") {
