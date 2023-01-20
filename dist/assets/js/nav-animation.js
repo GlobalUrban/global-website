@@ -24,7 +24,16 @@ window.addEventListener("scroll", () => {
 //Nav mobile animation
 const hamburger = document.getElementById("hamburguer");
 const navContainer = document.getElementById("nav-container");
+const navLinksContainer = document.getElementsByClassName("nav-links__container");
 
 hamburger.addEventListener("click", ()=> {
 	navContainer.classList.toggle("showNavLinks");
+})
+
+navContainer.addEventListener("click", ()=>{
+	navContainer.classList.remove("showNavLinks");
+})
+
+navLinksContainer[0].addEventListener("click", (e)=>{
+e.stopPropagation()
 })
