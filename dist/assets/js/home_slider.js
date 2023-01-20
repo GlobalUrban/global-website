@@ -40,7 +40,7 @@ const runSlider = () => {
         percentageMoved -= amountTomoveApply
         slides.style.transform = 'translate(' + percentageMoved + '%, 0%)'
         setPressedStyles(Math.abs(percentageMoved));
-    }, 2000);
+    }, 5000);
 }
 
 const stopOnHover = () => {
