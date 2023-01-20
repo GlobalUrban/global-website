@@ -150,7 +150,7 @@
             height: 300px;
             width: 100%;
 
-            @include breakpoint("Phone-L"){
+            @include breakpoint("Phone-L") {
                 height: 230px;
             }
 
@@ -168,7 +168,9 @@
                     display: flex;
                     justify-content: center;
                     position: relative;
-                    .title-hover{
+
+
+                    .title-hover {
                         width: 100%;
                         height: 100%;
                         @include flexx(column, flex-end, center);
@@ -176,13 +178,20 @@
                         padding-bottom: 10%;
                         transition: all 0.4s;
                         transform: translateY(100%);
-                        
+                        font-size: 18px;
+                        background: rgb(0, 0, 0);
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8239670868347339) 100%);
+                        font-size: 20px;
+                        font-weight: 600;
                         color: white;
                     }
-                    .title-hover-hover{
-                        transform:translateY(0%)
+
+
+                    .title-hover-hover {
+                        transform: translateY(0%)
                     }
                 }
+
                 .slider-automatic-container-slide-mobile {
                     height: 100%;
                     width: 50vw;
@@ -221,5 +230,6 @@
             }
         }
     }
+
     // ------------------------------------- //
 }

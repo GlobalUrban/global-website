@@ -107,7 +107,6 @@ const appendMember = () => {
     console.log('appending')
     clearMembers();
     teamMembers.map((member, index) => {
-        console.log('-----')
         const node = document.createElement("div");
         const node_img = document.createElement("img");
         node.classList.add(classToApply);

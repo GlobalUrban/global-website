@@ -1305,6 +1305,11 @@ header .selector-pressed {
   padding-bottom: 10%;
   transition: all 0.4s;
   transform: translateY(100%);
+  font-size: 18px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8239670868) 100%);
+  font-size: 20px;
+  font-weight: 600;
   color: white;
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover-hover {
