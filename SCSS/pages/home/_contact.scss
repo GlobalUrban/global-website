@@ -313,6 +313,21 @@
             font-size: 25px;
         }
 
+        a {
+            .call {
+                width: 100%;
+                @include flex-center;
+                height: 50%;
+                gap: 10px;
+                cursor: pointer;
+                img {
+                    width: 50px;
+                }
+    
+                font-size: 25px;
+            }
+        }
+
         .divider {
             width: 80%;
             height: 0.5px;

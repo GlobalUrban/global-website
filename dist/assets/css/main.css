@@ -812,6 +812,19 @@ header .selector-pressed {
 .contact-mobile__pop-up .pop-up .call img {
   width: 50px;
 }
+.contact-mobile__pop-up .pop-up a .call {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.contact-mobile__pop-up .pop-up a .call img {
+  width: 50px;
+}
 .contact-mobile__pop-up .pop-up .divider {
   width: 80%;
   height: 0.5px;
