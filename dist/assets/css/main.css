@@ -1274,6 +1274,11 @@ header .selector-pressed {
   height: 300px;
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .about-us .about-us__team .slider-automatic-container {
+    height: 230px;
+  }
+}
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides {
   height: 100%;
   overflow-x: hidden;
@@ -1366,6 +1371,11 @@ header .selector-pressed {
   height: 50%;
   width: 100vw;
 }
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container {
+    height: 40%;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides {
   height: 80%;
   width: 300%;
@@ -1373,6 +1383,11 @@ header .selector-pressed {
   display: flex;
   flex-direction: row;
   transition: all 1s;
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides {
+    height: 70%;
+  }
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide {
   height: 100%;
@@ -1483,6 +1498,11 @@ header .selector-pressed {
     overflow: scroll;
   }
 }
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
+    height: 30%;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
   display: flex;
   justify-content: space-around;
@@ -1571,6 +1591,11 @@ header .selector-pressed {
   align-items: center;
   padding: 0 4%;
   padding-top: 8%;
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
+    height: 60%;
+  }
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left {
   align-self: flex-start;
