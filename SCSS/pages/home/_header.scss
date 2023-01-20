@@ -1,5 +1,6 @@
 @use '../../abstracts/colors' as c;
 @use '../../abstracts/mixins' as m;
+@use '../../abstracts/breakpoints' as b;
 
 
 header {
@@ -65,11 +66,19 @@ header {
             position: absolute;
             @include m.flexx(column, flex-end, flex-start);
             padding: 7% 4%;
+
+            @include b.breakpoint("Tablet-M"){
+                padding: 25% 5%;
+            }
             
             .item-info {
                 color: white;
                 width: 50%;
                 font-size: 20px;
+
+                @include b.breakpoint("Tablet-M"){
+                    width: 90%;
+                }
 
                 h1 {
                     line-height: 1.3;

@@ -293,6 +293,29 @@
         transition: all 0.4s ease-in-out;
         opacity: 1;
         transform: translateY(80%) translateX(80%);
+        @include flex-between(column);
+        
+
+        .call {
+            width: 100%;
+            @include flex-center;
+            height: 50%;
+            gap: 10px;
+            cursor: pointer;
+            img {
+                width: 50px;
+            }
+
+            font-size: 25px;
+        }
+
+        .divider {
+            width: 80%;
+            height: 0.5px;
+            background: grey;
+        }
+
+        
     }
 }
 
