@@ -2,11 +2,13 @@
 
 .about-us {
     z-index: 10;
+    
 
     // About Us General Information ---------- //
     .about-us__info {
         width: 100%;
         height: 1100px;
+        overflow-x: hidden;
         position: relative;
         display: flex;
         background-image: url(../img/home/about-gradiant.png);
