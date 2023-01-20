@@ -667,6 +667,15 @@ header .selector-pressed {
   resize: none;
   color: white;
 }
+.container .container-bottom .cont-form form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.751);
+}
+.container .container-bottom .cont-form form textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.751);
+}
+.container .container-bottom .cont-form form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.751);
+}
 .container .container-bottom .cont-form form .input {
   margin-top: 3%;
   padding: 1%;
@@ -677,6 +686,15 @@ header .selector-pressed {
   background: none;
   outline: none;
   color: white;
+}
+.container .container-bottom .cont-form form .input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.751);
+}
+.container .container-bottom .cont-form form .input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.751);
+}
+.container .container-bottom .cont-form form .input::placeholder {
+  color: rgba(255, 255, 255, 0.751);
 }
 .container .container-bottom .cont-form form .submit {
   margin-top: 3%;
