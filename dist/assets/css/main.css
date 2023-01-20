@@ -1469,15 +1469,6 @@ header .selector-pressed {
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-5 {
   background-color: blueviolet;
 }
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides #p-1 {
-  background-color: blue;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides #p-2 {
-  background-color: orange;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides #p-3 {
-  background-color: red;
-}
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
   height: 20%;
   padding-bottom: 2%;
@@ -1557,8 +1548,8 @@ header .selector-pressed {
   }
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .btn-general-pressed-0 {
-  width: 12%;
   margin-right: 8%;
+  width: 12%;
   transform: translateX(-165%);
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .btn-general-pressed-1 {
@@ -1589,16 +1580,21 @@ header .selector-pressed {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  align-items: flex-start;
   padding: 0 4%;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 @media screen and (max-width: 480px) {
   .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
     height: 60%;
   }
 }
+@media screen and (max-width: 1400px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
+    padding-top: 8%;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left {
-  align-self: flex-start;
   width: 60%;
 }
 @media screen and (max-width: 1024px) {

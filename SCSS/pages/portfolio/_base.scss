@@ -161,17 +161,17 @@
                     }
                 }
 
-                #p-1 {
-                    background-color: blue;
-                }
+                // #p-1 {
+                //     background-color: blue;
+                // }
 
-                #p-2 {
-                    background-color: orange;
-                }
+                // #p-2 {
+                //     background-color: orange;
+                // }
 
-                #p-3 {
-                    background-color: red;
-                }
+                // #p-3 {
+                //     background-color: red;
+                // }
             }
 
             // General Slider buttons container //
@@ -250,8 +250,8 @@
                 }
 
                 .btn-general-pressed-0 {
-                    width: 12%;
                     margin-right: 8%;
+                    width: 12%;
                     transform: translateX(-165%);
                 }
 
@@ -292,16 +292,24 @@
             width: 100%;
             height: 50%;
 
+            
+
+            @include flex-between(row);
+            align-items: flex-start;
+            padding: 0 4%;
+            padding-top: 5%;
+
             @include breakpoint("Phone-L"){
                 height: 60%    
             }
 
-            @include flex-between(row);
-            padding: 0 4%;
-            padding-top: 8%;
+            @include breakpoint("laptop-L"){
+                padding-top: 8%;
+            }
+            
 
             .info-container__left {
-                align-self: flex-start;
+                
                 width: 60%;
 
 
