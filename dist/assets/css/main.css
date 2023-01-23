@@ -492,10 +492,11 @@ header .selector-pressed {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 .contact-us img {
   width: 100%;
-  height: 130%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -503,16 +504,25 @@ header .selector-pressed {
 .container {
   position: absolute;
   width: 100%;
-  height: 130%;
+  height: 100%;
   padding: 3% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+  }
+}
 .container .working {
   width: 90%;
-  height: 60%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -606,9 +616,14 @@ header .selector-pressed {
   height: 1px;
   background: rgba(255, 255, 255, 0.459);
 }
+@media screen and (max-width: 480px) {
+  .container .divider {
+    display: none;
+  }
+}
 .container .container-bottom {
   width: 90%;
-  height: 40%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -620,6 +635,11 @@ header .selector-pressed {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .container-bottom {
+    display: none;
   }
 }
 .container .container-bottom .cont-form {
@@ -758,6 +778,19 @@ header .selector-pressed {
   line-height: 0.9;
   margin: 0;
   padding: 0;
+}
+.container .contact-form__btn {
+  width: 80%;
+  height: 100px;
+  background: white;
+  border: none;
+  outline: none;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .container .contact-form__btn {
+    display: flex;
+  }
 }
 
 .contact-mobile {
