@@ -4,6 +4,7 @@
 const mobileBtn = document.getElementById("contact-mobile");
 const contPopUp = document.getElementById("cont-pop-up");
 const popUp = document.getElementById("pop-up");
+const stopPropagation = document.getElementById("mobile-form-pop-up");
 
 
 mobileBtn.addEventListener("click", ()=> {
@@ -36,7 +37,9 @@ contactContPopUp.addEventListener("click", ()=> {
     contactContPopUp.classList.remove("mobile-pop-up__show");  
 })
 
-
+stopPropagation.addEventListener("click", (e)=> {
+    e.stopPropagation()
+})
 
 
 

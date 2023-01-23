@@ -163,10 +163,12 @@
                 textarea {
                     width: 100%;
                     height: auto;
+                    height: 60px;
                     max-height: 300px;
                     background: none;
+                    margin-top: 3%;
                     border: none;
-                    border-bottom: solid white 1px;
+                    border: solid white 1px;
                     outline: none;
                     resize: none;
                     color: white;
@@ -176,6 +178,10 @@
                     }
                 }
 
+                .email-phone_container{
+                    width: 100%;
+                    @include flex-between(center)
+                }
                 .input {
                     margin-top: 3%;
                     padding: 1%;
@@ -189,6 +195,10 @@
                     &::placeholder{
                         color: rgba(255, 255, 255, 0.751);
                     }
+                }
+
+                .input-secondary{
+                    width: 48%;
                 }
 
                 .submit {
@@ -263,10 +273,13 @@
 
     .contact-form__btn {
         width: 80%;
-        height: 100px;
+        height: 80px;
         background: white;
         border: none;
+        border-radius: 5px;
+        font-size: 130%;
         outline: none;
+        @include flex(column, center);
         display: none;
 
         @include breakpoint("Phone-L") {
@@ -383,4 +396,117 @@
     opacity: 1;
 }
 
+.form-pop-up-container {
+    .form-pop-up{
+        transform: translateX(-0%);
+        margin-bottom: 30%;
+        color: red;
+        width: 70%;
+        height: 45%;
+        background: linear-gradient(319deg, rgba(241, 120, 56, 0.7) 0%, rgba(248, 141, 5, 0.7) 100%);
+        
+        @include flex(column, center);
+        // Form Container //
+        .cont-form {
+            width: 100%;
+            height: 100%;
+            padding: 1%;
+            @include flexx(column, center, flex-start);
+            color: white;
+
+            @include breakpoint("Tablet-M") {
+                width: 100%;
+                @include flex(column, center);
+            }
+            h3{
+                text-align: center;
+                margin: 0;
+            }
+
+            form {
+                width: 70%;
+                @include flex(column, center);
+
+                @include breakpoint("Tablet-M") {
+                    width: 90%;
+                    @include flex(column, center);
+                }
+               
+
+
+                textarea {
+                    width: 100%;
+                    height: auto;
+                    height: 40px;
+                    max-height: 300px;
+                    background: none;
+                    margin-top: 10%;
+                    border: none;
+                    border: solid white 1px;
+                    outline: none;
+                    resize: none;
+                    color: white;
+                    
+                    &::placeholder{
+                        color: rgba(255, 255, 255, 0.751);
+                    }
+                }
+
+                .email-phone_container{
+                    width: 100%;
+                    @include flex-between(center)
+                }
+                .input {
+                    margin-top: 10%;
+                    padding: 1%;
+                    width: 100%;
+                    height: 30px;
+                    border: none;
+                    border: solid white 1px;
+                    background: none;
+                    outline: none;
+                    color: white;
+                    &::placeholder{
+                        color: rgba(255, 255, 255, 0.751);
+                    }
+                }
+
+                .input-secondary{
+                    width: 48%;
+                }
+
+                .submit {
+                    margin-top: 10%;
+                    border: solid white 1px;
+                    background: none;
+                    outline: none;
+                    color: white;
+                    padding: 1.2% 7%;
+                    font-size: 20px;
+                    transition: 0.2s;
+                    align-self: flex-start;
+
+                    @include breakpoint("Tablet-M") {
+                        padding: 2% 15%;
+                        align-self: center;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        /* From https://css.glass */
+                        background: rgba(255, 255, 255, 0.21);
+
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(11.8px);
+                        -webkit-backdrop-filter: blur(11.8px);
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                    }
+                }
+
+            }
+
+        }
+        
+    }   
+}
 
