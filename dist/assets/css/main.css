@@ -918,10 +918,15 @@ header .selector-pressed {
 .form-pop-up-container .form-pop-up {
   transform: translateX(0%);
   margin-bottom: 30%;
-  color: red;
-  width: 70%;
+  width: 90%;
   height: 45%;
-  background: linear-gradient(319deg, rgba(241, 120, 56, 0.7) 0%, rgba(248, 141, 5, 0.7) 100%);
+  /* From https://css.glass */
+  background: rgba(255, 132, 0, 0.83);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  border: 1px solid rgb(255, 132, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
