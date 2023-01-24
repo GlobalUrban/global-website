@@ -1,21 +1,36 @@
 
 // Projects
-const projects1 = ['p1', 'Lorem Ipsum', 'p3', 'p4', 'p5']
-const projects2 = ['t1', 't2', 't3']
-const projects3 = ['s1', 's2', 's3', 's4', 's5']
+const projects1 = [
+    'City of Bell Garden’s Grant Writing Services',
+    'City of Azusa’s Calhome Program Administration and Grant Writing Services',
+    'Valley Vista Grant Writing Services'
+]
+const projects2 = [
+    'City of Cudahy Crisis Management and Public Relations Services',
+    'City of Hawaiians Gardens Community Outreach Services',
+    'Stantec Stakeholder Engagement and Community Outreach Services'
+]
+const projects3 = [
+    'City of La Puente Social Media, Web Development and Graphic Designs Services',
+    'City of San Luis Obispo Graphic Design and Motion Graphics Services',
+    'City of Huntington Park Social Media, Web Development and Graphic Design Services'
+]
 
 // Descriptions
-const d1 = ['mambru se fue a la guerra', 
-'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-, `Lorem ipsum dolor sit amet consectetur adipisicing elit. Non possimus
-suscipit veniam consequuntur veritatis sit earum consequatur? Corporis voluptatibus soluta
-tenetur suscipit sint iusto nulla pariatur, nihil dolorum recusandae aperiam?`
-, 'wqerqwer', 'pzxcvzxcv']
+const d1 = [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.']
 const d2 = [
-    'I will command a great and terrible army, and we will sail to a billion worlds. We will sail until every light has been extinguished',
-     'You are strong, child, but I am beyond strength', 
-     'I am the end, and I have come for you, Finn.']
-const d3 = ['Befor there was time', 'Before there was everything', 'there were monsters', '-The lich', 'Adventure time']
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.']
+
+const d3 = [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.']
+    
 
 // Controllers for movement
 let amountMoved1 = 1;
@@ -207,19 +222,19 @@ const setOnInfoField = (project, inner) => {
     if (portfolioSelected == 0) {
         tittle.innerHTML = projects1[amountMoved1]
         p.innerHTML = d1[amountMoved1]
-        img.src =  imgRouteContent + amountMoved1 + '.png';
+        img.src = imgRouteContent + amountMoved1 + '.png';
     }
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
-        img.src =  imgRouteContent + amountMoved2 + '.png';
+        img.src = imgRouteContent + amountMoved2 + '.png';
     }
 
     if (portfolioSelected == 2) {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
-        img.src =  imgRouteContent + amountMoved3 + '.png';
+        img.src = imgRouteContent + amountMoved3 + '.png';
     }
 }
 
@@ -234,7 +249,7 @@ const setPressedStyle = (index) => {
     underlinePressed.classList.remove('btn-general-pressed-0')
     underlinePressed.classList.remove('btn-general-pressed-1')
     underlinePressed.classList.remove('btn-general-pressed-2')
-    underlinePressed.classList.add('btn-general-pressed-'+index)
+    underlinePressed.classList.add('btn-general-pressed-' + index)
 }
 
 // Geenal buttons

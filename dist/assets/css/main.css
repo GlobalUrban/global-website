@@ -790,6 +790,9 @@ header .selector-pressed {
   margin: 0;
   padding: 0;
 }
+.container .container-bottom .contact-information .contact-information__item .info a {
+  color: white;
+}
 .container .contact-form__btn {
   width: 80%;
   height: 80px;
@@ -1884,6 +1887,7 @@ header .selector-pressed {
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left p {
   font-size: 18px;
   margin: 0;
+  margin-top: 4%;
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container img {
   width: 300px;
