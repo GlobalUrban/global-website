@@ -79,6 +79,12 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+header video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 header .home-slider-container {
   width: 100vw;
   height: 100%;
@@ -1723,7 +1729,6 @@ header .selector-pressed {
   transform: rotate(180deg);
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides {
-  background-color: gray;
   height: 100%;
   display: flex;
   overflow-x: hidden;
