@@ -25,6 +25,30 @@
         </div>
     </div>
     <!-- ============================================== -->
+
+        <!-- Contact Form Mobile Pop up================  -->
+        <div class="contact-mobile__pop-up form-pop-up-container" id="contact__pop-up">
+            <div class="pop-up form-pop-up" id="pop-up">
+                <div id="mobile-form-pop-up" class="cont-form">
+                    <h3>Please fill the form,<br> and we'll be in touch.</h3>
+                    <form action="">
+                        <input class="input" type="text" name="" placeholder="Name..." id="">
+                        <div  class="email-phone_container">
+                            <input class="input input-secondary" type="email" name="" placeholder="Email" id="">
+                            <input class="input input-secondary" type="tel" name="" placeholder="Phone" id="">
+                        </div>
+                        <textarea maxlength="95" name="" id="" rows="1"
+                            placeholder="How can we help you?"></textarea>
+                        <input id="contact-id-m" class="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================== -->
+    
+
+
+
     </div>
 
     <!-- NAV // ================================================================ -->
@@ -102,12 +126,12 @@
             <div id="slides" class="home-slider-container-slides">
 
                 <div id="slide-1" class="home-slider-container-slides-slide">
-                    <img src="https://picsum.photos/2002/2000" alt="">
+                    <img id="slide1-img" src="https://picsum.photos/2002/2000" alt="">
 
                     <!-- Front Cover // -->
                     <div class="front-cover">
                         <div class="item-info">
-                            <h1>Lorem, ipsum.</h1>
+                            <h1>City of La Puente Website</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
                                 sunt
                                 asperiores odit accusantium.</p> <br>
@@ -117,11 +141,11 @@
                 </div>
 
                 <div id="slide-2" class="home-slider-container-slides-slide">
-                    <img src="https://picsum.photos/2002/2001" alt="">
+                    <img id="slide2-img" src="https://picsum.photos/2002/2001" alt="">
                     <!-- Front Cover // -->
                     <div class="front-cover">
                         <div class="item-info">
-                            <h1>Lorem, ipsum.</h1>
+                            <h1>City of San Luis Obispo <br>State of the City 2022</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
                                 sunt
                                 asperiores odit accusantium.</p> <br>
@@ -131,11 +155,11 @@
                 </div>
 
                 <div id="slide-3" class="home-slider-container-slides-slide">
-                    <img src="https://picsum.photos/2002/2002" alt="">
+                    <img id="slide3-img" src="https://picsum.photos/2002/2002" alt="">
                     <!-- Front Cover // -->
                     <div class="front-cover">
                         <div class="item-info">
-                            <h1>Lorem, ipsum.</h1>
+                            <h1>Stantec Pilot Interpretation Program Development</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
                                 sunt
                                 asperiores odit accusantium.</p> <br>
@@ -145,11 +169,11 @@
                 </div>
 
                 <div id="slide-4" class="home-slider-container-slides-slide">
-                    <img src="https://picsum.photos/2002/2003" alt="">
+                    <img id="slide4-img" src="https://picsum.photos/2002/2003" alt="">
                     <!-- Front Cover // -->
                     <div class="front-cover">
                         <div class="item-info">
-                            <h1>Lorem, ipsum.</h1>
+                            <h1>CalHome Program Administration</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt iusto
                                 sunt
                                 asperiores odit accusantium.</p> <br>
@@ -336,11 +360,14 @@
                     <div class="cont-form">
                         <h1>Get in touch with us! </h1>
                         <form action="">
-                            <textarea maxlength="95" name="" id="" rows="1"
-                                placeholder="how can we help you ?"></textarea>
                             <input class="input" type="text" name="" placeholder="Name..." id="">
-                            <input class="input" type="email" name="" placeholder="Email" id="">
-                            <input id="contact-id-m" class="submit" type="submit" value="submit">
+                            <div  class="email-phone_container">
+                                <input class="input input-secondary" type="email" name="" placeholder="Email" id="">
+                                <input class="input input-secondary" type="tel" name="" placeholder="Phone Number" id="">
+                            </div>
+                            <textarea maxlength="95" name="" id="" rows="1"
+                                placeholder="How can we help you?"></textarea>
+                            <input id="contact-id-m" class="submit" type="submit" value="Submit">
                         </form>
                     </div>
 
@@ -353,7 +380,9 @@
 
                             <div class="info">
                                 <h2>Let's Talk</h2>
-                                +1 (626) 545-2234
+                                <a href="tel:50376298514">
+                                    +1 (626) 545-2234
+                                </a>
                             </div>
                         </div>
 
@@ -363,14 +392,17 @@
 
                             <div class="info">
                                 <h2 id="contact-id">Address</h2>
-                                2200 S Fremont Ave, Suite 208 <br>
-                                Alhambra CA 91803
+                                2200 S. Fremont Ave, Suite 208 <br>
+                                Alhambra, CA 91803
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
+                <!-- Contact btn mobile // -->
+                <button class="contact-form__btn" id="contact-form__mobile-btn"">
+                    Get in Touch with us!
+                </button>
             </div>
         </div>
         <!-- ---------------------------------------- -->
