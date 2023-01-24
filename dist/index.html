@@ -127,7 +127,7 @@
 
                 <div id="slide-1" class="home-slider-container-slides-slide">
                     <!-- <img id="slide1-img" src="https://picsum.photos/2002/2000" alt=""> -->
-                    <video src="./assets/img/home/header/video_1.mp4" loop="true" autoplay="autoplay" type="video/mp4" controls muted> </video>
+                    <video src="./assets/img/home/header/video_1.mp4" loop="true" autoplay="autoplay" type="video/mp4" controls muted id="vid"> </video>
 
                     <!-- Front Cover // -->
                     <div class="front-cover">
@@ -443,8 +443,11 @@
     <!-- AOS Animation // -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+ 
+
     <script>
         AOS.init();
+        document.getElementById('vid').play();
     </script>
 </body>
 
