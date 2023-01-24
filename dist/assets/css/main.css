@@ -755,6 +755,13 @@ header .selector-pressed {
   -webkit-backdrop-filter: blur(11.8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.container .container-bottom .cont-form .success-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .container .container-bottom .contact-information {
   width: 50%;
   height: 100%;

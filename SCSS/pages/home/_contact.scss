@@ -233,6 +233,12 @@
 
             }
 
+            .success-form{
+                padding: 10px;
+                @include flex(column, center);
+                
+            }
+
         }
 
 
