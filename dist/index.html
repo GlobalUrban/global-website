@@ -39,7 +39,7 @@
                         </div>
                         <textarea maxlength="95" name="" id="" rows="1"
                             placeholder="How can we help you?"></textarea>
-                        <input id="contact-id-m" class="submit" type="submit" value="Submit">
+                        <input id="contact-id-m-pop" class="submit" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
@@ -366,16 +366,17 @@
                     <!-- form container // -->
                     <div class="cont-form">
                         <h1>Get in touch with us! </h1>
-                        <form action="">
-                            <input class="input" type="text" name="" placeholder="Name..." id="">
+                        <form id="form-desk" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
+                            <input class="input" type="text" name="name" placeholder="Name..." id="f-name">
                             <div  class="email-phone_container">
-                                <input class="input input-secondary" type="email" name="" placeholder="Email" id="">
-                                <input class="input input-secondary" type="tel" name="" placeholder="Phone Number" id="">
-                            </div>
-                            <textarea maxlength="95" name="" id="" rows="1"
+                                <input class="input input-secondary" type="email" name="email" placeholder="Email" id="f-email">
+                                <input class="input input-secondary" type="tel" name="phone" placeholder="Phone Number" id="f-phone">
+                            </div> 
+                            <textarea maxlength="95" name="message" id="f-text" rows="1"
                                 placeholder="How can we help you?"></textarea>
                             <input id="contact-id-m" class="submit" type="submit" value="Submit">
                         </form>
+                        <div id="success-submit-id" class="success-form">We will contact you!</div>
                     </div>
 
                     <!-- Contact Information // -->
@@ -439,6 +440,9 @@
 
     <!-- Counter animation -->
     <script src="./assets/js/achieved_counter.js"></script>
+
+    <!-- Handle Submit action -->
+    <script src="./assets/js/form-submit.js"></script>
 
     <!-- AOS Animation // -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
