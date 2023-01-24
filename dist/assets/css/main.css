@@ -1723,7 +1723,6 @@ header .selector-pressed {
   transform: rotate(180deg);
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides {
-  background-color: gray;
   height: 100%;
   display: flex;
   overflow-x: hidden;
