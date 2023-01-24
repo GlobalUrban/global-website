@@ -79,6 +79,12 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+header video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 header .home-slider-container {
   width: 100vw;
   height: 100%;
