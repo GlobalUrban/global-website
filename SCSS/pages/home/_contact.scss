@@ -402,7 +402,7 @@
 
 
 .mobile-pop-up__show {
-    z-index: 300;
+    z-index: 3000;
     opacity: 1;
 }
 
@@ -411,7 +411,7 @@
 
     .form-pop-up {
         transform: translateX(-0%);
-        margin-bottom: 30%;
+        // margin-bottom: 30%;
         width: 90%;
         height: 500px;
         /* From https://css.glass */
@@ -466,9 +466,15 @@
                     resize: none;
                     color: white;
                     padding: 2% 3%;
+                    transition: all 0.2s;
 
                     &::placeholder {
                         color: rgba(255, 255, 255, 0.751);
+                    }
+
+                    &:focus {
+                        width: 105%;
+                    border: solid white 2px;
                     }
                 }
 
@@ -488,9 +494,15 @@
                     outline: none;
                     color: white;
                     padding: 2% 3%;
+                    transition: all 0.2s;
 
                     &::placeholder {
                         color: rgba(255, 255, 255, 0.751);
+                    }
+
+                    &:focus {
+                        width: 105%;
+                    border: solid white 2px;
                     }
                 }
 
@@ -527,3 +539,8 @@
 
     }
 }
+
+.input:focus .form-pop-up {
+    margin-bottom: 0;
+}
+
