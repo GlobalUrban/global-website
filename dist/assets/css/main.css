@@ -911,13 +911,12 @@ header .selector-pressed {
 }
 
 .mobile-pop-up__show {
-  z-index: 300;
+  z-index: 3000;
   opacity: 1;
 }
 
 .form-pop-up-container .form-pop-up {
   transform: translateX(0%);
-  margin-bottom: 30%;
   width: 90%;
   height: 500px;
   /* From https://css.glass */
@@ -985,6 +984,7 @@ header .selector-pressed {
   resize: none;
   color: white;
   padding: 2% 3%;
+  transition: all 0.2s;
 }
 .form-pop-up-container .form-pop-up .cont-form form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.751);
@@ -994,6 +994,10 @@ header .selector-pressed {
 }
 .form-pop-up-container .form-pop-up .cont-form form textarea::placeholder {
   color: rgba(255, 255, 255, 0.751);
+}
+.form-pop-up-container .form-pop-up .cont-form form textarea:focus {
+  width: 105%;
+  border: solid white 2px;
 }
 .form-pop-up-container .form-pop-up .cont-form form .email-phone_container {
   width: 100%;
@@ -1013,6 +1017,7 @@ header .selector-pressed {
   outline: none;
   color: white;
   padding: 2% 3%;
+  transition: all 0.2s;
 }
 .form-pop-up-container .form-pop-up .cont-form form .input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.751);
@@ -1022,6 +1027,10 @@ header .selector-pressed {
 }
 .form-pop-up-container .form-pop-up .cont-form form .input::placeholder {
   color: rgba(255, 255, 255, 0.751);
+}
+.form-pop-up-container .form-pop-up .cont-form form .input:focus {
+  width: 105%;
+  border: solid white 2px;
 }
 .form-pop-up-container .form-pop-up .cont-form form .input-secondary {
   width: 48%;
@@ -1047,6 +1056,10 @@ header .selector-pressed {
     padding: 2% 15%;
     align-self: center;
   }
+}
+
+.input:focus .form-pop-up {
+  margin-bottom: 0;
 }
 
 .services {
