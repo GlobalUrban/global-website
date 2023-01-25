@@ -116,6 +116,23 @@ footer {
                         }   
                     }
 
+                    .socials {
+                        @include flex-center;
+                        gap: 5px;
+
+                        @include breakpoint("Phone-L"){
+                            gap: 0px;
+                        }
+
+                        a {
+                            svg {
+                                @include breakpoint("Phone-L"){
+                                    width: 45px;
+                                }
+                            }
+                        }
+                    }
+
                     a {
                         color: white;
                         @include breakpoint("Phone-L") {

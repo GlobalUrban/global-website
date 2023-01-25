@@ -2077,6 +2077,22 @@ footer .footer-left .left-top .left-container .left-container__bottom h3 {
     align-items: center;
   }
 }
+footer .footer-left .left-top .left-container .left-container__bottom .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 480px) {
+  footer .footer-left .left-top .left-container .left-container__bottom .socials {
+    gap: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footer-left .left-top .left-container .left-container__bottom .socials a svg {
+    width: 45px;
+  }
+}
 footer .footer-left .left-top .left-container .left-container__bottom a {
   color: white;
 }
