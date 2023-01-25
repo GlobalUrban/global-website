@@ -432,23 +432,25 @@ header .selector-pressed {
 }
 
 .css-animated:hover figure {
-  -webkit-animation: cyclePhotos 2s linear infinite;
-          animation: cyclePhotos 2s linear infinite;
+  -webkit-animation: cyclePhotos 4s linear infinite;
+          animation: cyclePhotos 4s linear infinite;
 }
 .css-animated figure:nth-child(1) {
   opacity: 1;
-}
-.css-animated figure:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.css-animated figure:nth-child(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
+.css-animated figure:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.css-animated figure:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
 .css-animated figure:nth-child(4) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 @-webkit-keyframes cyclePhotos {
@@ -1377,6 +1379,12 @@ header .selector-pressed {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 1024px) {
+  .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
+    width: 200px;
+    height: 200px;
+  }
+}
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content .img-medium {
   width: 200px;
   height: 200px;
@@ -1389,9 +1397,11 @@ header .selector-pressed {
   color: white;
   font-size: 25px;
   margin: 0;
+  text-align: center;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content span {
   color: white;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-bottom .service-project {
