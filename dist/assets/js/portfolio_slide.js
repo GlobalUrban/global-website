@@ -4,7 +4,6 @@ const projects1 = [
     'City of Bell Garden’s Grant Writing Services',
     'City of Azusa’s Calhome Program Administration and Grant Writing Services',
     'Valley Vista Grant Writing Services',
-    'a'
 ]
 const projects2 = [
     'City of Cudahy Crisis Management and Public Relations Services',
