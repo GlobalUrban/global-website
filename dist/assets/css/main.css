@@ -1389,9 +1389,11 @@ header .selector-pressed {
   color: white;
   font-size: 25px;
   margin: 0;
+  text-align: center;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content span {
   color: white;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-bottom .service-project {
