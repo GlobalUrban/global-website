@@ -1379,6 +1379,12 @@ header .selector-pressed {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 1024px) {
+  .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
+    width: 200px;
+    height: 200px;
+  }
+}
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content .img-medium {
   width: 200px;
   height: 200px;
