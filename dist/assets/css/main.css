@@ -1345,6 +1345,38 @@ header .selector-pressed {
   overflow: hidden;
   position: relative;
 }
+.services .services-content .services-scroll .service .service-bottom .service-project:hover .opacity-layer {
+  opacity: 1;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.589);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 300;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content {
+  width: 65%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
+  width: 100px;
+  height: 100px;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content h3 {
+  color: white;
+}
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-bottom .service-project {
     width: 100%;
