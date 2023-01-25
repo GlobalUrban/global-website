@@ -1372,8 +1372,18 @@ header .selector-pressed {
   gap: 10px;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
+  width: 300px;
+  height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content .img-medium {
+  width: 200px;
+  height: 200px;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content .img-small {
+  width: 100px;
+  height: 100px;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content h3 {
   color: white;

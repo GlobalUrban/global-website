@@ -276,9 +276,19 @@
                 gap: 10px;
 
                 img {
-                //   width: 200px;
-                //   height: 200px;
+                  width: 300px;
+                  height: 300px;
                     object-fit: contain;
+                }
+
+                .img-medium {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                .img-small {
+                    width: 100px;
+                    height: 100px;
                 }
 
                 h3 {
