@@ -1,19 +1,25 @@
 
 // Projects
 const projects1 = [
+    'Valley Vista Grant Writing Services',
     'City of Bell Garden’s Grant Writing Services',
     'City of Azusa’s Calhome Program Administration and Grant Writing Services',
     'Valley Vista Grant Writing Services',
+    'City of Bell Garden’s Grant Writing Services',
 ]
 const projects2 = [
+    'Stantec Stakeholder Engagement and Community Outreach Services',
     'City of Cudahy Crisis Management and Public Relations Services',
     'City of Hawaiians Gardens Community Outreach Services',
-    'Stantec Stakeholder Engagement and Community Outreach Services'
+    'Stantec Stakeholder Engagement and Community Outreach Services',
+    'City of Cudahy Crisis Management and Public Relations Services',
 ]
 const projects3 = [
+    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
     'City of La Puente Social Media, Web Development and Graphic Designs Services',
     'City of San Luis Obispo Graphic Design and Motion Graphics Services',
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services'
+    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of La Puente Social Media, Web Development and Graphic Designs Services',
 ]
 
 // Descriptions
@@ -176,14 +182,21 @@ const styleInnerSlidesContainer = () => {
 }
 
 const innerSlideRight1 = () => {
-    if (amountMoved1 > projects1.length - 2) amountMoved1 = -1;
+    // if (amountMoved1 > projects1.length - 4) btnr1.style.display = 'none'
+    if (amountMoved1 > projects1.length - 3) {
+        amountMoved1 = 0
+    };
     amountMoved1 += 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
     // console.log(amountMoved1)
     setOnInfoField();
 }
 const innerSlideLeft1 = () => {
-    if (amountMoved1 < 1) amountMoved1 = 1;
+    // if (amountMoved1 <= projects1.length - 2) btnr1.style.display = 'block'
+    if (amountMoved1 == 1 ) {
+        amountMoved1 = 4; 
+        btnl1.style.display = 'hidden'
+    }
     amountMoved1 -= 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
     // console.log(amountMoved1)
@@ -191,14 +204,14 @@ const innerSlideLeft1 = () => {
 }
 
 const innerSlideRight2 = () => {
-    if (amountMoved2 > projects2.length - 2) amountMoved2 = -1;
+    if (amountMoved2 > projects2.length - 3) amountMoved2 = 0;
     amountMoved2 += 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
     // console.log(amountMoved2);
     setOnInfoField();
 }
 const innerSlideLeft2 = () => {
-    if (amountMoved2 < 1) amountMoved2 = 1;
+    if (amountMoved2 == 1) amountMoved2 = 4;
     amountMoved2 -= 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
     // console.log(amountMoved2);
@@ -206,14 +219,14 @@ const innerSlideLeft2 = () => {
 }
 
 const innerSlideRight3 = () => {
-    if (amountMoved3 > projects3.length - 2) amountMoved3 = -1;
+    if (amountMoved3 > projects3.length - 3) amountMoved3 = -0;
     amountMoved3 += 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
     // console.log(amountMoved3);
     setOnInfoField();
 }
 const innerSlideLeft3 = () => {
-    if (amountMoved3 < 1) amountMoved3 = 1;
+    if (amountMoved3 == 1) amountMoved3 = 4;
     amountMoved3 -= 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
     // console.log(amountMoved3);
