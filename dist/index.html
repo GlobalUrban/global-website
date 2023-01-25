@@ -26,20 +26,22 @@
     </div>
     <!-- ============================================== -->
 
-    <!-- Contact Form Mobile Pop up================  -->
-    <div class="contact-mobile__pop-up form-pop-up-container" id="contact__pop-up">
-        <div class="pop-up form-pop-up" id="pop-up">
-            <div id="mobile-form-pop-up" class="cont-form">
-                <h3>Please fill the form,<br> and we'll be in touch.</h3>
-                <form action="">
-                    <input class="input" type="text" name="" placeholder="Name..." id="">
-                    <div class="email-phone_container">
-                        <input class="input input-secondary" type="email" name="" placeholder="Email" id="">
-                        <input class="input input-secondary" type="tel" name="" placeholder="Phone" id="">
-                    </div>
-                    <textarea maxlength="95" name="" id="" rows="1" placeholder="How can we help you?"></textarea>
-                    <input id="contact-id-m-pop" class="submit" type="submit" value="Submit">
-                </form>
+        <!-- Contact Form Mobile Pop up================  -->
+        <div class="contact-mobile__pop-up form-pop-up-container" id="contact__pop-up">
+            <div class="pop-up form-pop-up" id="pop-up">
+                <div id="mobile-form-pop-up" class="cont-form">
+                    <h3>Please fill the form,<br> and we'll be in touch.</h3>
+                    <form id="form-mobile" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
+                        <input class="input" type="text" name="name" placeholder="Name..." id="">
+                        <div  class="email-phone_container">
+                            <input class="input input-secondary" type="email" name="email" placeholder="Email" id="">
+                            <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="">
+                        </div>
+                        <textarea maxlength="95" name="message" id="" rows="1"
+                            placeholder="How can we help you?"></textarea>
+                        <input id="contact-id-m-pop" class="submit" type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -394,7 +396,7 @@
                                 placeholder="How can we help you?"></textarea>
                             <input id="contact-id-m" class="submit" type="submit" value="Submit">
                         </form>
-                        <div id="success-submit-id" class="success-form">We will contact you!</div>
+                        <div id="success-submit-id" class="success-form">Thanks. Your message has been received.</div>
                     </div>
 
                     <!-- Contact Information // -->
@@ -426,7 +428,7 @@
                 </div>
 
                 <!-- Contact btn mobile // -->
-                <button class="contact-form__btn" id="contact-form__mobile-btn"">
+                <button class="contact-form__btn" id="contact-form__mobile-btn">
                     Get in touch with us!
                 </button>
             </div>

@@ -762,11 +762,28 @@ header .selector-pressed {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .container .container-bottom .cont-form .success-form {
+  background: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
   padding: 10px;
+  margin-top: 10px;
+  position: absolute;
+  opacity: 0.7;
+  width: 20%;
+  font-size: 15px;
+  bottom: 235px;
+  transform: translateX(25%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .container .container-bottom .cont-form .success-form {
+    width: 50%;
+    transform: translateX(10%);
+  }
 }
 .container .container-bottom .contact-information {
   width: 50%;

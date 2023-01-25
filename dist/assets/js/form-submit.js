@@ -2,27 +2,15 @@ let formSubmitDesktop = document.getElementById('contact-id-m');
 let formSubmitMobile = document.getElementById('contact-id-m-pop');
 
 let formId = document.getElementById('form-desk');
+let formIdMobile = document.getElementById('form-mobile');
 let successDiv = document.getElementById('success-submit-id');
 
-// Fields from 
-let nameform = document.getElementById('f-name')
-let email = document.getElementById('f-email')
-let phone = document.getElementById('f-phone')
-let text = document.getElementById('f-text')
-
+let btnGetInTouch = document.getElementById('contact-form__mobile-btn')
 
 const handleSubmit = async (e) => {
 
-    // e.preventDefault();
-
     console.log("nameform.value")
-    // console.log(nameform.value)
-    // console.log(email.value)
-    // console.log(phone.value)
-    // console.log(text.value)
-
     window.localStorage.setItem('form-submit', true)
-    
 }
 
 const checkSubmitStorage = () => {
@@ -31,6 +19,10 @@ const checkSubmitStorage = () => {
         successDiv.style.display = "none"
     } else {
         window.location.href = "#form-desk"
+        window.location.href = "#contact-form__mobile-btn"
+        btnGetInTouch.innerHTML = "Thanks. Your message has been received."
+        btnGetInTouch.style.background = "transparent"
+        btnGetInTouch.style.color = "white"
     };
     console.log(submitControl);
     window.localStorage.removeItem('form-submit')
@@ -40,4 +32,5 @@ const checkSubmitStorage = () => {
 // formSubmitDesktop.addEventListener('submit', handleSubmit)
 // formSubmitDesktop.addEventListener('click', handleSubmit)
 formId.addEventListener('submit', handleSubmit)
+formIdMobile.addEventListener('submit', handleSubmit)
 window.addEventListener('load', checkSubmitStorage)
