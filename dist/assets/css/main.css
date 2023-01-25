@@ -432,23 +432,25 @@ header .selector-pressed {
 }
 
 .css-animated:hover figure {
-  -webkit-animation: cyclePhotos 2s linear infinite;
-          animation: cyclePhotos 2s linear infinite;
+  -webkit-animation: cyclePhotos 4s linear infinite;
+          animation: cyclePhotos 4s linear infinite;
 }
 .css-animated figure:nth-child(1) {
   opacity: 1;
-}
-.css-animated figure:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.css-animated figure:nth-child(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
+.css-animated figure:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.css-animated figure:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
 .css-animated figure:nth-child(4) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 @-webkit-keyframes cyclePhotos {
