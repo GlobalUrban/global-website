@@ -264,7 +264,7 @@
               position: absolute;
               background: rgba(0, 0, 0, 0.336);
               @include img-cover;
-              z-index: 300;
+              z-index: 1;
               opacity: 0;
               transition: all 0.3s;
               @include flex-center;
@@ -273,6 +273,7 @@
                 width: 65%;
                 height: 50%;
                 @include flex(column, center);
+                gap: 10px;
 
                 img {
                   width: 100px;
@@ -281,6 +282,11 @@
 
                 h3 {
                   color: white;
+                  font-size: 25px;
+                  margin: 0;
+                }
+                span {
+                    color: white;
                 }
               }
             }

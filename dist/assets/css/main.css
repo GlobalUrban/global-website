@@ -1355,7 +1355,7 @@ header .selector-pressed {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 300;
+  z-index: 1;
   opacity: 0;
   transition: all 0.3s;
   display: flex;
@@ -1369,12 +1369,18 @@ header .selector-pressed {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
   width: 100px;
   height: 100px;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content h3 {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content span {
   color: white;
 }
 @media screen and (max-width: 768px) {
