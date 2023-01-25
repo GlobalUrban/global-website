@@ -15,8 +15,15 @@ const grantWriting = document.getElementById("grant-writing");
 const communications = document.getElementById("communications");
 const design = document.getElementById("design");
 
+// Get communication links for projects
+let Clink1 = document.getElementById("c-services-1")
+let Clink2 = document.getElementById("c-services-2")
+let Clink3 = document.getElementById("c-services-3")
 
-
+const setProjectToOpen = (service, project) => {
+    window.localStorage.setItem("service", service)
+    window.localStorage.setItem("project", project)
+}
 
 grantWritingBtn.addEventListener("click", ()=>{
     servicesOptions.classList.add("services-options__up");
@@ -40,3 +47,8 @@ for(let i = 0; i < 3; i++){
         servicesScroll.style.marginLeft = "0%";
     })
 }
+
+
+Clink1.addEventListener("click", ()=>{setProjectToOpen(1, 1)})
+Clink2.addEventListener("click", ()=>{setProjectToOpen(1, 2)})
+Clink3.addEventListener("click", ()=>{setProjectToOpen(1, 3)})

@@ -38,7 +38,7 @@ const d3 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.']
-    
+
 
 // Controllers for movement
 let amountMoved1 = 1;
@@ -179,6 +179,7 @@ const styleInnerSlidesContainer = () => {
 
     document.getElementById('innerslides-3').style.width = projects3.length * 100 + '%';
     document.getElementById('innerslides-3').style.transform = 'translate(-' + 80 * amountMoved3 / projects3.length + '%, 0%)'
+
 }
 
 const innerSlideRight1 = () => {
@@ -193,8 +194,8 @@ const innerSlideRight1 = () => {
 }
 const innerSlideLeft1 = () => {
     // if (amountMoved1 <= projects1.length - 2) btnr1.style.display = 'block'
-    if (amountMoved1 == 1 ) {
-        amountMoved1 = 4; 
+    if (amountMoved1 == 1) {
+        amountMoved1 = 4;
         btnl1.style.display = 'hidden'
     }
     amountMoved1 -= 1;
@@ -267,6 +268,22 @@ const setPressedStyle = (index) => {
     underlinePressed.classList.add('btn-general-pressed-' + index)
 }
 
+// Check storage for service set from services 
+const checkStorage = () => {
+    let serviceSet = window.localStorage.getItem("service")
+    let projectSet = window.localStorage.getItem("project")
+    if (serviceSet && projectSet) {
+        projectPressed(-33.333 * serviceSet, serviceSet);
+        if (projectSet == 2) innerSlideRight2();
+        if (projectSet == 3) {
+            innerSlideRight2(); 
+            innerSlideRight2();
+        }
+    }
+    window.localStorage.removeItem("service")
+    window.localStorage.removeItem("project")
+}
+
 // Geenal buttons
 btn1.addEventListener('click', () => { projectPressed(-0, 0) })
 btn2.addEventListener('click', () => { projectPressed(-33.333, 1) })
@@ -285,4 +302,4 @@ btnl3.addEventListener('click', innerSlideLeft3)
 window.addEventListener('load', styleInnerSlidesContainer)
 window.addEventListener('load', fillProjectSlides)
 window.addEventListener('load', setOnInfoField)
-
+window.addEventListener('load', checkStorage);
