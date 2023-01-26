@@ -113,7 +113,7 @@ const appendMember = () => {
         const node_img = document.createElement("img");
         node.classList.add(classToApply);
         node.id = 's-' + (teamMembers.indexOf(member)).toString();
-        node_img.src = imgRouteGrant + teamMembers.indexOf(member) + '.png';
+        node_img.src = imgRouteGrant + teamMembers.indexOf(member) + '.jpg';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node.appendChild(node_img);
@@ -146,7 +146,7 @@ const appendMember = () => {
         const node_img = document.createElement("img");
         node.classList.add(classToApply);
         node.id = 's-' + (teamMembers2.indexOf(member)).toString();
-        node_img.src = imgRouteDig + teamMembers2.indexOf(member) + '.png';
+        node_img.src = imgRouteDig + teamMembers2.indexOf(member) + '.jpg';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node.appendChild(node_img);
