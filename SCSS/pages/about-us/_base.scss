@@ -127,7 +127,6 @@
     // About Us Team Section ---------------- //
     .about-us__team {
         width: 100%;
-        background: $t2;
         @include flex(column, flex-start);
 
 
@@ -152,9 +151,13 @@
 
         // Team Slider ----------------- //
         .slider-automatic-container {
-            height: 300px;
+            height: 400px;
             width: 100%;
             overflow-x: hidden;
+
+            @include breakpoint("laptop-L") {
+                height: 300px;
+            }
 
             @include breakpoint("Phone-L") {
                 height: 230px;
@@ -203,8 +206,6 @@
                                 color: white;
                             }
                         }
-
-
                     }
 
 
@@ -251,39 +252,11 @@
 
                     }
 
-
                     .title-hover-hover {
                         transform: translateY(0%)
                     }
                 }
 
-                #s-1 {
-                    background-color: blue;
-                }
-
-                #s-2 {
-                    background-color: orange;
-                }
-
-                #s-3 {
-                    background-color: green;
-                }
-
-                #s-4 {
-                    background-color: yellow;
-                }
-
-                #s-5 {
-                    background-color: pink;
-                }
-
-                #s-6 {
-                    background-color: brown;
-                }
-
-                #s-7 {
-                    background-color: black;
-                }
             }
         }
     }
