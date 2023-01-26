@@ -1373,7 +1373,7 @@ header .selector-pressed {
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer {
   position: absolute;
-  background: rgba(0, 0, 0, 0.336);
+  background: rgba(0, 0, 0, 0.459);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
