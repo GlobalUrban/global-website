@@ -65,27 +65,27 @@ const setPressedStyles = (index) => {
 
 const setSrcSlider = () => {
     const windowSize = window.innerWidth;
-    if (windowSize <= 768) {
-        let url = "assets/img/portfolio/content/GUS_About_us_";
-        // let url = "assets/img/home/test/testmobile.png";
-        let img1= document.getElementById('slide-1');
-        let img2= document.getElementById('slide-2');
-        let img3= document.getElementById('slide-3');
-        let img4= document.getElementById('slide-4');
-        let vide0 = document.getElementsByClassName('videos');
-        vide0[0].style.display = 'none';
-        vide0[1].style.display = 'none';
-        vide0[2].style.display = 'none';
-        vide0[3].style.display = 'none';
-        // img1.src = url + 0 + ".png";
-        // img2.src = url + 1 + ".png";
-        // img3.src = url + 2 + ".png";
-        // img4.src = url + 3 + ".png";
-        // img1.src = url;
-        // img2.src = url;
-        // img3.src = url;
-        // img4.src = url;
-    }
+    // if (windowSize <= 768) {
+    //     let url = "assets/img/portfolio/content/GUS_About_us_";
+    //     // let url = "assets/img/home/test/testmobile.png";
+    //     let img1= document.getElementById('slide-1');
+    //     let img2= document.getElementById('slide-2');
+    //     let img3= document.getElementById('slide-3');
+    //     let img4= document.getElementById('slide-4');
+    //     let vide0 = document.getElementsByClassName('videos');
+    //     vide0[0].style.display = 'none';
+    //     vide0[1].style.display = 'none';
+    //     vide0[2].style.display = 'none';
+    //     vide0[3].style.display = 'none';
+    //     // img1.src = url + 0 + ".png";
+    //     // img2.src = url + 1 + ".png";
+    //     // img3.src = url + 2 + ".png";
+    //     // img4.src = url + 3 + ".png";
+    //     // img1.src = url;
+    //     // img2.src = url;
+    //     // img3.src = url;
+    //     // img4.src = url;
+    // }
 }
 
 
