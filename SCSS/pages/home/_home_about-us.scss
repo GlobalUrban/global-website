@@ -83,6 +83,16 @@
               width: 80%;
             }
 
+            h1 {
+                font-size: 80px;
+                margin: 0;
+
+                @include b.breakpoint("Tablet-L"){
+                    font-size: 50px;
+                }
+            
+            }
+
             p {
                 @include b.breakpoint("Tablet-M") {
                     text-align: justify;
