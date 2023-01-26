@@ -55,7 +55,15 @@ let portfolioSelected = 0;
 
 // Image routes //
 const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
+// const imgRouteCover = "../img/portfolio/cover/Portfolio-grant-writing-client-"
+const imgRouteCoverGrant = "../img/portfolio/cover/Portfolio-grant-writing-client-"
+const imgRouteCoverCom = "../img/portfolio/cover/Portfolio-communications-client-"
+const imgRouteCoverDig = "../img/portfolio/cover/Portfolio-design-client-"
+
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
+const imgRouteContentGrant = "../img/portfolio/content/Portfolio-grant-writing-client-pic-"
+const imgRouteContentCom = "../img/portfolio/content/Portfolio-communications-client-"
+const imgRouteContentDig = "../img/portfolio/content/Portfolio-design-client-"
 
 // Buttons for general slides
 let btn1 = document.getElementById('btn-1')
@@ -109,12 +117,12 @@ const fillProjectSlides = () => {
         span.classList.add('inner-slides-text-styles')
         const text = document.createTextNode(project)
         span.appendChild(text)
-        node.appendChild(span)
+        // node.appendChild(span)
 
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCover + projects1.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverGrant + projects1.indexOf(project) + '.png';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -135,12 +143,12 @@ const fillProjectSlides = () => {
         span.classList.add('inner-slides-text-styles')
         const text = document.createTextNode(project)
         span.appendChild(text)
-        node.appendChild(span)
+        // node.appendChild(span)
 
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCover + projects2.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverCom + projects2.indexOf(project) + '.png';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -161,12 +169,12 @@ const fillProjectSlides = () => {
         span.classList.add('inner-slides-text-styles')
         const text = document.createTextNode(project)
         span.appendChild(text)
-        node.appendChild(span)
+        // node.appendChild(span)
 
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCover + projects3.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverDig + projects3.indexOf(project) + '.png';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -245,19 +253,22 @@ const setOnInfoField = (project, inner) => {
     if (portfolioSelected == 0) {
         tittle.innerHTML = projects1[amountMoved1]
         p.innerHTML = d1[amountMoved1]
-        img.src = imgRouteContent + amountMoved1 + '.png';
+        let index = amountMoved1 + 1;
+        img.src = imgRouteContentGrant + index + '.png';
     }
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
-        img.src = imgRouteContent + amountMoved2 + '.png';
+        let index = amountMoved2 + 1;
+        img.src = imgRouteContentCom + index + '.png';
     }
 
     if (portfolioSelected == 2) {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
-        img.src = imgRouteContent + amountMoved3 + '.png';
+        let index = amountMoved3 + 1;
+        img.src = imgRouteContentDig + index + '.png';
     }
 }
 
