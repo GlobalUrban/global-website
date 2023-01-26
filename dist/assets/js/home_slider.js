@@ -40,7 +40,7 @@ const runSlider = () => {
         percentageMoved -= amountTomoveApply
         slides.style.transform = 'translate(' + percentageMoved + '%, 0%)'
         setPressedStyles(Math.abs(percentageMoved));
-    }, 5000);
+    }, 6000);
 }
 
 const stopOnHover = () => {
@@ -61,6 +61,21 @@ const setPressedStyles = (index) => {
     selectors[2].classList.remove('selector-pressed')
     selectors[3].classList.remove('selector-pressed')
     selectors[indexSet].classList.add('selector-pressed')
+}
+
+const setSrcSlider = () => {
+    const windowSize = window.innerWidth;
+    if (windowSize <= 768) {
+        let url = "assets/img/portfolio/content/GUS_About_us_";
+        let img1= document.getElementById('slide1-img');
+        let img2= document.getElementById('slide2-img');
+        let img3= document.getElementById('slide3-img');
+        let img4= document.getElementById('slide4-img');
+        img1.src = url + 0 + ".png";
+        img2.src = url + 1 + ".png";
+        img3.src = url + 2 + ".png";
+        img4.src = url + 3 + ".png";
+    }
 }
 
 
@@ -88,3 +103,4 @@ selector4.addEventListener('click', () => { handleSelector(-75) })
 
 window.addEventListener('load', () => {setPressedStyles(0)})
 window.addEventListener('load', runSlider)
+window.addEventListener('load', setSrcSlider)
