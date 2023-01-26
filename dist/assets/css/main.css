@@ -1620,7 +1620,6 @@ header .selector-pressed {
 }
 .about-us .about-us__team {
   width: 100%;
-  background: rgba(255, 0, 0, 0.534);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
