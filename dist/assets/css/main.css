@@ -1663,6 +1663,9 @@ header .selector-pressed {
   font-size: 18;
   color: white;
 }
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover div {
+  text-align: center;
+}
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover div h3 {
   margin: 0;
   line-height: 1.9;
