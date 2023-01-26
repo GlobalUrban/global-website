@@ -74,14 +74,14 @@ let portfolioSelected = 0;
 // Image routes //
 const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
 // const imgRouteCover = "../img/portfolio/cover/Portfolio-grant-writing-client-"
-const imgRouteCoverGrant = "../img/portfolio/cover/Portfolio-grant-writing-client-"
-const imgRouteCoverCom = "../img/portfolio/cover/Portfolio-communications-client-"
-const imgRouteCoverDig = "../img/portfolio/cover/Portfolio-design-client-"
+const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
+const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
+const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
 
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
-const imgRouteContentGrant = "../img/portfolio/content/Portfolio-grant-writing-client-pic-"
-const imgRouteContentCom = "../img/portfolio/content/Portfolio-communications-client-"
-const imgRouteContentDig = "../img/portfolio/content/Portfolio-design-client-"
+const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-pic-"
+const imgRouteContentCom = "../img/portfolio/content/reduced/Portfolio-communications-client-"
+const imgRouteContentDig = "../img/portfolio/content/reduced/Portfolio-design-client-"
 
 // Buttons for general slides
 let btn1 = document.getElementById('btn-1')
