@@ -6,7 +6,8 @@ let amountTomoveApply = 25
 
 let slideInverval = undefined;
 
-const handleRightArrow = () => {
+const handleRightArrow = (e) => {
+    e.stopPropagation();
     stopOnHover();
     if (percentageMoved == -75) percentageMoved = amountTomoveApply
     percentageMoved -= amountTomoveApply;
@@ -15,7 +16,8 @@ const handleRightArrow = () => {
     setPressedStyles(Math.abs(percentageMoved))
 }
 
-const handleLeftArrow = () => {
+const handleLeftArrow = (e) => {
+    e.stopPropagation();
     stopOnHover();
     if (percentageMoved == 0) percentageMoved = -100
     percentageMoved += 25;
@@ -88,6 +90,19 @@ const setSrcSlider = () => {
     // }
 }
 
+const setProjectToOpen = (service, project) => {
+    window.localStorage.setItem("service", service)
+    window.localStorage.setItem("project", project)
+}
+
+const setProjectToOpen2 = () => {
+    console.log(percentageMoved)
+    if (percentageMoved == 0) setProjectToOpen(2, 1)
+    if (percentageMoved == -25) setProjectToOpen(2, 2)
+    if (percentageMoved == -50) setProjectToOpen(1, 3)
+    if (percentageMoved == -75) setProjectToOpen(0, 2)
+    window.location.href = "./assets/html/portfolio.html#portfolio-slider-id"
+} 
 
 let leftArrow = document.getElementById('la')
 let rightArrow = document.getElementById('ra')
@@ -103,6 +118,14 @@ let selector2 = document.getElementById('s2')
 let selector3 = document.getElementById('s3')
 let selector4 = document.getElementById('s4')
 
+// Selectors for see more link
+let link1 = document.getElementById('seemore-1')
+let link2 = document.getElementById('seemore-2')
+let link3 = document.getElementById('seemore-3')
+let link4 = document.getElementById('seemore-4')
+let containerButtonsToLink = document.getElementById('container-buttons-tolink')
+
+
 rightArrow.addEventListener('click', handleRightArrow)
 leftArrow.addEventListener('click', handleLeftArrow)
 
@@ -110,6 +133,13 @@ selector1.addEventListener('click', () => { handleSelector(0) })
 selector2.addEventListener('click', () => { handleSelector(-25) })
 selector3.addEventListener('click', () => { handleSelector(-50) })
 selector4.addEventListener('click', () => { handleSelector(-75) })
+
+// Event listener for set project to localstorage
+link1.addEventListener("click", ()=>{setProjectToOpen(2, 1)})
+link1.addEventListener("click", ()=>{setProjectToOpen(2, 2)})
+link1.addEventListener("click", ()=>{setProjectToOpen(1, 3)})
+link1.addEventListener("click", ()=>{setProjectToOpen(0, 2)})
+containerButtonsToLink.addEventListener("click", setProjectToOpen2)
 
 window.addEventListener('load', () => {setPressedStyles(0)})
 window.addEventListener('load', runSlider)

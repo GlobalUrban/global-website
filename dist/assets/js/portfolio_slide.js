@@ -26,7 +26,7 @@ const projects3 = [
     // Con tirro //
     'City of Huntington Park Social Media, Web Development and Graphic Design Services',
 
-    'City of La Puente Social Media, Web Development and Graphic Designs Services',
+    'City of La Puente Social Media, Web Development and Graphic Design Services',
     'City of San Luis Obispo Graphic Design and Motion Graphics Services',
     'City of Huntington Park Social Media, Web Development and Graphic Design Services',
 
