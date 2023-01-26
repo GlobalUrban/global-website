@@ -1327,6 +1327,11 @@ header .selector-pressed {
   margin: 0;
   font-size: 35px;
 }
+@media screen and (max-width: 480px) {
+  .services .services-content .services-scroll .service .service-top .service-info .service-info__content h2 {
+    font-size: 30px;
+  }
+}
 .services .services-content .services-scroll .service .service-top .service-info .service-info__content .digital-h2 {
   line-height: 1.1;
   margin-bottom: 5px;
@@ -1486,6 +1491,11 @@ header .selector-pressed {
     margin-top: 100px;
   }
 }
+@media screen and (max-width: 480px) {
+  .services .btn-back {
+    transform: translateX(125%);
+  }
+}
 .services .btn-back:hover {
   transform: scale(1.2);
   fill: white;
@@ -1510,6 +1520,26 @@ header .selector-pressed {
   position: relative;
   display: flex;
   background-image: url(../img/home/about-gradiant.png);
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us .about-us__info {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-us .about-us__info {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-us .about-us__info {
+    height: 1100px;
+  }
 }
 .about-us .about-us__info .about-us__info-front {
   position: absolute;
@@ -1594,12 +1624,29 @@ header .selector-pressed {
   margin-top: 100px;
   width: 80%;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .dvbe__info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about-us .about-us__info .about-us__info-front .dvbe__info img {
   width: 250px;
 }
 @media screen and (max-width: 1024px) {
   .about-us .about-us__info .about-us__info-front .dvbe__info img {
     display: none;
+  }
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info .img-logo-hide {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .dvbe__info .img-logo-hide {
+    display: block;
   }
 }
 .about-us .about-us__info .about-us__info-front .dvbe__info .dvbe__cont-info {

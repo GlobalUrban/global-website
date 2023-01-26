@@ -14,9 +14,20 @@
        
         background-image: url(../img/home/about-gradiant.png);
 
-        // @include breakpoint(Tablet-L){
-        //    height: 1000px;
-        // }
+
+
+        @include breakpoint(Tablet-L){
+           height: 1000px;
+        }
+        @include breakpoint(Tablet-M){
+           height: 1000px;
+        }
+        @include breakpoint(Phone-L){
+           height: 1000px;
+        }
+        @include breakpoint(Phone-M){
+           height: 1100px;
+        }
 
         // Front information ---- //
         .about-us__info-front {
@@ -91,12 +102,23 @@
                 @include flex-center;
                 margin-top: 100px;
                 width: 80%;
+                @include breakpoint("Tablet-L") {
+                    text-align: center;
+                    @include flex(column, center)
+                }
 
                 img {
                     width: 250px;
 
                     @include breakpoint(Tablet-L) {
                         display: none;
+                    }
+                }
+
+                .img-logo-hide{
+                    display: none;
+                    @include breakpoint("Tablet-L"){
+                        display: block;
                     }
                 }
 
