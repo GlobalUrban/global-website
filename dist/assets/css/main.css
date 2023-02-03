@@ -7,9 +7,10 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Myriad-Pro";
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-size: 20px;
 }
 
 /**
@@ -24,6 +25,22 @@ body {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: "Myriad-Pro";
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad-Pro";
+  src: url(../fonts/MYRIADPRO-SEMIBOLD.OTF) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad-Pro";
+  src: url(../fonts/MYRIADPRO-BOLD.OTF) format("opentype");
+  font-weight: 900;
+  font-weight: bold;
+}
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
@@ -110,10 +127,21 @@ header .home-slider-container-slides-slide {
   position: relative;
 }
 header .home-slider-container-slides-slide img {
+  display: none;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 480px) {
+  header .home-slider-container-slides-slide img {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .home-slider-container-slides-slide video {
+    display: none;
+  }
 }
 header .home-slider-container-slides-slide .front-cover {
   width: 100%;
@@ -146,12 +174,22 @@ header .home-slider-container-slides-slide .front-cover .item-info h1 {
   margin: 0;
   position: static;
 }
+@media screen and (max-width: 480px) {
+  header .home-slider-container-slides-slide .front-cover .item-info h1 {
+    font-size: 28px;
+  }
+}
 header .home-slider-container-slides-slide .front-cover .item-info p {
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  header .home-slider-container-slides-slide .front-cover .item-info p {
+    font-size: 18px;
+  }
+}
 header .home-slider-container-slides-slide .front-cover .item-info a {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 25px;
   margin: 0;
 }
@@ -316,6 +354,15 @@ header .selector-pressed {
     width: 80%;
   }
 }
+.home__about-us .home__about-us-content .about-us__information h1 {
+  font-size: 80px;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .home__about-us .home__about-us-content .about-us__information h1 {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 768px) {
   .home__about-us .home__about-us-content .about-us__information p {
     text-align: justify;
@@ -432,23 +479,25 @@ header .selector-pressed {
 }
 
 .css-animated:hover figure {
-  -webkit-animation: cyclePhotos 2s linear infinite;
-          animation: cyclePhotos 2s linear infinite;
+  -webkit-animation: cyclePhotos 4s linear infinite;
+          animation: cyclePhotos 4s linear infinite;
 }
 .css-animated figure:nth-child(1) {
   opacity: 1;
-}
-.css-animated figure:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.css-animated figure:nth-child(3) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
+.css-animated figure:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.css-animated figure:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
 .css-animated figure:nth-child(4) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 @-webkit-keyframes cyclePhotos {
@@ -1345,6 +1394,62 @@ header .selector-pressed {
   overflow: hidden;
   position: relative;
 }
+.services .services-content .services-scroll .service .service-bottom .service-project:hover .opacity-layer {
+  opacity: 1;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.459);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content {
+  width: 65%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1024px) {
+  .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content .img-medium {
+  width: 200px;
+  height: 200px;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content .img-small {
+  width: 100px;
+  height: 100px;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content h3 {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+}
+.services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content span {
+  color: white;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-bottom .service-project {
     width: 100%;
@@ -1584,6 +1689,9 @@ header .selector-pressed {
   font-size: 18;
   color: white;
 }
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover div {
+  text-align: center;
+}
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide .title-hover div h3 {
   margin: 0;
   line-height: 1.9;
@@ -1625,7 +1733,7 @@ header .selector-pressed {
   margin: 0;
   line-height: 1.9;
   margin-bottom: -25px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   color: white;
 }
@@ -1850,7 +1958,7 @@ header .selector-pressed {
   align-items: center;
   cursor: pointer;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media screen and (max-width: 1024px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns .portfolio-slider-projects-btn {
@@ -2325,7 +2433,7 @@ footer .footer-right .right-bottom {
 
 .selected-mobile {
   transform: translateX(-30%) scale(1.3);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .nav-selected {
