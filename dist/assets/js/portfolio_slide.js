@@ -378,6 +378,7 @@ const setPressedStyle = (index) => {
     generalButtons[0].classList.remove('btn-general-pressed')
     generalButtons[1].classList.remove('btn-general-pressed')
     generalButtons[2].classList.remove('btn-general-pressed')
+    generalButtons[3].classList.remove('btn-general-pressed')
     generalButtons[index].classList.add('btn-general-pressed')
 
     let underlinePressed = document.getElementById('underline-pressed');
