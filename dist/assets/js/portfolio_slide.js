@@ -44,6 +44,7 @@ const d1 = [
 
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 ]
+
 const d2 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 
@@ -64,20 +65,21 @@ const d3 = [
     'Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation..',
 ]
 
-
 // Controllers for movement
 let amountMoved1 = 1;
 let amountMoved2 = 1;
 let amountMoved3 = 1;
 let portfolioSelected = 0;
 
-// Image routes //
+// IMAGE ROUTES //
+
+// Image Cover //
 const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
-// const imgRouteCover = "../img/portfolio/cover/Portfolio-grant-writing-client-"
 const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
 const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
 const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
 
+// Content Image //
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
 const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-pic-"
 const imgRouteContentCom = "../img/portfolio/content/reduced/Portfolio-communications-client-"
@@ -101,7 +103,6 @@ let btnr3 = document.getElementById('btn-right-3')
 
 // Handlers for slides containers
 let projectSlides = document.getElementById('p-slides')
-
 let innerslides1 = document.getElementById('innerslides-1');
 let innerslides2 = document.getElementById('innerslides-2');
 let innerslides3 = document.getElementById('innerslides-3');
@@ -212,7 +213,6 @@ const styleInnerSlidesContainer = () => {
 
     document.getElementById('innerslides-3').style.width = projects3.length * 100 + '%';
     document.getElementById('innerslides-3').style.transform = 'translate(-' + 80 * amountMoved3 / projects3.length + '%, 0%)'
-
 }
 
 const innerSlideRight1 = () => {
@@ -225,6 +225,7 @@ const innerSlideRight1 = () => {
     // console.log(amountMoved1)
     setOnInfoField();
 }
+
 const innerSlideLeft1 = () => {
     // if (amountMoved1 <= projects1.length - 2) btnr1.style.display = 'block'
     if (amountMoved1 == 1) {
