@@ -179,6 +179,9 @@
                 line-height: 1.8;
                 margin: 0;
                 font-size: 35px;
+                @include breakpoint(Phone-L) {
+                  font-size: 30px;
+                }
               }
 
               .digital-h2 {
@@ -354,6 +357,9 @@
     @include breakpoint(Tablet-M) {
       margin-left: 37vw;
       margin-top: 100px;
+    }
+    @include breakpoint(Phone-L) {
+      transform: translateX(125%);
     }
 
     &:hover {

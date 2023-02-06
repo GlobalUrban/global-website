@@ -1,49 +1,67 @@
 
 // Projects
 const projects1 = [
+    // Con tirro //
     'Valley Vista Grant Writing Services',
+
     'City of Bell Garden’s Grant Writing Services',
     'City of Azusa’s Calhome Program Administration and Grant Writing Services',
     'Valley Vista Grant Writing Services',
+
+    // Con tirro //
     'City of Bell Garden’s Grant Writing Services',
 ]
 const projects2 = [
+    // Con tirro //
     'Stantec Stakeholder Engagement and Community Outreach Services',
+
     'City of Cudahy Crisis Management and Public Relations Services',
     'City of Hawaiians Gardens Community Outreach Services',
     'Stantec Stakeholder Engagement and Community Outreach Services',
+
+    // Con tirro //
     'City of Cudahy Crisis Management and Public Relations Services',
 ]
 const projects3 = [
+    // Con tirro //
     'City of Huntington Park Social Media, Web Development and Graphic Design Services',
-    'City of La Puente Social Media, Web Development and Graphic Designs Services',
+
+    'City of La Puente Social Media, Web Development and Graphic Design Services',
     'City of San Luis Obispo Graphic Design and Motion Graphics Services',
     'City of Huntington Park Social Media, Web Development and Graphic Design Services',
-    'City of La Puente Social Media, Web Development and Graphic Designs Services',
+
+    // Con tirro //
+    'City of La Puente Social Media, Web Development and Graphic Design Services',
 ]
 
 // Descriptions
 const d1 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+
+    'Our goal, along with the City of Bell Gardens, is to seek benefits for the community, which is why we create proposals for projects that can help the City. By working together, we get the best concessions for its residents.',
+    "Working hand in hand with our clients is what we enjoy the most, and that's why we do our best for them, such as managing the CalHome Program and ensuring its residents' reach, effectiveness, and availability. Furthermore, we support the City by creating State and Federal funds proposals.",
+    'Grant Writing are two words that mean a lot to us, and that’s why we work with Valley Vista Services to help them achieve different contracts throughout the State, providing top-quality waste recollection and management service.',
+
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 ]
 const d2 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+
+    'The key to public relations management is to support emergency crises at unnoticed times. Global Urban developed the strategic plan and executed responses in support of, and on behalf of, the City of Cudahy.',
+    "Global assisted the City by preparing a three-day charrette workshop with the residents in order to develop a Community-Based Planning, where they engaged the community and obtained their input as to the types of recreational features that they wanted to see in their community. These meetings maximized the points allocated to the Proposition 68 project application that was submitted.",
+    "We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.",
+
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 ]
 
 const d3 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+
+    'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
+    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
+    "Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation.",
+
+    'Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation..',
 ]
 
 
@@ -56,14 +74,14 @@ let portfolioSelected = 0;
 // Image routes //
 const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
 // const imgRouteCover = "../img/portfolio/cover/Portfolio-grant-writing-client-"
-const imgRouteCoverGrant = "../img/portfolio/cover/Portfolio-grant-writing-client-"
-const imgRouteCoverCom = "../img/portfolio/cover/Portfolio-communications-client-"
-const imgRouteCoverDig = "../img/portfolio/cover/Portfolio-design-client-"
+const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
+const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
+const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
 
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
-const imgRouteContentGrant = "../img/portfolio/content/Portfolio-grant-writing-client-pic-"
-const imgRouteContentCom = "../img/portfolio/content/Portfolio-communications-client-"
-const imgRouteContentDig = "../img/portfolio/content/Portfolio-design-client-"
+const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-pic-"
+const imgRouteContentCom = "../img/portfolio/content/reduced/Portfolio-communications-client-"
+const imgRouteContentDig = "../img/portfolio/content/reduced/Portfolio-design-client-"
 
 // Buttons for general slides
 let btn1 = document.getElementById('btn-1')

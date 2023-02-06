@@ -479,25 +479,25 @@ header .selector-pressed {
 }
 
 .css-animated:hover figure {
-  -webkit-animation: cyclePhotos 4s linear infinite;
-          animation: cyclePhotos 4s linear infinite;
+  -webkit-animation: cyclePhotos 2.8s linear infinite;
+          animation: cyclePhotos 2.8s linear infinite;
 }
 .css-animated figure:nth-child(1) {
   opacity: 1;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 .css-animated figure:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
 .css-animated figure:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
 }
 .css-animated figure:nth-child(4) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
 }
 
 @-webkit-keyframes cyclePhotos {
@@ -1327,6 +1327,11 @@ header .selector-pressed {
   margin: 0;
   font-size: 35px;
 }
+@media screen and (max-width: 480px) {
+  .services .services-content .services-scroll .service .service-top .service-info .service-info__content h2 {
+    font-size: 30px;
+  }
+}
 .services .services-content .services-scroll .service .service-top .service-info .service-info__content .digital-h2 {
   line-height: 1.1;
   margin-bottom: 5px;
@@ -1486,6 +1491,11 @@ header .selector-pressed {
     margin-top: 100px;
   }
 }
+@media screen and (max-width: 480px) {
+  .services .btn-back {
+    transform: translateX(125%);
+  }
+}
 .services .btn-back:hover {
   transform: scale(1.2);
   fill: white;
@@ -1510,6 +1520,26 @@ header .selector-pressed {
   position: relative;
   display: flex;
   background-image: url(../img/home/about-gradiant.png);
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us .about-us__info {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-us .about-us__info {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-us .about-us__info {
+    height: 1100px;
+  }
 }
 .about-us .about-us__info .about-us__info-front {
   position: absolute;
@@ -1594,12 +1624,29 @@ header .selector-pressed {
   margin-top: 100px;
   width: 80%;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .dvbe__info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about-us .about-us__info .about-us__info-front .dvbe__info img {
   width: 250px;
 }
 @media screen and (max-width: 1024px) {
   .about-us .about-us__info .about-us__info-front .dvbe__info img {
     display: none;
+  }
+}
+.about-us .about-us__info .about-us__info-front .dvbe__info .img-logo-hide {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__info .about-us__info-front .dvbe__info .img-logo-hide {
+    display: block;
   }
 }
 .about-us .about-us__info .about-us__info-front .dvbe__info .dvbe__cont-info {
@@ -1620,7 +1667,6 @@ header .selector-pressed {
 }
 .about-us .about-us__team {
   width: 100%;
-  background: rgba(255, 0, 0, 0.534);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1647,9 +1693,14 @@ header .selector-pressed {
   position: absolute;
 }
 .about-us .about-us__team .slider-automatic-container {
-  height: 300px;
+  height: 400px;
   width: 100%;
   overflow-x: hidden;
+}
+@media screen and (max-width: 1400px) {
+  .about-us .about-us__team .slider-automatic-container {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 480px) {
   .about-us .about-us__team .slider-automatic-container {
@@ -1739,27 +1790,6 @@ header .selector-pressed {
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide-mobile .title-hover-hover {
   transform: translateY(0%);
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-1 {
-  background-color: blue;
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-2 {
-  background-color: orange;
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-3 {
-  background-color: green;
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-4 {
-  background-color: yellow;
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-5 {
-  background-color: pink;
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-6 {
-  background-color: brown;
-}
-.about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides #s-7 {
-  background-color: black;
 }
 
 .portfolio {
