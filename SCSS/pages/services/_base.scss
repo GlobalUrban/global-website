@@ -188,11 +188,11 @@
 
     // Services Scroll part //
     .services-scroll {
-      width: 300%;
+      width: 400%;
       height: 100%;
       @include flex-center;
       position: relative;
-      transform: translateX(-33.3333333%);
+      transform: translateX(0);
       transition: all 0.5s ease-in-out;
 
       // Individual Service -------------------- //

@@ -1319,13 +1319,13 @@ header .selector-pressed {
   overflow-x: hidden;
 }
 .services .services-content .services-scroll {
-  width: 300%;
+  width: 400%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  transform: translateX(-33.3333333%);
+  transform: translateX(0);
   transition: all 0.5s ease-in-out;
 }
 .services .services-content .services-scroll .service {
