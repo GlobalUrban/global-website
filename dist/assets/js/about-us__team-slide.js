@@ -14,32 +14,35 @@ let amountTomoveMobile = 50;
 let amountTomoveApply = undefined;
 
 const imgRoute = "../img/about-us/team_members/GUS_About_us_"
+const imgRouteGrant = "../img/about-us/team_members/Grant/g-"
+const imgRouteDig = "../img/about-us/team_members/Dig/d-"
 
 let classDesktop = 'slider-automatic-container-slide';
 let classMobile = 'slider-automatic-container-slide-mobile';
 let classToApply = undefined;
 
 let teamMembers = [
-    {name: 'juan0', charge: 'work0'},
-    {name: 'juan1', charge: 'work1'},
-    {name: 'juan2', charge: 'work2'},
-    {name: 'juan3', charge: 'work3'},
-    {name: 'juan4', charge: 'work4'},
-    {name: 'juan5', charge: 'work5'},
-    {name: 'juan6', charge: 'work6'},
-    {name: 'juan7', charge: 'work7'},
-    {name: 'juan8', charge: 'work8'},
+    {name: 'Omar Hernandez', charge: 'President & Senior Grant Writer'},
+    {name: 'Cinthia Iniguez', charge: 'Account Executive'},
+    {name: 'Lauren Hernandez', charge: 'Associate Account Executive'},
+    {name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator'},
+    {name: 'Daniela Espinoza', charge: 'Assistant Program Administrator'},
+    {name: 'Christa Leonard', charge: 'Director of Grant Acquisition'},
 ]
 
 let teamMembers2 = [
-    {name: 'pedro0', charge: 'work2-0'},
-    {name: 'pedro1', charge: 'work2-1'},
-    {name: 'pedro2', charge: 'work2-2'},
-    {name: 'pedro3', charge: 'work2-3'},
-    {name: 'pedro4', charge: 'work2-4'},
-    {name: 'pedro5', charge: 'work2-5'},
-    {name: 'pedro6', charge: 'work2-6'},
-    {name: 'pedro7', charge: 'work2-7'},
+    {name: 'Jackeline Landa', charge: 'Art Director'},
+    {name: 'Kat Fuentes', charge: 'Creative Manager'},
+    {name: 'Angie Mejia', charge: 'Senior Graphic Designer'},
+    {name: 'Hector', charge: 'Senior Web Developer'},
+    {name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production'},
+    {name: 'Elena Mejia', charge: 'Social Media Strategist'},
+    {name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration'},
+    {name: 'Ximena Morazan', charge: 'Associate Social Media Strategist'},
+    {name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics'},
+    // {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
+    {name: 'Edgardo Valencia', charge: 'Front-End Developer'},
+    {name: 'Francisco Ortiz', charge: 'Back-End Developer'},
 ]
 
 let children1 = new Array()
@@ -110,8 +113,10 @@ const appendMember = () => {
         const node_img = document.createElement("img");
         node.classList.add(classToApply);
         node.id = 's-' + (teamMembers.indexOf(member)).toString();
-        node_img.src = imgRoute + teamMembers.indexOf(member) + '.png';
+        node_img.src = imgRouteGrant + teamMembers.indexOf(member) + '.png';
         node_img.alt = 'Team member';
+        node_img.style.width = "100%";
+        node_img.style.height = "100%";
         node_img.style.objectFit = 'cover';
         node.appendChild(node_img);
 
@@ -143,8 +148,10 @@ const appendMember = () => {
         const node_img = document.createElement("img");
         node.classList.add(classToApply);
         node.id = 's-' + (teamMembers2.indexOf(member)).toString();
-        node_img.src = imgRoute + teamMembers2.indexOf(member) + '.png';
+        node_img.src = imgRouteDig + teamMembers2.indexOf(member) + '.png';
         node_img.alt = 'Team member';
+        node_img.style.width = "100%";
+        node_img.style.height = "100%";
         node_img.style.objectFit = 'cover';
         node.appendChild(node_img);
 

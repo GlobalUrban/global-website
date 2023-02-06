@@ -19,11 +19,11 @@ const setNumber0 = () => {
     if (runned) return;
     let c0 = 0
     let counterInverval = setInterval(() => {
-        c0 += 3
+        c0 += 30
         counter0.innerHTML = c0
-        if (c0 >= 249) {
+        if (c0 >= 2580) {
             clearInterval(counterInverval)
-            counter0.innerHTML = '249'
+            counter0.innerHTML = '2,580 '
             let br = document.createElement('br')
             let text = document.createTextNode('Days')
             counter0.appendChild(br)
@@ -37,11 +37,11 @@ const setNumber1 = () => {
     if (runned1) return;
     let c0 = 0
     let counterInverval = setInterval(() => {
-        c0 += 400
+        c0 += 700
         counter1.innerHTML = c0
         if (c0 >= 39420) {
             clearInterval(counterInverval)
-            counter1.innerHTML = '39,429'
+            counter1.innerHTML = '54,220'
             let br = document.createElement('br')
             let text = document.createTextNode('Pots of Coffee')
             counter1.appendChild(br)

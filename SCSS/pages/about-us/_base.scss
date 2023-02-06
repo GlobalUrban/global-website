@@ -14,9 +14,20 @@
        
         background-image: url(../img/home/about-gradiant.png);
 
-        // @include breakpoint(Tablet-L){
-        //    height: 1000px;
-        // }
+
+
+        @include breakpoint(Tablet-L){
+           height: 1000px;
+        }
+        @include breakpoint(Tablet-M){
+           height: 1000px;
+        }
+        @include breakpoint(Phone-L){
+           height: 1000px;
+        }
+        @include breakpoint(Phone-M){
+           height: 1100px;
+        }
 
         // Front information ---- //
         .about-us__info-front {
@@ -91,12 +102,23 @@
                 @include flex-center;
                 margin-top: 100px;
                 width: 80%;
+                @include breakpoint("Tablet-L") {
+                    text-align: center;
+                    @include flex(column, center)
+                }
 
                 img {
                     width: 250px;
 
                     @include breakpoint(Tablet-L) {
                         display: none;
+                    }
+                }
+
+                .img-logo-hide{
+                    display: none;
+                    @include breakpoint("Tablet-L"){
+                        display: block;
                     }
                 }
 
@@ -127,7 +149,6 @@
     // About Us Team Section ---------------- //
     .about-us__team {
         width: 100%;
-        background: $t2;
         @include flex(column, flex-start);
 
 
@@ -152,9 +173,13 @@
 
         // Team Slider ----------------- //
         .slider-automatic-container {
-            height: 300px;
+            height: 400px;
             width: 100%;
             overflow-x: hidden;
+
+            @include breakpoint("laptop-L") {
+                height: 300px;
+            }
 
             @include breakpoint("Phone-L") {
                 height: 230px;
@@ -193,6 +218,7 @@
 
 
                         div {
+                            text-align: center;
                             h3 {
                                 margin: 0;
                                 line-height: 1.9;
@@ -202,8 +228,6 @@
                                 color: white;
                             }
                         }
-
-
                     }
 
 
@@ -241,7 +265,7 @@
                                 margin: 0;
                                 line-height: 1.9;
                                 margin-bottom: -25px;
-                                font-weight: 600;
+                                font-weight: 500;
                                 font-size: 20px;
                                 color: white;
                             }
@@ -250,39 +274,11 @@
 
                     }
 
-
                     .title-hover-hover {
                         transform: translateY(0%)
                     }
                 }
 
-                #s-1 {
-                    background-color: blue;
-                }
-
-                #s-2 {
-                    background-color: orange;
-                }
-
-                #s-3 {
-                    background-color: green;
-                }
-
-                #s-4 {
-                    background-color: yellow;
-                }
-
-                #s-5 {
-                    background-color: pink;
-                }
-
-                #s-6 {
-                    background-color: brown;
-                }
-
-                #s-7 {
-                    background-color: black;
-                }
             }
         }
     }
