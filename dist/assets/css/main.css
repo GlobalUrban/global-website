@@ -1170,6 +1170,7 @@ header .selector-pressed {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  order: 2;
 }
 @media screen and (max-width: 1024px) {
   .services .services-options .services-options__top {

@@ -4,7 +4,7 @@
 const grantWritingBtn = document.getElementById("granttWritingBtn");
 const communicationsBtn = document.getElementById("communicationsBtn");
 const designBtn = document.getElementById("designBtn");
-const fourthBtn = document.getElementById("fourthBtn");
+const projectManagementBtn = document.getElementById("projectManagementBtn");
 const btnBack = document.getElementsByClassName("btn-back");
 
 // Items //
@@ -15,7 +15,7 @@ const servicesScroll = document.getElementById("services-scroll");
 const grantWriting = document.getElementById("grant-writing");
 const communications = document.getElementById("communications");
 const design = document.getElementById("design");
-const fourth = document.getElementById("fourth");
+const projectManagement = document.getElementById("project-management");
 
 // Get Grant Writting links for projects
 let Glink1 = document.getElementById("g-services-1")
@@ -34,26 +34,27 @@ const setProjectToOpen = (service, project) => {
     window.localStorage.setItem("service", service)
     window.localStorage.setItem("project", project)
 }
+projectManagementBtn.addEventListener("click", ()=>{
+    servicesOptions.classList.add("services-options__up");
+    servicesScroll.style.marginLeft = "0%";
+})
 
 grantWritingBtn.addEventListener("click", ()=>{
     servicesOptions.classList.add("services-options__up");
-    servicesScroll.style.marginLeft = "0%";
+    servicesScroll.style.marginLeft = "-100%";
 });
 
 communicationsBtn.addEventListener("click", ()=>{
     servicesOptions.classList.add("services-options__up");
-    servicesScroll.style.marginLeft = "-100%";
+    servicesScroll.style.marginLeft = "-200%";
 })
 
 designBtn.addEventListener("click", ()=>{
     servicesOptions.classList.add("services-options__up");
-    servicesScroll.style.marginLeft = "-200%";
-})
-
-fourthBtn.addEventListener("click", ()=>{
-    servicesOptions.classList.add("services-options__up");
     servicesScroll.style.marginLeft = "-300%";
 })
+
+
 
 
 for(let i = 0; i < 4; i++){
