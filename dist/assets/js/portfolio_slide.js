@@ -156,8 +156,6 @@ const fillProjectSlides = () => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects1.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -178,12 +176,11 @@ const fillProjectSlides = () => {
 
         innerslides1.appendChild(node);
     })
+
     projects2.map((project) => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects2.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -209,8 +206,6 @@ const fillProjectSlides = () => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects3.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -236,8 +231,6 @@ const fillProjectSlides = () => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects4.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -392,15 +385,18 @@ const setPressedStyle = (index) => {
 const checkStorage = () => {
     let serviceSet = window.localStorage.getItem("service")
     let projectSet = window.localStorage.getItem("project")
+    console.log(serviceSet, projectSet);
+
     if (serviceSet && projectSet) {
-        projectPressed(-33.333 * serviceSet, serviceSet);
+        projectPressed(-25 * serviceSet, serviceSet);
         setProject(serviceSet, projectSet);
     }
-    window.localStorage.removeItem("service")
-    window.localStorage.removeItem("project")
+    // window.localStorage.removeItem("service")
+    // window.localStorage.removeItem("project")
 }
 
 const setProject = (serviceSet, projectSet) => {
+
     if (serviceSet == 0) {
         if (projectSet == 2) innerSlideRight1();
         if (projectSet == 3) {
@@ -420,6 +416,14 @@ const setProject = (serviceSet, projectSet) => {
         if (projectSet == 3) {
             innerSlideRight3();
             innerSlideRight3();
+        }
+    }
+
+    if (serviceSet == 3) {
+        if (projectSet == 2) innerSlideRight4();
+        if (projectSet == 3) {
+            innerSlideRight4();
+            innerSlideRight4();
         }
     }
 }

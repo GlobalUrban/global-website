@@ -17,6 +17,10 @@ const communications = document.getElementById("communications");
 const design = document.getElementById("design");
 const projectManagement = document.getElementById("project-management");
 
+// Get Project Managment Links //
+let Plink1 = document.getElementById("p-services-1");
+let Plink2 = document.getElementById("p-services-2");
+let Plink3 = document.getElementById("p-services-3");
 // Get Grant Writting links for projects
 let Glink1 = document.getElementById("g-services-1")
 let Glink2 = document.getElementById("g-services-2")
@@ -30,48 +34,54 @@ let Dlink1 = document.getElementById("d-services-1")
 let Dlink2 = document.getElementById("d-services-2")
 let Dlink3 = document.getElementById("d-services-3")
 
+
 const setProjectToOpen = (service, project) => {
     window.localStorage.setItem("service", service)
     window.localStorage.setItem("project", project)
+    console.log(window.localStorage.getItem("service" + "projects"));
 }
-projectManagementBtn.addEventListener("click", ()=>{
+
+projectManagementBtn.addEventListener("click", () => {
     servicesOptions.classList.add("services-options__up");
     servicesScroll.style.marginLeft = "0%";
 })
 
-grantWritingBtn.addEventListener("click", ()=>{
+grantWritingBtn.addEventListener("click", () => {
     servicesOptions.classList.add("services-options__up");
     servicesScroll.style.marginLeft = "-100%";
 });
 
-communicationsBtn.addEventListener("click", ()=>{
+communicationsBtn.addEventListener("click", () => {
     servicesOptions.classList.add("services-options__up");
     servicesScroll.style.marginLeft = "-200%";
 })
 
-designBtn.addEventListener("click", ()=>{
+designBtn.addEventListener("click", () => {
     servicesOptions.classList.add("services-options__up");
     servicesScroll.style.marginLeft = "-300%";
 })
 
 
 
-
-for(let i = 0; i < 4; i++){
-    btnBack[i].addEventListener("click", ()=>{
+for (let i = 0; i < 4; i++) {
+    btnBack[i].addEventListener("click", () => {
         servicesOptions.classList.remove("services-options__up");
         servicesScroll.style.marginLeft = "0%";
     })
 }
 
-Glink1.addEventListener("click", ()=>{setProjectToOpen(0, 1)})
-Glink2.addEventListener("click", ()=>{setProjectToOpen(0, 2)})
-Glink3.addEventListener("click", ()=>{setProjectToOpen(0, 3)})
+Glink1.addEventListener("click", () => { setProjectToOpen(0, 1) })
+Glink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
+Glink3.addEventListener("click", () => { setProjectToOpen(0, 3) })
 
-Clink1.addEventListener("click", ()=>{setProjectToOpen(1, 1)})
-Clink2.addEventListener("click", ()=>{setProjectToOpen(1, 2)})
-Clink3.addEventListener("click", ()=>{setProjectToOpen(1, 3)})
+Clink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
+Clink2.addEventListener("click", () => { setProjectToOpen(1, 2) })
+Clink3.addEventListener("click", () => { setProjectToOpen(1, 3) })
 
-Dlink1.addEventListener("click", ()=>{setProjectToOpen(2, 1)})
-Dlink2.addEventListener("click", ()=>{setProjectToOpen(2, 2)})
-Dlink3.addEventListener("click", ()=>{setProjectToOpen(2, 3)})
+Dlink1.addEventListener("click", () => { setProjectToOpen(2, 1) })
+Dlink2.addEventListener("click", () => { setProjectToOpen(2, 2) })
+Dlink3.addEventListener("click", () => { setProjectToOpen(2, 3) })
+
+Plink1.addEventListener("click", () => { setProjectToOpen(3, 1) })
+Plink2.addEventListener("click", () => { setProjectToOpen(3, 2) })
+Plink3.addEventListener("click", () => { setProjectToOpen(3, 3) })
