@@ -34,6 +34,18 @@ const projects3 = [
     'City of La Puente Social Media, Web Development and Graphic Design Services',
 ]
 
+const projects4 = [
+    // Con tirro //
+    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+
+    'City of La Puente Social Media, Web Development and Graphic Design Services',
+    'City of San Luis Obispo Graphic Design and Motion Graphics Services',
+    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+
+    // Con tirro //
+    'City of La Puente Social Media, Web Development and Graphic Design Services',
+]
+
 // Descriptions
 const d1 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -44,6 +56,7 @@ const d1 = [
 
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 ]
+
 const d2 = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 
@@ -64,20 +77,32 @@ const d3 = [
     'Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation..',
 ]
 
+const d4 = [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+
+    'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
+    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
+    "Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation.",
+
+    'Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation..',
+]
 
 // Controllers for movement
 let amountMoved1 = 1;
 let amountMoved2 = 1;
 let amountMoved3 = 1;
+let amountMoved4 = 1;
 let portfolioSelected = 0;
 
-// Image routes //
+// IMAGE ROUTES //
+
+// Image Cover //
 const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
-// const imgRouteCover = "../img/portfolio/cover/Portfolio-grant-writing-client-"
 const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
 const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
 const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
 
+// Content Image //
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
 const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-pic-"
 const imgRouteContentCom = "../img/portfolio/content/reduced/Portfolio-communications-client-"
@@ -87,6 +112,7 @@ const imgRouteContentDig = "../img/portfolio/content/reduced/Portfolio-design-cl
 let btn1 = document.getElementById('btn-1')
 let btn2 = document.getElementById('btn-2')
 let btn3 = document.getElementById('btn-3')
+let btn4 = document.getElementById('btn-4')
 
 // Buttons for inner slides
 let btnl1 = document.getElementById('btn-left-1')
@@ -98,13 +124,16 @@ let btnr2 = document.getElementById('btn-right-2')
 let btnl3 = document.getElementById('btn-left-3')
 let btnr3 = document.getElementById('btn-right-3')
 
+let btnl4 = document.getElementById('btn-left-4')
+let btnr4 = document.getElementById('btn-right-4')
+
 
 // Handlers for slides containers
 let projectSlides = document.getElementById('p-slides')
-
 let innerslides1 = document.getElementById('innerslides-1');
 let innerslides2 = document.getElementById('innerslides-2');
 let innerslides3 = document.getElementById('innerslides-3');
+let innerslides4 = document.getElementById('innerslides-4');
 
 // Handlers for info
 let inforContainer = document.getElementById('info-container');
@@ -175,6 +204,7 @@ const fillProjectSlides = () => {
 
         innerslides2.appendChild(node);
     })
+
     projects3.map((project) => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
@@ -201,6 +231,33 @@ const fillProjectSlides = () => {
 
         innerslides3.appendChild(node);
     })
+
+    projects4.map((project) => {
+        const node = document.createElement("div");
+        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+        node.id = 'iner-' + projects4.indexOf(project);
+        node.style.border = 'solid';
+        node.style.borderColor = 'black';
+
+        //  span for inner text
+        const span = document.createElement("span");
+        span.classList.add('inner-slides-text-styles')
+        const text = document.createTextNode(project)
+        span.appendChild(text)
+        // node.appendChild(span)
+
+
+        // Img for inner slides
+        const node_img = document.createElement("img");
+        node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.png';
+        node_img.alt = 'Team member';
+        node_img.style.objectFit = 'cover';
+        node_img.style.width = '100%';
+        node_img.style.height = '100%';
+        node.appendChild(node_img)
+
+        innerslides4.appendChild(node);
+    })
 }
 
 const styleInnerSlidesContainer = () => {
@@ -213,6 +270,8 @@ const styleInnerSlidesContainer = () => {
     document.getElementById('innerslides-3').style.width = projects3.length * 100 + '%';
     document.getElementById('innerslides-3').style.transform = 'translate(-' + 80 * amountMoved3 / projects3.length + '%, 0%)'
 
+    document.getElementById('innerslides-4').style.width = projects4.length * 100 + '%';
+    document.getElementById('innerslides-4').style.transform = 'translate(-' + 80 * amountMoved3 / projects4.length + '%, 0%)'
 }
 
 const innerSlideRight1 = () => {
@@ -225,6 +284,7 @@ const innerSlideRight1 = () => {
     // console.log(amountMoved1)
     setOnInfoField();
 }
+
 const innerSlideLeft1 = () => {
     // if (amountMoved1 <= projects1.length - 2) btnr1.style.display = 'block'
     if (amountMoved1 == 1) {
@@ -267,7 +327,23 @@ const innerSlideLeft3 = () => {
     setOnInfoField();
 }
 
-const setOnInfoField = (project, inner) => {
+const innerSlideRight4 = () => {
+    if (amountMoved4 > projects4.length - 3) amountMoved4 = -0;
+    amountMoved4 += 1;
+    innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
+    // console.log(amountMoved3);
+    setOnInfoField();
+}
+
+const innerSlideLeft4 = () => {
+    if (amountMoved4 == 1) amountMoved4 = 4;
+    amountMoved4 -= 1;
+    innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
+    // console.log(amountMoved3);
+    setOnInfoField();
+}
+
+const setOnInfoField = () => {
     if (portfolioSelected == 0) {
         tittle.innerHTML = projects1[amountMoved1]
         p.innerHTML = d1[amountMoved1]
@@ -288,6 +364,13 @@ const setOnInfoField = (project, inner) => {
         let index = amountMoved3 + 1;
         img.src = imgRouteContentDig + index + '.png';
     }
+
+    if (portfolioSelected == 3) {
+        tittle.innerHTML = projects4[amountMoved4]
+        p.innerHTML = d4[amountMoved4]
+        let index = amountMoved4 + 1;
+        img.src = imgRouteContentDig + index + '.png';
+    }
 }
 
 const setPressedStyle = (index) => {
@@ -295,6 +378,7 @@ const setPressedStyle = (index) => {
     generalButtons[0].classList.remove('btn-general-pressed')
     generalButtons[1].classList.remove('btn-general-pressed')
     generalButtons[2].classList.remove('btn-general-pressed')
+    generalButtons[3].classList.remove('btn-general-pressed')
     generalButtons[index].classList.add('btn-general-pressed')
 
     let underlinePressed = document.getElementById('underline-pressed');
@@ -340,10 +424,11 @@ const setProject = (serviceSet, projectSet) => {
     }
 }
 
-// Geenal buttons
+// General buttons
 btn1.addEventListener('click', () => { projectPressed(-0, 0) })
-btn2.addEventListener('click', () => { projectPressed(-33.333, 1) })
-btn3.addEventListener('click', () => { projectPressed(-33.333 * 2, 2) })
+btn2.addEventListener('click', () => { projectPressed(-25, 1) })
+btn3.addEventListener('click', () => { projectPressed(-25 * 2, 2) })
+btn4.addEventListener('click', () => { projectPressed(-25 * 3, 3) })
 
 // Inner buttons
 btnr1.addEventListener('click', innerSlideRight1)
@@ -354,6 +439,9 @@ btnl2.addEventListener('click', innerSlideLeft2)
 
 btnr3.addEventListener('click', innerSlideRight3)
 btnl3.addEventListener('click', innerSlideLeft3)
+
+btnr4.addEventListener('click', innerSlideRight4)
+btnl4.addEventListener('click', innerSlideLeft4)
 
 window.addEventListener('load', styleInnerSlidesContainer)
 window.addEventListener('load', fillProjectSlides)

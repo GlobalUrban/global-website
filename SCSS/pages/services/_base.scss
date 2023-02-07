@@ -25,6 +25,7 @@
       width: 100%;
       height: 65%;
       @include flex-between(row);
+      order: 2;
 
       @include breakpoint("Tablet-L") {
         height: 77%;

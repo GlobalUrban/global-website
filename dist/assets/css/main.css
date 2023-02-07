@@ -1170,6 +1170,7 @@ header .selector-pressed {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  order: 2;
 }
 @media screen and (max-width: 1024px) {
   .services .services-options .services-options__top {
@@ -1907,7 +1908,7 @@ header .selector-pressed {
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides {
   height: 80%;
-  width: 300%;
+  width: 400%;
   overflow-x: hidden;
   display: flex;
   flex-direction: row;
@@ -1979,24 +1980,6 @@ header .selector-pressed {
   align-items: center;
   position: relative;
 }
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-0 {
-  background-color: gainsboro;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-1 {
-  background-color: pink;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-2 {
-  background-color: cyan;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-3 {
-  background-color: black;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-4 {
-  background-color: goldenrod;
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-projects-slide-innerslides #iner-5 {
-  background-color: blueviolet;
-}
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
   height: 20%;
   padding-bottom: 2%;
@@ -2017,12 +2000,12 @@ header .selector-pressed {
 @media screen and (max-width: 1024px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
     padding-bottom: 0;
+    overflow: scroll;
   }
 }
 @media screen and (max-width: 768px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container {
     padding-bottom: 0;
-    overflow: scroll;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2047,13 +2030,14 @@ header .selector-pressed {
 }
 @media screen and (max-width: 768px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
-    width: 700px;
-    margin-left: 150px;
+    width: 800px;
+    margin-left: 250px;
   }
 }
 @media screen and (max-width: 480px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns {
-    margin-left: 300px;
+    width: 500px;
+    margin-left: 500px;
   }
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns .portfolio-slider-projects-btn {
@@ -2063,41 +2047,30 @@ header .selector-pressed {
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
+  margin: 0 7px;
+}
+.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns .portfolio-slider-projects-btn:hover {
+  text-decoration: underline;
+}
+.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns .portfolio-slider-projects-btn:focus {
+  text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-btns .portfolio-slider-projects-btn {
     font-weight: 300;
     border: solid grey 0.2px;
-    padding: 2% 3%;
+    padding: 2% 0%;
+    min-width: 210px;
     border-radius: 5px;
     box-shadow: 3px 7px 13px -7px rgba(0, 0, 0, 0.48);
   }
 }
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-underline {
-  height: 1px;
-  background-color: black;
-  transition: all 1s;
-}
-@media screen and (max-width: 1024px) {
-  .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .portfolio-slider__btn-container-underline {
-    display: none;
-  }
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .btn-general-pressed-0 {
-  margin-right: 8%;
-  width: 12%;
-  transform: translateX(-165%);
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .btn-general-pressed-1 {
-  width: 14%;
-  transform: translateX(-20%);
-}
-.portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider__btn-container .btn-general-pressed-2 {
-  width: 15%;
-  transform: translateX(145%);
+.portfolio .portfolio-general-container .portfolio-slider-projects-container .btn-general-pressed {
+  text-decoration: underline;
 }
 @media screen and (max-width: 1024px) {
   .portfolio .portfolio-general-container .portfolio-slider-projects-container .btn-general-pressed {
+    text-decoration: none;
     background: rgb(36, 36, 36);
     color: white;
   }
