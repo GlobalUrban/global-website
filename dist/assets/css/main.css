@@ -1479,7 +1479,7 @@ header .selector-pressed {
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer {
   position: absolute;
-  background: rgba(0, 0, 0, 0.459);
+  background: rgba(0, 0, 0, 0.54);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1529,6 +1529,8 @@ header .selector-pressed {
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content span {
   color: white;
   text-align: center;
+  font-size: 18px;
+  font-weight: 100;
 }
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-bottom .service-project {
