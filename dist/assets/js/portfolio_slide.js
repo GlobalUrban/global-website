@@ -2,89 +2,107 @@
 // Projects
 const projects1 = [
     // Con tirro //
-    'Valley Vista Grant Writing Services',
+    'City of Huntington Park’s CalHome Program Management',
 
-    'City of Bell Garden’s Grant Writing Services',
-    'City of Azusa’s Calhome Program Administration and Grant Writing Services',
-    'Valley Vista Grant Writing Services',
+    'City of Bell Garden’s CalHome Program Management',
+    'City of Azusa’s CalHome Program Management',
+    'City of Huntington Park’s CalHome Program Management',
 
     // Con tirro //
-    'City of Bell Garden’s Grant Writing Services',
+    'City of Bell Garden’s CalHome Program Management',
 ]
+
 const projects2 = [
     // Con tirro //
-    'Stantec Stakeholder Engagement and Community Outreach Services',
+    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
 
-    'City of Cudahy Crisis Management and Public Relations Services',
-    'City of Hawaiians Gardens Community Outreach Services',
-    'Stantec Stakeholder Engagement and Community Outreach Services',
+    'City of Lynwood Equitable Communities Revitalization Grant',
+    "First 5 LA Commission Children's Dental Care Program ",
+    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
 
     // Con tirro //
-    'City of Cudahy Crisis Management and Public Relations Services',
+    'City of Lynwood Equitable Communities Revitalization Grant',
 ]
+
 const projects3 = [
     // Con tirro //
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'Department of Water Resources Stakeholder Engagement and Community Outreach',
 
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
-    'City of San Luis Obispo Graphic Design and Motion Graphics Services',
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
+    'City of Montebello Community Outreach',
+    'Department of Water Resources Stakeholder Engagement and Community Outreach',
 
     // Con tirro //
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
+    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
 ]
 
 const projects4 = [
     // Con tirro //
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of La Puente Graphic Design, Social Media, and Web Development',
 
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
-    'City of San Luis Obispo Graphic Design and Motion Graphics Services',
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of El Monte Graphic Design and Social Media',
+    'City of Rosemead Newsletter Design ',
+    'City of La Puente Graphic Design, Social Media, and Web Development',
 
     // Con tirro //
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
+    'City of El Monte Graphic Design and Social Media',
 ]
 
 // Descriptions
 const d1 = [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
 
-    'Our goal, along with the City of Bell Gardens, is to seek benefits for the community, which is why we create proposals for projects that can help the City. By working together, we get the best concessions for its residents.',
-    "Working hand in hand with our clients is what we enjoy the most, and that's why we do our best for them, such as managing the CalHome Program and ensuring its residents' reach, effectiveness, and availability. Furthermore, we support the City by creating State and Federal funds proposals.",
-    'Grant Writing are two words that mean a lot to us, and that’s why we work with Valley Vista Services to help them achieve different contracts throughout the State, providing top-quality waste recollection and management service.',
 
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
+
+    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident.",
+
+    'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
+
+
+    'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
 ]
 
 const d2 = [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 
-    'The key to public relations management is to support emergency crises at unnoticed times. Global Urban developed the strategic plan and executed responses in support of, and on behalf of, the City of Cudahy.',
-    "Global assisted the City by preparing a three-day charrette workshop with the residents in order to develop a Community-Based Planning, where they engaged the community and obtained their input as to the types of recreational features that they wanted to see in their community. These meetings maximized the points allocated to the Proposition 68 project application that was submitted.",
-    "We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.",
 
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    `Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Lorem Ipsum</h3>`,
+
+    "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Lorem Ipsum</h3>",
+
+    "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Lorem Ipsum</h3>",
+
+
+    'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 ]
 
 const d3 = [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.',
 
-    'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
-    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
-    "Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation.",
 
-    'Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation..',
+    'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
+
+    "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.",
+
+    "We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.",
+
+
+    'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 ]
 
 const d4 = [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-
     'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
-    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
-    "Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation.",
 
-    'Our experience with the CalHome Program makes the City of Huntington Park rely on our work to achieve its commitment to the community. Our team is qualified to develop plans, target the right audience and oversee a successful launch for program implementation..',
+
+    'Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.',
+
+    "Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.",
+
+    "A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.",
+
+
+    'Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.',
 ]
 
 // Controllers for movement
@@ -156,8 +174,6 @@ const fillProjectSlides = () => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects1.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -170,7 +186,7 @@ const fillProjectSlides = () => {
         // Img for inner slides
         const node_img = document.createElement("img");
         node_img.src = imgRouteCoverGrant + projects1.indexOf(project) + '.png';
-        node_img.alt = 'Team member';
+        node_img.alt = 'Project Img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
         node_img.style.height = '100%';
@@ -178,12 +194,11 @@ const fillProjectSlides = () => {
 
         innerslides1.appendChild(node);
     })
+
     projects2.map((project) => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects2.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -209,8 +224,6 @@ const fillProjectSlides = () => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects3.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -223,7 +236,7 @@ const fillProjectSlides = () => {
         // Img for inner slides
         const node_img = document.createElement("img");
         node_img.src = imgRouteCoverDig + projects3.indexOf(project) + '.png';
-        node_img.alt = 'Team member';
+        node_img.alt = 'cover img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
         node_img.style.height = '100%';
@@ -236,8 +249,6 @@ const fillProjectSlides = () => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
         node.id = 'iner-' + projects4.indexOf(project);
-        node.style.border = 'solid';
-        node.style.borderColor = 'black';
 
         //  span for inner text
         const span = document.createElement("span");
@@ -392,15 +403,18 @@ const setPressedStyle = (index) => {
 const checkStorage = () => {
     let serviceSet = window.localStorage.getItem("service")
     let projectSet = window.localStorage.getItem("project")
+    console.log(serviceSet, projectSet);
+
     if (serviceSet && projectSet) {
-        projectPressed(-33.333 * serviceSet, serviceSet);
+        projectPressed(-25 * serviceSet, serviceSet);
         setProject(serviceSet, projectSet);
     }
-    window.localStorage.removeItem("service")
-    window.localStorage.removeItem("project")
+    // window.localStorage.removeItem("service")
+    // window.localStorage.removeItem("project")
 }
 
 const setProject = (serviceSet, projectSet) => {
+
     if (serviceSet == 0) {
         if (projectSet == 2) innerSlideRight1();
         if (projectSet == 3) {
@@ -420,6 +434,14 @@ const setProject = (serviceSet, projectSet) => {
         if (projectSet == 3) {
             innerSlideRight3();
             innerSlideRight3();
+        }
+    }
+
+    if (serviceSet == 3) {
+        if (projectSet == 2) innerSlideRight4();
+        if (projectSet == 3) {
+            innerSlideRight4();
+            innerSlideRight4();
         }
     }
 }

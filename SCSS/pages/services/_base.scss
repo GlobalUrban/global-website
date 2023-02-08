@@ -353,7 +353,7 @@
             // Opacity Layer //
             .opacity-layer {
               position: absolute;
-              background: rgba(0, 0, 0, 0.459);
+              background: rgba(0, 0, 0, 0.54);
               @include img-cover;
               z-index: 1;
               opacity: 0;
@@ -397,6 +397,8 @@
                 span {
                   color: white;
                   text-align: center;
+                  font-size: 18px;
+                  font-weight: 100;
                 }
               }
             }
