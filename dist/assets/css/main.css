@@ -274,7 +274,6 @@ header .selector-pressed {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 0;
@@ -479,34 +478,20 @@ header .selector-pressed {
 }
 
 .css-animated:hover figure {
-  -webkit-animation: cyclePhotos 2.8s linear infinite;
-          animation: cyclePhotos 2.8s linear infinite;
+  animation: cyclePhotos 2.8s linear infinite;
 }
 .css-animated figure:nth-child(1) {
   opacity: 1;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 .css-animated figure:nth-child(2) {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  animation-delay: 1.4s;
 }
 .css-animated figure:nth-child(3) {
-  -webkit-animation-delay: 2.1s;
-          animation-delay: 2.1s;
+  animation-delay: 2.1s;
 }
 .css-animated figure:nth-child(4) {
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-}
-
-@-webkit-keyframes cyclePhotos {
-  0%, 25% {
-    opacity: 1;
-  }
-  26%, 100% {
-    opacity: 0;
-  }
+  animation-delay: 2.8s;
 }
 
 @keyframes cyclePhotos {
@@ -541,7 +526,6 @@ header .selector-pressed {
   width: 100%;
   height: 100vh;
   z-index: 0;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   display: flex;
@@ -748,9 +732,6 @@ header .selector-pressed {
 .container .container-bottom .cont-form form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.751);
 }
-.container .container-bottom .cont-form form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.751);
-}
 .container .container-bottom .cont-form form textarea::placeholder {
   color: rgba(255, 255, 255, 0.751);
 }
@@ -773,9 +754,6 @@ header .selector-pressed {
   color: white;
 }
 .container .container-bottom .cont-form form .input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.751);
-}
-.container .container-bottom .cont-form form .input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.751);
 }
 .container .container-bottom .cont-form form .input::placeholder {
@@ -1068,9 +1046,6 @@ header .selector-pressed {
 .form-pop-up-container .form-pop-up .cont-form form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.751);
 }
-.form-pop-up-container .form-pop-up .cont-form form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.751);
-}
 .form-pop-up-container .form-pop-up .cont-form form textarea::placeholder {
   color: rgba(255, 255, 255, 0.751);
 }
@@ -1099,9 +1074,6 @@ header .selector-pressed {
   transition: all 0.2s;
 }
 .form-pop-up-container .form-pop-up .cont-form form .input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.751);
-}
-.form-pop-up-container .form-pop-up .cont-form form .input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.751);
 }
 .form-pop-up-container .form-pop-up .cont-form form .input::placeholder {
@@ -1165,7 +1137,7 @@ header .selector-pressed {
 }
 .services .services-options .services-options__top {
   width: 100%;
-  height: 65%;
+  height: 60%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -1250,7 +1222,7 @@ header .selector-pressed {
 }
 .services .services-options .services-options__bottom {
   width: 100%;
-  height: 35%;
+  height: 40%;
   background: #000;
   width: 100%;
   position: relative;
