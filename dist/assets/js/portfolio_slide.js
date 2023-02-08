@@ -2,48 +2,50 @@
 // Projects
 const projects1 = [
     // Con tirro //
-    'Valley Vista Grant Writing Services',
+    'City of Huntington Park’s CalHome Program Management',
 
-    'City of Bell Garden’s Grant Writing Services',
-    'City of Azusa’s Calhome Program Administration and Grant Writing Services',
-    'Valley Vista Grant Writing Services',
+    'City of Bell Garden’s CalHome Program Management',
+    'City of Azusa’s CalHome Program Management',
+    'City of Huntington Park’s CalHome Program Management',
 
     // Con tirro //
-    'City of Bell Garden’s Grant Writing Services',
+    'City of Bell Garden’s CalHome Program Management',
 ]
+
 const projects2 = [
     // Con tirro //
-    'Stantec Stakeholder Engagement and Community Outreach Services',
+    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
 
-    'City of Cudahy Crisis Management and Public Relations Services',
-    'City of Hawaiians Gardens Community Outreach Services',
-    'Stantec Stakeholder Engagement and Community Outreach Services',
+    'City of Lynwood Equitable Communities Revitalization Grant',
+    "First 5 LA Commission Children's Dental Care Program ",
+    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
 
     // Con tirro //
-    'City of Cudahy Crisis Management and Public Relations Services',
+    'City of Lynwood Equitable Communities Revitalization Grant',
 ]
+
 const projects3 = [
     // Con tirro //
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'Department of Water Resources Stakeholder Engagement and Community Outreach',
 
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
-    'City of San Luis Obispo Graphic Design and Motion Graphics Services',
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
+    'City of Montebello Community Outreach',
+    'Department of Water Resources Stakeholder Engagement and Community Outreach',
 
     // Con tirro //
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
+    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
 ]
 
 const projects4 = [
     // Con tirro //
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of La Puente Graphic Design, Social Media, and Web Development',
 
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
-    'City of San Luis Obispo Graphic Design and Motion Graphics Services',
-    'City of Huntington Park Social Media, Web Development and Graphic Design Services',
+    'City of El Monte Graphic Design and Social Media',
+    'City of Rosemead Newsletter Design ',
+    'City of La Puente Graphic Design, Social Media, and Web Development',
 
     // Con tirro //
-    'City of La Puente Social Media, Web Development and Graphic Design Services',
+    'City of El Monte Graphic Design and Social Media',
 ]
 
 // Descriptions
@@ -168,7 +170,7 @@ const fillProjectSlides = () => {
         // Img for inner slides
         const node_img = document.createElement("img");
         node_img.src = imgRouteCoverGrant + projects1.indexOf(project) + '.png';
-        node_img.alt = 'Team member';
+        node_img.alt = 'Project Img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
         node_img.style.height = '100%';
@@ -218,7 +220,7 @@ const fillProjectSlides = () => {
         // Img for inner slides
         const node_img = document.createElement("img");
         node_img.src = imgRouteCoverDig + projects3.indexOf(project) + '.png';
-        node_img.alt = 'Team member';
+        node_img.alt = 'cover img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
         node_img.style.height = '100%';
