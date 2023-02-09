@@ -238,7 +238,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverDig + projects3.indexOf(project) + '.jpeg';
+        node_img.src = imgRouteCoverCom + projects3.indexOf(project) + '.jpeg';
         node_img.alt = 'cover img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -377,7 +377,7 @@ const setOnInfoField = () => {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
         let index = amountMoved3 + 1;
-        img.src = imgRouteContentDig + index + '.jpeg';
+        img.src = imgRouteContentCom + index + '.jpeg';
     }
 
     if (portfolioSelected == 3) {
