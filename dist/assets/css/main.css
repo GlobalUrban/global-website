@@ -1321,6 +1321,9 @@ header .selector-pressed {
     height: 35%;
   }
 }
+.services .services-content .services-scroll .service .service-top .back-communications {
+  margin-left: 35vw;
+}
 .services .services-content .services-scroll .service .service-top .communication-order1 {
   order: 1;
 }
@@ -1745,6 +1748,7 @@ header .selector-pressed {
   height: 400px;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 @media screen and (max-width: 1400px) {
   .about-us .about-us__team .slider-automatic-container {
@@ -1840,6 +1844,35 @@ header .selector-pressed {
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide-mobile .title-hover-hover {
   transform: translateY(0%);
 }
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl {
+  position: absolute;
+  transform: translateY(-400%);
+  margin-left: 1%;
+  width: 50px;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl {
+    transform: translateY(-300%);
+  }
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr {
+  position: absolute;
+  transform: translateY(-400%) rotate(180deg);
+  margin-right: 1%;
+  right: 0;
+  width: 50px;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr {
+    transform: translateY(-300%) rotate(180deg);
+  }
+}
 
 .portfolio {
   width: 100%;
@@ -1916,7 +1949,7 @@ header .selector-pressed {
   height: 100%;
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-project-slide__cont-btn .portfolio-slider-projects-slide-btn {
-  width: 50px;
+  width: 60px;
   background: none;
   outline: none;
   border: none;
