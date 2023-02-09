@@ -40,7 +40,7 @@ let teamMembers2 = [
     {name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration'},
     {name: 'Ximena Morazan', charge: 'Associate Social Media Strategist'},
     {name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics'},
-    {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
+    // {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
     {name: 'Edgardo Valencia', charge: 'Front-End Developer'},
     {name: 'Francisco Ortiz', charge: 'Back-End Developer'},
 ]
@@ -113,8 +113,10 @@ const appendMember = () => {
         const node_img = document.createElement("img");
         node.classList.add(classToApply);
         node.id = 's-' + (teamMembers.indexOf(member)).toString();
-        node_img.src = imgRouteGrant + teamMembers.indexOf(member) + '.jpg';
+        node_img.src = imgRouteGrant + teamMembers.indexOf(member) + '.jpeg';
         node_img.alt = 'Team member';
+        node_img.style.width = "100%";
+        node_img.style.height = "100%";
         node_img.style.objectFit = 'cover';
         node.appendChild(node_img);
 
@@ -140,14 +142,18 @@ const appendMember = () => {
 
         slides.appendChild(node);
     })
+
+
     teamMembers2.map((member, index) => {
         console.log('-----')
         const node = document.createElement("div");
         const node_img = document.createElement("img");
         node.classList.add(classToApply);
         node.id = 's-' + (teamMembers2.indexOf(member)).toString();
-        node_img.src = imgRouteDig + teamMembers2.indexOf(member) + '.jpg';
+        node_img.src = imgRouteDig + teamMembers2.indexOf(member) + '.jpeg';
         node_img.alt = 'Team member';
+        node_img.style.width = "100%";
+        node_img.style.height = "100%";
         node_img.style.objectFit = 'cover';
         node.appendChild(node_img);
 
