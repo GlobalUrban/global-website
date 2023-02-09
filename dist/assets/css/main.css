@@ -1846,8 +1846,12 @@ header .selector-pressed {
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl {
   position: absolute;
-  transform: translateY(-350%);
+  transform: translateY(-400%);
+  margin-left: 1%;
   width: 50px;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl {
@@ -1856,9 +1860,13 @@ header .selector-pressed {
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr {
   position: absolute;
-  transform: translateY(-350%) rotate(180deg);
+  transform: translateY(-400%) rotate(180deg);
+  margin-right: 1%;
   right: 0;
   width: 50px;
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr {

@@ -290,8 +290,14 @@
 
             .slider-automatic-container-arrowl {
                 position: absolute;
-                transform: translateY(-350%);
+                transform: translateY(-400%);
+                margin-left: 1%;
                 width: 50px;
+                
+
+                &:hover {
+                    cursor: pointer;
+                }
 
                 @include breakpoint(Phone-L) {
                     transform: translateY(-300%);
@@ -301,9 +307,13 @@
 
             .slider-automatic-container-arrowr {
                 position: absolute;
-                transform: translateY(-350%) rotate(180deg);
+                transform: translateY(-400%) rotate(180deg);
+                margin-right: 1%;
                 right: 0;
                 width: 50px;
+                &:hover {
+                    cursor: pointer;
+                }
 
                 @include breakpoint(Phone-L) {
                     transform: translateY(-300%) rotate(180deg);
