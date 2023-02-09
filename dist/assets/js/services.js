@@ -70,18 +70,19 @@ for (let i = 0; i < 4; i++) {
     })
 }
 
-Glink1.addEventListener("click", () => { setProjectToOpen(0, 1) })
-Glink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
-Glink3.addEventListener("click", () => { setProjectToOpen(0, 3) })
+Plink1.addEventListener("click", () => { setProjectToOpen(0, 1) })
+Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
+Plink3.addEventListener("click", () => { setProjectToOpen(0, 3) })
 
-Clink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
-Clink2.addEventListener("click", () => { setProjectToOpen(1, 2) })
-Clink3.addEventListener("click", () => { setProjectToOpen(1, 3) })
+Glink1.addEventListener("click", () => { setProjectToOpen(1, 3) })
+Glink2.addEventListener("click", () => { setProjectToOpen(1, 2) })
+Glink3.addEventListener("click", () => { setProjectToOpen(1, 1) })
 
-Dlink1.addEventListener("click", () => { setProjectToOpen(2, 1) })
-Dlink2.addEventListener("click", () => { setProjectToOpen(2, 2) })
-Dlink3.addEventListener("click", () => { setProjectToOpen(2, 3) })
+Clink1.addEventListener("click", () => { setProjectToOpen(2, 1) })
+Clink2.addEventListener("click", () => { setProjectToOpen(2, 2) })
+Clink3.addEventListener("click", () => { setProjectToOpen(2, 3) })
 
-Plink1.addEventListener("click", () => { setProjectToOpen(3, 1) })
-Plink2.addEventListener("click", () => { setProjectToOpen(3, 2) })
-Plink3.addEventListener("click", () => { setProjectToOpen(3, 3) })
+Dlink1.addEventListener("click", () => { setProjectToOpen(3, 1) })
+Dlink2.addEventListener("click", () => { setProjectToOpen(3, 2) })
+Dlink3.addEventListener("click", () => { setProjectToOpen(3, 3) })
+

@@ -123,7 +123,7 @@ const imgRouteCoverProg = "../img/portfolio/cover/reduced/Portfolio-program-clie
 
 // Content Image //
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
-const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-pic-"
+const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-"
 const imgRouteContentCom = "../img/portfolio/content/reduced/Portfolio-communications-client-"
 const imgRouteContentDig = "../img/portfolio/content/reduced/Portfolio-design-client-"
 const imgRouteContentProg = "../img/portfolio/content/reduced/Portfolio-program-client-"
@@ -213,7 +213,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverCom + projects2.indexOf(project) + '.jpeg';
+        node_img.src = imgRouteCoverGrant + projects2.indexOf(project) + '.jpeg';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -370,7 +370,7 @@ const setOnInfoField = () => {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
         let index = amountMoved2 + 1;
-        img.src = imgRouteContentCom + index + '.jpeg';
+        img.src = imgRouteContentGrant + index + '.jpeg';
     }
 
     if (portfolioSelected == 2) {
@@ -413,8 +413,8 @@ const checkStorage = () => {
         projectPressed(-25 * serviceSet, serviceSet);
         setProject(serviceSet, projectSet);
     }
-    // window.localStorage.removeItem("service")
-    // window.localStorage.removeItem("project")
+    window.localStorage.removeItem("service")
+    window.localStorage.removeItem("project")
 }
 
 
