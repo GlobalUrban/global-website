@@ -25,22 +25,22 @@ let classToApply = undefined;
 
 let teamMembers = [
     { name: 'Omar Hernandez', charge: 'President & Senior Grant Writer' },
-    { name: 'Cinthia Iniguez', charge: 'Account Executive' },
-    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
-    { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
-    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
     { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
+    { name: 'Cinthia Iniguez', charge: 'Account Executive' },
+    { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
+    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
+    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
 ]
 
 let teamMembers2 = [
     { name: 'Jackeline Landa', charge: 'Art Director' },
     { name: 'Kat Fuentes', charge: 'Creative Manager' },
     { name: 'Angie Mejia', charge: 'Senior Graphic Designer' },
-    { name: 'Hector', charge: 'Senior Web Developer' },
-    { name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production' },
+    { name: 'Don Hector', charge: 'Senior Web Developer' },
     { name: 'Elena Mejia', charge: 'Social Media Strategist' },
-    { name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration' },
+    { name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production' },
     { name: 'Ximena Morazan', charge: 'Associate Social Media Strategist' },
+    { name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration' },
     { name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics' },
     // {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
     { name: 'Edgardo Valencia', charge: 'Front-End Developer' },
