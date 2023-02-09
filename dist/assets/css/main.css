@@ -1748,6 +1748,7 @@ header .selector-pressed {
   height: 400px;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 @media screen and (max-width: 1400px) {
   .about-us .about-us__team .slider-automatic-container {
@@ -1842,6 +1843,27 @@ header .selector-pressed {
 }
 .about-us .about-us__team .slider-automatic-container .slider-automatic-container-slides .slider-automatic-container-slide-mobile .title-hover-hover {
   transform: translateY(0%);
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl {
+  position: absolute;
+  transform: translateY(-350%);
+  width: 50px;
+}
+@media screen and (max-width: 480px) {
+  .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowl {
+    transform: translateY(-300%);
+  }
+}
+.about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr {
+  position: absolute;
+  transform: translateY(-350%) rotate(180deg);
+  right: 0;
+  width: 50px;
+}
+@media screen and (max-width: 480px) {
+  .about-us .about-us__team .slider-automatic-container .slider-automatic-container-arrowr {
+    transform: translateY(-300%) rotate(180deg);
+  }
 }
 
 .portfolio {
