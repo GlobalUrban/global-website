@@ -1735,7 +1735,7 @@ header .selector-pressed {
 }
 @media screen and (max-width: 480px) {
   .about-us .about-us__team .team__cont-title {
-    height: 250px;
+    height: 350px;
   }
 }
 .about-us .about-us__team .team__cont-title img {
