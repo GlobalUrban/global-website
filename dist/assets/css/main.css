@@ -1321,6 +1321,9 @@ header .selector-pressed {
     height: 35%;
   }
 }
+.services .services-content .services-scroll .service .service-top .back-communications {
+  margin-left: 35vw;
+}
 .services .services-content .services-scroll .service .service-top .communication-order1 {
   order: 1;
 }
@@ -1916,7 +1919,7 @@ header .selector-pressed {
   height: 100%;
 }
 .portfolio .portfolio-general-container .portfolio-slider-projects-container .portfolio-slider-projects-slides .portfolio-slider-projects-slide .portfolio-slider-project-slide__cont-btn .portfolio-slider-projects-slide-btn {
-  width: 50px;
+  width: 60px;
   background: none;
   outline: none;
   border: none;
