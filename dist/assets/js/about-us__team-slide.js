@@ -36,7 +36,7 @@ let teamMembers2 = [
     { name: 'Jackeline Landa', charge: 'Art Director' },
     { name: 'Kat Fuentes', charge: 'Creative Manager' },
     { name: 'Angie Mejia', charge: 'Senior Graphic Designer' },
-    { name: 'Don Hector', charge: 'Senior Web Developer' },
+    { name: 'Hector Suarez', charge: 'Senior Web Developer' },
     { name: 'Elena Mejia', charge: 'Social Media Strategist' },
     { name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production' },
     { name: 'Ximena Morazan', charge: 'Associate Social Media Strategist' },
