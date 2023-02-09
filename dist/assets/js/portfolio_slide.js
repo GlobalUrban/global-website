@@ -119,12 +119,14 @@ const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
 const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
 const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
 const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
+const imgRouteCoverProg = "../img/portfolio/cover/reduced/Portfolio-program-client-"
 
 // Content Image //
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
 const imgRouteContentGrant = "../img/portfolio/content/reduced/Portfolio-grant-writing-client-pic-"
 const imgRouteContentCom = "../img/portfolio/content/reduced/Portfolio-communications-client-"
 const imgRouteContentDig = "../img/portfolio/content/reduced/Portfolio-design-client-"
+const imgRouteContentProg = "../img/portfolio/content/reduced/Portfolio-program-client-"
 
 // Buttons for general slides
 let btn1 = document.getElementById('btn-1')
@@ -170,6 +172,7 @@ const projectPressed = (position, portfolio) => {
 }
 
 const fillProjectSlides = () => {
+
     projects1.map((project) => {
         const node = document.createElement("div");
         node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
@@ -185,7 +188,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverGrant + projects1.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverProg + projects1.indexOf(project) + '.jpeg';
         node_img.alt = 'Project Img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -210,7 +213,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverCom + projects2.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverCom + projects2.indexOf(project) + '.jpeg';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -235,7 +238,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverDig + projects3.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverDig + projects3.indexOf(project) + '.jpeg';
         node_img.alt = 'cover img missing';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -260,7 +263,7 @@ const fillProjectSlides = () => {
 
         // Img for inner slides
         const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.png';
+        node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.jpeg';
         node_img.alt = 'Team member';
         node_img.style.objectFit = 'cover';
         node_img.style.width = '100%';
@@ -354,33 +357,34 @@ const innerSlideLeft4 = () => {
     setOnInfoField();
 }
 
+// Content Image //
 const setOnInfoField = () => {
     if (portfolioSelected == 0) {
         tittle.innerHTML = projects1[amountMoved1]
         p.innerHTML = d1[amountMoved1]
         let index = amountMoved1 + 1;
-        img.src = imgRouteContentGrant + index + '.png';
+        img.src = imgRouteContentProg + index + '.jpeg';
     }
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
         let index = amountMoved2 + 1;
-        img.src = imgRouteContentCom + index + '.png';
+        img.src = imgRouteContentCom + index + '.jpeg';
     }
 
     if (portfolioSelected == 2) {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
         let index = amountMoved3 + 1;
-        img.src = imgRouteContentDig + index + '.png';
+        img.src = imgRouteContentDig + index + '.jpeg';
     }
 
     if (portfolioSelected == 3) {
         tittle.innerHTML = projects4[amountMoved4]
         p.innerHTML = d4[amountMoved4]
         let index = amountMoved4 + 1;
-        img.src = imgRouteContentDig + index + '.png';
+        img.src = imgRouteContentDig + index + '.jpeg';
     }
 }
 
@@ -412,6 +416,8 @@ const checkStorage = () => {
     // window.localStorage.removeItem("service")
     // window.localStorage.removeItem("project")
 }
+
+
 
 const setProject = (serviceSet, projectSet) => {
 
