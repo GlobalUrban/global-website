@@ -164,7 +164,7 @@
             @include flexx(row, flex-start, center);
 
             @include breakpoint(Phone-L) {
-                height: 250px
+                height: 350px
             }
 
 
@@ -181,6 +181,9 @@
                     font-weight: 100;
                     font-size: 20px;
                     margin-right: 20px;
+                    // @include breakpoint(Phone-L) {
+                    //     height: 900px;
+                    // }
                 }
             }
         }
