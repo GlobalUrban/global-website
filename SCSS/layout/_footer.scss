@@ -15,7 +15,7 @@ footer {
     }
 
     @include breakpoint("Tablet-M") {
-        height: 1000px;
+        height: 1200px;
     }
 
     // Footer Left //
@@ -63,8 +63,9 @@ footer {
                     width: 90%;
                     gap: 30px;
                     @include flex(column, center);
-                    height: 30.333%;
+                    height: 73.333%;
                 }
+                
 
                 .left-container__top {
                     color: white;
