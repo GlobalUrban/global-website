@@ -2171,7 +2171,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   footer {
-    height: 1000px;
+    height: 1200px;
   }
 }
 footer .footer-left {
@@ -2235,7 +2235,7 @@ footer .footer-left .left-top .left-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30.333%;
+    height: 73.333%;
   }
 }
 footer .footer-left .left-top .left-container .left-container__top {
