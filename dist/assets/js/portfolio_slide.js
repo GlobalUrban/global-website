@@ -2,56 +2,56 @@
 // Projects
 const projects1 = [
     // Con tirro //
-    'City of Huntington Park’s CalHome Program Management',
+    'CalHome Program Management <br/><h3>City of Huntington Park</h3>',
 
-    'City of Bell Garden’s CalHome Program Management',
-    'City of Azusa’s CalHome Program Management',
-    'City of Huntington Park’s CalHome Program Management',
+    'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
+    'CalHome Program Management <br/><h5>City of Azusa</h5>',
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
 
     // Con tirro //
-    'City of Bell Garden’s CalHome Program Management',
+    'CalHome Program Management <br/><h3>City of Bell Gardens</h3>',
 ]
 
 const projects2 = [
     // Con tirro //
-    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
+    'WaterSmart Drought Response Program Grant <br/><h5>Pasadena Water and Power Department</h5>',
 
-    'City of Lynwood Equitable Communities Revitalization Grant',
-    "First 5 LA Commission Children's Dental Care Program ",
-    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
-    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
-    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
+    'Equitable Communities Revitalization Grant <br/><h5>City of Lynwood</h5>',
+    "Children's Dental Care Program <br/><h5>First 5 LA Commission</h5>",
+    'WaterSmart Drought Response Program Grant <br/><h5>Pasadena Water and Power Department</h5>',
+    'Equitable Communities Revitalization Grant <br/><h5>City of Lynwood</h5>',
+    'Equitable Communities Revitalization Grant <br/><h5>City of Lynwood</h5>',
 
     // Con tirro //
-    'City of Lynwood Equitable Communities Revitalization Grant',
+    'Equitable Communities Revitalization Grant <br/><h5>City of Lynwood</h5>',
 ]
 
 const projects3 = [
     // Con tirro //
-    'Department of Water Resources Stakeholder Engagement and Community Outreach',
+    'Pilot Interpretation Program <br/><h5>California Department of Water Resources</h5>',
 
-    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
-    'City of Montebello Community Outreach',
-    'Department of Water Resources Stakeholder Engagement and Community Outreach',
-    'Department of Water Resources Stakeholder Engagement and Community Outreach',
-    'Department of Water Resources Stakeholder Engagement and Community Outreach',
+    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
+    'Community Outreach <br/><h5>City of Montebello</h5>',
+    'Pilot Interpretation Program <br/><h5>California Department of Water Resources</h5>',
+    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
+    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
 
     // Con tirro //
-    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
+    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
 ]
 
 const projects4 = [
     // Con tirro //
-    'City of La Puente Graphic Design, Social Media, and Web Development',
+    'Graphic Design, Social Media, and Web Development <br/><h5>City of Oceanside</h5>',
 
-    'City of El Monte Graphic Design and Social Media',
-    'City of Rosemead Newsletter Design ',
-    'City of La Puente Graphic Design, Social Media, and Web Development',
-    'City of La Puente Graphic Design, Social Media, and Web Development',
-    'City of La Puente Graphic Design, Social Media, and Web Development',
+    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
+    'Newsletter Design <br/><h5>City of Rosemead</h5>',
+    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
+    'Graphic Design, Social Media, and Web Development <br/><h5>City of La Puente</h5>',
+    'Graphic Design, Social Media, and Web Development <br/><h5>City of La Puente</h5>',
 
     // Con tirro //
-    'City of El Monte Graphic Design and Social Media',
+    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
 ]
 
 // Descriptions
