@@ -179,6 +179,11 @@ header .home-slider-container-slides-slide .front-cover .item-info h1 {
     font-size: 28px;
   }
 }
+@media screen and (max-width: 480px) {
+  header .home-slider-container-slides-slide .front-cover .item-info h2 {
+    font-size: 22px;
+  }
+}
 header .home-slider-container-slides-slide .front-cover .item-info p {
   margin: 0;
 }
