@@ -55,9 +55,9 @@ const d1 = [
 
     'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
 
-    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident.",
+    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident. <br/><h3>Grant Funded Amount: $4.83 million</h3>",
 
-    'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
+    'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation. <br/><h3>Grant Funded Amount: $4.6 million</h3>',
 
 
     'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
@@ -67,7 +67,7 @@ const d2 = [
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 
 
-    `Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Grant Funded Amount: $6.8 million</h3>`,
+    `Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Grant Funded Amount: $6.85 million</h3>`,
 
     "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Grant Funded Amount: $8.4 million</h3>",
 

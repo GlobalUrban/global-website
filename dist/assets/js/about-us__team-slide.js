@@ -230,6 +230,8 @@ const handleArrows2 = (right) => {
     clearInterval(slideInverval2)
     clearInterval(slideInverval2 - 1)
     clearInterval(slideInverval2 - 2)
+    clearInterval(slideInverval2 - 3)
+    clearInterval(slideInverval2 - 4)
 
     if ((amountofmoves2 == teamMembers2.length - (4 - mobileAmountLess)) && right) {
         console.log('reached');
@@ -260,6 +262,8 @@ const handleArrows1 = (right) => {
     clearInterval(slideInverval)
     clearInterval(slideInverval - 1)
     clearInterval(slideInverval - 2)
+    clearInterval(slideInverval - 3)
+    clearInterval(slideInverval - 4)
 
     if ((amountofmoves == teamMembers.length - (4 - mobileAmountLess)) && right) {
         console.log('reached');
