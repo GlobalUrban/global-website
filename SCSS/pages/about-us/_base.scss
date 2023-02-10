@@ -163,6 +163,12 @@
             background: $t2;
             @include flexx(row, flex-start, center);
 
+            @include breakpoint(Tablet-L) {
+                height: 200px
+            }
+            @include breakpoint(Tablet-M) {
+                height: 250px
+            }
             @include breakpoint(Phone-L) {
                 height: 350px
             }
@@ -177,10 +183,11 @@
                 margin-left: 20px;
                 position: absolute;
 
-                span {
+                p {
                     font-weight: 100;
                     font-size: 20px;
                     margin-right: 20px;
+                    line-height: 25px;
                     // @include breakpoint(Phone-L) {
                     //     height: 900px;
                     // }

@@ -1733,6 +1733,16 @@ header .selector-pressed {
   justify-content: flex-start;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .about-us .about-us__team .team__cont-title {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us .about-us__team .team__cont-title {
+    height: 250px;
+  }
+}
 @media screen and (max-width: 480px) {
   .about-us .about-us__team .team__cont-title {
     height: 350px;
@@ -1749,10 +1759,11 @@ header .selector-pressed {
   margin-left: 20px;
   position: absolute;
 }
-.about-us .about-us__team .team__cont-title h2 span {
+.about-us .about-us__team .team__cont-title h2 p {
   font-weight: 100;
   font-size: 20px;
   margin-right: 20px;
+  line-height: 25px;
 }
 .about-us .about-us__team .slider-automatic-container {
   height: 400px;
