@@ -30,11 +30,12 @@ let teamMembers = [
     { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
     { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
     { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
+    { name: 'Nora Hernandez', charge: 'Administrative Manager' },
 ]
 
 let teamMembers2 = [
     { name: 'Jackeline Landa', charge: 'Art Director' },
-    { name: 'Kat Fuentes', charge: 'Creative Manager' },
+    { name: 'Kat Fuentes', charge: 'Creative Supervisor' },
     { name: 'Angie Mejia', charge: 'Senior Graphic Designer' },
     { name: 'Hector Suarez', charge: 'Senior Web Developer' },
     { name: 'Elena Mejia', charge: 'Social Media Strategist' },
@@ -43,8 +44,8 @@ let teamMembers2 = [
     { name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration' },
     { name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics' },
     // {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
-    { name: 'Edgardo Valencia', charge: 'Front-End Developer' },
-    { name: 'Francisco Ortiz', charge: 'Back-End Developer' },
+    { name: 'Edgardo Valencia', charge: 'Front-End Web Developer' },
+    { name: 'Francisco Ortiz', charge: 'Back-End Web Developer' },
 ]
 
 let children1 = new Array()
@@ -241,7 +242,7 @@ const handleArrows2 = (right) => {
 
     if (amountofmoves2 < 1 && !right) {
         amountMoved2 = amountTomoveApply * ((teamMembers2.length - (3 - mobileAmountLess)) * (-1));
-        amountofmoves2 = (8 + mobileAmountLess)
+        amountofmoves2 = (8 + mobileAmountLess) // Only increment this number when adding member
     }
 
     if (right) {
@@ -275,7 +276,7 @@ const handleArrows1 = (right) => {
     if (amountofmoves < 1 && !right) {
         console.log('reached');
         amountMoved = amountTomoveApply * ((teamMembers.length - (3 - mobileAmountLess)) * (-1));
-        amountofmoves = (3 + mobileAmountLess)
+        amountofmoves = (4 + mobileAmountLess)  // Only increment this number when adding member
     }
 
     if (right) {
