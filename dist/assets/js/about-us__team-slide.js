@@ -43,7 +43,7 @@ let teamMembers2 = [
     { name: 'Ximena Morazan', charge: 'Associate Social Media Strategist' },
     { name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration' },
     { name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics' },
-    // {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
+    {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
     { name: 'Edgardo Valencia', charge: 'Front-End Web Developer' },
     { name: 'Francisco Ortiz', charge: 'Back-End Web Developer' },
 ]
@@ -242,7 +242,7 @@ const handleArrows2 = (right) => {
 
     if (amountofmoves2 < 1 && !right) {
         amountMoved2 = amountTomoveApply * ((teamMembers2.length - (3 - mobileAmountLess)) * (-1));
-        amountofmoves2 = (8 + mobileAmountLess) // Only increment this number when adding member
+        amountofmoves2 = (9 + mobileAmountLess) // Only increment this number when adding member
     }
 
     if (right) {

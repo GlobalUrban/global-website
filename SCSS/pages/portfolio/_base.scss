@@ -37,8 +37,8 @@
             height: 50%;
             width: 100vw;
 
-            @include breakpoint("Phone-L"){
-                   height: 40%; 
+            @include breakpoint("Phone-L") {
+                height: 40%;
             }
 
             // Portfolio Slider Projects Slides Container //
@@ -50,9 +50,9 @@
                 flex-direction: row;
                 transition: all 1s;
 
-                @include breakpoint("Phone-L"){
-                    height: 70%; 
-             }
+                @include breakpoint("Phone-L") {
+                    height: 70%;
+                }
 
                 // Portfolio Slider Category Slider//
                 .portfolio-slider-projects-slide {
@@ -150,33 +150,37 @@
                 height: 20%;
                 padding-bottom: 2%;
                 width: 100%;
-                
+
                 @include flex(column, center);
-                
+
 
                 &::-webkit-scrollbar {
                     display: none;
-                  }
-                  
-                  /* Hide scrollbar for IE, Edge and Firefox */
-                  & {
-                    -ms-overflow-style: none;  /* IE and Edge */
-                    scrollbar-width: none;  /* Firefox */
-                  }
+                }
+
+                /* Hide scrollbar for IE, Edge and Firefox */
+                & {
+                    -ms-overflow-style: none;
+                    /* IE and Edge */
+                    scrollbar-width: none;
+                    /* Firefox */
+                }
 
                 @include breakpoint("Tablet-L") {
                     padding-bottom: 0;
-                    overflow: scroll;  
-                    
-                }
-                @include breakpoint("Tablet-M") {
-                    padding-bottom: 0;
-                   
+                    overflow: scroll;
+
                 }
 
-                @include breakpoint("Phone-L"){
-                    height: 30%; 
-             }
+                @include breakpoint("Tablet-M") {
+                    padding-bottom: 0;
+
+                }
+
+                @include breakpoint("Phone-L") {
+                    height: 30%;
+                }
+
                 // Btn Container //
                 .portfolio-slider__btn-container-btns {
                     @include flex-around(row);
@@ -189,13 +193,13 @@
                         align-items: center;
                     }
 
-                    @include breakpoint("Tablet-M"){
+                    @include breakpoint("Tablet-M") {
                         width: 800px;
                         margin-left: 250px;
-                      
+
                     }
 
-                    @include breakpoint("Phone-L"){
+                    @include breakpoint("Phone-L") {
                         width: 500px;
                         margin-left: 500px;
                     }
@@ -211,17 +215,19 @@
                         margin: 0 7px;
 
                         &:hover {
-                            text-decoration: underline;;
+                            text-decoration: underline;
+                            ;
                         }
 
                         &:focus {
-                            text-decoration: underline;;
+                            text-decoration: underline;
+                            ;
                         }
 
                         @include breakpoint("Tablet-L") {
                             font-weight: 300;
                             border: solid grey 0.2px;
-                            padding: 2% 0%; 
+                            padding: 2% 0%;
                             min-width: 210px;
                             border-radius: 5px;
                             -webkit-box-shadow: 3px 7px 13px -7px rgba(0, 0, 0, 0.48);
@@ -247,7 +253,7 @@
 
 
             .btn-general-pressed {
-           text-decoration: underline;
+                text-decoration: underline;
 
                 @include breakpoint("Tablet-L") {
                     text-decoration: none;
@@ -276,18 +282,18 @@
             padding: 0 4%;
             padding-top: 5%;
 
-            @include breakpoint("Phone-L"){
-                height: 60%    
+            @include breakpoint("Phone-L") {
+                height: 60%
             }
 
-            @include breakpoint("laptop-L"){
+            @include breakpoint("laptop-L") {
                 padding-top: 8%;
             }
-            
+
 
             .info-container__left {
                 width: 60%;
-                
+
 
 
                 @include breakpoint("Tablet-L") {
@@ -298,6 +304,9 @@
                     color: black;
                     line-height: 1.5;
                     margin: 0;
+                    span{
+                        margin: 0;
+                    }
                 }
 
                 p {
@@ -311,12 +320,53 @@
 
             img {
                 width: 450px;
-                background-color: red;
+                padding-bottom: 20px;
+                transform: translateY(-10%);
 
 
                 @include breakpoint("Tablet-L") {
                     display: none;
                 }
+            }
+        }
+
+        .info-container-pop-background {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            backdrop-filter: blur(5px);
+            display: none;
+            z-index: 100000;
+        }
+
+        .info-container-pop-background-black {
+            background: black;
+            opacity: 0.5;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            display: none;
+            z-index: 100000;
+        }
+
+        .info-container-pop-content {
+            background: white;
+            border-radius: 10px;
+            position: fixed;
+            width: 50%;
+            height: 60%;
+            top: 15%;
+            left: 15%;
+            object-fit: contain;
+            display: none;
+            z-index: 100000;
+
+            img {
+                height: 70%;
+                width: 70%;
+                object-fit: contain;
             }
         }
     }
