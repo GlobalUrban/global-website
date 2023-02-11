@@ -2,50 +2,56 @@
 // Projects
 const projects1 = [
     // Con tirro //
-    'City of Huntington Park’s CalHome Program Management',
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
 
-    'City of Bell Garden’s CalHome Program Management',
-    'City of Azusa’s CalHome Program Management',
-    'City of Huntington Park’s CalHome Program Management',
+    'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
+    'CalHome Program Management <br/><h5>City of Azusa</h5>',
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
 
     // Con tirro //
-    'City of Bell Garden’s CalHome Program Management',
+    'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
 ]
 
 const projects2 = [
     // Con tirro //
-    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
+    'WaterSmart Drought Response Program Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span> ',
 
-    'City of Lynwood Equitable Communities Revitalization Grant',
-    "First 5 LA Commission Children's Dental Care Program ",
-    'Pasadena Water and Power Department WaterSmart Drought Response Program Grant',
+    'Equitable Communities Revitalization Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6.85 million</span>',
+    "Children's Dental Care Program <br/><span style='font-size:24px;'>Grant Funded Amount: $8.4 million</span>",
+    'WaterSmart Drought Response Program Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span> ',
+    'Land and Water Conservation Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6 million</span> ',
+    'Safe Streets and Roads for All (SS4A) Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span>',
 
     // Con tirro //
-    'City of Lynwood Equitable Communities Revitalization Grant',
+    'Equitable Communities Revitalization Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6.85 million</span>',
 ]
 
 const projects3 = [
     // Con tirro //
-    'Department of Water Resources Stakeholder Engagement and Community Outreach',
+    'Pilot Interpretation Program <br/><h5>California Department of Water Resources</h5>',
 
-    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
-    'City of Montebello Community Outreach',
-    'Department of Water Resources Stakeholder Engagement and Community Outreach',
+    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
+    'Community Outreach <br/><h5>City of Montebello</h5>',
+    'Pilot Interpretation Program <br/><h5>California Department of Water Resources</h5>',
+    'Delta Fuel Dump Crisis Management and Public Relations <br/><h5>City of Cudahy</h5>',
+    'Proposition 68 Public Outreach and Community Engagement <br/><h5>City of Hawaiian Gardens</h5>',
 
     // Con tirro //
-    'City of Oceanside Virtual Community Meetings and Stakeholder Engagement',
+    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
 ]
 
 const projects4 = [
     // Con tirro //
-    'City of La Puente Graphic Design, Social Media, and Web Development',
+    'Graphic Design, Social Media, and Web Development <br/><h5>City of Oceanside</h5>',
 
-    'City of El Monte Graphic Design and Social Media',
-    'City of Rosemead Newsletter Design ',
-    'City of La Puente Graphic Design, Social Media, and Web Development',
+    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
+    'Newsletter Design <br/><h5>City of Rosemead</h5>',
+    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
+    'State of the City Presentation <br/><h5>City of San Luis Obispo</h5>',
+    'Branding, Graphic Design, and Events Stationery <br/><h5>California Contract Cities Association</h5>',
 
     // Con tirro //
-    'City of El Monte Graphic Design and Social Media',
+    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
 ]
 
 // Descriptions
@@ -55,9 +61,9 @@ const d1 = [
 
     'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
 
-    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident. <br/><h3>Grant Funded Amount: $4.83 million</h3>",
+    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident.",
 
-    'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation. <br/><h3>Grant Funded Amount: $4.6 million</h3>',
+    'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
 
 
     'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
@@ -67,11 +73,15 @@ const d2 = [
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 
 
-    `Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Grant Funded Amount: $6.85 million</h3>`,
+    `<span style="font-size:24px; ">City of Lynwood</span><br/><br/> Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
-    "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Grant Funded Amount: $8.4 million</h3>",
+    `<span style='font-size:24px;' >First 5 LA Commission</span> <br/><br/> Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
-    "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><h3>Grant Funded Amount: Pending</h3>",
+    `<span style='font-size:24px;'>Pasadena Water and Power Department</span> <br/><br/>Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
+    
+    `<span style='font-size:24px;'>City of Bell Gardens</span> <br/><br/>Our goal, along with the City of Bell Gardens, is to seek benefits for the community, which is why we create proposals for projects that can help the City. By working together, we get the best concessions for its residents. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
+    
+    `<span style='font-size:24px;'>City of Azusa</span> <br/><br/>Working hand in hand with our clients is what we enjoy the most, and that's why we do our best for them, such as managing the CalHome Program and ensuring its residents' reach, effectiveness, and availability. Furthermore, we support the City by creating State and Federal funds proposals.<br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
 
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
@@ -86,6 +96,10 @@ const d3 = [
     "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.",
 
     "We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.",
+    
+    "The key to public relations management is to support emergency crises at unnoticed times. Global Urban developed the strategic plan and executed responses in support of, and on behalf of, the City of Cudahy.",
+    
+    "Global assisted the City by preparing a three-day charrette workshop with the residents in order to develop a Community-Based Planning, where they engaged the community and obtained their input as to the types of recreational features that they wanted to see in their community. These meetings maximized the points allocated to the Proposition 68 project application that was submitted.",
 
 
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
@@ -99,6 +113,10 @@ const d4 = [
 
     "Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.",
 
+    "A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.",
+    
+    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
+    
     "A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.",
 
 
@@ -160,6 +178,10 @@ let inforContainer = document.getElementById('info-container');
 let tittle = document.getElementById('info-title')
 let p = document.getElementById('info-p')
 let img = document.getElementById('info-img')
+let imgPop = document.getElementById('info-img-pop')
+let popBack = document.getElementById('pop-background')
+let popBackBlack = document.getElementById('pop-background-black')
+let popContent = document.getElementById('pop-content')
 
 
 // Functions handlers
@@ -319,7 +341,7 @@ const innerSlideRight2 = () => {
     setOnInfoField();
 }
 const innerSlideLeft2 = () => {
-    if (amountMoved2 == 1) amountMoved2 = 4;
+    if (amountMoved2 == 1) amountMoved2 = 6;
     amountMoved2 -= 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
     // console.log(amountMoved2);
@@ -334,7 +356,7 @@ const innerSlideRight3 = () => {
     setOnInfoField();
 }
 const innerSlideLeft3 = () => {
-    if (amountMoved3 == 1) amountMoved3 = 4;
+    if (amountMoved3 == 1) amountMoved3 = 6;
     amountMoved3 -= 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
     // console.log(amountMoved3);
@@ -350,7 +372,7 @@ const innerSlideRight4 = () => {
 }
 
 const innerSlideLeft4 = () => {
-    if (amountMoved4 == 1) amountMoved4 = 4;
+    if (amountMoved4 == 1) amountMoved4 = 6;
     amountMoved4 -= 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
     // console.log(amountMoved3);
@@ -364,6 +386,7 @@ const setOnInfoField = () => {
         p.innerHTML = d1[amountMoved1]
         let index = amountMoved1 + 1;
         img.src = imgRouteContentProg + index + '.jpeg';
+        imgPop.src = imgRouteContentProg + index + '.jpeg';
     }
 
     if (portfolioSelected == 1) {
@@ -371,6 +394,7 @@ const setOnInfoField = () => {
         p.innerHTML = d2[amountMoved2]
         let index = amountMoved2 + 1;
         img.src = imgRouteContentGrant + index + '.jpeg';
+        imgPop.src = imgRouteContentGrant + index + '.jpeg';
     }
 
     if (portfolioSelected == 2) {
@@ -378,6 +402,7 @@ const setOnInfoField = () => {
         p.innerHTML = d3[amountMoved3]
         let index = amountMoved3 + 1;
         img.src = imgRouteContentCom + index + '.jpeg';
+        imgPop.src = imgRouteContentCom + index + '.jpeg';
     }
 
     if (portfolioSelected == 3) {
@@ -385,6 +410,7 @@ const setOnInfoField = () => {
         p.innerHTML = d4[amountMoved4]
         let index = amountMoved4 + 1;
         img.src = imgRouteContentDig + index + '.jpeg';
+        imgPop.src = imgRouteContentDig + index + '.jpeg';
     }
 }
 
@@ -452,6 +478,21 @@ const setProject = (serviceSet, projectSet) => {
     }
 }
 
+// Pop img
+
+const popImg = () => {
+    popBack.style.display = 'block';
+    popContent.style.display = 'block';
+    popBackBlack.style.display = 'block';
+    imgPop.style.display = 'block';
+}
+
+const hidePop = () => {
+    popBack.style.display = 'none';
+    popBackBlack.style.display = 'none';
+    popContent.style.display = 'none';
+}
+
 // General buttons
 btn1.addEventListener('click', () => { projectPressed(-0, 0) })
 btn2.addEventListener('click', () => { projectPressed(-25, 1) })
@@ -470,6 +511,9 @@ btnl3.addEventListener('click', innerSlideLeft3)
 
 btnr4.addEventListener('click', innerSlideRight4)
 btnl4.addEventListener('click', innerSlideLeft4)
+
+img.addEventListener('click', popImg)
+popBackBlack.addEventListener('click', hidePop)
 
 window.addEventListener('load', styleInnerSlidesContainer)
 window.addEventListener('load', fillProjectSlides)
