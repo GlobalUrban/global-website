@@ -2510,6 +2510,12 @@ footer .footer-right .right-bottom {
 }
 .nav-desktop .nav-right .nav-links li a {
   color: white;
+  font-weight: 300;
+  transition: all 0.2s ease-out;
+}
+.nav-desktop .nav-right .nav-links li a:hover {
+  font-weight: bold;
+  font-size: 24px;
 }
 .nav-desktop .nav-right .social {
   display: flex;
@@ -2597,8 +2603,9 @@ footer .footer-right .right-bottom {
 }
 
 .nav-selected {
-  font-weight: 900;
-  font-size: 19px;
+  font-weight: 900 !important;
+  font-weight: bold;
+  font-size: 27px;
 }
 
 .showNavLinks {
@@ -2618,7 +2625,7 @@ footer .footer-right .right-bottom {
 }
 
 .scroll-up nav {
-  opacity: 0.3;
+  opacity: 0.5;
   filter: drop-shadow(0 -10px 20px rgb(61, 61, 61));
 }
 .scroll-up nav img {
