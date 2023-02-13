@@ -47,12 +47,15 @@
                 list-style-type: none;
                 transition: all 0.2s;
 
-                &:hover {
-                    // transform: translateY(7%) scale(1.03);
-                }
-
                 a {
                     color: white;
+                    font-weight: 300;
+                    transition: all 0.2s ease-out;
+        
+                    &:hover {
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -138,6 +141,7 @@
         a {
             color: white;
             font-size: 20px;
+          
         }
     }
 
@@ -150,8 +154,9 @@
 }
 
 .nav-selected{
-    font-weight: 900;
-    font-size: 19px;
+    font-weight: 900 !important;
+    font-weight: bold;
+    font-size: 27px;
 }
 
 .showNavLinks {
@@ -182,7 +187,7 @@
 
 .scroll-up {
     nav {
-        opacity: 0.3;
+        opacity: 0.5;
         filter: drop-shadow(0 -10px 20px rgb(61, 61, 61));
 
         img {
