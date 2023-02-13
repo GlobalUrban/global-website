@@ -2,14 +2,14 @@
 // Projects
 const projects1 = [
     // Con tirro //
-    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
-
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
+    
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
     'CalHome Program Management <br/><h5>City of Azusa</h5>',
-    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
-
-    // Con tirro //
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
+    
+    // Con tirro //
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
 ]
 
 const projects2 = [
@@ -59,11 +59,11 @@ const d1 = [
     'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
 
 
-    'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
-
-    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident.",
-
     'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
+    
+    "Qui aliquip ullamco commodo exercitation et sit aliqua cupidatat duis est excepteur exercitation tempor deserunt. Do ea est sint excepteur proident nostrud occaecat. Et aute qui sit officia sit proident reprehenderit sunt. In esse mollit tempor elit qui. Ipsum minim est exercitation duis velit veniam minim commodo. Veniam commodo ad proident.",
+    
+    'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
 
 
     'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
