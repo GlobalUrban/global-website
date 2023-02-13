@@ -14,12 +14,12 @@ const projects1 = [
 
 const projects2 = [
     // Con tirro //
-    'Safe Streets and Roads for All (SS4A) Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span>',
+    'Land and Water Conservation Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6 million</span> ',
 
     "Children's Dental Care Program <br/><span style='font-size:24px;'>Grant Funded Amount: $8.4 million</span>",
     'Equitable Communities Revitalization Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6.85 million</span>',
-    'Safe Streets and Roads for All (SS4A) Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span>',
     'Land and Water Conservation Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6 million</span> ',
+    'Safe Streets and Roads for All (SS4A) Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span>',
     'WaterSmart Drought Response Program Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span> ',
 
     // Con tirro //
@@ -94,7 +94,6 @@ const d3 = [
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 
     "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.",
-
     
     "The key to public relations management is to support emergency crises at unnoticed times. Global Urban developed the strategic plan and executed responses in support of, and on behalf of, the City of Cudahy.",
     
@@ -114,9 +113,10 @@ const d4 = [
 
     "Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.",
 
+    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
+    
     "Eiusmod Lorem incididunt laboris qui non do ad dolore quis proident irure ipsum cupidatat ea. Laborum anim nulla nisi ut consequat laboris labore eiusmod sint veniam incididunt voluptate enim. Cupidatat magna commodo tempor laboris magna. Commodo nulla aliquip deserunt eiusmod. Minim ex consequat non incididunt ullamco. Eu in sit nulla. Mollit eu ea dolore velit nostrud nulla laboris. Aute tempor velit officia adipisicing est laborum duis.",
     
-    "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
     
     "A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.",
 
