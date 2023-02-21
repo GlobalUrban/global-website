@@ -109,6 +109,12 @@ header {
                     }
                 }
 
+                h2{
+                    @include b.breakpoint("Phone-L"){
+                        font-size: 22px;
+                    }
+                }
+
                 
                 
                 p {

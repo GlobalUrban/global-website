@@ -97,10 +97,10 @@ const setProjectToOpen = (service, project) => {
 
 const setProjectToOpen2 = () => {
     console.log(percentageMoved)
-    if (percentageMoved == 0) setProjectToOpen(2, 1)
-    if (percentageMoved == -25) setProjectToOpen(2, 2)
-    if (percentageMoved == -50) setProjectToOpen(1, 3)
-    if (percentageMoved == -75) setProjectToOpen(0, 2)
+    if (percentageMoved == 0) setProjectToOpen(3, 3)
+    if (percentageMoved == -25) setProjectToOpen(1, 3)
+    if (percentageMoved == -50) setProjectToOpen(2, 3)
+    if (percentageMoved == -75) setProjectToOpen(0, 1)
     window.location.href = "./assets/html/portfolio.html#portfolio-slider-id"
 } 
 
@@ -135,10 +135,6 @@ selector3.addEventListener('click', () => { handleSelector(-50) })
 selector4.addEventListener('click', () => { handleSelector(-75) })
 
 // Event listener for set project to localstorage
-link1.addEventListener("click", ()=>{setProjectToOpen(2, 1)})
-link1.addEventListener("click", ()=>{setProjectToOpen(2, 2)})
-link1.addEventListener("click", ()=>{setProjectToOpen(1, 3)})
-link1.addEventListener("click", ()=>{setProjectToOpen(0, 2)})
 containerButtonsToLink.addEventListener("click", setProjectToOpen2)
 
 window.addEventListener('load', () => {setPressedStyles(0)})

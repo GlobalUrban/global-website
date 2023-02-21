@@ -13,30 +13,119 @@
   .services-options {
     width: 100%;
     height: 100vh;
-    @include flex-between(row);
+    @include flex(column, center);
     position: absolute;
     z-index: 20;
     transition: all 0.4s ease-in-out;
     overflow-x: hidden;
 
-    @include breakpoint(Tablet-M) {
-      position: fixed;
+
+    // Services Options Top //
+    .services-options__top {
+      width: 100%;
+      height: 60%;
+      @include flex-between(row);
+      order: 2;
+
+      @include breakpoint("Tablet-L") {
+        height: 77%;
+      }
+
+      // Service Option Button //
+      .option {
+        width: 33.33%;
+        height: 100%;
+        position: relative;
+        @include flex-center;
+        overflow: hidden;
+
+        @include breakpoint(Tablet-L) {
+          width: 100%;
+        }
+
+        img {
+          @include img-cover;
+          position: relative;
+        }
+
+        .image-fade {
+          @include img-cover;
+          position: absolute;
+          transition: all 0.5s ease-in;
+        }
+
+        h2 {
+          position: absolute;
+          bottom: 4%;
+          left: 2%;
+          color: white;
+          font-size: 35px;
+          font-weight: 500;
+        }
+
+        .opacity-layer {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: rgba(0, 0, 0, 0.342);
+          opacity: 0;
+          transition: all 0.1s ease-in;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:hover .opacity-layer {
+          opacity: 1;
+        }
+
+        &:hover .image-fade {
+          opacity: 0;
+        }
+      }
+
+      .option-1 {
+        background: $t1;
+      }
+
+      .option-2 {
+        background: $t2;
+      }
+
+      .option-3 {
+        background: $t3;
+      }
+
+      // @include breakpoint(Tablet-M) {
+      //   position: fixed;
+      // }
+
+      @include breakpoint(Tablet-L) {
+        @include flexx(column, space-between, flex-center);
+
+      }
+
     }
 
-    @include breakpoint(Tablet-L) {
-      @include flexx(column, space-between, flex-center);
-    }
-
-    // Service Option Button //
-    .option {
-      width: 33.33%;
-      height: 100%;
+    // Services Options Bottom //
+    .services-options__bottom {
+      width: 100%;
+      height: 40%;
+      background: #000;
+      width: 100%;
       position: relative;
       @include flex-center;
       overflow: hidden;
 
+
+
       @include breakpoint(Tablet-L) {
         width: 100%;
+      }
+
+      @include breakpoint("Tablet-L") {
+        height: 23%;
       }
 
       img {
@@ -81,18 +170,15 @@
       }
     }
 
-    .option-1 {
-      background: $t1;
+    @include breakpoint(Tablet-M) {
+      position: fixed;
     }
 
-    .option-2 {
-      background: $t2;
-    }
 
-    .option-3 {
-      background: $t3;
-    }
+
+
   }
+
   // ----------------------------------------------------------
 
   // Service Back Part || Information section // --------------
@@ -103,11 +189,11 @@
 
     // Services Scroll part //
     .services-scroll {
-      width: 300%;
+      width: 400%;
       height: 100%;
       @include flex-center;
       position: relative;
-      transform: translateX(-33.3333333%);
+      transform: translateX(0);
       transition: all 0.5s ease-in-out;
 
       // Individual Service -------------------- //
@@ -128,6 +214,10 @@
             height: 35%;
           }
 
+          .back-communications {
+           margin-left: 35vw;
+          }
+
           // Communication Change Order ------- //
           .communication-order1 {
             order: 1;
@@ -146,6 +236,7 @@
               z-index: 10;
             }
           }
+
           // --------------------------------------
 
           // Service Information //
@@ -179,6 +270,7 @@
                 line-height: 1.8;
                 margin: 0;
                 font-size: 35px;
+
                 @include breakpoint(Phone-L) {
                   font-size: 30px;
                 }
@@ -265,7 +357,7 @@
             // Opacity Layer //
             .opacity-layer {
               position: absolute;
-              background: rgba(0, 0, 0, 0.459);
+              background: rgba(0, 0, 0, 0.54);
               @include img-cover;
               z-index: 1;
               opacity: 0;
@@ -281,22 +373,22 @@
                 img {
                   width: 300px;
                   height: 300px;
-                    object-fit: contain;
+                  object-fit: contain;
 
-                    @include breakpoint("Tablet-L") {
-                      width: 200px;
-                      height: 200px;
-                    }
+                  @include breakpoint("Tablet-L") {
+                    width: 200px;
+                    height: 200px;
+                  }
                 }
 
                 .img-medium {
-                    width: 200px;
-                    height: 200px;
+                  width: 200px;
+                  height: 200px;
                 }
 
                 .img-small {
-                    width: 100px;
-                    height: 100px;
+                  width: 100px;
+                  height: 100px;
                 }
 
                 h3 {
@@ -305,9 +397,12 @@
                   margin: 0;
                   text-align: center;
                 }
+
                 span {
-                    color: white;
-                    text-align: center;
+                  color: white;
+                  text-align: center;
+                  font-size: 18px;
+                  font-weight: 100;
                 }
               }
             }
@@ -358,6 +453,7 @@
       margin-left: 37vw;
       margin-top: 100px;
     }
+
     @include breakpoint(Phone-L) {
       transform: translateX(125%);
     }
