@@ -2,7 +2,7 @@
 
 .about-us {
     z-index: 10;
-    
+
 
     // About Us General Information ---------- //
     .about-us__info {
@@ -11,29 +11,32 @@
         overflow-x: hidden;
         position: relative;
         display: flex;
-       
+
         background-image: url(../img/home/about-gradiant.png);
 
 
 
-        @include breakpoint(Tablet-L){
-           height: 1000px;
+        @include breakpoint(Tablet-L) {
+            height: 1000px;
         }
-        @include breakpoint(Tablet-M){
-           height: 1000px;
+
+        @include breakpoint(Tablet-M) {
+            height: 1000px;
         }
-        @include breakpoint(Phone-L){
-           height: 1000px;
+
+        @include breakpoint(Phone-L) {
+            height: 1000px;
         }
-        @include breakpoint(Phone-M){
-           height: 1100px;
+
+        @include breakpoint(Phone-M) {
+            height: 1100px;
         }
 
         // Front information ---- //
         .about-us__info-front {
             position: absolute;
             @include flex(column, center);
-          
+
             padding-top: 35vh;
 
             @include breakpoint(Tablet-L) {
@@ -102,6 +105,7 @@
                 @include flex-center;
                 margin-top: 100px;
                 width: 80%;
+
                 @include breakpoint("Tablet-L") {
                     text-align: center;
                     @include flex(column, center)
@@ -115,9 +119,10 @@
                     }
                 }
 
-                .img-logo-hide{
+                .img-logo-hide {
                     display: none;
-                    @include breakpoint("Tablet-L"){
+
+                    @include breakpoint("Tablet-L") {
                         display: block;
                     }
                 }
@@ -154,9 +159,20 @@
 
         .team__cont-title {
             width: 100%;
-            height: 100px;
+            height: 150px;
             background: $t2;
             @include flexx(row, flex-start, center);
+
+            @include breakpoint(Tablet-L) {
+                height: 200px
+            }
+            @include breakpoint(Tablet-M) {
+                height: 250px
+            }
+            @include breakpoint(Phone-L) {
+                height: 350px
+            }
+
 
             img {
                 @include img-cover;
@@ -166,6 +182,17 @@
                 color: white;
                 margin-left: 20px;
                 position: absolute;
+
+                p {
+                    font-weight: 100;
+                    font-size: 20px;
+                    margin-right: 20px;
+                    line-height: 25px;
+                    
+                    // @include breakpoint(Phone-L) {
+                    //     height: 900px;
+                    // }
+                }
             }
         }
 
@@ -176,6 +203,7 @@
             height: 400px;
             width: 100%;
             overflow-x: hidden;
+            position: relative;
 
             @include breakpoint("laptop-L") {
                 height: 300px;
@@ -219,6 +247,7 @@
 
                         div {
                             text-align: center;
+
                             h3 {
                                 margin: 0;
                                 line-height: 1.9;
@@ -279,6 +308,38 @@
                     }
                 }
 
+            }
+
+            .slider-automatic-container-arrowl {
+                position: absolute;
+                transform: translateY(-400%);
+                margin-left: 1%;
+                width: 50px;
+                
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @include breakpoint(Phone-L) {
+                    transform: translateY(-300%);
+                }
+            }
+
+
+            .slider-automatic-container-arrowr {
+                position: absolute;
+                transform: translateY(-400%) rotate(180deg);
+                margin-right: 1%;
+                right: 0;
+                width: 50px;
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @include breakpoint(Phone-L) {
+                    transform: translateY(-300%) rotate(180deg);
+                }
             }
         }
     }

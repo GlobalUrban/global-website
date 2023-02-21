@@ -13,6 +13,8 @@ let amountTomoveDesktop = 25;
 let amountTomoveMobile = 50;
 let amountTomoveApply = undefined;
 
+let ArrowsPressed = false
+
 const imgRoute = "../img/about-us/team_members/GUS_About_us_"
 const imgRouteGrant = "../img/about-us/team_members/Grant/g-"
 const imgRouteDig = "../img/about-us/team_members/Dig/d-"
@@ -22,27 +24,28 @@ let classMobile = 'slider-automatic-container-slide-mobile';
 let classToApply = undefined;
 
 let teamMembers = [
-    {name: 'Omar Hernandez', charge: 'President & Senior Grant Writer'},
-    {name: 'Cinthia Iniguez', charge: 'Account Executive'},
-    {name: 'Lauren Hernandez', charge: 'Associate Account Executive'},
-    {name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator'},
-    {name: 'Daniela Espinoza', charge: 'Assistant Program Administrator'},
-    {name: 'Christa Leonard', charge: 'Director of Grant Acquisition'},
+    { name: 'Omar Hernandez', charge: 'President & Senior Grant Writer' },
+    { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
+    { name: 'Cinthia Iniguez', charge: 'Account Executive' },
+    { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
+    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
+    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
+    { name: 'Nora Hernandez', charge: 'Administrative Manager' },
 ]
 
 let teamMembers2 = [
-    {name: 'Jackeline Landa', charge: 'Art Director'},
-    {name: 'Kat Fuentes', charge: 'Creative Manager'},
-    {name: 'Angie Mejia', charge: 'Senior Graphic Designer'},
-    {name: 'Hector', charge: 'Senior Web Developer'},
-    {name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production'},
-    {name: 'Elena Mejia', charge: 'Social Media Strategist'},
-    {name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration'},
-    {name: 'Ximena Morazan', charge: 'Associate Social Media Strategist'},
-    {name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics'},
-    // {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
-    {name: 'Edgardo Valencia', charge: 'Front-End Developer'},
-    {name: 'Francisco Ortiz', charge: 'Back-End Developer'},
+    { name: 'Jackeline Landa', charge: 'Art Director' },
+    { name: 'Kat Fuentes', charge: 'Creative Supervisor' },
+    { name: 'Angie Mejia', charge: 'Senior Graphic Designer' },
+    { name: 'Hector Suarez', charge: 'Senior Web Developer' },
+    { name: 'Elena Mejia', charge: 'Social Media Strategist' },
+    { name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production' },
+    { name: 'Ximena Morazan', charge: 'Associate Social Media Strategist' },
+    { name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration' },
+    { name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics' },
+    {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
+    { name: 'Edgardo Valencia', charge: 'Front-End Web Developer' },
+    { name: 'Francisco Ortiz', charge: 'Back-End Web Developer' },
 ]
 
 let children1 = new Array()
@@ -52,7 +55,12 @@ let slideInverval = undefined;
 let slideInverval2 = undefined;
 let timeoutOnLoad = 2000;
 
+let mobileAmountLess = 0
+
 const runSlider = (indexSlider) => {
+
+    if (ArrowsPressed) return;
+
     console.log({ timeoutOnLoad })
     if (indexSlider == 0) {
         for (let i = 0; i < 10; i++) {
@@ -201,6 +209,7 @@ const setClassforWindow = () => {
     if (windowSize <= 768) {
         classToApply = classMobile
         amountTomoveApply = amountTomoveMobile
+        mobileAmountLess = 2
     };
     console.log(classToApply)
     console.log(amountTomoveApply)
@@ -215,8 +224,85 @@ const titleHoverLeave = (index, first = false) => {
     else children2[index].classList.remove("title-hover-hover")
 }
 
+// Handlers for arrows
+
+const handleArrows2 = (right) => {
+    ArrowsPressed = true
+    clearInterval(slideInverval2)
+    clearInterval(slideInverval2 - 1)
+    clearInterval(slideInverval2 - 2)
+    clearInterval(slideInverval2 - 3)
+    clearInterval(slideInverval2 - 4)
+
+    if ((amountofmoves2 == teamMembers2.length - (4 - mobileAmountLess)) && right) {
+        console.log('reached');
+        amountMoved2 = amountTomoveApply;
+        amountofmoves2 = -1
+    }
+
+    if (amountofmoves2 < 1 && !right) {
+        amountMoved2 = amountTomoveApply * ((teamMembers2.length - (3 - mobileAmountLess)) * (-1));
+        amountofmoves2 = (9 + mobileAmountLess) // Only increment this number when adding member
+    }
+
+    if (right) {
+        amountMoved2 -= amountTomoveApply
+        amountofmoves2 += 1
+        slides2.style.transform = 'translate(' + amountMoved2 + 'vw, 0%)'
+    } else {
+        // 8
+        if (amountofmoves2 > (9 + mobileAmountLess)) return
+        amountMoved2 += amountTomoveApply
+        amountofmoves2 -= 1
+        slides2.style.transform = 'translate(' + amountMoved2 + 'vw, 0%)'
+    }
+}
+
+const handleArrows1 = (right) => {
+    ArrowsPressed = true
+    clearInterval(slideInverval)
+    clearInterval(slideInverval - 1)
+    clearInterval(slideInverval - 2)
+    clearInterval(slideInverval - 3)
+    clearInterval(slideInverval - 4)
+
+    if ((amountofmoves == teamMembers.length - (4 - mobileAmountLess)) && right) {
+        console.log('reached');
+        amountMoved = amountTomoveApply;
+        amountofmoves = -1
+        console.log({ amountofmoves, amountMoved })
+    }
+
+    if (amountofmoves < 1 && !right) {
+        console.log('reached');
+        amountMoved = amountTomoveApply * ((teamMembers.length - (3 - mobileAmountLess)) * (-1));
+        amountofmoves = (4 + mobileAmountLess)  // Only increment this number when adding member
+    }
+
+    if (right) {
+        console.log('right');
+        amountMoved -= amountTomoveApply
+        amountofmoves += 1
+        slides.style.transform = 'translate(' + amountMoved + 'vw, 0%)'
+        console.log({ amountofmoves, amountMoved })
+    } else {
+        if (amountofmoves > (4 + mobileAmountLess)) return
+        amountMoved += amountTomoveApply
+        amountofmoves -= 1
+        slides.style.transform = 'translate(' + amountMoved + 'vw, 0%)'
+        console.log({ amountofmoves, amountMoved })
+    }
+
+
+}
+
 let slides = document.getElementById('slides')
 let slides2 = document.getElementById('slides-2')
+
+let arrosl1 = document.getElementById('slider-automatic-container-arrowl')
+let arrosr1 = document.getElementById('slider-automatic-container-arrowr')
+let arrosl2 = document.getElementById('slider-automatic-container-arrowl2')
+let arrosr2 = document.getElementById('slider-automatic-container-arrowr2')
 
 
 window.addEventListener('load', styleContainer)
@@ -232,4 +318,9 @@ slides.addEventListener('mouseover', () => { stopOnHover(0) })
 slides2.addEventListener('mouseover', () => { stopOnHover(1) })
 slides.addEventListener('mouseleave', () => { runSlider(0) })
 slides2.addEventListener('mouseleave', () => { runSlider(1) })
+
+arrosr1.addEventListener('click', () => { handleArrows1(true) })
+arrosl1.addEventListener('click', () => { handleArrows1(false) })
+arrosr2.addEventListener('click', () => { handleArrows2(true) })
+arrosl2.addEventListener('click', () => { handleArrows2(false) })
 
