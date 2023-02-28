@@ -21,14 +21,17 @@ const projectManagement = document.getElementById("project-management");
 let Plink1 = document.getElementById("p-services-1");
 let Plink2 = document.getElementById("p-services-2");
 let Plink3 = document.getElementById("p-services-3");
+
 // Get Grant Writting links for projects
 let Glink1 = document.getElementById("g-services-1")
 let Glink2 = document.getElementById("g-services-2")
 let Glink3 = document.getElementById("g-services-3")
+
 // Get communication links for projects
 let Clink1 = document.getElementById("c-services-1")
 let Clink2 = document.getElementById("c-services-2")
 let Clink3 = document.getElementById("c-services-3")
+
 // Get Digital links for projects
 let Dlink1 = document.getElementById("d-services-1")
 let Dlink2 = document.getElementById("d-services-2")
@@ -70,19 +73,23 @@ for (let i = 0; i < 4; i++) {
     })
 }
 
-// Plink1.addEventListener("click", () => { setProjectToOpen(0, 1) })
-// Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
-// Plink3.addEventListener("click", () => { setProjectToOpen(0, 3) })
+// Program Management //
+Plink1.addEventListener("click", () => { setProjectToOpen(0, 3) })
+Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
+Plink3.addEventListener("click", () => { setProjectToOpen(0, 4) })
 
-// Glink1.addEventListener("click", () => { setProjectToOpen(1, 3) })
-// Glink2.addEventListener("click", () => { setProjectToOpen(1, 2) })
-// Glink3.addEventListener("click", () => { setProjectToOpen(1, 1) })
+// Grant Writing //
+Glink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
+Glink2.addEventListener("click", () => { setProjectToOpen(1, 3) })
+Glink3.addEventListener("click", () => { setProjectToOpen(1, 4) })
 
-// Clink1.addEventListener("click", () => { setProjectToOpen(2, 1) })
-// Clink2.addEventListener("click", () => { setProjectToOpen(2, 2) })
-// Clink3.addEventListener("click", () => { setProjectToOpen(2, 3) })
+// Communications //
+Clink1.addEventListener("click", () => { setProjectToOpen(2, 3) })
+Clink2.addEventListener("click", () => { setProjectToOpen(2, 4) })
+Clink3.addEventListener("click", () => { setProjectToOpen(2, 5) })
 
-// Dlink1.addEventListener("click", () => { setProjectToOpen(3, 1) })
-// Dlink2.addEventListener("click", () => { setProjectToOpen(3, 2) })
-// Dlink3.addEventListener("click", () => { setProjectToOpen(3, 3) })
+// Digital & Print //
+Dlink1.addEventListener("click", () => { setProjectToOpen(3, 5) })
+Dlink2.addEventListener("click", () => { setProjectToOpen(3, 3) })
+Dlink3.addEventListener("click", () => { setProjectToOpen(3, 4) })
 
