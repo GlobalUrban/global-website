@@ -461,10 +461,32 @@ const setProject = (serviceSet, projectSet) => {
             innerSlideRight2();
             innerSlideRight2();
         }
+        if (projectSet == 4) {
+            innerSlideRight2();
+            innerSlideRight2();
+            innerSlideRight2();
+        }
+        if (projectSet == 5) {
+            innerSlideRight2();
+            innerSlideRight2();
+            innerSlideRight2();
+            innerSlideRight2();
+        }
     }
     if (serviceSet == 2) {
         if (projectSet == 2) innerSlideRight3();
         if (projectSet == 3) {
+            innerSlideRight3();
+            innerSlideRight3();
+        }
+        if (projectSet == 4) {
+            innerSlideRight3();
+            innerSlideRight3();
+            innerSlideRight3();
+        }
+        if (projectSet == 5) {
+            innerSlideRight3();
+            innerSlideRight3();
             innerSlideRight3();
             innerSlideRight3();
         }
@@ -473,6 +495,17 @@ const setProject = (serviceSet, projectSet) => {
     if (serviceSet == 3) {
         if (projectSet == 2) innerSlideRight4();
         if (projectSet == 3) {
+            innerSlideRight4();
+            innerSlideRight4();
+        }
+        if (projectSet == 4) {
+            innerSlideRight4();
+            innerSlideRight4();
+            innerSlideRight4();
+        }
+        if (projectSet == 5) {
+            innerSlideRight4();
+            innerSlideRight4();
             innerSlideRight4();
             innerSlideRight4();
         }
