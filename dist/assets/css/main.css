@@ -1538,6 +1538,9 @@ header .selector-pressed {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.services .services-content .services-scroll .service .service-bottom .service-project__program-management {
+  width: 100%;
+}
 .services .services-options__up {
   transform: translateY(-100%);
 }
