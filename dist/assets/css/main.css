@@ -2493,12 +2493,12 @@ footer .footer-right .right-bottom {
   }
 }
 .nav-desktop img {
-  width: 350px;
+  width: 450px;
   transition: all 0.3s;
   margin-top: 1%;
 }
 .nav-desktop .img-page {
-  width: 250px;
+  width: 350px;
 }
 @media screen and (max-width: 1024px) {
   .nav-desktop .img-page {

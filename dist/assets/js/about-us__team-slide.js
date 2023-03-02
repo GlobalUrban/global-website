@@ -25,12 +25,12 @@ let classToApply = undefined;
 
 let teamMembers = [
     { name: 'Omar Hernandez', charge: 'President & Senior Grant Writer' },
+    { name: 'Nora Hernandez', charge: 'Administrative Manager' },
     { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
     { name: 'Cinthia Iniguez', charge: 'Account Executive' },
     { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
     { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
     { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
-    { name: 'Nora Hernandez', charge: 'Administrative Manager' },
 ]
 
 let teamMembers2 = [
