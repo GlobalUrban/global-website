@@ -156,7 +156,8 @@
 .nav-selected{
     font-weight: 900 !important;
     font-weight: bold;
-    font-size: 27px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .showNavLinks {
