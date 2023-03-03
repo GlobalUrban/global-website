@@ -5,7 +5,7 @@ const projects1 = [
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
 
     'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
-    'CalHome Program Management <br/><h5>City of Azusa</h5>',
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
 
     // Con tirro //
@@ -140,7 +140,7 @@ const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
 const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
 const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
 const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
-const imgRouteCoverProg = "../img/portfolio/cover/reduced/Portfolio-program-client-"
+const imgRouteCoverProg = "../img/portfolio/cover/reduced/Portfolio-program-client-0.jpeg"
 
 // Content Image //
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
@@ -180,7 +180,11 @@ let innerslides4 = document.getElementById('innerslides-4');
 let inforContainer = document.getElementById('info-container');
 let tittle = document.getElementById('info-title')
 let p = document.getElementById('info-p')
-let img = document.getElementById('info-img')
+let imgMain = document.getElementById('info-img2')
+let img1 = document.getElementById('info-img1')
+let hideDiv = document.getElementById('hide-div')
+let img3 = document.getElementById('info-img3')
+let imgProgramMobile = document.getElementById('info-imgProgramMobile')
 let imgPop = document.getElementById('info-img-pop')
 let popBack = document.getElementById('pop-background')
 let popBackBlack = document.getElementById('pop-background-black')
@@ -196,108 +200,108 @@ const projectPressed = (position, portfolio) => {
     setPressedStyle(portfolioSelected);
 }
 
-const fillProjectSlides = () => {
+// const fillProjectSlides = () => {
 
-    projects1.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects1.indexOf(project);
+//     projects1.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects1.indexOf(project);
 
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
-
-
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverProg + projects1.indexOf(project) + '.jpeg';
-        node_img.alt = 'Project Img missing';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
-
-        innerslides1.appendChild(node);
-    })
-
-    projects2.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects2.indexOf(project);
-
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
+//         //  span for inner text
+//         // const span = document.createElement("span");
+//         // span.classList.add('inner-slides-text-styles')
+//         // const text = document.createTextNode(project)
+//         // span.appendChild(text)
+//         // // node.appendChild(span)
 
 
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverGrant + projects2.indexOf(project) + '.jpeg';
-        node_img.alt = 'Team member';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
+//         // // Img for inner slides
+//         // const node_img = document.createElement("img");
+//         // node_img.src = imgRouteCoverProg + projects1.indexOf(project) + '.jpeg';
+//         // node_img.alt = 'Project Img missing';
+//         // node_img.style.objectFit = 'cover';
+//         // node_img.style.width = '100%';
+//         // node_img.style.height = '100%';
+//         // node.appendChild(node_img)
 
-        innerslides2.appendChild(node);
-    })
+//         // innerslides1.appendChild(node);
+//     })
 
-    projects3.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects3.indexOf(project);
+//     projects2.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects2.indexOf(project);
 
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
-
-
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverCom + projects3.indexOf(project) + '.jpeg';
-        node_img.alt = 'cover img missing';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
-
-        innerslides3.appendChild(node);
-    })
-
-    projects4.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects4.indexOf(project);
-
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
+//         //  span for inner text
+//         // const span = document.createElement("span");
+//         // span.classList.add('inner-slides-text-styles')
+//         // const text = document.createTextNode(project)
+//         // span.appendChild(text)
+//         // // node.appendChild(span)
 
 
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.jpeg';
-        node_img.alt = 'Team member';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
+//         // // Img for inner slides
+//         // const node_img = document.createElement("img");
+//         // node_img.src = imgRouteCoverGrant + projects2.indexOf(project) + '.jpeg';
+//         // node_img.alt = 'Team member';
+//         // node_img.style.objectFit = 'cover';
+//         // node_img.style.width = '100%';
+//         // node_img.style.height = '100%';
+//         // node.appendChild(node_img)
 
-        innerslides4.appendChild(node);
-    })
-}
+//         // innerslides2.appendChild(node);
+//     })
+
+//     projects3.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects3.indexOf(project);
+
+//         //  span for inner text
+//         const span = document.createElement("span");
+//         span.classList.add('inner-slides-text-styles')
+//         const text = document.createTextNode(project)
+//         span.appendChild(text)
+//         // node.appendChild(span)
+
+
+//         // Img for inner slides
+//         const node_img = document.createElement("img");
+//         node_img.src = imgRouteCoverCom + projects3.indexOf(project) + '.jpeg';
+//         node_img.alt = 'cover img missing';
+//         node_img.style.objectFit = 'cover';
+//         node_img.style.width = '100%';
+//         node_img.style.height = '100%';
+//         // node.appendChild(node_img)
+
+//         // innerslides3.appendChild(node);
+//     })
+
+//     projects4.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects4.indexOf(project);
+
+//         //  span for inner text
+//         const span = document.createElement("span");
+//         span.classList.add('inner-slides-text-styles')
+//         const text = document.createTextNode(project)
+//         span.appendChild(text)
+//         // node.appendChild(span)
+
+
+//         // Img for inner slides
+//         const node_img = document.createElement("img");
+//         node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.jpeg';
+//         node_img.alt = 'Team member';
+//         node_img.style.objectFit = 'cover';
+//         node_img.style.width = '100%';
+//         node_img.style.height = '100%';
+//         node.appendChild(node_img)
+
+//         innerslides4.appendChild(node);
+//     })
+// }
 
 const styleInnerSlidesContainer = () => {
     document.getElementById('innerslides-1').style.width = projects1.length * 100 + '%';
@@ -384,38 +388,104 @@ const innerSlideLeft4 = () => {
 
 // Content Image //
 const setOnInfoField = () => {
+    let index = amountMoved1 + 1;
+
+    // Program Managemetn //
     if (portfolioSelected == 0) {
-        tittle.innerHTML = projects1[amountMoved1]
-        p.innerHTML = d1[amountMoved1]
-        let index = amountMoved1 + 1;
-        img.src = imgRouteContentProg + index + '.jpeg';
-        imgPop.src = imgRouteContentProg + index + '.jpeg';
+        // Import Image //
+        imgMain.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
+        img1.src = "../img/portfolio/content/reduced/Portfolio-program-client-3.jpeg";
+        img3.src = "../img/portfolio/content/reduced/Portfolio-program-client-4.jpeg";
+        imgPop.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
+        imgProgramMobile.src = "../img/about-us/kat&angie.png";
+
+        // Title & Description //
+        tittle.innerHTML = "Program Management"
+        tittle.style.marginTop = "none"
+        p.innerHTML = "Global’s team of experienced program managers has effectively helped cities and private entities to organize and coordinate their activities, set clear objectives, and develop strategies to implement their programs by providing them with a team that possesses the tools and processes to ensure that projects are completed on time and within budget saving money and increasing efficiency. We are currently administering various programs for multiple cities that create jobs, provide first-time home buyer assistance, and improve their living conditions and quality of life through owner-occupied rehabilitation programs."
+        p.style.width = "100%"
+        p.style.marginBottom = "50px"
+        p.style.marginTop = "5px"
+
+        // Style //
+        img1.style.width = "300px";
+        img1.style.height = "300px";
+        img3.style.width = "300px";
+        img3.style.height = "300px";
+        imgMain.style.width = "300px";
+        imgMain.style.height = "300px";
+        imgProgramMobile.style.width = "300px";
+        imgProgramMobile.style.height = "300px";
+
+
+
+        inforContainer.style.display = "flex";
+        inforContainer.style.flexDirection = "column"
+
+        if (inforContainer.clientWidth <= 500) {
+            img1.style.display = "none";
+            img3.style.display = "none";
+            imgProgramMobile.style.display = "block";
+            imgMain.style.display = "none";
+        } else {
+            img1.style.display = "block";
+            img3.style.display = "block";
+            imgProgramMobile.style.display = "none";
+        }
     }
+
+
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
         let index = amountMoved2 + 1;
-        img.src = imgRouteContentGrant + index + '.jpeg';
+        imgMain.src = imgRouteContentGrant + index + '.jpeg';
         imgPop.src = imgRouteContentGrant + index + '.jpeg';
+        img1.style.display = "none";
+        img3.style.display = "none";
+        imgProgramMobile.style.display = "none";
+        imgMain.style.width = "500px";
+        imgMain.style.height = "500px";
+        inforContainer.style.flexDirection = "row"
     }
 
     if (portfolioSelected == 2) {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
         let index = amountMoved3 + 1;
-        img.src = imgRouteContentCom + index + '.jpeg';
+        imgMain.src = imgRouteContentCom + index + '.jpeg';
         imgPop.src = imgRouteContentCom + index + '.jpeg';
+        img1.style.display = "none";
+        img3.style.display = "none";
+        imgProgramMobile.style.display = "none";
+        imgMain.style.width = "500px";
+        imgMain.style.height = "500px";
+        inforContainer.style.flexDirection = "row"
     }
 
     if (portfolioSelected == 3) {
         tittle.innerHTML = projects4[amountMoved4]
         p.innerHTML = d4[amountMoved4]
         let index = amountMoved4 + 1;
-        img.src = imgRouteContentDig + index + '.jpeg';
+        imgMain.src = imgRouteContentDig + index + '.jpeg';
         imgPop.src = imgRouteContentDig + index + '.jpeg';
+        img1.style.display = "none";
+        img3.style.display = "none";
+        imgProgramMobile.style.display = "none";
+        imgMain.style.width = "500px";
+        imgMain.style.height = "500px";
+        inforContainer.style.flexDirection = "row"
     }
+
+
 }
+
+
+
+
+
+
 
 const setPressedStyle = (index) => {
     let generalButtons = document.getElementsByClassName('portfolio-slider-projects-btn');
@@ -548,10 +618,15 @@ btnl3.addEventListener('click', innerSlideLeft3)
 btnr4.addEventListener('click', innerSlideRight4)
 btnl4.addEventListener('click', innerSlideLeft4)
 
-img.addEventListener('click', popImg)
+imgMain.addEventListener('click', popImg)
 popBackBlack.addEventListener('click', hidePop)
 
 window.addEventListener('load', styleInnerSlidesContainer)
-window.addEventListener('load', fillProjectSlides)
+// window.addEventListener('load', fillProjectSlides)
 window.addEventListener('load', setOnInfoField)
 window.addEventListener('load', checkStorage);
+
+
+
+
+
