@@ -5,7 +5,7 @@ const projects1 = [
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
 
     'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
-    'CalHome Program Management <br/><h5>City of Azusa</h5>',
+    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
 
     // Con tirro //
@@ -180,7 +180,9 @@ let innerslides4 = document.getElementById('innerslides-4');
 let inforContainer = document.getElementById('info-container');
 let tittle = document.getElementById('info-title')
 let p = document.getElementById('info-p')
-let img = document.getElementById('info-img')
+let imgMain = document.getElementById('info-img2')
+let img1 = document.getElementById('info-img1')
+let img3 = document.getElementById('info-img3')
 let imgPop = document.getElementById('info-img-pop')
 let popBack = document.getElementById('pop-background')
 let popBackBlack = document.getElementById('pop-background-black')
@@ -196,108 +198,108 @@ const projectPressed = (position, portfolio) => {
     setPressedStyle(portfolioSelected);
 }
 
-const fillProjectSlides = () => {
+// const fillProjectSlides = () => {
 
-    projects1.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects1.indexOf(project);
+//     projects1.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects1.indexOf(project);
 
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
-
-
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverProg + projects1.indexOf(project) + '.jpeg';
-        node_img.alt = 'Project Img missing';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
-
-        innerslides1.appendChild(node);
-    })
-
-    projects2.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects2.indexOf(project);
-
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
+//         //  span for inner text
+//         // const span = document.createElement("span");
+//         // span.classList.add('inner-slides-text-styles')
+//         // const text = document.createTextNode(project)
+//         // span.appendChild(text)
+//         // // node.appendChild(span)
 
 
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverGrant + projects2.indexOf(project) + '.jpeg';
-        node_img.alt = 'Team member';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
+//         // // Img for inner slides
+//         // const node_img = document.createElement("img");
+//         // node_img.src = imgRouteCoverProg + projects1.indexOf(project) + '.jpeg';
+//         // node_img.alt = 'Project Img missing';
+//         // node_img.style.objectFit = 'cover';
+//         // node_img.style.width = '100%';
+//         // node_img.style.height = '100%';
+//         // node.appendChild(node_img)
 
-        innerslides2.appendChild(node);
-    })
+//         // innerslides1.appendChild(node);
+//     })
 
-    projects3.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects3.indexOf(project);
+//     projects2.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects2.indexOf(project);
 
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
-
-
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverCom + projects3.indexOf(project) + '.jpeg';
-        node_img.alt = 'cover img missing';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
-
-        innerslides3.appendChild(node);
-    })
-
-    projects4.map((project) => {
-        const node = document.createElement("div");
-        node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-        node.id = 'iner-' + projects4.indexOf(project);
-
-        //  span for inner text
-        const span = document.createElement("span");
-        span.classList.add('inner-slides-text-styles')
-        const text = document.createTextNode(project)
-        span.appendChild(text)
-        // node.appendChild(span)
+//         //  span for inner text
+//         // const span = document.createElement("span");
+//         // span.classList.add('inner-slides-text-styles')
+//         // const text = document.createTextNode(project)
+//         // span.appendChild(text)
+//         // // node.appendChild(span)
 
 
-        // Img for inner slides
-        const node_img = document.createElement("img");
-        node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.jpeg';
-        node_img.alt = 'Team member';
-        node_img.style.objectFit = 'cover';
-        node_img.style.width = '100%';
-        node_img.style.height = '100%';
-        node.appendChild(node_img)
+//         // // Img for inner slides
+//         // const node_img = document.createElement("img");
+//         // node_img.src = imgRouteCoverGrant + projects2.indexOf(project) + '.jpeg';
+//         // node_img.alt = 'Team member';
+//         // node_img.style.objectFit = 'cover';
+//         // node_img.style.width = '100%';
+//         // node_img.style.height = '100%';
+//         // node.appendChild(node_img)
 
-        innerslides4.appendChild(node);
-    })
-}
+//         // innerslides2.appendChild(node);
+//     })
+
+//     projects3.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects3.indexOf(project);
+
+//         //  span for inner text
+//         const span = document.createElement("span");
+//         span.classList.add('inner-slides-text-styles')
+//         const text = document.createTextNode(project)
+//         span.appendChild(text)
+//         // node.appendChild(span)
+
+
+//         // Img for inner slides
+//         const node_img = document.createElement("img");
+//         node_img.src = imgRouteCoverCom + projects3.indexOf(project) + '.jpeg';
+//         node_img.alt = 'cover img missing';
+//         node_img.style.objectFit = 'cover';
+//         node_img.style.width = '100%';
+//         node_img.style.height = '100%';
+//         node.appendChild(node_img)
+
+//         innerslides3.appendChild(node);
+//     })
+
+//     projects4.map((project) => {
+//         // const node = document.createElement("div");
+//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
+//         // node.id = 'iner-' + projects4.indexOf(project);
+
+//         //  span for inner text
+//         const span = document.createElement("span");
+//         span.classList.add('inner-slides-text-styles')
+//         const text = document.createTextNode(project)
+//         span.appendChild(text)
+//         // node.appendChild(span)
+
+
+//         // Img for inner slides
+//         const node_img = document.createElement("img");
+//         node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.jpeg';
+//         node_img.alt = 'Team member';
+//         node_img.style.objectFit = 'cover';
+//         node_img.style.width = '100%';
+//         node_img.style.height = '100%';
+//         node.appendChild(node_img)
+
+//         innerslides4.appendChild(node);
+//     })
+// }
 
 const styleInnerSlidesContainer = () => {
     document.getElementById('innerslides-1').style.width = projects1.length * 100 + '%';
@@ -385,27 +387,35 @@ const innerSlideLeft4 = () => {
 // Content Image //
 const setOnInfoField = () => {
     if (portfolioSelected == 0) {
-        tittle.innerHTML = projects1[amountMoved1]
-        p.innerHTML = d1[amountMoved1]
+        tittle.innerHTML = "projects1[amountMoved1]"
+        p.innerHTML = "d1[amountMoved1]"
         let index = amountMoved1 + 1;
-        img.src = imgRouteContentProg + index + '.jpeg';
-        imgPop.src = imgRouteContentProg + index + '.jpeg';
+        imgMain.src = "../img/about-us/kat&angie.png";
+        img1.src = "../img/about-us/kat&angie.png";
+        img3.src = "../img/about-us/kat&angie.png";
+        imgPop.src = "../img/about-us/kat&angie.png";
+        img1.style.display = "block";
+        img3.style.display = "block";
     }
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
         p.innerHTML = d2[amountMoved2]
         let index = amountMoved2 + 1;
-        img.src = imgRouteContentGrant + index + '.jpeg';
+        imgMain.src = imgRouteContentGrant + index + '.jpeg';
         imgPop.src = imgRouteContentGrant + index + '.jpeg';
+        img1.style.display = "none";
+        img3.style.display = "none";
     }
 
     if (portfolioSelected == 2) {
         tittle.innerHTML = projects3[amountMoved3]
         p.innerHTML = d3[amountMoved3]
         let index = amountMoved3 + 1;
-        img.src = imgRouteContentCom + index + '.jpeg';
+        imgMain.src = imgRouteContentCom + index + '.jpeg';
         imgPop.src = imgRouteContentCom + index + '.jpeg';
+        img1.style.display = "none";
+        img3.style.display = "none";
     }
 
     if (portfolioSelected == 3) {
@@ -414,6 +424,8 @@ const setOnInfoField = () => {
         let index = amountMoved4 + 1;
         img.src = imgRouteContentDig + index + '.jpeg';
         imgPop.src = imgRouteContentDig + index + '.jpeg';
+        img1.style.display = "none";
+        img3.style.display = "none";
     }
 }
 
@@ -548,7 +560,7 @@ btnl3.addEventListener('click', innerSlideLeft3)
 btnr4.addEventListener('click', innerSlideRight4)
 btnl4.addEventListener('click', innerSlideLeft4)
 
-img.addEventListener('click', popImg)
+imgMain.addEventListener('click', popImg)
 popBackBlack.addEventListener('click', hidePop)
 
 window.addEventListener('load', styleInnerSlidesContainer)
