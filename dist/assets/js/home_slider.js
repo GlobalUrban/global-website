@@ -26,7 +26,8 @@ const handleLeftArrow = (e) => {
     setPressedStyles(Math.abs(percentageMoved))
 }
 
-const handleSelector = (select) => {
+const handleSelector = (select, e) => {
+    e.stopPropagation()
     stopOnHover();
     slides.style.transform = 'translate(' + select + '%, 0%)';
     percentageMoved = select;
@@ -97,12 +98,28 @@ const setProjectToOpen = (service, project) => {
 
 const setProjectToOpen2 = () => {
     console.log(percentageMoved)
-    if (percentageMoved == 0) setProjectToOpen(3, 3)
-    if (percentageMoved == -25) setProjectToOpen(1, 3)
-    if (percentageMoved == -50) setProjectToOpen(2, 3)
-    if (percentageMoved == -75) setProjectToOpen(0, 1)
+    if (percentageMoved == 0) setProjectToOpen(3, 5)
+    if (percentageMoved == -25) return
+    if (percentageMoved == -50) setProjectToOpen(2, 5)
+    if (percentageMoved == -75) setProjectToOpen(0, 3)
     window.location.href = "./assets/html/portfolio.html#portfolio-slider-id"
 } 
+
+//  see more functions
+const handleSeeMore = (index, e) => {
+    e.stopPropagation();
+    moreArray[index].style.display = "inline"
+    linksSeeMore[index].style.display = "none"
+}
+
+const handleSeeLess = (index, e) => {
+    e.stopPropagation();
+    linksSeeMore[index].style.display = "inline"
+    moreArray[index].style.display = "none"
+}
+
+
+// Get elements =================================================================
 
 let leftArrow = document.getElementById('la')
 let rightArrow = document.getElementById('ra')
@@ -119,20 +136,46 @@ let selector3 = document.getElementById('s3')
 let selector4 = document.getElementById('s4')
 
 // Selectors for see more link
-let link1 = document.getElementById('seemore-1')
-let link2 = document.getElementById('seemore-2')
-let link3 = document.getElementById('seemore-3')
-let link4 = document.getElementById('seemore-4')
+let linksSeeMore = [
+    document.getElementById('seemore-1'),
+    document.getElementById('seemore-2'),
+    document.getElementById('seemore-3'),
+    document.getElementById('seemore-4'),
+];
 let containerButtonsToLink = document.getElementById('container-buttons-tolink')
 
+// more information elements
+const moreArray = [
+    document.getElementById('more1'),
+    document.getElementById('more2'),
+    document.getElementById('more3'),
+    document.getElementById('more4'),
+]
+
+// p elements
+let ps = document.getElementsByClassName('info-p')
 
 rightArrow.addEventListener('click', handleRightArrow)
 leftArrow.addEventListener('click', handleLeftArrow)
 
-selector1.addEventListener('click', () => { handleSelector(0) })
-selector2.addEventListener('click', () => { handleSelector(-25) })
-selector3.addEventListener('click', () => { handleSelector(-50) })
-selector4.addEventListener('click', () => { handleSelector(-75) })
+selector1.addEventListener('click', (e) => { handleSelector(0, e) })
+selector2.addEventListener('click', (e) => { handleSelector(-25, e) })
+selector3.addEventListener('click', (e) => { handleSelector(-50, e) })
+selector4.addEventListener('click', (e) => { handleSelector(-75, e) })
+
+// listeners for see more buttons
+linksSeeMore.map ( (link, index) =>  {
+    link.addEventListener('click', (e) => {handleSeeMore(index, e) })
+})
+
+// listeners for see less buttons
+moreArray.map ( (more, index) =>  {
+    more.addEventListener('click', (e) => {handleSeeLess(index, e) })
+})
+
+for (let i = 0; i < ps.length; i++) {
+    ps[i].addEventListener('click', (e) => e.stopPropagation())   
+}
 
 // Event listener for set project to localstorage
 containerButtonsToLink.addEventListener("click", setProjectToOpen2)

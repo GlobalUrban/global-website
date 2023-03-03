@@ -192,6 +192,16 @@ header .home-slider-container-slides-slide .front-cover .item-info p {
     font-size: 18px;
   }
 }
+header .home-slider-container-slides-slide .front-cover .item-info p span {
+  cursor: pointer;
+}
+header .home-slider-container-slides-slide .front-cover .item-info p .seemore-btn {
+  font-style: italic;
+}
+header .home-slider-container-slides-slide .front-cover .item-info p .more {
+  display: none;
+  cursor: pointer;
+}
 header .home-slider-container-slides-slide .front-cover .item-info a {
   color: white;
   font-weight: 500;
@@ -235,12 +245,13 @@ header .home-slider-container-buttons {
 header .home-slider-container-buttons-directions {
   display: flex;
   width: 100%;
-  height: 90%;
+  height: 9%;
   padding: 0 3%;
-  padding-top: 6%;
   justify-content: space-between;
   align-items: center;
   z-index: 300;
+  position: absolute;
+  bottom: 50%;
 }
 header #ra {
   transform: rotate(180deg);
@@ -256,12 +267,16 @@ header .home-slider-container-selectors {
   gap: 10px;
   align-self: flex-end;
   padding-right: 3%;
+  position: absolute;
+  bottom: 8%;
+  right: 2%;
 }
 header .home-slider-container-selectors-selector {
-  height: 5px;
+  height: 10px;
   width: 50px;
+  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.426);
-  border-radius: 2px;
+  border-radius: 5px;
 }
 header .selector-pressed {
   background-color: rgba(255, 255, 255, 0.885);
@@ -1523,6 +1538,9 @@ header .selector-pressed {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.services .services-content .services-scroll .service .service-bottom .service-project__program-management {
+  width: 100%;
+}
 .services .services-options__up {
   transform: translateY(-100%);
 }
@@ -1926,7 +1944,7 @@ header .selector-pressed {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 1000px;
+  height: 1150px;
   gap: 15px;
   overflow-x: hidden;
 }
@@ -2478,12 +2496,12 @@ footer .footer-right .right-bottom {
   }
 }
 .nav-desktop img {
-  width: 350px;
+  width: 450px;
   transition: all 0.3s;
   margin-top: 1%;
 }
 .nav-desktop .img-page {
-  width: 250px;
+  width: 350px;
 }
 @media screen and (max-width: 1024px) {
   .nav-desktop .img-page {
@@ -2605,7 +2623,8 @@ footer .footer-right .right-bottom {
 .nav-selected {
   font-weight: 900 !important;
   font-weight: bold;
-  font-size: 27px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .showNavLinks {
