@@ -80,7 +80,7 @@ Plink3.addEventListener("click", () => { setProjectToOpen(0, 4) })
 
 // Grant Writing //
 Glink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
-Glink2.addEventListener("click", () => { setProjectToOpen(1, 3) })
+Glink2.addEventListener("click", () => { setProjectToOpen(1, 2) })
 Glink3.addEventListener("click", () => { setProjectToOpen(1, 4) })
 
 // Communications //
