@@ -140,7 +140,7 @@ const imgRouteCover = "../img/portfolio/cover/GUS_About_us_"
 const imgRouteCoverGrant = "../img/portfolio/cover/reduced/Portfolio-grant-writing-client-"
 const imgRouteCoverCom = "../img/portfolio/cover/reduced/Portfolio-communications-client-"
 const imgRouteCoverDig = "../img/portfolio/cover/reduced/Portfolio-design-client-"
-const imgRouteCoverProg = "../img/portfolio/cover/reduced/Portfolio-program-client-"
+const imgRouteCoverProg = "../img/portfolio/cover/reduced/Portfolio-program-client-0.jpeg"
 
 // Content Image //
 const imgRouteContent = "../img/portfolio/content/GUS_About_us_"
@@ -182,7 +182,9 @@ let tittle = document.getElementById('info-title')
 let p = document.getElementById('info-p')
 let imgMain = document.getElementById('info-img2')
 let img1 = document.getElementById('info-img1')
+let hideDiv = document.getElementById('hide-div')
 let img3 = document.getElementById('info-img3')
+let imgProgramMobile = document.getElementById('info-imgProgramMobile')
 let imgPop = document.getElementById('info-img-pop')
 let popBack = document.getElementById('pop-background')
 let popBackBlack = document.getElementById('pop-background-black')
@@ -270,9 +272,9 @@ const projectPressed = (position, portfolio) => {
 //         node_img.style.objectFit = 'cover';
 //         node_img.style.width = '100%';
 //         node_img.style.height = '100%';
-//         node.appendChild(node_img)
+//         // node.appendChild(node_img)
 
-//         innerslides3.appendChild(node);
+//         // innerslides3.appendChild(node);
 //     })
 
 //     projects4.map((project) => {
@@ -386,17 +388,53 @@ const innerSlideLeft4 = () => {
 
 // Content Image //
 const setOnInfoField = () => {
+    let index = amountMoved1 + 1;
+
+    // Program Managemetn //
     if (portfolioSelected == 0) {
-        tittle.innerHTML = "projects1[amountMoved1]"
-        p.innerHTML = "d1[amountMoved1]"
-        let index = amountMoved1 + 1;
-        imgMain.src = "../img/about-us/kat&angie.png";
-        img1.src = "../img/about-us/kat&angie.png";
-        img3.src = "../img/about-us/kat&angie.png";
-        imgPop.src = "../img/about-us/kat&angie.png";
-        img1.style.display = "block";
-        img3.style.display = "block";
+        // Import Image //
+        imgMain.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
+        img1.src = "../img/portfolio/content/reduced/Portfolio-program-client-3.jpeg";
+        img3.src = "../img/portfolio/content/reduced/Portfolio-program-client-4.jpeg";
+        imgPop.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
+        imgProgramMobile.src = "../img/about-us/kat&angie.png";
+
+        // Title & Description //
+        tittle.innerHTML = "Program Management"
+        tittle.style.marginTop = "none"
+        p.innerHTML = "Global’s team of experienced program managers has effectively helped cities and private entities to organize and coordinate their activities, set clear objectives, and develop strategies to implement their programs by providing them with a team that possesses the tools and processes to ensure that projects are completed on time and within budget saving money and increasing efficiency. We are currently administering various programs for multiple cities that create jobs, provide first-time home buyer assistance, and improve their living conditions and quality of life through owner-occupied rehabilitation programs."
+        p.style.width = "100%"
+        p.style.marginBottom = "50px"
+        p.style.marginTop = "5px"
+
+        // Style //
+        img1.style.width = "300px";
+        img1.style.height = "300px";
+        img3.style.width = "300px";
+        img3.style.height = "300px";
+        imgMain.style.width = "300px";
+        imgMain.style.height = "300px";
+        imgProgramMobile.style.width = "300px";
+        imgProgramMobile.style.height = "300px";
+
+
+
+        inforContainer.style.display = "flex";
+        inforContainer.style.flexDirection = "column"
+
+        if (inforContainer.clientWidth <= 500) {
+            img1.style.display = "none";
+            img3.style.display = "none";
+            imgProgramMobile.style.display = "block";
+            imgMain.style.display = "none";
+        } else {
+            img1.style.display = "block";
+            img3.style.display = "block";
+            imgProgramMobile.style.display = "none";
+        }
     }
+
+
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
@@ -406,6 +444,10 @@ const setOnInfoField = () => {
         imgPop.src = imgRouteContentGrant + index + '.jpeg';
         img1.style.display = "none";
         img3.style.display = "none";
+        imgProgramMobile.style.display = "none";
+        imgMain.style.width = "500px";
+        imgMain.style.height = "500px";
+        inforContainer.style.flexDirection = "row"
     }
 
     if (portfolioSelected == 2) {
@@ -416,18 +458,34 @@ const setOnInfoField = () => {
         imgPop.src = imgRouteContentCom + index + '.jpeg';
         img1.style.display = "none";
         img3.style.display = "none";
+        imgProgramMobile.style.display = "none";
+        imgMain.style.width = "500px";
+        imgMain.style.height = "500px";
+        inforContainer.style.flexDirection = "row"
     }
 
     if (portfolioSelected == 3) {
         tittle.innerHTML = projects4[amountMoved4]
         p.innerHTML = d4[amountMoved4]
         let index = amountMoved4 + 1;
-        img.src = imgRouteContentDig + index + '.jpeg';
+        imgMain.src = imgRouteContentDig + index + '.jpeg';
         imgPop.src = imgRouteContentDig + index + '.jpeg';
         img1.style.display = "none";
         img3.style.display = "none";
+        imgProgramMobile.style.display = "none";
+        imgMain.style.width = "500px";
+        imgMain.style.height = "500px";
+        inforContainer.style.flexDirection = "row"
     }
+
+
 }
+
+
+
+
+
+
 
 const setPressedStyle = (index) => {
     let generalButtons = document.getElementsByClassName('portfolio-slider-projects-btn');
@@ -564,6 +622,11 @@ imgMain.addEventListener('click', popImg)
 popBackBlack.addEventListener('click', hidePop)
 
 window.addEventListener('load', styleInnerSlidesContainer)
-window.addEventListener('load', fillProjectSlides)
+// window.addEventListener('load', fillProjectSlides)
 window.addEventListener('load', setOnInfoField)
 window.addEventListener('load', checkStorage);
+
+
+
+
+

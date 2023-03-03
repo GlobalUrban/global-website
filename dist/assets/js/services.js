@@ -73,10 +73,10 @@ for (let i = 0; i < 4; i++) {
     })
 }
 
-// Program Management //
-Plink1.addEventListener("click", () => { setProjectToOpen(0, 3) })
-Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
-Plink3.addEventListener("click", () => { setProjectToOpen(0, 4) })
+// // Program Management //
+// Plink1.addEventListener("click", () => { setProjectToOpen(0, 3) })
+// Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
+// Plink3.addEventListener("click", () => { setProjectToOpen(0, 4) })
 
 // Grant Writing //
 Glink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
@@ -85,7 +85,7 @@ Glink3.addEventListener("click", () => { setProjectToOpen(1, 4) })
 
 // Communications //
 Clink1.addEventListener("click", () => { setProjectToOpen(2, 3) })
-Clink2.addEventListener("click", () => { setProjectToOpen(2, 4) })
+Clink2.addEventListener("click", () => { setProjectToOpen(2, 2) })
 Clink3.addEventListener("click", () => { setProjectToOpen(2, 5) })
 
 // Digital & Print //
