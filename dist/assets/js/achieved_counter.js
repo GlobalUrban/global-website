@@ -59,7 +59,7 @@ const setNumber2 = () => {
         counter2.innerHTML = c0
         if (c0 >= 150) {
             clearInterval(counterInverval)
-            counter2.innerHTML = '150+'
+            counter2.innerHTML = '75 +'
             let br = document.createElement('br')
             let text = document.createTextNode('Happy Clients')
             counter2.appendChild(br)

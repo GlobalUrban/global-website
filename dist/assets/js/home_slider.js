@@ -99,7 +99,7 @@ const setProjectToOpen = (service, project) => {
 const setProjectToOpen2 = () => {
     console.log(percentageMoved)
     if (percentageMoved == 0) setProjectToOpen(3, 5)
-    if (percentageMoved == -25) setProjectToOpen(1, 5)
+    if (percentageMoved == -25) return
     if (percentageMoved == -50) setProjectToOpen(2, 5)
     if (percentageMoved == -75) setProjectToOpen(0, 3)
     window.location.href = "./assets/html/portfolio.html#portfolio-slider-id"
