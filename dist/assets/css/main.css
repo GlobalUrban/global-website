@@ -748,6 +748,7 @@ header .selector-pressed {
   outline: none;
   resize: none;
   color: white;
+  padding: 1.5%;
 }
 .container .container-bottom .cont-form form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.751);
