@@ -1,34 +1,45 @@
 
 // Projects
 const projects1 = [
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
     'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
     'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
 
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 const projects2 = [
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Land and Water Conservation Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6 million</span> ',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    "Children's Dental Care Program <br/><span style='font-size:24px;'>Grant Funded Amount: $8.4 million</span>",
-    'Equitable Communities Revitalization Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6.85 million</span>',
+    // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
+    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:24px; color: #F17838;'><b>Grant Funded Amount: </b> $8.4 million</span>",
+    // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
+    ' <br/><span style="font-size:24px;">Requested Amount: $6.9 million</span>',
+    // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
     'Land and Water Conservation Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6 million</span> ',
+    // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
     'Safe Streets and Roads for All (SS4A) Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span>',
+    // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
     'WaterSmart Drought Response Program Grant <br/><span style="font-size:24px;">Grant Funded Amount: Pending</span> ',
 
-    // Con tirro //
-    "Children's Dental Care Program <br/><span style='font-size:24px;'>Grant Funded Amount: $8.4 million</span>",
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;' ><b>Funding Agency: U.S. Department of Transportation (DOT)</b></span></br><span style='font-size:24px; color: #F17838;'>Grant Funded Amount: $8.4 million</span>",
+    ' <br/><span style="font-size:24px;">Requested Amount: $6.9 million</span>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 const projects3 = [
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Delta Fuel Dump Crisis Management and Public Relations <br/><h5>City of Cudahy</h5>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
     'Community Outreach <br/><h5>City of Montebello</h5>',
@@ -36,13 +47,15 @@ const projects3 = [
     'Proposition 68 Public Outreach and Community Engagement <br/><h5>City of Hawaiian Gardens</h5>',
     'Pilot Interpretation Program <br/><h5>California Department of Water Resources</h5>',
 
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 const projects4 = [
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'State of the City Presentation <br/><h5>City of San Luis Obispo</h5>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
     'Newsletter Design <br/><h5>City of Rosemead</h5>',
@@ -50,13 +63,16 @@ const projects4 = [
     'Branding, Graphic Design, and Events Stationery <br/><h5>California Contract Cities Association</h5>',
     'Graphic Design and Social Media <br/><h5>City of La Puente</h5>',
 
-    // Con tirro //
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 // Descriptions
 const d1 = [
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
     'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
@@ -65,33 +81,42 @@ const d1 = [
     'Global’s team of experienced program managers has effectively helped cities and private entities to organize and coordinate their activities, set clear objectives, and develop strategies to implement their programs by providing them with a team that possesses the tools and processes to ensure that projects are completed on time and within budget saving money and increasing efficiency.  We are currently administering various programs for multiple cities that create jobs, provide first-time home buyer assistance, and improve their living conditions and quality of life through owner-occupied rehabilitation programs.',
 
 
-
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Consequat dolore id adipisicing pariatur. Adipisicing magna irure dolor ex anim. Velit eu magna velit eu veniam laboris anim amet nulla magna esse cupidatat ut cillum cupidatat. Excepteur aliqua consequat anim non exercitation sit ad exercitation enim consequat deserunt in consectetur velit laboris. Aute ea est magna culpa esse ipsum deserunt nisi quis reprehenderit.',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 const d2 = [
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     `<span style='font-size:24px;'>Pasadena Water and Power Department</span> <br/><br/>Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
+    `<span style='font-size:24px;' >Housing Authority of the City of Los Angeles (HACLA)</span> <br/><br/> RAISE discretionary grants help project sponsors at the State and local levels, including municipalities, Tribal governments, counties, and others complete critical freight and passenger transportation infrastructure projects. RAISE projects are rigorously reviewed and evaluated on statutory criteria of safety, environmental sustainability, quality of life, mobility and community connectivity, economic competitiveness and opportunity including tourism, state of good repair, partnership and collaboration, and innovation. <br/><br/><h2 style="text-align:start;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
-    `<span style='font-size:24px;' >First 5 LA Commission</span> <br/><br/> Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
-
+    // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
     `<span style="font-size:24px; ">City of Lynwood</span><br/><br/> Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
-
+    // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
     `<span style='font-size:24px;'>City of Bell Gardens</span> <br/><br/>Our goal, along with the City of Bell Gardens, is to seek benefits for the community, which is why we create proposals for projects that can help the City. By working together, we get the best concessions for its residents. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
+
+    // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
     `<span style='font-size:24px;'>City of Azusa</span> <br/><br/>Working hand in hand with our clients is what we enjoy the most, and that's why we do our best for them, such as managing the CalHome Program and ensuring its residents' reach, effectiveness, and availability. Furthermore, we support the City by creating State and Federal funds proposals.<br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
+    // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
     `<span style='font-size:24px;'>Pasadena Water and Power Department</span> <br/><br/>
     Grant writing is a powerful tool for public and private entities to secure funding to reach their goals. The Global team has written almost one billion dollars worth of successful grants that have helped our clients access additional resources to augment their operations, develop new products, create new jobs, improve their infrastructure, expand public services, and increase economic development. Pasadena Water and Power allowed us to write grants to expand access to clean drinking water, improve water quality, and creating sustainable infrastructure for their residents while not increasing rates.
     <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
-
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 const d3 = [
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.',
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 
@@ -103,13 +128,15 @@ const d3 = [
 
     "Global's team evaluates perspectives, plans, and turns ideas into reality. Through our collaboration with Stantec, we support the California Department of Water Resources in communicating its goals of informing the public on the importance of water conservation, educating people on how to use water efficiently, and promoting water-related policies and initiatives. Through our collaborative efforts, we assist DWR and Ground Sustainability Agencies in communicating water supply availability, water quality, and potential water shortages.",
 
-
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 const d4 = [
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     'Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.',
 
@@ -123,7 +150,9 @@ const d4 = [
     "Meeting the growing social media challenges has required a multi-pronged approach. We initially created a strategy to ensure that the social media presence was engaging and well-aligned with the City’s organizational goals. This included the development of content that resonated with the residents and promoted  that content. We continually monitor and respond to comments and feedback from users in a timely manner. Our analytical tools to track the performance of the various social media campaigns and make adjustments as needed.",
 
 
+    // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.',
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
 // Controllers for movement
