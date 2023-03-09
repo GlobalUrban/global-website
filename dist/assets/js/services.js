@@ -80,8 +80,8 @@ for (let i = 0; i < 4; i++) {
 
 // Grant Writing //
 Glink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
-Glink2.addEventListener("click", () => { setProjectToOpen(1, 2) })
-Glink3.addEventListener("click", () => { setProjectToOpen(1, 4) })
+Glink2.addEventListener("click", () => { setProjectToOpen(1, 3) })
+Glink3.addEventListener("click", () => { setProjectToOpen(1, 5) })
 
 // Communications //
 Clink1.addEventListener("click", () => { setProjectToOpen(2, 3) })
