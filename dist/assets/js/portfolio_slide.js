@@ -16,7 +16,7 @@ const projects1 = [
 
 const projects2 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    'Land and Water Conservation Grant <br/><span style="font-size:24px;">Grant Funded Amount: $6 million</span> ',
+    'Land and Water Conservation Fund (LWCF) <br/> <span>Funding Agency: California Department of Parks and Recreation</span> </br><span style="font-size:24px; color: #F17838;">Requested Amount: $6 million</span>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
@@ -31,8 +31,7 @@ const projects2 = [
     'Proposition 1 Groundwater Grant Program <br/> <span>Funding Agency: State Water Resources Control Board</span> </br><span style="font-size:24px; color: #F17838;">Requested Amount: $2.5 million</span>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;' ><b>Funding Agency: U.S. Department of Transportation (DOT)</b></span></br><span style='font-size:24px; color: #F17838;'>Grant Funded Amount: $8.4 million</span>",
-    ' <br/><span style="font-size:24px;">Requested Amount: $6.9 million</span>',
+    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:24px; color: #F17838;'><b>Grant Funded Amount: </b> $8.4 million</span>",
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
@@ -68,7 +67,8 @@ const projects4 = [
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
-// Descriptions
+// Descriptions // ================================================================================================
+// Program Management //
 const d1 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Consequat reprehenderit dolor aute aute ullamco reprehenderit ad proident pariatur qui dolore. Fugiat sit amet mollit proident elit ullamco. Ipsum laborum enim nostrud sunt occaecat et ullamco dolor non pariatur consequat sint. In ut qui enim id irure aliquip. Ipsum tempor cillum qui nisi. Laboris ea labore proident culpa exercitation.',
@@ -86,9 +86,10 @@ const d1 = [
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
+// Grant Writing //
 const d2 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    `<span style='font-size:24px;'>Pasadena Water and Power Department</span> <br/><br/>Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
+    `<span style='font-size:24px;'>City of Bell Gardens</span> <br/><br/>After over a decade without having a functional community pool, our team was able to obtain 6 million dollars for the renovation of the Bell Gardens Community pool.  This effort reduced the risk of drownings and provided residents access to swimming programs that increases opportunities for advancement and success, as swimming is a great way to stay healthy, build confidence, and foster a sense of community. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
@@ -107,10 +108,11 @@ const d2 = [
     `<span style='font-size:24px;'>Azusa Light and Water</span> <br/><br/> The funding would be used for the rehabilitation of the inactive Aspan Well located within the City of Azusa. This project will consist of designing and constructing treatment facilities and well modifications to facilitate reactivating the well. Drought conditions continue to persist throughout California, and this project provides another critical source of water for the City and its approximately 50,000 residents. The project will satisfy approximately 15% of the current water system demand, and water will be directly treated and delivered to City residents. The project will allow Azusa Light and Water (ALW) to reduce its reliance on imported water supplies during periods of drought and emergency. <br/><br/><h2 style="text-align:center;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
+    `<span style='font-size:24px;' >Housing Authority of the City of Los Angeles (HACLA)</span> <br/><br/> RAISE discretionary grants help project sponsors at the State and local levels, including municipalities, Tribal governments, counties, and others complete critical freight and passenger transportation infrastructure projects. RAISE projects are rigorously reviewed and evaluated on statutory criteria of safety, environmental sustainability, quality of life, mobility and community connectivity, economic competitiveness and opportunity including tourism, state of good repair, partnership and collaboration, and innovation. <br/><br/><h2 style="text-align:start;font-size:22px; color:rgba(241, 120, 56, 1);">Global has obtained over $750 million in funding for municipalities, agencies, organizations, and others.</h2>`,
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
+// Communications //
 const d3 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.',
@@ -131,6 +133,7 @@ const d3 = [
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
+// Digital & Print Design //
 const d4 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
@@ -428,7 +431,7 @@ const setOnInfoField = () => {
         // imgProgramMobile.src = "../img/about-us/kat&angie.png";
 
         // Title & Description //
-        tittle.innerHTML = "Program Management"
+        tittle.innerHTML = "CalHome Program Management"
         tittle.style.marginTop = "none"
         p.innerHTML = "Global’s team of experienced program managers has effectively helped cities and private entities to organize and coordinate their activities, set clear objectives, and develop strategies to implement their programs by providing them with a team that possesses the tools and processes to ensure that projects are completed on time and within budget saving money and increasing efficiency. We are currently administering various programs for multiple cities that create jobs, provide first-time home buyer assistance, and improve their living conditions and quality of life through owner-occupied rehabilitation programs."
         p.style.width = "100%"
