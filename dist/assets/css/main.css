@@ -2175,6 +2175,11 @@ header .selector-pressed {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left {
+    width: 99%;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left h2 {
   color: black;
   line-height: 1.5;

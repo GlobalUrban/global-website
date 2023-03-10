@@ -33,16 +33,16 @@
         gap: 15px;
         overflow-x: hidden;
 
-        @include breakpoint("Laptop-M"){
+        @include breakpoint("Laptop-M") {
             height: 1500px;
         }
 
 
-        @include breakpoint("Tablet-M"){
+        @include breakpoint("Tablet-M") {
             height: 1700px;
         }
 
-        @include breakpoint("Phone-L"){
+        @include breakpoint("Phone-L") {
             height: 1700px;
         }
 
@@ -262,10 +262,10 @@
 
             @include breakpoint("Tablet-L") {
                 height: 60%;
-                
+
                 @include flex(column, center);
                 justify-content: flex-start;
-                align-items: flex-start;     
+                align-items: flex-start;
 
                 h2 {
                     width: 100%;
@@ -279,7 +279,12 @@
 
 
             .info-container__left {
-            
+
+
+                @media screen and (min-width: 1200px) {
+                    width: 99%;
+                }
+
                 h2 {
                     color: black;
                     line-height: 1.5;
