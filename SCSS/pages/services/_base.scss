@@ -6,8 +6,9 @@
   position: relative;
 
   @include breakpoint(Tablet-M) {
-    height: 1500px;
+    height: 1700px;
   }
+
 
   // Services Front part || Buttons Section -------------------
   .services-options {
@@ -18,7 +19,6 @@
     z-index: 20;
     transition: all 0.4s ease-in-out;
     overflow-x: hidden;
-
 
     // Services Options Top //
     .services-options__top {
@@ -173,10 +173,6 @@
     @include breakpoint(Tablet-M) {
       position: fixed;
     }
-
-
-
-
   }
 
   // ----------------------------------------------------------
@@ -211,11 +207,12 @@
           display: flex;
 
           @include breakpoint(Tablet-M) {
-            height: 35%;
+            height: 40%;
           }
 
           .back-communications {
            margin-left: 35vw;
+           z-index: 10000;
           }
 
           // Communication Change Order ------- //
@@ -232,7 +229,6 @@
               bottom: -3%;
               right: 0;
               font-size: 25px;
-
               z-index: 10;
             }
           }
@@ -283,6 +279,18 @@
 
               p {
                 margin: 0;
+              }
+
+              ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5;
+                
+                li{
+                  margin-right: 35px;
+                  margin-top: 10px;
+                }
               }
             }
 
@@ -336,7 +344,7 @@
           display: flex;
 
           @include breakpoint(Tablet-M) {
-            height: 65%;
+            height: 60%;
           }
 
           @include breakpoint(Tablet-M) {
@@ -363,6 +371,10 @@
               opacity: 0;
               transition: all 0.3s;
               @include flex-center;
+
+              @include breakpoint("Phone-L"){
+                opacity: 1;
+              }
 
               .opacity-content {
                 width: 65%;

@@ -1141,7 +1141,7 @@ header .selector-pressed {
 }
 @media screen and (max-width: 768px) {
   .services {
-    height: 1500px;
+    height: 1700px;
   }
 }
 .services .services-options {
@@ -1339,11 +1339,12 @@ header .selector-pressed {
 }
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-top {
-    height: 35%;
+    height: 40%;
   }
 }
 .services .services-content .services-scroll .service .service-top .back-communications {
   margin-left: 35vw;
+  z-index: 10000;
 }
 .services .services-content .services-scroll .service .service-top .communication-order1 {
   order: 1;
@@ -1410,6 +1411,16 @@ header .selector-pressed {
 .services .services-content .services-scroll .service .service-top .service-info .service-info__content p {
   margin: 0;
 }
+.services .services-content .services-scroll .service .service-top .service-info .service-info__content ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5;
+}
+.services .services-content .services-scroll .service .service-top .service-info .service-info__content ul li {
+  margin-right: 35px;
+  margin-top: 10px;
+}
 .services .services-content .services-scroll .service .service-top .service-info .done-projects {
   position: absolute;
   align-self: center;
@@ -1450,7 +1461,7 @@ header .selector-pressed {
 }
 @media screen and (max-width: 768px) {
   .services .services-content .services-scroll .service .service-bottom {
-    height: 65%;
+    height: 60%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1486,6 +1497,11 @@ header .selector-pressed {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer {
+    opacity: 1;
+  }
 }
 .services .services-content .services-scroll .service .service-bottom .service-project .opacity-layer .opacity-content {
   width: 65%;
