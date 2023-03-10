@@ -1948,6 +1948,21 @@ header .selector-pressed {
   gap: 15px;
   overflow-x: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .portfolio .portfolio-general-container {
+    height: 1500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio .portfolio-general-container {
+    height: 1700px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-general-container {
+    height: 1700px;
+  }
+}
 .portfolio .portfolio-general-container .portfolio-slider-projects-container {
   height: 50%;
   width: 100vw;
@@ -2137,28 +2152,27 @@ header .selector-pressed {
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   align-items: flex-start;
-  padding: 0 4%;
-  padding-top: 5%;
-}
-@media screen and (max-width: 480px) {
-  .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
-    height: 60%;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
-    padding-top: 8%;
-  }
+  padding: 0 2%;
+  padding-top: 50px;
 }
 @media screen and (max-width: 1024px) {
-  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left {
-    width: 95%;
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container h2 {
+    width: 100%;
   }
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left h2 {
@@ -2172,7 +2186,7 @@ header .selector-pressed {
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .info-container__left p {
   font-size: 18px;
   margin: 0;
-  margin-top: 4%;
+  margin-top: 100%;
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container img {
   width: 450px;

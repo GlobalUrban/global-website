@@ -374,6 +374,7 @@ const innerSlideRight2 = () => {
     // console.log(amountMoved2);
     setOnInfoField();
 }
+
 const innerSlideLeft2 = () => {
     if (amountMoved2 == 1) amountMoved2 = 6;
     amountMoved2 -= 1;
@@ -424,7 +425,7 @@ const setOnInfoField = () => {
         img1.src = "../img/portfolio/content/reduced/Portfolio-program-client-3.jpeg";
         img3.src = "../img/portfolio/content/reduced/Portfolio-program-client-4.jpeg";
         imgPop.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
-        imgProgramMobile.src = "../img/about-us/kat&angie.png";
+        // imgProgramMobile.src = "../img/about-us/kat&angie.png";
 
         // Title & Description //
         tittle.innerHTML = "Program Management"
@@ -441,24 +442,25 @@ const setOnInfoField = () => {
         img3.style.height = "300px";
         imgMain.style.width = "300px";
         imgMain.style.height = "300px";
-        imgProgramMobile.style.width = "300px";
-        imgProgramMobile.style.height = "300px";
+        // imgProgramMobile.style.width = "300px";
+        // imgProgramMobile.style.height = "300px";
 
 
 
         inforContainer.style.display = "flex";
         inforContainer.style.flexDirection = "column"
 
-        if (inforContainer.clientWidth <= 500) {
-            img1.style.display = "none";
-            img3.style.display = "none";
-            imgProgramMobile.style.display = "block";
-            imgMain.style.display = "none";
-        } else {
-            img1.style.display = "block";
-            img3.style.display = "block";
-            imgProgramMobile.style.display = "none";
-        }
+        // if (inforContainer.clientWidth <= 500) {
+        //     img1.style.display = "none";
+        //     img3.style.display = "none";
+        //     imgProgramMobile.style.display = "block";
+        //     // imgMain.style.display = "none";
+        // } else {
+        //     img1.style.display = "block";
+        //     img3.style.display = "block";
+        //     // imgMain.style.display = "block";
+        //     imgProgramMobile.style.display = "none";
+        // }
     }
 
 
@@ -508,12 +510,6 @@ const setOnInfoField = () => {
 
 }
 
-
-
-
-
-
-
 const setPressedStyle = (index) => {
     let generalButtons = document.getElementsByClassName('portfolio-slider-projects-btn');
     generalButtons[0].classList.remove('btn-general-pressed')
@@ -542,8 +538,6 @@ const checkStorage = () => {
     window.localStorage.removeItem("service")
     window.localStorage.removeItem("project")
 }
-
-
 
 const setProject = (serviceSet, projectSet) => {
 
@@ -649,6 +643,7 @@ imgMain.addEventListener('click', popImg)
 popBackBlack.addEventListener('click', hidePop)
 
 window.addEventListener('load', styleInnerSlidesContainer)
+
 // window.addEventListener('load', fillProjectSlides)
 window.addEventListener('load', setOnInfoField)
 window.addEventListener('load', checkStorage);
