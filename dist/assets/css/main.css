@@ -885,6 +885,7 @@ header .selector-pressed {
   justify-content: center;
   align-items: center;
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .container .contact-form__btn {

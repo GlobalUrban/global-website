@@ -312,6 +312,7 @@
         outline: none;
         @include flex(column, center);
         display: none;
+        cursor: pointer;
 
         @include breakpoint("Phone-L") {
             display: flex;
