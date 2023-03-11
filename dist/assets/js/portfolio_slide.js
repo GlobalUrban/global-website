@@ -20,7 +20,7 @@ const projects2 = [
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
-    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:24px; color: #F17838;'><b>Grant Funded Amount: </b> $8.4 million</span>",
+    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:24px; color: #F17838;'><b>Grant Funded Amount: </b> $6.9 million</span>",
     // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
     'Solid Waste Infrastructure for Recycling (SWIFR) Grant Program <br/> <span>Funding Agency: U.S. Environmental Protection Agency (EPA)</span> </br><span style="font-size:24px; color: #F17838;">Requested Amount: $3.7 million</span>',
     // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ const projects2 = [
     'Proposition 1 Groundwater Grant Program <br/> <span>Funding Agency: State Water Resources Control Board</span> </br><span style="font-size:24px; color: #F17838;">Requested Amount: $2.5 million</span>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:24px; color: #F17838;'><b>Grant Funded Amount: </b> $8.4 million</span>",
+    "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:24px; color: #F17838;'><b>Grant Funded Amount: </b> $6.9 million</span>",
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
