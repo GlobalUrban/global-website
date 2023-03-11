@@ -335,10 +335,12 @@
                 width: 50px;
                 &:hover {
                     cursor: pointer;
+                   
                 }
 
                 @include breakpoint(Phone-L) {
                     transform: translateY(-300%) rotate(180deg);
+                   
                 }
             }
         }
