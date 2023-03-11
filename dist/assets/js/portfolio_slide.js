@@ -2,15 +2,15 @@
 // Projects
 const projects1 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    'CalHome Program Management <br/><h5>City of Bell Gardens</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2><h5>City of Bell Gardens</h5>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    '<h2 style="margin-bottom: 20px; line-height: 1;">CalHome Program Management></h2> <h5>City of Huntington Park</h5>',
-    '<h2 style="margin-bottom: 20px; line-height: 1;">CalHome Program Management></h2> <h5>City of Huntington Park</h5>',
-    '<h2 style="margin-bottom: 20px; line-height: 1;">CalHome Program Management></h2> <h5>City of Bell Gardens</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2> <h5>City of Huntington Park</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2> <h5>City of Huntington Park</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2> <h5>City of Bell Gardens</h5>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    'CalHome Program Management <br/><h5>City of Huntington Park</h5>',
+    '<h2 style="margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2> <h5>City of Huntington Park</h5>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
@@ -29,10 +29,10 @@ const projects2 = [
     '<h2 style="margin-bottom: 20px; line-height: 1;">Grant Title: Land and Water Conservation Fund (LWCF)</h2> <span><b>Funding Agency: </b>  California Department of Parks and Recreation</span> </br><span style="font-size:20px; "><b>Client: </b>City of Bell Gardens</span> <br/><span style="font-size:20px;"><b>Requested Amount:</b> $6 million</span><br><br>',
 
     // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
-    '<h2 style="margin-bottom: 20px; line-height: 1;">Grant Title: Safe Streets and Roads for All (SS4A) Grant Program</h2> <span><b>Funding Agency: </b> : U.S. Department of Transportation (DOT)</span> </br><span style="font-size:20px; "><b>Client: </b>City of Azusa</span><span style="font-size:20px;"><b>Requested Amount:</b> $3.5 million</span><br><br>',
+    '<h2 style="margin-bottom: 20px; line-height: 1;">Grant Title: Safe Streets and Roads for All (SS4A) Grant Program</h2> <span><b>Funding Agency: </b> : U.S. Department of Transportation (DOT)</span> </br><span style="font-size:20px; "><b>Client: </b>City of Azusa</span> <br><span style="font-size:20px;"><b>Requested Amount:</b> $3.5 million</span><br><br>',
 
     // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
-    '<h2 style="margin-bottom: 20px; line-height: 1;">Grant Title: Proposition 1 Groundwater Grant Program</h2> <span><b>Funding Agency: </b>  State Water Resources Control Board</span></br><span style="font-size:20px; "><b>Client: </b>Azusa Light and Water</span><span style="font-size:20px;"><b>Requested Amount:</b> $2.5 million</span><br><br>',
+    '<h2 style="margin-bottom: 20px; line-height: 1;">Grant Title: Proposition 1 Groundwater Grant Program</h2> <span><b>Funding Agency: </b>  State Water Resources Control Board</span></br><span style="font-size:20px; "><b>Client: </b>Azusa Light and Water</span><br><span style="font-size:20px;"><b>Requested Amount:</b> $2.5 million</span><br><br>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     "Rebuilding American Infrastructure with Sustainability and Equity (RAISE) Grant Program <br/> <span style='font-size: 24px;'><b>Funding Agency: </b> U.S. Department of Transportation (DOT)</span></br><span style='font-size:20px;'><b>Grant Funded Amount: </b> $6.9 million</span>",
@@ -44,11 +44,11 @@ const projects3 = [
     'Delta Fuel Dump Crisis Management and Public Relations <br/><h5>City of Cudahy</h5>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
-    'Community Outreach <br/><h5>City of Montebello</h5>',
-    'Delta Fuel Dump Crisis Management and Public Relations <br/><h5>City of Cudahy</h5>',
-    'Proposition 68 Public Outreach and Community Engagement <br/><h5>City of Hawaiian Gardens</h5>',
-    'Pilot Interpretation Program <br/><h5>California Department of Water Resources</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Virtual Meetings and Stakeholder Engagement</h2><h3>City of Oceanside</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Community Outreach </h2><h3>City of Montebello</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Delta Fuel Dump Crisis Management and Public Relations</h2><h3>City of Cudahy</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Proposition 68 Public Outreach and Community Engagement</h2><h3>City of Hawaiian Gardens</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Pilot Interpretation Program</h2><h3>California Department of Water Resources</h3>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Virtual Meetings and Stakeholder Engagement <br/><h5>City of Oceanside</h5>',
@@ -60,11 +60,11 @@ const projects4 = [
     'State of the City Presentation <br/><h5>City of San Luis Obispo</h5>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
-    'Newsletter Design <br/><h5>City of Rosemead</h5>',
-    'State of the City Presentation <br/><h5>City of San Luis Obispo</h5>',
-    'Branding, Graphic Design, and Events Stationery <br/><h5>California Contract Cities Association</h5>',
-    'Graphic Design and Social Media <br/><h5>City of La Puente</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Graphic Design and Social Media</h2><h3>City of El Monte</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Newsletter Design</h2><h3>City of Rosemead</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">State of the City Presentation</h2><h3>City of San Luis Obispo</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Branding, Graphic Design, and Events Stationery</h2><h3>California Contract Cities Association</h3>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Graphic Design and Social Media</h2><h3>City of La Puente</h3>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
@@ -435,7 +435,7 @@ const setOnInfoField = () => {
         // imgProgramMobile.src = "../img/about-us/kat&angie.png";
 
         // Title & Description //
-        tittle.innerHTML = "CalHome Program Management"
+        tittle.innerHTML = '<h2 style= "margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2>'
         tittle.style.marginTop = "none"
         p.innerHTML = "Global’s team of experienced program managers has effectively helped cities and private entities to organize and coordinate their activities, set clear objectives, and develop strategies to implement their programs by providing them with a team that possesses the tools and processes to ensure that projects are completed on time and within budget saving money and increasing efficiency. We are currently administering various programs for multiple cities that create jobs, provide first-time home buyer assistance, and improve their living conditions and quality of life through owner-occupied rehabilitation programs."
         p.style.width = "100%"
