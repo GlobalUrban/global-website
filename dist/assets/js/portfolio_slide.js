@@ -453,17 +453,17 @@ const setOnInfoField = () => {
         inforContainer.style.display = "flex";
         inforContainer.style.flexDirection = "column"
 
-        // if (inforContainer.clientWidth <= 500) {
-        //     img1.style.display = "none";
-        //     img3.style.display = "none";
-        //     imgProgramMobile.style.display = "block";
-        //     // imgMain.style.display = "none";
-        // } else {
-        //     img1.style.display = "block";
-        //     img3.style.display = "block";
-        //     // imgMain.style.display = "block";
-        //     imgProgramMobile.style.display = "none";
-        // }
+        if (inforContainer.clientWidth <= 500) {
+            img1.style.display = "none";
+            img3.style.display = "none";
+            imgProgramMobile.style.display = "none";
+            // imgMain.style.display = "none";
+        } else {
+            img1.style.display = "block";
+            img3.style.display = "block";
+            // imgMain.style.display = "block";
+            imgProgramMobile.style.display = "none";
+        }
     }
 
 
