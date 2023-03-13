@@ -211,8 +211,8 @@
           }
 
           .back-communications {
-           margin-left: 35vw;
-           z-index: 10000;
+            margin-left: 35vw;
+            z-index: 10000;
           }
 
           // Communication Change Order ------- //
@@ -286,8 +286,8 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 5;
-                
-                li{
+
+                li {
                   margin-right: 35px;
                   margin-top: 10px;
                 }
@@ -339,7 +339,7 @@
         .service-bottom {
           width: 100%;
           height: 45%;
-          
+
           display: flex;
 
           @include breakpoint(Tablet-M) {
@@ -371,7 +371,7 @@
               transition: all 0.3s;
               @include flex-center;
 
-              @include breakpoint("Phone-L"){
+              @include breakpoint("Phone-L") {
                 opacity: 1;
               }
 
@@ -426,7 +426,7 @@
               @include img-cover;
             }
 
-           
+
           }
 
 
@@ -456,7 +456,7 @@
   // Button Back || This pull back the services buttons //
   .btn-back {
     position: fixed;
-    
+
     background: white;
     padding: 5px 20px;
     color: black;
@@ -499,26 +499,26 @@
 
   @include breakpoint("Tablet-M") {
     display: none;
-}
+  }
 }
 
 .s-program__mobile {
-display: none;
-width: 100%;
-height: 100%;
-@include flex-center;
+  display: none;
+  width: 100%;
+  height: 100%;
+  @include flex-center;
 
-img {
-  object-fit: cover;
-}
+  img {
+    object-fit: cover;
+  }
 
-@include breakpoint("Tablet-M") {
-  display: block;
-}
+  @include breakpoint("Tablet-M") {
+    display: block;
+  }
 }
 
 #more {
- display: none;
+  display: none;
 
 }
 
@@ -533,5 +533,3 @@ img {
   color: white;
   font-weight: bold;
 }
-
-
