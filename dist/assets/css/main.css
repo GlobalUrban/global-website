@@ -1627,6 +1627,22 @@ header .selector-pressed {
   }
 }
 
+#more {
+  display: none;
+}
+
+#more2 {
+  display: none;
+}
+
+.myBtn {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+}
+
 .about-us {
   z-index: 10;
 }
