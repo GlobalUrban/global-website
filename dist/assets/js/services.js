@@ -75,8 +75,6 @@ for (let i = 0; i < 4; i++) {
     })
 }
 
-
-
 // Read More //
 function myFunction2() {
     var dots2 = document.getElementById("dots2");
@@ -110,17 +108,6 @@ function myFunction() {
     }
   } 
 
-
-
-
-
-   
-
-// // Program Management //
-// Plink1.addEventListener("click", () => { setProjectToOpen(0, 3) })
-// Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
-// Plink3.addEventListener("click", () => { setProjectToOpen(0, 4) })
-
 // Grant Writing //
 Glink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
 Glink2.addEventListener("click", () => { setProjectToOpen(1, 3) })
@@ -133,6 +120,6 @@ Clink3.addEventListener("click", () => { setProjectToOpen(2, 5) })
 
 // Digital & Print //
 Dlink1.addEventListener("click", () => { setProjectToOpen(3, 5) })
-Dlink2.addEventListener("click", () => { setProjectToOpen(3, 3) })
+Dlink2.addEventListener("click", () => { setProjectToOpen(3, 1) })
 Dlink3.addEventListener("click", () => { setProjectToOpen(3, 4) })
 

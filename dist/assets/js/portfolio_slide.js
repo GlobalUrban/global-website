@@ -44,10 +44,20 @@ const projects3 = [
     'Delta Fuel Dump Crisis Management and Public Relations <br/><h5>City of Cudahy</h5>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Virtual Meetings and Stakeholder Engagement</h2><h3>City of Oceanside</h3>',
+
+    // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Community Outreach </h2><h3>City of Montebello</h3>',
+
+    // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Delta Fuel Dump Crisis Management and Public Relations</h2><h3>City of Cudahy</h3>',
+
+    // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Proposition 68 Public Outreach and Community Engagement</h2><h3>City of Hawaiian Gardens</h3>',
+
+
+    // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Pilot Interpretation Program</h2><h3>California Department of Water Resources</h3>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,17 +67,26 @@ const projects3 = [
 
 const projects4 = [
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    'State of the City Presentation <br/><h5>City of San Luis Obispo</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Graphic Design and Social Media</h2><h3>City of El Monte</h3>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    '<h2 style= "margin-bottom: 20px; line-height: 1;">Graphic Design and Social Media</h2><h3>City of El Monte</h3>',
-    '<h2 style= "margin-bottom: 20px; line-height: 1;">Newsletter Design</h2><h3>City of Rosemead</h3>',
+    // Slide 1 //
     '<h2 style= "margin-bottom: 20px; line-height: 1;">State of the City Presentation</h2><h3>City of San Luis Obispo</h3>',
+
+    // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Newsletter Design</h2><h3>City of Rosemead</h3>',
+
+    // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">Graphic Design and Social Media</h2><h3>City of El Monte</h3>',
+
+    // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Branding, Graphic Design, and Events Stationery</h2><h3>California Contract Cities Association</h3>',
+
+    // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
     '<h2 style= "margin-bottom: 20px; line-height: 1;">Graphic Design and Social Media</h2><h3>City of La Puente</h3>',
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    'Graphic Design and Social Media <br/><h5>City of El Monte</h5>',
+    '<h2 style= "margin-bottom: 20px; line-height: 1;">State of the City Presentation</h2><h3>City of San Luis Obispo</h3>',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ]
 
@@ -122,14 +141,20 @@ const d3 = [
     'We provided our Professional input to Stantec Consulting Services Inc. with a Service Plan to implement communication and engagement activities that expand the use of Written Translation Services, assisting Groundwater Sustainability Agencies and local water management groups, and creating interpretation services on a pilot scale.',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
     'Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.',
 
+    // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
     "Duis sunt ullamco duis Lorem aute in voluptate minim commodo laborum culpa labore. Culpa esse cupidatat ea consequat do. Eiusmod dolore esse mollit ullamco incididunt consectetur Lorem culpa cillum est excepteur aliquip tempor. Commodo nisi exercitation consectetur. Occaecat consectetur dolore veniam est velit ea aliquip magna do eiusmod eiusmod culpa do enim Lorem.",
 
+    // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
     "The key to public relations management is to support emergency crises at unnoticed times. Global Urban developed the strategic plan and executed responses in support of, and on behalf of, the City of Cudahy.",
 
+
+    // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
     "Global assisted the City by preparing a three-day charrette workshop with the residents in order to develop a Community-Based Planning, where they engaged the community and obtained their input as to the types of recreational features that they wanted to see in their community. These meetings maximized the points allocated to the Proposition 68 project application that was submitted.",
 
+    // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
     "Global's team evaluates perspectives, plans, and turns ideas into reality. Through our collaboration with Stantec, we support the California Department of Water Resources in communicating its goals of informing the public on the importance of water conservation, educating people on how to use water efficiently, and promoting water-related policies and initiatives. Through our collaborative efforts, we assist DWR and Ground Sustainability Agencies in communicating water supply availability, water quality, and potential water shortages.",
 
     // TIRRO ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -143,15 +168,21 @@ const d4 = [
     'A website and social media are merged in design and content, which is why our team continues working to achieve the success of their social media and website, creating a cohesive graphic line that represents the image of the City of La Puente accurately.',
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    'Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.',
-
-    "Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.",
-
+    // Slide 1 // -------------------------------------------------------------------------------------------------------------------------
     "A story is better when you can see it rather than imagine it. Our team prepared The State of the City 2022 Presentation for San Luis Obispo. Marketing material and highly produced videos were created to reflect the city's essence while informing its citizens about the improvements and new goals for their City.",
 
+    // Slide 2 // -------------------------------------------------------------------------------------------------------------------------
+    "Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.",
+
+    // Slide 3 // -------------------------------------------------------------------------------------------------------------------------
+    'Consectetur ullamco occaecat labore est cupidatat. Dolore cillum fugiat veniam cupidatat nulla aliquip eu ea amet sit. Aliqua incididunt sint cupidatat aute Lorem pariatur reprehenderit. Ea officia magna ut excepteur veniam sunt. Elit reprehenderit sit exercitation id nostrud ipsum deserunt id ullamco deserunt ex. Anim non incididunt exercitation deserunt ex. Do voluptate amet ad mollit duis dolor Lorem eiusmod. Cupidatat mollit do consequat ad duis nisi eiusmod consectetur elit non sit.',
+
+
+
+    // Slide 4 // -------------------------------------------------------------------------------------------------------------------------
     "Eiusmod Lorem incididunt laboris qui non do ad dolore quis proident irure ipsum cupidatat ea. Laborum anim nulla nisi ut consequat laboris labore eiusmod sint veniam incididunt voluptate enim. Cupidatat magna commodo tempor laboris magna. Commodo nulla aliquip deserunt eiusmod. Minim ex consequat non incididunt ullamco. Eu in sit nulla. Mollit eu ea dolore velit nostrud nulla laboris. Aute tempor velit officia adipisicing est laborum duis.",
 
-
+    // Slide 5 // -------------------------------------------------------------------------------------------------------------------------
     "Meeting the growing social media challenges has required a multi-pronged approach. We initially created a strategy to ensure that the social media presence was engaging and well-aligned with the City’s organizational goals. This included the development of content that resonated with the residents and promoted  that content. We continually monitor and respond to comments and feedback from users in a timely manner. Our analytical tools to track the performance of the various social media campaigns and make adjustments as needed.",
 
 
@@ -452,8 +483,6 @@ const setOnInfoField = () => {
         // imgProgramMobile.style.width = "300px";
         // imgProgramMobile.style.height = "300px";
 
-
-
         inforContainer.style.display = "flex";
         inforContainer.style.flexDirection = "column"
 
@@ -469,8 +498,6 @@ const setOnInfoField = () => {
             imgProgramMobile.style.display = "none";
         }
     }
-
-
 
     if (portfolioSelected == 1) {
         tittle.innerHTML = projects2[amountMoved2]
@@ -513,8 +540,6 @@ const setOnInfoField = () => {
         imgMain.style.height = "500px";
         inforContainer.style.flexDirection = "row"
     }
-
-
 }
 
 const setPressedStyle = (index) => {
