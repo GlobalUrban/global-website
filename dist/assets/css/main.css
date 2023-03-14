@@ -1652,7 +1652,8 @@ header .selector-pressed {
   overflow-x: hidden;
   position: relative;
   display: flex;
-  background-image: url(../img/home/about-gradiant.png);
+  background: rgb(54, 45, 130);
+  background: linear-gradient(126deg, rgb(54, 45, 130) 0%, rgb(96, 29, 124) 52%, rgb(56, 15, 67) 82%);
 }
 @media screen and (max-width: 1200px) {
   .about-us .about-us__info {
