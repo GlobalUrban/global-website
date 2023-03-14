@@ -275,8 +275,8 @@ const projectPressed = (position, portfolio) => {
     // console.log(portfolioSelected)
     projectSlides.style.transform = 'translate(' + position + '%, 0%)'
     setPressedStyle(portfolioSelected);
-    setDiv();
-    setDiv2();
+    setDiv()
+    setDiv2()
 }
 
 
@@ -303,7 +303,6 @@ const innerSlideRight1 = () => {
     };
     amountMoved1 += 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
-    // console.log(amountMoved1)
     setDiv()
 }
 
@@ -314,12 +313,11 @@ const innerSlideLeft1 = () => {
     }
     amountMoved1 -= 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
-    // console.log(amountMoved1)
     setDiv()
 }
 
 const innerSlideRight2 = () => {
-    if (amountMoved2 > projects2.length - 3) return;
+    if (amountMoved2 > projects2.length - 3) amountMoved2 = 0; //return; //
     amountMoved2 += 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
     // console.log(amountMoved2);
@@ -327,10 +325,9 @@ const innerSlideRight2 = () => {
 }
 
 const innerSlideLeft2 = () => {
-    if (amountMoved2 == 1) return;
+    if (amountMoved2 == 1) amountMoved2 = 6; //return; //
     amountMoved2 -= 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
-    // console.log(amountMoved2);
     setDiv2()
 }
 
