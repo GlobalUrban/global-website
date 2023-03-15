@@ -108,6 +108,10 @@ function myFunction() {
     }
   } 
 
+
+// Program Management //
+Plink2.addEventListener("click", () => { setProjectToOpen(0, 2) })
+
 // Grant Writing //
 Glink1.addEventListener("click", () => { setProjectToOpen(1, 1) })
 Glink2.addEventListener("click", () => { setProjectToOpen(1, 3) })

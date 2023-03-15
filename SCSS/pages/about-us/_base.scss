@@ -15,12 +15,6 @@
         background: rgb(54, 45, 130);
         background: linear-gradient(126deg, rgba(54, 45, 130, 1) 0%, rgba(96, 29, 124, 1) 52%, rgba(56, 15, 67, 1) 82%);
 
-
-
-
-
-
-
         @include breakpoint(Laptop-M) {
             height: 1300px;
         }
@@ -166,6 +160,7 @@
         .team__cont-title {
             width: 100%;
             height: 200px;
+            
 
             @include flexx(row, flex-start, center);
 
@@ -191,12 +186,14 @@
                 line-height: 1;
                 margin-left: 20px;
                 position: absolute;
+                color: $orange;
 
                 p {
                     font-weight: 100;
                     font-size: 20px;
                     margin-top: 10px;
                     padding: 0;
+                    color: black;
                     margin-right: 20px;
                     // line-height: 25px;
                 }
