@@ -1555,7 +1555,12 @@ header .selector-pressed {
      object-fit: cover;
 }
 .services .services-content .services-scroll .service .service-bottom .service-project__program-management {
-  width: 100%;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .services .services-content .services-scroll .service .service-bottom .service-project__program-management {
+    width: 100%;
+  }
 }
 .services .services-options__up {
   transform: translateY(-100%);
@@ -1597,33 +1602,6 @@ header .selector-pressed {
 @media screen and (max-width: 1400px) {
   .services .btn-back__communications {
     margin-left: 14.6%;
-  }
-}
-
-.s-program__desktop {
-  display: block;
-}
-@media screen and (max-width: 768px) {
-  .s-program__desktop {
-    display: none;
-  }
-}
-
-.s-program__mobile {
-  display: none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.s-program__mobile img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  .s-program__mobile {
-    display: block;
   }
 }
 
