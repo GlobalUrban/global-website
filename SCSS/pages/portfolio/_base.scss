@@ -255,7 +255,7 @@
         // Portfolio Content Container //
         .portfolio-external-slider-info-container {
             width: 100%;
-            
+
             @include flex-between(row);
             align-items: flex-start;
             padding: 0 2%;
@@ -305,15 +305,36 @@
 
 
 
-            img {
-                width: 450px;
-                padding-bottom: 20px;
-                transform: translateY(-10%);
+            // Portfolio Content stlye // --------------------------------------------------
+            .portfolio-content {
+                width: 100%;
+                @include flex-around(row);
+                align-items: flex-start;
+                padding: 2% 2%;
+                gap: 20px;
 
-
-                @include breakpoint("Tablet-L") {
-                    display: none;
+                @include breakpoint(Tablet-L) {
+                    @include flex(column, center);
                 }
+
+
+                .left {
+                    width: 60%;
+
+                    @include breakpoint(Tablet-L) {
+                        width: 100%;
+                    }
+                }
+
+                @include breakpoint(Tablet-L) {
+                    width: 100%;
+                }
+
+                .cont-img {
+                    @include img(400px, 400px);
+                }
+
+
             }
 
             #a-01 {
@@ -326,22 +347,25 @@
                 h2 {
                     margin: 0;
                 }
+
                 p {
                     padding: 20px;
                     margin: 0;
                 }
+
                 div {
                     height: 30%;
                     width: 100%;
                     @include flex-center;
                     gap: 30px;
+
                     img {
                         height: 80%;
                         width: 20%;
                     }
                 }
             }
-            
+
             #a-02 {
                 display: flex;
                 flex-direction: column;
@@ -353,162 +377,27 @@
                 h2 {
                     margin: 0;
                 }
+
                 p {
                     padding: 20px;
                     margin: 0;
                 }
+
                 div {
                     height: 300px;
                     width: 100%;
                     background: red;
                     @include flex-center;
                     gap: 30px;
-                    img {
-                        height: 80%;
-                        width: 20%;
-                    }
-                }
-            }
-            
-            #a-11 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                width: 100%;
 
-                h2 {
-                    margin: 0;
-                }
-                p {
-                    padding: 20px;
-                    margin: 0;
-                }
-                div {
-                    height: 300px;
-                    width: 100%;
-                    background: blue;
-                    @include flex-center;
-                    gap: 30px;
                     img {
                         height: 80%;
                         width: 20%;
                     }
                 }
             }
-            
-            #a-12 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                width: 100%;
 
-                h2 {
-                    margin: 0;
-                }
-                p {
-                    padding: 20px;
-                    margin: 0;
-                }
-                div {
-                    height: 300px;
-                    width: 100%;
-                    background: green;
-                    @include flex-center;
-                    gap: 30px;
-                    img {
-                        height: 80%;
-                        width: 20%;
-                    }
-                }
-            }
-            
-            #a-13 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                width: 100%;
-
-                h2 {
-                    margin: 0;
-                }
-                p {
-                    padding: 20px;
-                    margin: 0;
-                }
-                div {
-                    height: 300px;
-                    width: 100%;
-                    background: pink;
-                    @include flex-center;
-                    gap: 30px;
-                    img {
-                        height: 80%;
-                        width: 20%;
-                    }
-                }
-            }
-            
-            #a-14 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                width: 100%;
-
-                h2 {
-                    margin: 0;
-                }
-                p {
-                    padding: 20px;
-                    margin: 0;
-                }
-                div {
-                    height: 300px;
-                    width: 100%;
-                    background: orange;
-                    @include flex-center;
-                    gap: 30px;
-                    img {
-                        height: 80%;
-                        width: 20%;
-                    }
-                }
-            }
-            
-            #a-15 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 15px;
-                width: 100%;
-
-                h2 {
-                    margin: 0;
-                }
-                p {
-                    padding: 20px;
-                    margin: 0;
-                }
-                div {
-                    height: 300px;
-                    width: 100%;
-                    background: teal;
-                    @include flex-center;
-                    gap: 30px;
-                    img {
-                        height: 80%;
-                        width: 20%;
-                    }
-                }
-            }
+        
         }
 
         .info-container-pop-background {
@@ -557,7 +446,4 @@
         // height: 30%;
         // @include flex-center();
     }
-
-
-
 }

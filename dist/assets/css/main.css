@@ -2224,15 +2224,46 @@ header .selector-pressed {
   margin: 0;
   margin-top: 100%;
 }
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container img {
-  width: 450px;
-  padding-bottom: 20px;
-  transform: translateY(-10%);
+.portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-start;
+  padding: 2% 2%;
+  gap: 20px;
 }
 @media screen and (max-width: 1024px) {
-  .portfolio .portfolio-general-container .portfolio-external-slider-info-container img {
-    display: none;
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}
+.portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .left {
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content {
+    width: 100%;
+  }
+}
+.portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .cont-img {
+  height: 400px;
+  width: 400px;
+}
+.portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .cont-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-01 {
   display: flex;
@@ -2285,146 +2316,6 @@ header .selector-pressed {
   gap: 30px;
 }
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-02 div img {
-  height: 80%;
-  width: 20%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-11 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-11 h2 {
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-11 p {
-  padding: 20px;
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-11 div {
-  height: 300px;
-  width: 100%;
-  background: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-11 div img {
-  height: 80%;
-  width: 20%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-12 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-12 h2 {
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-12 p {
-  padding: 20px;
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-12 div {
-  height: 300px;
-  width: 100%;
-  background: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-12 div img {
-  height: 80%;
-  width: 20%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-13 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-13 h2 {
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-13 p {
-  padding: 20px;
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-13 div {
-  height: 300px;
-  width: 100%;
-  background: pink;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-13 div img {
-  height: 80%;
-  width: 20%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-14 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-14 h2 {
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-14 p {
-  padding: 20px;
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-14 div {
-  height: 300px;
-  width: 100%;
-  background: orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-14 div img {
-  height: 80%;
-  width: 20%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-15 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-15 h2 {
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-15 p {
-  padding: 20px;
-  margin: 0;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-15 div {
-  height: 300px;
-  width: 100%;
-  background: teal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-15 div img {
   height: 80%;
   width: 20%;
 }
