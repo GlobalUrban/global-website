@@ -322,7 +322,7 @@ const innerSlideRight1 = () => {
 const innerSlideLeft1 = () => {
     // if (amountMoved1 <= projects1.length - 2) btnr1.style.display = 'block'
     if (amountMoved1 == 1) {
-        amountMoved1 = 4;
+        amountMoved1 = 3;       // reduce on to reduce a slider
     }
     amountMoved1 -= 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
