@@ -317,7 +317,6 @@
                     @include flex(column, center);
                 }
 
-
                 .left {
                     width: 60%;
 
@@ -326,9 +325,7 @@
                     }
                 }
 
-                @include breakpoint(Tablet-L) {
-                    width: 100%;
-                }
+        
 
                 .cont-img {
                     @include img(400px, 400px);

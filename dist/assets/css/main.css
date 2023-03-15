@@ -2250,11 +2250,6 @@ header .selector-pressed {
     width: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
-  .portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content {
-    width: 100%;
-  }
-}
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .cont-img {
   height: 400px;
   width: 400px;
