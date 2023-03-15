@@ -29,8 +29,8 @@ let teamMembers = [
     { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
     { name: 'Cinthia Iniguez', charge: 'Program Manager' },
     { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
-    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
     { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
+    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
 ]
 
 let teamMembers2 = [
