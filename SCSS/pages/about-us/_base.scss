@@ -238,7 +238,7 @@
 
                     .title-hover {
                         width: 100%;
-                        height: 100%;
+                        height: 70%;
                         @include flexx(column, flex-end, center);
                         position: absolute;
                         padding-bottom: 5%;
@@ -268,7 +268,7 @@
 
 
                     .title-hover-hover {
-                        transform: translateY(0%)
+                        transform: translateY(45%)
                     }
                 }
 
