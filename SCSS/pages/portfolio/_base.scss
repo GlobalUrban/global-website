@@ -334,6 +334,22 @@
 
             }
 
+            .portfolio-content {
+
+                .left-grant-writing {
+                    .grant-writing-top {
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                .orange {
+                    color: $orange;
+                    font-size: 25px;
+                }
+            }
+
             #a-01 {
                 display: flex;
                 flex-direction: column;
@@ -437,5 +453,15 @@
             }
         }
     }
-
 }
+
+.info-container-programManagement-imgs {
+    
+    flex-wrap: wrap;
+
+    img {
+        min-width: 200px;
+
+    }
+}
+

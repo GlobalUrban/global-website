@@ -2260,6 +2260,13 @@ header .selector-pressed {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .left-grant-writing .grant-writing-top span {
+  font-size: 22px;
+}
+.portfolio .portfolio-general-container .portfolio-external-slider-info-container .portfolio-content .orange {
+  color: #ED8C23;
+  font-size: 25px;
+}
 .portfolio .portfolio-general-container .portfolio-external-slider-info-container #a-01 {
   display: flex;
   flex-direction: column;
@@ -2352,6 +2359,13 @@ header .selector-pressed {
   width: 70%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.info-container-programManagement-imgs {
+  flex-wrap: wrap;
+}
+.info-container-programManagement-imgs img {
+  min-width: 200px;
 }
 
 footer {
