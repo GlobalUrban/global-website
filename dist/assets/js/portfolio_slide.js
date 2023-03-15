@@ -253,7 +253,21 @@ let hiddenDivs = [
         document.getElementById('a-13'),
         document.getElementById('a-14'),
         document.getElementById('a-15'),
-    ]
+    ],
+    [
+        document.getElementById('a-21'),
+        document.getElementById('a-22'),
+        document.getElementById('a-23'),
+        document.getElementById('a-24'),
+        document.getElementById('a-25'),
+    ],
+    [
+        document.getElementById('a-31'),
+        document.getElementById('a-32'),
+        document.getElementById('a-33'),
+        document.getElementById('a-34'),
+        document.getElementById('a-35'),
+    ],
 ]
 // ========================================
 let tittle = document.getElementById('info-title')
@@ -275,8 +289,7 @@ const projectPressed = (position, portfolio) => {
     // console.log(portfolioSelected)
     projectSlides.style.transform = 'translate(' + position + '%, 0%)'
     setPressedStyle(portfolioSelected);
-    setDiv()
-    setDiv2()
+    setDiv(portfolioSelected)
 }
 
 
@@ -303,7 +316,7 @@ const innerSlideRight1 = () => {
     };
     amountMoved1 += 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
-    setDiv()
+    setDiv(portfolioSelected)
 }
 
 const innerSlideLeft1 = () => {
@@ -313,7 +326,7 @@ const innerSlideLeft1 = () => {
     }
     amountMoved1 -= 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
-    setDiv()
+    setDiv(portfolioSelected)
 }
 
 const innerSlideRight2 = () => {
@@ -321,14 +334,14 @@ const innerSlideRight2 = () => {
     amountMoved2 += 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
     // console.log(amountMoved2);
-    setDiv2()
+    setDiv(portfolioSelected)
 }
 
 const innerSlideLeft2 = () => {
     if (amountMoved2 == 1) amountMoved2 = 6; //return; //
     amountMoved2 -= 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
-    setDiv2()
+    setDiv(portfolioSelected)
 }
 
 const innerSlideRight3 = () => {
@@ -342,24 +355,19 @@ const innerSlideLeft3 = () => {
     if (amountMoved3 == 1) amountMoved3 = 6;
     amountMoved3 -= 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
 }
 
 const innerSlideRight4 = () => {
     if (amountMoved4 > projects4.length - 3) amountMoved4 = -0;
     amountMoved4 += 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
 }
 
 const innerSlideLeft4 = () => {
     if (amountMoved4 == 1) amountMoved4 = 6;
     amountMoved4 -= 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
+
 }
 
 const setPressedStyle = (index) => {
@@ -473,26 +481,16 @@ const hidePop = () => {
 }
 
 // set div by service and project
-const setDiv = async () => {
+const setDiv = async (portfolio) => {
+    let amountMoves = [
+        amountMoved1, amountMoved2, amountMoved3, amountMoved4
+    ]
     try {
         inforContainer.removeChild(inforContainer.firstChild)
     } catch (error) { console.log(error) }
-    // removeChild(inforContainer)
-    console.log(portfolioSelected)
-    console.log(amountMoved1)
-    console.log('a-' + portfolioSelected + amountMoved1)
-    console.log(hiddenDivs[portfolioSelected][amountMoved1 - 1])
-    inforContainer.appendChild(hiddenDivs[portfolioSelected][amountMoved1 - 1])
+    inforContainer.appendChild(hiddenDivs[portfolio][amountMoves[portfolio]-1])
 }
 
-const setDiv2 = async () => {
-    try {
-        removeChild(inforContainer)
-        // inforContainer.removeChild(inforContainer.firstChild)
-    } catch (error) { console.log(error) }
-    console.log(amountMoved2)
-    inforContainer.appendChild(hiddenDivs[portfolioSelected][amountMoved2 - 1])
-}
 
 const removeChild = (parent) => {
     try {
@@ -530,7 +528,7 @@ window.addEventListener('load', styleInnerSlidesContainer)
 
 // window.addEventListener('load', fillProjectSlides)
 window.addEventListener('load', checkStorage);
-window.addEventListener('load', () => { setDiv() });
+window.addEventListener('load', () => { setDiv(portfolioSelected) });
 
 
 
