@@ -348,26 +348,27 @@ const innerSlideRight3 = () => {
     if (amountMoved3 > projects3.length - 3) amountMoved3 = -0;
     amountMoved3 += 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 const innerSlideLeft3 = () => {
     if (amountMoved3 == 1) amountMoved3 = 6;
     amountMoved3 -= 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
+    setDiv(portfolioSelected)
 }
 
 const innerSlideRight4 = () => {
     if (amountMoved4 > projects4.length - 3) amountMoved4 = -0;
     amountMoved4 += 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
+    setDiv(portfolioSelected)
 }
 
 const innerSlideLeft4 = () => {
     if (amountMoved4 == 1) amountMoved4 = 6;
     amountMoved4 -= 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
-
+    setDiv(portfolioSelected)
 }
 
 const setPressedStyle = (index) => {
@@ -529,6 +530,7 @@ window.addEventListener('load', styleInnerSlidesContainer)
 // window.addEventListener('load', fillProjectSlides)
 window.addEventListener('load', checkStorage);
 window.addEventListener('load', () => { setDiv(portfolioSelected) });
+window.addEventListener('load', () => { setPressedStyle(portfolioSelected); });
 
 
 
