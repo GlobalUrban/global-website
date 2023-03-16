@@ -8,14 +8,14 @@ let successDiv = document.getElementById('success-submit-id');
 let btnGetInTouch = document.getElementById('contact-form__mobile-btn')
 
 const handleSubmit = async (e) => {
-
+    document.getElementById("form-desk").submit();
     console.log("nameform.value")
     window.localStorage.setItem('form-submit', true)
 }
 
 const checkSubmitStorage = () => {
     let submitControl = window.localStorage.getItem('form-submit')
-    if(!submitControl) {
+    if (!submitControl) {
         successDiv.style.display = "none"
     } else {
         window.location.href = "#form-desk"

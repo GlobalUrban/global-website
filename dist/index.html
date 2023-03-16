@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" type="image/x-icon" href="/dist/assets/img/favicon.ico">
 
-  <meta name="description" content="Global is a certified DVBE-SBE business that assists public and private organizations in pursuing and administering grants while enhancing their internal and external communications.">
+  <meta name="description"
+    content="Global is a certified DVBE-SBE business that assists public and private organizations in pursuing and administering grants while enhancing their internal and external communications.">
   <meta name="keywords" content="Communications, Grant Writing, Program Management">
   <meta name="author" content="Global Urban Strategies, Inc.">
   <title>Global Urban Strategies Inc. | Communications, Grant Writing, and Administration.</title>
@@ -19,7 +20,8 @@
   <!-- Addres & Phone Mobile Pop Up ================  -->
   <div class="contact-mobile__pop-up" id="cont-pop-up">
     <div class="pop-up" id="pop-up">
-      <a href="tel:+16265452234" target="_blank" class="call"><img src="./assets/img/home/contact/call-now.png" alt="" />
+      <a href="tel:+16265452234" target="_blank" class="call"><img src="./assets/img/home/contact/call-now.png"
+          alt="" />
         Call
         Now</a>
 
@@ -47,6 +49,7 @@
             <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="" />
           </div>
           <textarea maxlength="95" name="message" id="" rows="1" placeholder="How can we help you?"></textarea>
+
           <input id="contact-id-m-pop" class="submit" type="submit" value="Submit" />
         </form>
       </div>
@@ -411,6 +414,8 @@
           <!-- form container // -->
           <div class="cont-form">
             <h1>Get in touch with us!</h1>
+
+            <!-- Form // -->
             <form id="form-desk" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
               <input class="input" type="text" name="name" placeholder="Name" id="f-name" />
               <div class="email-phone_container">
@@ -419,7 +424,14 @@
               </div>
               <textarea maxlength="95" name="message" id="f-text" rows="1"
                 placeholder="How can we help you?"></textarea>
-              <input id="contact-id-m" class="submit" type="submit" value="Submit" />
+
+              <!-- <input class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
+                data-action='submit' id="contact-id-m" type="submit" value="Submit" /> -->
+              <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmit'
+                data-action='submit' id="contact-id-mm" >Submit</button>
+
+
+
             </form>
             <div id="success-submit-id" class="success-form">
               Thanks. Your message has been received.
@@ -465,6 +477,17 @@
   <!-- ============================================================================================================= -->
 
   <!-- Scripts // =============================================================== -->
+
+  <!-- recaptcha call back -->
+  <script>
+    function onSubmit(token) {
+      document.getElementById("form-desk").submit();
+    }
+  </script>
+
+  <!-- Google Recaptcha // -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- Nav animation // -->
   <script src="./assets/js/nav-animation.js"></script>
 
@@ -485,6 +508,8 @@
 
   <!-- AOS Animation // -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
 
   <script>
     AOS.init();
