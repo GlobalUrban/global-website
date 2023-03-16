@@ -6,8 +6,9 @@
   position: relative;
 
   @include breakpoint(Tablet-M) {
-    height: 1500px;
+    height: 1700px;
   }
+
 
   // Services Front part || Buttons Section -------------------
   .services-options {
@@ -18,7 +19,6 @@
     z-index: 20;
     transition: all 0.4s ease-in-out;
     overflow-x: hidden;
-
 
     // Services Options Top //
     .services-options__top {
@@ -173,10 +173,6 @@
     @include breakpoint(Tablet-M) {
       position: fixed;
     }
-
-
-
-
   }
 
   // ----------------------------------------------------------
@@ -211,11 +207,12 @@
           display: flex;
 
           @include breakpoint(Tablet-M) {
-            height: 35%;
+            height: 40%;
           }
 
           .back-communications {
-           margin-left: 35vw;
+            margin-left: 35vw;
+            z-index: 10000;
           }
 
           // Communication Change Order ------- //
@@ -232,7 +229,6 @@
               bottom: -3%;
               right: 0;
               font-size: 25px;
-
               z-index: 10;
             }
           }
@@ -284,6 +280,18 @@
               p {
                 margin: 0;
               }
+
+              ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5;
+
+                li {
+                  margin-right: 35px;
+                  margin-top: 10px;
+                }
+              }
             }
 
             // Projects Done Banner -------- //
@@ -314,7 +322,6 @@
           .service-img {
             width: 45%;
             height: 100%;
-            background: $t3;
 
             img {
               @include img-cover;
@@ -332,11 +339,11 @@
         .service-bottom {
           width: 100%;
           height: 45%;
-          background: $t3;
+
           display: flex;
 
           @include breakpoint(Tablet-M) {
-            height: 65%;
+            height: 60%;
           }
 
           @include breakpoint(Tablet-M) {
@@ -363,6 +370,10 @@
               opacity: 0;
               transition: all 0.3s;
               @include flex-center;
+
+              @include breakpoint("Phone-L") {
+                opacity: 1;
+              }
 
               .opacity-content {
                 width: 65%;
@@ -414,10 +425,18 @@
             img {
               @include img-cover;
             }
+
+
           }
 
+
           .service-project__program-management {
-            width: 100%;
+            width: 50%;
+
+            @include breakpoint(Tablet-M) {
+              width: 100%;
+            }
+
           }
         }
 
@@ -442,14 +461,14 @@
   // Button Back || This pull back the services buttons //
   .btn-back {
     position: fixed;
-    z-index: 500;
+
     background: white;
     padding: 5px 20px;
     color: black;
     font-size: 18px;
     border-radius: 45px;
     margin-left: 45vw;
-    margin-top: 80px;
+    margin-top: 100px;
     cursor: pointer;
     transition: all 0.3s;
 
@@ -478,4 +497,44 @@
       margin-left: 14.6%;
     }
   }
+}
+
+// .s-program__desktop {
+//   display: block;
+
+//   @include breakpoint("Tablet-M") {
+//     display: none;
+//   }
+// }
+
+// .s-program__mobile {
+//   display: none;
+//   width: 100%;
+//   height: 100%;
+//   @include flex-center;
+
+//   img {
+//     object-fit: cover;
+//   }
+
+//   @include breakpoint("Tablet-M") {
+//     display: block;
+//   }
+// }
+
+#more {
+  display: none;
+
+}
+
+#more2 {
+  display: none;
+}
+
+.myBtn {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
 }

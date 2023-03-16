@@ -172,6 +172,7 @@
                     outline: none;
                     resize: none;
                     color: white;
+                    padding: 1.5%;
 
                     &::placeholder {
                         color: rgba(255, 255, 255, 0.751);
@@ -311,6 +312,7 @@
         outline: none;
         @include flex(column, center);
         display: none;
+        cursor: pointer;
 
         @include breakpoint("Phone-L") {
             display: flex;
