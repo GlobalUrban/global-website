@@ -16,8 +16,8 @@ const checkSubmitStorage = () => {
     if (!submitControl) {
         successDiv.style.display = "none"
     } else {
-        window.location.href = "#form-desk"
         window.location.href = "#contact-form__mobile-btn"
+        window.location.href = "#form-desk"
         btnGetInTouch.innerHTML = "Thanks. Your message has been received."
         btnGetInTouch.style.background = "transparent"
         btnGetInTouch.style.color = "white"
