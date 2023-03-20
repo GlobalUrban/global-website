@@ -160,8 +160,7 @@ const moreArray = [
 // p elements
 let ps = document.getElementsByClassName('info-p')
 
-// submit button for recaptcha
-let submitButton = document.getElementById('contact-id-m')
+
 
 rightArrow.addEventListener('click', handleRightArrow)
 leftArrow.addEventListener('click', handleLeftArrow)
@@ -187,7 +186,6 @@ for (let i = 0; i < ps.length; i++) {
 
 // Event listener for set project to localstorage
 containerButtonsToLink.addEventListener("click", setProjectToOpen2)
-submitButton.addEventListener("click", submitRecaptcha)
 
 window.addEventListener('load', () => { setPressedStyles(0) })
 window.addEventListener('load', runSlider)

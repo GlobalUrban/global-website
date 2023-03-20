@@ -8,8 +8,6 @@ let successDiv = document.getElementById('success-submit-id');
 let btnGetInTouch = document.getElementById('contact-form__mobile-btn')
 
 const handleSubmit = async (e) => {
-    document.getElementById("form-desk").submit();
-    console.log("nameform.value")
     window.localStorage.setItem('form-submit', true)
 }
 
@@ -18,15 +16,13 @@ const checkSubmitStorage = () => {
     if (!submitControl) {
         successDiv.style.display = "none"
     } else {
-        window.location.href = "#form-desk"
         window.location.href = "#contact-form__mobile-btn"
+        window.location.href = "#form-desk"
         btnGetInTouch.innerHTML = "Thanks. Your message has been received."
         btnGetInTouch.style.background = "transparent"
         btnGetInTouch.style.color = "white"
     };
-    console.log(submitControl);
     window.localStorage.removeItem('form-submit')
-    console.log(submitControl);
 }
 
 // formSubmitDesktop.addEventListener('submit', handleSubmit)
