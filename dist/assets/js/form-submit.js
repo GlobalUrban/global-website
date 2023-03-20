@@ -16,7 +16,8 @@ const checkSubmitStorage = () => {
     if (!submitControl) {
         successDiv.style.display = "none"
     } else {
-        window.location.href = "#contact-form__mobile-btn"
+        // window.location.href = "#contact-form__mobile-btn"
+        console.log("entered")
         window.location.href = "#form-desk"
         btnGetInTouch.innerHTML = "Thanks. Your message has been received."
         btnGetInTouch.style.background = "transparent"
@@ -26,7 +27,7 @@ const checkSubmitStorage = () => {
 }
 
 // formSubmitDesktop.addEventListener('submit', handleSubmit)
-// formSubmitDesktop.addEventListener('click', handleSubmit)
-formId.addEventListener('submit', handleSubmit)
+formSubmitDesktop.addEventListener('click', handleSubmit)
+// formId.addEventListener('submit', handleSubmit)
 // formIdMobile.addEventListener('submit', handleSubmit)
 window.addEventListener('load', checkSubmitStorage)
