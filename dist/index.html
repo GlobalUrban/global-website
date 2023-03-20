@@ -53,7 +53,7 @@
           <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
           <!-- <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmit'
                 data-action='submit' id="contact-id-m-pop" >Submit</button> -->
-          <button data-action='submit' class="submit" id="contact-id-m-pop">Submit</button>
+          <button type="submit" class="submit" id="contact-id-m-pop">Submit</button>
         </form>
       </div>
     </div>
@@ -430,9 +430,9 @@
 
               <!-- <input class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
                 data-action='submit' id="contact-id-m" type="submit" value="Submit" /> -->
-              <!-- <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
-                  data-callback='onSubmit' data-action='submit' id="contact-id-m">Submit</button> -->
-              <button data-action='submit' class="submit" id="contact-id-m">Submit</button>
+              <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
+                  data-callback='onSubmit' data-action='submit' id="contact-id-m">Submit</button>
+              <!-- <button data-action='submit' class="submit" id="contact-id-m">Submit</button> -->
               <!-- <input class="g-recaptcha submit" data-action='submit' id="contact-id-m" type="submit" value="Submit" placeholder="Submit"/> -->
 
 
@@ -511,12 +511,15 @@
 
   <!-- recaptcha call back -->
   <script>
-    grecaptcha.ready(function () {
-      grecaptcha.execute('6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j', { action: 'submit' }).then(function (token) {
-        document.getElementById('contact-id-m-pop').value = token;
-        document.getElementById('contact-id-m').value = token;
-      });
-    });
+    // grecaptcha.ready(function () {
+    //   grecaptcha.execute('6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j', { action: 'submit' }).then(function (token) {
+    //     document.getElementById('contact-id-m-pop').value = token;
+    //     document.getElementById('contact-id-m').value = token;
+    //   });
+    // });
+    function onSubmit(token) {
+     document.getElementById("form-desk").submit();
+   }
   </script>
 
 
