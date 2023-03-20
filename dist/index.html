@@ -37,7 +37,17 @@
   <!-- Contact Form Mobile Pop up================  -->
   <div class="contact-mobile__pop-up form-pop-up-container" id="contact__pop-up">
     <div class="pop-up form-pop-up" id="pop-up">
-      <div id="mobile-form-pop-up" class="cont-form">
+
+      <!-- Form content -->
+      <h3 style="
+      color: white;
+      text-align: center;
+      margin: 0px 5px;
+      ">
+        Please fill form on a PC. <br>
+        Mobile form under maintenance
+      </h3>
+      <!-- <div id="mobile-form-pop-up" class="cont-form">
         <h3>
           Please fill the form,<br />
           and we'll be in touch.
@@ -50,12 +60,12 @@
           </div>
           <textarea maxlength="95" name="message" id="" rows="1" placeholder="How can we help you?"></textarea>
 
-          <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
-          <!-- <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmit'
-                data-action='submit' id="contact-id-m-pop" >Submit</button> -->
+          <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" />
+          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmit'
+                data-action='submit' id="contact-id-m-pop" >Submit</button>
           <button type="submit" class="submit" id="contact-id-m-pop">Submit</button>
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- ============================================== -->
@@ -431,7 +441,7 @@
               <!-- <input class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
                 data-action='submit' id="contact-id-m" type="submit" value="Submit" /> -->
               <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
-                  data-callback='onSubmit' data-action='submit' id="contact-id-m">Submit</button>
+                data-callback='onSubmit' data-action='submit' id="contact-id-m">Submit</button>
               <!-- <button data-action='submit' class="submit" id="contact-id-m">Submit</button> -->
               <!-- <input class="g-recaptcha submit" data-action='submit' id="contact-id-m" type="submit" value="Submit" placeholder="Submit"/> -->
 
@@ -467,7 +477,7 @@
           </div>
         </div>
 
-        <!-- Contact btn mobile // -->
+        <!-- Contact btn mobile //   // Disbaled temporally  -->
         <button class="contact-form__btn" id="contact-form__mobile-btn">
           Get in touch with us!
         </button>
@@ -518,8 +528,8 @@
     //   });
     // });
     function onSubmit(token) {
-     document.getElementById("form-desk").submit();
-   }
+      document.getElementById("form-desk").submit();
+    }
   </script>
 
 
