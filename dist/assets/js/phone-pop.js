@@ -27,7 +27,7 @@ const contactContPopUp = document.getElementById("contact__pop-up");
 
 
 contactBtn.addEventListener("click", ()=> {
-    contactContPopUp.classList.toggle("mobile-pop-up__show");
+    contactContPopUp.classList.add("mobile-pop-up__show");
     popUp.style.transform = "translateY(0%) translateX(0%)";
     popUp.style.width = "90%";
     popUp.style.height = "250px";
@@ -37,9 +37,9 @@ contactContPopUp.addEventListener("click", ()=> {
     contactContPopUp.classList.remove("mobile-pop-up__show");  
 })
 
-// stopPropagation.addEventListener("click", (e)=> {
-//     e.stopPropagation()
-// })
+stopPropagation.addEventListener("click", (e)=> {
+    e.stopPropagation()
+})
 
 
 
