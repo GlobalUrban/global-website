@@ -60,11 +60,12 @@
           <div class="email-phone_container">
             <input class="input input-secondary" type="email" name="email" placeholder="Email" id="" />
             <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="" />
+            <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token-m" style="display: none;" />
           </div>
           <textarea maxlength="95" name="message" id="" rows="1" placeholder="How can we help you?"></textarea>
 
           <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
-          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmit'
+          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmitMobile'
                 data-action='submit' id="contact-id-m-pop" >Submit</button>  
         </form>
       </div>
@@ -536,6 +537,11 @@
     function onSubmit(token) {
       document.getElementById('f-token').value = token;
       document.getElementById("form-desk").submit();
+    }
+
+    function onSubmitMobile(token) {
+      document.getElementById('f-token-m').value = token;
+      document.getElementById("form-mobile").submit();
     }
   </script>
 

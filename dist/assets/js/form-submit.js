@@ -28,6 +28,7 @@ const checkSubmitStorage = () => {
 
 // formSubmitDesktop.addEventListener('submit', handleSubmit)
 formSubmitDesktop.addEventListener('click', handleSubmit)
+formSubmitMobile.addEventListener('click', handleSubmit)
 // formId.addEventListener('submit', handleSubmit)
 // formIdMobile.addEventListener('submit', handleSubmit)
 window.addEventListener('load', checkSubmitStorage)
