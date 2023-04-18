@@ -4,9 +4,6 @@ let counter2 = document.getElementById('index-counter-2')
 
 let workingOnScreen = document.getElementById('working')
 
-console.log(counter0)
-console.log(counter1)
-console.log(counter2)
 
 let timeout = 20;
 

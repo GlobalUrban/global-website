@@ -29,47 +29,48 @@
     .portfolio-general-container {
         @include flex(column, center);
         width: 100%;
-        height: 1250px;
+        // height: 4250px;
+        padding: 50px 0px;
         gap: 15px;
         overflow-x: hidden;
 
         @include breakpoint("Laptop-M") {
-            height: 1500px;
+            // height: 1500px;
         }
 
 
         @include breakpoint("Tablet-M") {
-            height: 1700px;
+            // height: 1700px;
         }
 
         @include breakpoint("Phone-L") {
-            height: 1700px;
+            // height: 1700px;
         }
 
         .portfolio-slider-projects-container {
-            height: 50%;
+            // height: 50%;
             width: 100vw;
 
             @include breakpoint("Phone-L") {
-                height: 40%;
+                // height: 40%;
             }
 
             // Portfolio Slider Projects Slides Container //
             .portfolio-slider-projects-slides {
-                height: 80%;
+                height: 400px;
                 width: 400%;
-                overflow-x: hidden;
+                // overflow-x: hidden;
                 display: flex;
                 flex-direction: row;
                 transition: all 1s;
 
                 @include breakpoint("Phone-L") {
-                    height: 70%;
+                    // height: 70%;
                 }
 
                 // Portfolio Slider Category Slider//
                 .portfolio-slider-projects-slide {
-                    height: 100%;
+                    // height: 100%;
                     width: 100%;
                     overflow-x: hidden;
                     position: relative;
@@ -254,7 +255,7 @@
         // Portfolio Content Container //
         .portfolio-external-slider-info-container {
             width: 100%;
-            overflow: scroll;
+
             @include flex-between(row);
             align-items: flex-start;
             padding: 0 2%;
@@ -304,16 +305,83 @@
 
 
 
-            img {
-                width: 450px;
-                padding-bottom: 20px;
-                transform: translateY(-10%);
+            // Portfolio Content stlye // --------------------------------------------------
+            .portfolio-content {
+                width: 100%;
+                @include flex-around(row);
+                align-items: flex-start;
+                padding: 2% 2%;
+                gap: 20px;
+
+                @include breakpoint(Tablet-L) {
+                    @include flex(column, center);
+                }
+
+                .left {
+                    width: 60%;
+
+                    @include breakpoint(Tablet-L) {
+                        width: 100%;
+                    }
+                }
+
+        
+
+                .cont-img {
+                    @include img(400px, 400px);
+                }
 
 
-                @include breakpoint("Tablet-L") {
-                    display: none;
+            }
+
+            .portfolio-content {
+
+                .left-grant-writing {
+                    .grant-writing-top {
+                        span {
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                .orange {
+                    color: $orange;
+                    font-size: 25px;
                 }
             }
+
+            #a-01 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+
+                h2 {
+                    margin: 0;
+                }
+
+                p {
+                    padding: 20px;
+                    margin: 0;
+                }
+
+                div {
+                    height: 30%;
+                    width: 100%;
+                    @include flex-center;
+                    gap: 30px;
+
+                    img {
+                        height: 80%;
+                        width: 20%;
+                    }
+                }
+            }
+
+        
+
+        
         }
 
         .info-container-pop-background {
@@ -356,12 +424,15 @@
             }
         }
     }
-
-    .info-container-programManagement-imgs {
-        width: 100%;
-        @include flex-center();
-    }
-
-
-
 }
+
+.info-container-programManagement-imgs {
+    
+    flex-wrap: wrap;
+
+    img {
+        min-width: 200px;
+
+    }
+}
+

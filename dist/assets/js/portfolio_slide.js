@@ -241,6 +241,35 @@ let innerslides4 = document.getElementById('innerslides-4');
 
 // Handlers for info
 let inforContainer = document.getElementById('info-container');
+// divs hidden for info
+let hiddenDivs = [
+    [
+        document.getElementById('a-01'),
+        document.getElementById('a-02')
+    ],
+    [
+        document.getElementById('a-11'),
+        document.getElementById('a-12'),
+        document.getElementById('a-13'),
+        document.getElementById('a-14'),
+        document.getElementById('a-15'),
+    ],
+    [
+        document.getElementById('a-21'),
+        document.getElementById('a-22'),
+        document.getElementById('a-23'),
+        document.getElementById('a-24'),
+        document.getElementById('a-25'),
+    ],
+    [
+        document.getElementById('a-31'),
+        document.getElementById('a-32'),
+        document.getElementById('a-33'),
+        document.getElementById('a-34'),
+        document.getElementById('a-35'),
+    ],
+]
+// ========================================
 let tittle = document.getElementById('info-title')
 let p = document.getElementById('info-p')
 let imgMain = document.getElementById('info-img2')
@@ -259,112 +288,11 @@ const projectPressed = (position, portfolio) => {
     portfolioSelected = portfolio;
     // console.log(portfolioSelected)
     projectSlides.style.transform = 'translate(' + position + '%, 0%)'
-    setOnInfoField()
     setPressedStyle(portfolioSelected);
+    setDiv(portfolioSelected)
 }
 
-// const fillProjectSlides = () => {
 
-//     projects1.map((project) => {
-//         // const node = document.createElement("div");
-//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-//         // node.id = 'iner-' + projects1.indexOf(project);
-
-//         //  span for inner text
-//         // const span = document.createElement("span");
-//         // span.classList.add('inner-slides-text-styles')
-//         // const text = document.createTextNode(project)
-//         // span.appendChild(text)
-//         // // node.appendChild(span)
-
-
-//         // // Img for inner slides
-//         // const node_img = document.createElement("img");
-//         // node_img.src = imgRouteCoverProg + projects1.indexOf(project) + '.jpeg';
-//         // node_img.alt = 'Project Img missing';
-//         // node_img.style.objectFit = 'cover';
-//         // node_img.style.width = '100%';
-//         // node_img.style.height = '100%';
-//         // node.appendChild(node_img)
-
-//         // innerslides1.appendChild(node);
-//     })
-
-//     projects2.map((project) => {
-//         // const node = document.createElement("div");
-//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-//         // node.id = 'iner-' + projects2.indexOf(project);
-
-//         //  span for inner text
-//         // const span = document.createElement("span");
-//         // span.classList.add('inner-slides-text-styles')
-//         // const text = document.createTextNode(project)
-//         // span.appendChild(text)
-//         // // node.appendChild(span)
-
-
-//         // // Img for inner slides
-//         // const node_img = document.createElement("img");
-//         // node_img.src = imgRouteCoverGrant + projects2.indexOf(project) + '.jpeg';
-//         // node_img.alt = 'Team member';
-//         // node_img.style.objectFit = 'cover';
-//         // node_img.style.width = '100%';
-//         // node_img.style.height = '100%';
-//         // node.appendChild(node_img)
-
-//         // innerslides2.appendChild(node);
-//     })
-
-//     projects3.map((project) => {
-//         // const node = document.createElement("div");
-//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-//         // node.id = 'iner-' + projects3.indexOf(project);
-
-//         //  span for inner text
-//         const span = document.createElement("span");
-//         span.classList.add('inner-slides-text-styles')
-//         const text = document.createTextNode(project)
-//         span.appendChild(text)
-//         // node.appendChild(span)
-
-
-//         // Img for inner slides
-//         const node_img = document.createElement("img");
-//         node_img.src = imgRouteCoverCom + projects3.indexOf(project) + '.jpeg';
-//         node_img.alt = 'cover img missing';
-//         node_img.style.objectFit = 'cover';
-//         node_img.style.width = '100%';
-//         node_img.style.height = '100%';
-//         // node.appendChild(node_img)
-
-//         // innerslides3.appendChild(node);
-//     })
-
-//     projects4.map((project) => {
-//         // const node = document.createElement("div");
-//         // node.classList.add('portfolio-slider-projects-slide-innerslides-slide');
-//         // node.id = 'iner-' + projects4.indexOf(project);
-
-//         //  span for inner text
-//         const span = document.createElement("span");
-//         span.classList.add('inner-slides-text-styles')
-//         const text = document.createTextNode(project)
-//         span.appendChild(text)
-//         // node.appendChild(span)
-
-
-//         // Img for inner slides
-//         const node_img = document.createElement("img");
-//         node_img.src = imgRouteCoverDig + projects4.indexOf(project) + '.jpeg';
-//         node_img.alt = 'Team member';
-//         node_img.style.objectFit = 'cover';
-//         node_img.style.width = '100%';
-//         node_img.style.height = '100%';
-//         node.appendChild(node_img)
-
-//         innerslides4.appendChild(node);
-//     })
-// }
 
 const styleInnerSlidesContainer = () => {
     document.getElementById('innerslides-1').style.width = projects1.length * 100 + '%';
@@ -381,163 +309,66 @@ const styleInnerSlidesContainer = () => {
 }
 
 const innerSlideRight1 = () => {
+    // set dive
     // if (amountMoved1 > projects1.length - 4) btnr1.style.display = 'none'
-    if (amountMoved1 > projects1.length - 3) {
+    if (amountMoved1 > projects1.length - 4) { // add one to reduce one slider
         amountMoved1 = 0
     };
     amountMoved1 += 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
-    // console.log(amountMoved1)
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 
 const innerSlideLeft1 = () => {
     // if (amountMoved1 <= projects1.length - 2) btnr1.style.display = 'block'
     if (amountMoved1 == 1) {
-        amountMoved1 = 4;
-        btnl1.style.display = 'hidden'
+        amountMoved1 = 3;       // reduce on to reduce a slider
     }
     amountMoved1 -= 1;
     innerslides1.style.transform = 'translate(-' + (80 * amountMoved1 / projects1.length) + '%, 0%)'
-    // console.log(amountMoved1)
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 
 const innerSlideRight2 = () => {
-    if (amountMoved2 > projects2.length - 3) amountMoved2 = 0;
+    if (amountMoved2 > projects2.length - 3) amountMoved2 = 0; //return; //
     amountMoved2 += 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
     // console.log(amountMoved2);
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 
 const innerSlideLeft2 = () => {
-    if (amountMoved2 == 1) amountMoved2 = 6;
+    if (amountMoved2 == 1) amountMoved2 = 6; //return; //
     amountMoved2 -= 1;
     innerslides2.style.transform = 'translate(-' + (80 * amountMoved2 / projects2.length) + '%, 0%)'
-    // console.log(amountMoved2);
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 
 const innerSlideRight3 = () => {
     if (amountMoved3 > projects3.length - 3) amountMoved3 = -0;
     amountMoved3 += 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 const innerSlideLeft3 = () => {
     if (amountMoved3 == 1) amountMoved3 = 6;
     amountMoved3 -= 1;
     innerslides3.style.transform = 'translate(-' + (80 * amountMoved3 / projects3.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 
 const innerSlideRight4 = () => {
     if (amountMoved4 > projects4.length - 3) amountMoved4 = -0;
     amountMoved4 += 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
+    setDiv(portfolioSelected)
 }
 
 const innerSlideLeft4 = () => {
     if (amountMoved4 == 1) amountMoved4 = 6;
     amountMoved4 -= 1;
     innerslides4.style.transform = 'translate(-' + (80 * amountMoved4 / projects4.length) + '%, 0%)'
-    // console.log(amountMoved3);
-    setOnInfoField();
-}
-
-// Content Image //
-const setOnInfoField = () => {
-    let index = amountMoved1 + 1;
-
-    // Program Managemetn //
-    if (portfolioSelected == 0) {
-        // Import Image //
-        imgMain.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
-        img1.src = "../img/portfolio/content/reduced/Portfolio-program-client-3.jpeg";
-        img3.src = "../img/portfolio/content/reduced/Portfolio-program-client-4.jpeg";
-        imgPop.src = "../img/portfolio/content/reduced/Portfolio-program-client-2.jpeg";
-        // imgProgramMobile.src = "../img/about-us/kat&angie.png";
-
-        // Title & Description //
-        tittle.innerHTML = '<h2 style= "margin-bottom: 20px; line-height: 1;">CalHome Program Management</h2>'
-        tittle.style.marginTop = "none"
-        p.innerHTML = "Global’s team of experienced program managers has effectively helped cities and private entities to organize and coordinate their activities, set clear objectives, and develop strategies to implement their programs by providing them with a team that possesses the tools and processes to ensure that projects are completed on time and within budget saving money and increasing efficiency. We are currently administering various programs for multiple cities that create jobs, provide first-time home buyer assistance, and improve their living conditions and quality of life through owner-occupied rehabilitation programs."
-        p.style.width = "100%"
-        p.style.marginBottom = "50px"
-        p.style.marginTop = "5px"
-
-        // Style //
-        img1.style.width = "300px";
-        img1.style.height = "300px";
-        img3.style.width = "300px";
-        img3.style.height = "300px";
-        imgMain.style.width = "300px";
-        imgMain.style.height = "300px";
-        // imgProgramMobile.style.width = "300px";
-        // imgProgramMobile.style.height = "300px";
-
-        inforContainer.style.display = "flex";
-        inforContainer.style.flexDirection = "column"
-
-        if (inforContainer.clientWidth <= 500) {
-            img1.style.display = "none";
-            img3.style.display = "none";
-            imgProgramMobile.style.display = "none";
-            // imgMain.style.display = "none";
-        } else {
-            img1.style.display = "block";
-            img3.style.display = "block";
-            // imgMain.style.display = "block";
-            imgProgramMobile.style.display = "none";
-        }
-    }
-
-    if (portfolioSelected == 1) {
-        tittle.innerHTML = projects2[amountMoved2]
-        p.innerHTML = d2[amountMoved2]
-        let index = amountMoved2 + 1;
-        imgMain.src = imgRouteContentGrant + index + '.jpeg';
-        imgPop.src = imgRouteContentGrant + index + '.jpeg';
-        img1.style.display = "none";
-        img3.style.display = "none";
-        imgProgramMobile.style.display = "none";
-        imgMain.style.width = "500px";
-        imgMain.style.height = "500px";
-        inforContainer.style.flexDirection = "row"
-    }
-
-    if (portfolioSelected == 2) {
-        tittle.innerHTML = projects3[amountMoved3]
-        p.innerHTML = d3[amountMoved3]
-        let index = amountMoved3 + 1;
-        imgMain.src = imgRouteContentCom + index + '.jpeg';
-        imgPop.src = imgRouteContentCom + index + '.jpeg';
-        img1.style.display = "none";
-        img3.style.display = "none";
-        imgProgramMobile.style.display = "none";
-        imgMain.style.width = "500px";
-        imgMain.style.height = "500px";
-        inforContainer.style.flexDirection = "row"
-    }
-
-    if (portfolioSelected == 3) {
-        tittle.innerHTML = projects4[amountMoved4]
-        p.innerHTML = d4[amountMoved4]
-        let index = amountMoved4 + 1;
-        imgMain.src = imgRouteContentDig + index + '.jpeg';
-        imgPop.src = imgRouteContentDig + index + '.jpeg';
-        img1.style.display = "none";
-        img3.style.display = "none";
-        imgProgramMobile.style.display = "none";
-        imgMain.style.width = "500px";
-        imgMain.style.height = "500px";
-        inforContainer.style.flexDirection = "row"
-    }
+    setDiv(portfolioSelected)
 }
 
 const setPressedStyle = (index) => {
@@ -650,6 +481,28 @@ const hidePop = () => {
     popContent.style.display = 'none';
 }
 
+// set div by service and project
+const setDiv = async (portfolio) => {
+    let amountMoves = [
+        amountMoved1, amountMoved2, amountMoved3, amountMoved4
+    ]
+    try {
+        inforContainer.removeChild(inforContainer.firstChild)
+    } catch (error) { console.log(error) }
+    inforContainer.appendChild(hiddenDivs[portfolio][amountMoves[portfolio]-1])
+}
+
+
+const removeChild = (parent) => {
+    try {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 // General buttons
 btn1.addEventListener('click', () => { projectPressed(-0, 0) })
 btn2.addEventListener('click', () => { projectPressed(-25, 1) })
@@ -669,14 +522,15 @@ btnl3.addEventListener('click', innerSlideLeft3)
 btnr4.addEventListener('click', innerSlideRight4)
 btnl4.addEventListener('click', innerSlideLeft4)
 
-imgMain.addEventListener('click', popImg)
-popBackBlack.addEventListener('click', hidePop)
+// imgMain.addEventListener('click', popImg)
+// popBackBlack.addEventListener('click', hidePop)
 
 window.addEventListener('load', styleInnerSlidesContainer)
 
 // window.addEventListener('load', fillProjectSlides)
-window.addEventListener('load', setOnInfoField)
 window.addEventListener('load', checkStorage);
+window.addEventListener('load', () => { setDiv(portfolioSelected) });
+window.addEventListener('load', () => { setPressedStyle(portfolioSelected); });
 
 
 

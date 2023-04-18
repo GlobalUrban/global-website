@@ -57,7 +57,7 @@ const stopOnHover = () => {
 }
 
 const setPressedStyles = (index) => {
-    let indexSet = index/25;
+    let indexSet = index / 25;
     let selectors = document.getElementsByClassName('home-slider-container-selectors-selector');
     selectors[0].classList.remove('selector-pressed')
     selectors[1].classList.remove('selector-pressed')
@@ -103,7 +103,7 @@ const setProjectToOpen2 = () => {
     if (percentageMoved == -50) setProjectToOpen(2, 5)
     if (percentageMoved == -75) setProjectToOpen(0, 3)
     window.location.href = "./assets/html/portfolio.html#portfolio-slider-id"
-} 
+}
 
 //  see more functions
 const handleSeeMore = (index, e) => {
@@ -116,6 +116,11 @@ const handleSeeLess = (index, e) => {
     e.stopPropagation();
     linksSeeMore[index].style.display = "inline"
     moreArray[index].style.display = "none"
+}
+
+// recaptcha funcion
+const submitRecaptcha = () => {
+    
 }
 
 
@@ -155,6 +160,8 @@ const moreArray = [
 // p elements
 let ps = document.getElementsByClassName('info-p')
 
+
+
 rightArrow.addEventListener('click', handleRightArrow)
 leftArrow.addEventListener('click', handleLeftArrow)
 
@@ -164,22 +171,22 @@ selector3.addEventListener('click', (e) => { handleSelector(-50, e) })
 selector4.addEventListener('click', (e) => { handleSelector(-75, e) })
 
 // listeners for see more buttons
-linksSeeMore.map ( (link, index) =>  {
-    link.addEventListener('click', (e) => {handleSeeMore(index, e) })
+linksSeeMore.map((link, index) => {
+    link.addEventListener('click', (e) => { handleSeeMore(index, e) })
 })
 
 // listeners for see less buttons
-moreArray.map ( (more, index) =>  {
-    more.addEventListener('click', (e) => {handleSeeLess(index, e) })
+moreArray.map((more, index) => {
+    more.addEventListener('click', (e) => { handleSeeLess(index, e) })
 })
 
 for (let i = 0; i < ps.length; i++) {
-    ps[i].addEventListener('click', (e) => e.stopPropagation())   
+    ps[i].addEventListener('click', (e) => e.stopPropagation())
 }
 
 // Event listener for set project to localstorage
 containerButtonsToLink.addEventListener("click", setProjectToOpen2)
 
-window.addEventListener('load', () => {setPressedStyles(0)})
+window.addEventListener('load', () => { setPressedStyles(0) })
 window.addEventListener('load', runSlider)
 window.addEventListener('load', setSrcSlider)
