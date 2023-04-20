@@ -52,7 +52,7 @@
 
       <div id="mobile-form-pop-up" class="cont-form">
         <h3>
-          Get i touch<br />
+          Get in touch<br />
           with us!
         </h3>
         <form id="form-mobile" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
@@ -60,16 +60,17 @@
           <div class="email-phone_container">
             <input class="input input-secondary" type="email" name="email" placeholder="Email" id="" />
             <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="" />
-            <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token-m" style="display: none;" />
+            <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token-m"
+              style="display: none;" />
           </div>
           <textarea maxlength="95" name="message" id="" rows="1" placeholder="How can we help you?"></textarea>
 
           <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
-          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmitMobile'
-                data-action='submit' id="contact-id-m-pop" >Submit</button>  
+          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
+            data-callback='onSubmitMobile' data-action='submit' id="contact-id-m-pop">Submit</button>
         </form>
       </div>
-      
+
       <!-- --------------------------------------------------- -->
     </div>
   </div>
@@ -435,12 +436,13 @@
 
             <!-- Form // -->
             <form id="form-desk" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
-            <!-- <form id="form-desk" action="http://localhost:3000/messages/contact-us-gw" method="POST"> -->
+              <!-- <form id="form-desk" action="http://localhost:3000/messages/contact-us-gw" method="POST"> -->
               <input class="input" type="text" name="name" placeholder="Name" id="f-name" />
               <div class="email-phone_container">
                 <input class="input input-secondary" type="email" name="email" placeholder="Email" id="f-email" />
                 <input class="input input-secondary" type="tel" name="phone" placeholder="Phone Number" id="f-phone" />
-                <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token" style="display: none;" />
+                <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token"
+                  style="display: none;" />
               </div>
               <textarea maxlength="95" name="message" id="f-text" rows="1"
                 placeholder="How can we help you?"></textarea>
@@ -497,6 +499,20 @@
     </a>
   </section>
   <!-- ============================================================================================================= -->
+
+
+  <!-- QUICK LINKS, CONTACT & FOOTER || This is layout like this because of the home screen sticky functionality // -->
+<div class="pop-up-submitted-form" id="pop-up-submitted-form">
+  <div class="pop-up-submitted-form-opaticy-layer"></div>
+  <div class="pop-up-submitted-form-content">
+    Thanks. Your message has been received.
+    <br>
+    We will be in touch with you soon
+    <div class="pop-up-submitted-form-close" id="pop-up-submitted-form-close">+</div>
+  </div>
+</div>
+  <!-- ============================================================================================================= -->
+
 
   <!-- Scripts // =============================================================== -->
 
