@@ -2390,6 +2390,7 @@ header .selector-pressed {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .dinner-form form {
   width: 80%;
