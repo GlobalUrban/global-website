@@ -30,7 +30,7 @@
             <!-- <input type="submit" value="SUBMIT"> -->
             <!-- <button id="global-dinner-submit" type="submit">SUBMIT</button> -->
             <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
-                data-callback='onSubmitD' data-action='submit'>Submit</button>
+                data-callback='onSubmitD' data-action='submit' id="dinner-form-btn">Submit</button>
         </form>
 
         <a class="redirection" href="./index.html"> Global Urban Website</a>
@@ -41,10 +41,12 @@
 <!-- Google Recaptcha // -->
 <script src="https://www.google.com/recaptcha/api.js?render=6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"></script>
 
+<!-- <script src="./assets/js/form-submit-dinner.js"></script> -->
 <script src="./assets/js/global-dinner.js"></script>
 
 <script>
     function onSubmitD(token) {
+        window.localStorage.setItem('form-dinner-submit', true)
         document.getElementById('f-dinner-token').value = token;
         document.getElementById("global-dinner-form").submit();
     }
