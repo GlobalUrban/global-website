@@ -5,18 +5,39 @@
     height: 100vh;
     background: $blue;
     @include flex-center;
+    position: relative;
 
     form {
         width: 80%;
-        max-width: 450px;
-        min-width: 300px;
-        background: white;
+        max-width: 500px;
+        min-width: 350px;
+        background: none;
         gap: 10px;
         padding: 2% 1%;
+
+
+        // background: rgba(50, 39, 84, 0.11);
+
+        // box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        // backdrop-filter: blur(2.4px);
+        // -webkit-backdrop-filter: blur(6.4px);
+
+        position: absolute;
         @include flex(column, center);
+        font-family: "AbhayaLibre";
 
         @include breakpoint("Phone-L") {
             padding: 25px 1%;
+        }
+
+        .date-box {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+            }
 
         }
 
@@ -24,13 +45,30 @@
             width: 90%;
             padding: 2%;
             outline: none;
+            background: none;
+            border: solid #CDB266 1px;
+            color: white;
         }
 
-        input[type="submit"] {
-            background: $orange;
+        input::placeholder {
+            color: #c5bfac;
+        }
+
+        button {
+            width: 70%;
+            background: rgb(205, 178, 102);
+            background: linear-gradient(90deg, rgba(205, 178, 102, 1) 0%, rgba(211, 189, 129, 1) 57%, rgba(221, 204, 160, 1) 100%);
             border: none;
             color: white;
             padding: 3% 2%;
         }
+    }
+
+    .redirection {
+        position: absolute;
+        color: #CDB266;
+        font-family: "AbhayaLibre";
+        text-decoration: underline;
+        bottom: 5%;
     }
 }
