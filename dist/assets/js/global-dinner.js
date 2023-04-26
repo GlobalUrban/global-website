@@ -17,4 +17,4 @@ const handleDinnerSubmit = (e) => {
 }
 
 
-globalDinnerSubmitBtn.addEventListener('click', handleDinnerSubmit)
+// globalDinnerSubmitBtn.addEventListener('click', handleDinnerSubmit)
