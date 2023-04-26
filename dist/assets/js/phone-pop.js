@@ -37,9 +37,9 @@ contactContPopUp.addEventListener("click", ()=> {
     contactContPopUp.classList.remove("mobile-pop-up__show");  
 })
 
-// stopPropagation.addEventListener("click", (e)=> {
-//     e.stopPropagation()
-// })
+stopPropagation.addEventListener("click", (e)=> {
+    e.stopPropagation()
+})
 
 
 

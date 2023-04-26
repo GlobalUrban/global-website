@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +15,17 @@
   <meta name="keywords" content="Communications, Grant Writing, Program Management">
   <meta name="author" content="Global Urban Strategies, Inc.">
   <title>Global Urban Strategies Inc. | Communications, Grant Writing, and Administration.</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-103RTSTY19%22%3E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-103RTSTY19');
+  </script>
+
 </head>
 
 <body>
@@ -39,33 +51,39 @@
     <div class="pop-up form-pop-up" id="pop-up">
 
       <!-- Form content -->
-      <h3 style="
+      <!-- <h3 style="
       color: white;
       text-align: center;
       margin: 0px 5px;
       ">
         Please fill form on a PC. <br>
         Mobile form under maintenance
-      </h3>
-      <!-- <div id="mobile-form-pop-up" class="cont-form">
+      </h3> -->
+
+      <!-- Mobile Form // ----------------------------------------------- -->
+
+      <div id="mobile-form-pop-up" class="cont-form">
         <h3>
-          Please fill the form,<br />
-          and we'll be in touch.
+          Get in touch<br />
+          with us!
         </h3>
         <form id="form-mobile" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
           <input class="input" type="text" name="name" placeholder="Name..." id="" />
           <div class="email-phone_container">
             <input class="input input-secondary" type="email" name="email" placeholder="Email" id="" />
             <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="" />
+            <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token-m"
+              style="display: none;" />
           </div>
           <textarea maxlength="95" name="message" id="" rows="1" placeholder="How can we help you?"></textarea>
 
-          <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" />
-          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j" data-callback='onSubmit'
-                data-action='submit' id="contact-id-m-pop" >Submit</button>
-          <button type="submit" class="submit" id="contact-id-m-pop">Submit</button>
+          <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
+          <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
+            data-callback='onSubmitMobile' data-action='submit' id="contact-id-m-pop">Submit</button>
         </form>
-      </div> -->
+      </div>
+
+      <!-- --------------------------------------------------- -->
     </div>
   </div>
   <!-- ============================================== -->
@@ -430,12 +448,13 @@
 
             <!-- Form // -->
             <form id="form-desk" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
-            <!-- <form id="form-desk" action="http://localhost:3000/messages/contact-us-gw" method="POST"> -->
+              <!-- <form id="form-desk" action="http://localhost:3000/messages/contact-us-gw" method="POST"> -->
               <input class="input" type="text" name="name" placeholder="Name" id="f-name" />
               <div class="email-phone_container">
                 <input class="input input-secondary" type="email" name="email" placeholder="Email" id="f-email" />
                 <input class="input input-secondary" type="tel" name="phone" placeholder="Phone Number" id="f-phone" />
-                <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token" style="display: none;" />
+                <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token"
+                  style="display: none;" />
               </div>
               <textarea maxlength="95" name="message" id="f-text" rows="1"
                 placeholder="How can we help you?"></textarea>
@@ -493,6 +512,20 @@
   </section>
   <!-- ============================================================================================================= -->
 
+
+  <!-- QUICK LINKS, CONTACT & FOOTER || This is layout like this because of the home screen sticky functionality // -->
+  <div class="pop-up-submitted-form" id="pop-up-submitted-form">
+    <div class="pop-up-submitted-form-opaticy-layer"></div>
+    <div class="pop-up-submitted-form-content">
+      Thank you! Your message has been received.
+      <br>
+      We will be in touch with you soon.
+      <div class="pop-up-submitted-form-close" id="pop-up-submitted-form-close">+</div>
+    </div>
+  </div>
+  <!-- ============================================================================================================= -->
+
+
   <!-- Scripts // =============================================================== -->
 
 
@@ -532,6 +565,11 @@
     function onSubmit(token) {
       document.getElementById('f-token').value = token;
       document.getElementById("form-desk").submit();
+    }
+
+    function onSubmitMobile(token) {
+      document.getElementById('f-token-m').value = token;
+      document.getElementById("form-mobile").submit();
     }
   </script>
 
