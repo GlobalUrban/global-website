@@ -12,7 +12,7 @@ if (maintenanceAlert) {
 window.addEventListener('load', () => {
     setTimeout(() => {
         maintenanceAlert.classList.remove('maintenance-alert--hide');
-    }, 2000);
+    }, 200);
 })
 
 
