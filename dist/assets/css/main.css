@@ -294,6 +294,81 @@ header .selector-pressed {
   background-color: teal;
 }
 
+.maintenance-alert {
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4392156863);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 5000000000000;
+}
+.maintenance-alert .alert {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  min-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .maintenance-alert .alert {
+    height: 90%;
+    width: 95%;
+    min-width: 300px;
+  }
+}
+.maintenance-alert .alert button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #ffffff;
+  color: black;
+  font-size: 30px;
+  rotate: 45deg;
+  top: -20px;
+  right: -25px;
+  cursor: pointer;
+}
+.maintenance-alert .alert .cont-img {
+  height: 100%;
+  width: 100%;
+}
+.maintenance-alert .alert .cont-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.maintenance-alert .alert .cont-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 480px) {
+  .maintenance-alert .alert .cont-img .desktop {
+    display: none;
+  }
+}
+.maintenance-alert .alert .cont-img .mobile {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .maintenance-alert .alert .cont-img .mobile {
+    display: block;
+  }
+}
+
+.maintenance-alert--hide {
+  display: none;
+}
+
 .home__about-us {
   width: 100%;
   height: 100vh;
