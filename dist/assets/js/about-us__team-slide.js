@@ -24,19 +24,19 @@ let classMobile = 'slider-automatic-container-slide-mobile';
 let classToApply = undefined;
 
 let teamMembers = [
-    { name: 'Omar Hernandez', charge: 'President & Senior Grant Writer' },
-    { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
-    { name: 'Cinthia Iniguez', charge: 'Account Executive' },
-    { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
-    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
-    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
+    { name: 'Omar Hernandez', charge: 'President and CEO' },
     { name: 'Nora Hernandez', charge: 'Administrative Manager' },
+    { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
+    { name: 'Cinthia Iniguez', charge: 'Program Manager' },
+    { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
+    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
+    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
 ]
 
 let teamMembers2 = [
     { name: 'Jackeline Landa', charge: 'Art Director' },
     { name: 'Kat Fuentes', charge: 'Creative Supervisor' },
-    { name: 'Angie Mejia', charge: 'Senior Graphic Designer' },
+    { name: 'Angie Mejia', charge: 'Proposal Specialist' },
     { name: 'Hector Suarez', charge: 'Senior Web Developer' },
     { name: 'Elena Mejia', charge: 'Social Media Strategist' },
     { name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production' },

@@ -4,9 +4,6 @@ let counter2 = document.getElementById('index-counter-2')
 
 let workingOnScreen = document.getElementById('working')
 
-console.log(counter0)
-console.log(counter1)
-console.log(counter2)
 
 let timeout = 20;
 
@@ -59,7 +56,7 @@ const setNumber2 = () => {
         counter2.innerHTML = c0
         if (c0 >= 150) {
             clearInterval(counterInverval)
-            counter2.innerHTML = '150+'
+            counter2.innerHTML = '75 +'
             let br = document.createElement('br')
             let text = document.createTextNode('Happy Clients')
             counter2.appendChild(br)

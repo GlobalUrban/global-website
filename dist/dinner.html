@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Global Dinner</title>
+</head>
+
+<body>
+    <div class="dinner-form">
+        <div class="dinner-background">
+            <img src="./assets/img/global-dinner/global-dinner-bg.png" alt="">
+        </div>
+
+        <form id="global-dinner-form" action="https://global-website-api-v1.vercel.app/messages/global-dinner-form" method="POST">
+        <!-- <form id="global-dinner-form" action="http://localhost:3000/messages/global-dinner-form" method="POST"> -->
+
+            <div class="date-box">
+                <img src="./assets/img/global-dinner/invitation-date.png" alt="">
+            </div>
+            <input type="text" required placeholder="Name" name="Name" id="global-dinner-form-name">
+            <input type="email" required placeholder="Email" name="Email" id="global-dinner-form-email">
+            <input type="number" required placeholder="No. of Guests" name="Guests" id="global-dinner-form-guests">
+            <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-dinner-token"
+                style="display: none;" />
+            <!-- <input type="submit" value="SUBMIT"> -->
+            <!-- <input type="submit" value="SUBMIT"> -->
+            <!-- <button id="global-dinner-submit" type="submit">SUBMIT</button> -->
+            <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
+                data-callback='onSubmitD' data-action='submit' id="dinner-form-btn">Submit</button>
+        </form>
+
+        <a class="redirection" href="./index.html"> Global Urban Website</a>
+    </div>
+</body>
+
+
+<!-- Google Recaptcha // -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"></script>
+
+<!-- <script src="./assets/js/form-submit-dinner.js"></script> -->
+<script src="./assets/js/global-dinner.js"></script>
+
+<script>
+    function onSubmitD(token) {
+        window.localStorage.setItem('form-dinner-submit', true)
+        document.getElementById('f-dinner-token').value = token;
+        document.getElementById("global-dinner-form").submit();
+    }
+</script>
+
+</html>

@@ -19,13 +19,13 @@
     }
 
     img {
-        width: 350px;
+        width: 450px;
         transition: all 0.3s;
         margin-top: 1%;
     }
 
     .img-page {
-        width: 250px;
+        width: 350px;
 
         @include b.breakpoint(Tablet-L) {
             width: 150px;
@@ -156,7 +156,8 @@
 .nav-selected{
     font-weight: 900 !important;
     font-weight: bold;
-    font-size: 27px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .showNavLinks {
