@@ -41,6 +41,12 @@ body {
   font-weight: 900;
   font-weight: bold;
 }
+@font-face {
+  font-family: "AbhayaLibre";
+  src: url(../fonts/AbhayaLibre-Regular.ttf) format("truetype");
+  font-weight: 300;
+  font-weight: normal;
+}
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
@@ -826,6 +832,7 @@ header .selector-pressed {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .container .container-bottom .cont-form .success-form {
@@ -1133,6 +1140,61 @@ header .selector-pressed {
 
 .input:focus .form-pop-up {
   margin-bottom: 0;
+}
+
+.pop-up-submitted-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-submitted-form .pop-up-submitted-form-opaticy-layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-submitted-form .pop-up-submitted-form-content {
+  background: white;
+  border-radius: 10px;
+  font-size: medium;
+  text-align: center;
+  font-size: 20px;
+  padding: 60px;
+  opacity: 1;
+  position: relative;
+}
+.pop-up-submitted-form .pop-up-submitted-form-content .pop-up-submitted-form-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transform: rotate(45deg);
+  font-size: 35px;
+  border-radius: 100%;
+  background: gray;
+  padding: 2px 11px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 40px black;
+}
+@media screen and (max-width: 768px) {
+  .pop-up-submitted-form .pop-up-submitted-form-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
 }
 
 .services {
@@ -2318,6 +2380,74 @@ header .selector-pressed {
 }
 .info-container-programManagement-imgs img {
   min-width: 200px;
+}
+
+.dinner-form {
+  width: 100%;
+  height: 100vh;
+  background: #2A4083;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.dinner-form form {
+  width: 80%;
+  max-width: 500px;
+  min-width: 350px;
+  background: none;
+  gap: 10px;
+  padding: 2% 1%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "AbhayaLibre";
+}
+@media screen and (max-width: 480px) {
+  .dinner-form form {
+    padding: 25px 1%;
+  }
+}
+.dinner-form form .date-box {
+  width: 100%;
+}
+.dinner-form form .date-box img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.dinner-form form input {
+  width: 90%;
+  padding: 2%;
+  outline: none;
+  background: none;
+  border: solid #CDB266 1px;
+  color: white;
+}
+.dinner-form form input::-moz-placeholder {
+  color: #c5bfac;
+}
+.dinner-form form input::placeholder {
+  color: #c5bfac;
+}
+.dinner-form form button {
+  width: 70%;
+  background: rgb(205, 178, 102);
+  background: linear-gradient(90deg, rgb(205, 178, 102) 0%, rgb(211, 189, 129) 57%, rgb(221, 204, 160) 100%);
+  border: none;
+  color: white;
+  padding: 3% 2%;
+}
+.dinner-form .redirection {
+  position: absolute;
+  color: #CDB266;
+  font-family: "AbhayaLibre";
+  text-decoration: underline;
+  bottom: 5%;
 }
 
 footer {

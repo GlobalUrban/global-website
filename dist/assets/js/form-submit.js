@@ -1,9 +1,13 @@
 let formSubmitDesktop = document.getElementById('contact-id-m');
 let formSubmitMobile = document.getElementById('contact-id-m-pop');
-
-let formId = document.getElementById('form-desk');
-let formIdMobile = document.getElementById('form-mobile');
 let successDiv = document.getElementById('success-submit-id');
+
+// Button for closing pop up submitted Button
+let closeSubmitButton = document.getElementById('pop-up-submitted-form-close')
+let closeDinnerSubmitButton = document.getElementById('pop-up-dinner-submitted-form-close')
+
+let popUpSubmittedForm = document.getElementById('pop-up-submitted-form')
+let popUpDinnerSubmittedForm = document.getElementById('pop-up-dinner-submitted-form')
 
 let btnGetInTouch = document.getElementById('contact-form__mobile-btn')
 
@@ -13,21 +17,37 @@ const handleSubmit = async (e) => {
 
 const checkSubmitStorage = () => {
     let submitControl = window.localStorage.getItem('form-submit')
+    let submitDinnerControl = window.localStorage.getItem('form-dinner-submit')
+    if (!!submitDinnerControl) popUpDinnerSubmittedForm.style.display = "flex"
     if (!submitControl) {
         successDiv.style.display = "none"
     } else {
+        successDiv.style.display = "none"
         // window.location.href = "#contact-form__mobile-btn"
         console.log("entered")
-        window.location.href = "#form-desk"
-        btnGetInTouch.innerHTML = "Thanks. Your message has been received."
-        btnGetInTouch.style.background = "transparent"
-        btnGetInTouch.style.color = "white"
+        popUpSubmittedForm.style.display = "flex"
+        // window.location.href = "#form-desk"
+        // btnGetInTouch.innerHTML = "Thanks. Your message has been received."
+        // btnGetInTouch.style.background = "transparent"
+        // btnGetInTouch.style.color = "white"
     };
+
+
     window.localStorage.removeItem('form-submit')
+    window.localStorage.removeItem('form-dinner-submit')
+}
+
+const handleCloseSubmitButton = () => {
+    popUpSubmittedForm.style.display = "none"
+}
+
+const handleCloseDinnerSubmitButton = () => {
+    popUpDinnerSubmittedForm.style.display = "none"
 }
 
 // formSubmitDesktop.addEventListener('submit', handleSubmit)
 formSubmitDesktop.addEventListener('click', handleSubmit)
-// formId.addEventListener('submit', handleSubmit)
-// formIdMobile.addEventListener('submit', handleSubmit)
+formSubmitMobile.addEventListener('click', handleSubmit)
+closeSubmitButton.addEventListener('click', handleCloseSubmitButton)
+closeDinnerSubmitButton.addEventListener('click', handleCloseDinnerSubmitButton)
 window.addEventListener('load', checkSubmitStorage)
