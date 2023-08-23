@@ -41,27 +41,27 @@
         Now</a>
 
       <div class="divider"></div>
-      <!-- <a href="https://goo.gl/maps/QffdHPw9ZoMRdBug8"><a class="call"
-          href="https://maps.apple.com/?address=2200%20S%20Fremont%20Ave,%20Alhambra,%20CA%20%2091803,%20United%20States&ll=34.067524,-118.148966&q=2200%20S%20Fremont%20Ave"><img
-            src="./assets/img/home/contact/map-directions.png" alt="" />
-          Get Directions</a></a> -->
+
     </div>
   </div>
+  <!-- ============================================== -->
+
+  <!-- maintenance Alert ============================== -->
+  <!-- <div class="maintenance-alert maintenance-alert--hide" id="maintenance-alert">
+    <div class="alert">
+      <div class="cont-img">
+        <img class="desktop" src="./assets/img/general/global-maintenance.jpeg" alt="" />
+        <img class="mobile" src="./assets/img/general/maintenance-alert-mobile.jpg" alt="" />
+        <button class="maintenance-alert__close">CLOSE</button>
+      </div>
+    </div>
+  </div> -->
   <!-- ============================================== -->
 
   <!-- Contact Form Mobile Pop up================  -->
   <div class="contact-mobile__pop-up form-pop-up-container" id="contact__pop-up">
     <div class="pop-up form-pop-up" id="pop-up">
 
-      <!-- Form content -->
-      <!-- <h3 style="
-      color: white;
-      text-align: center;
-      margin: 0px 5px;
-      ">
-        Please fill form on a PC. <br>
-        Mobile form under maintenance
-      </h3> -->
 
       <!-- Mobile Form // ----------------------------------------------- -->
 
@@ -70,7 +70,7 @@
           Get in touch<br />
           with us!
         </h3>
-        <form id="form-mobile" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
+        <form id="form-mobile" action="https://global-website-backend.vercel.app/api/v2/messages" method="POST">
           <input class="input" type="text" name="name" placeholder="Name..." id="" />
           <div class="email-phone_container">
             <input class="input input-secondary" type="email" name="email" placeholder="Email" id="" />
@@ -78,7 +78,8 @@
             <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token-m"
               style="display: none;" />
           </div>
-          <textarea maxlength="95" name="message" id="" rows="1" placeholder="How can we help you?"></textarea>
+          <textarea required maxlength="500" name="messageSent" id="" rows="1"
+            placeholder="How can we help you?"></textarea>
 
           <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
           <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
@@ -450,8 +451,7 @@
             <h1>Get in touch with us!</h1>
 
             <!-- Form // -->
-            <form id="form-desk" action="https://global-website-api-v1.vercel.app/messages/contact-us-gw" method="POST">
-              <!-- <form id="form-desk" action="http://localhost:3000/messages/contact-us-gw" method="POST"> -->
+            <form id="form-desk" action="https://global-website-backend.vercel.app/api/v2/messages/" method="POST">
               <input class="input" type="text" name="name" placeholder="Name" id="f-name" />
               <div class="email-phone_container">
                 <input class="input input-secondary" type="email" name="email" placeholder="Email" id="f-email" />
@@ -459,7 +459,7 @@
                 <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token"
                   style="display: none;" />
               </div>
-              <textarea maxlength="95" name="message" id="f-text" rows="1"
+              <textarea required maxlength="500" name="messageSent" id="f-text" rows="1"
                 placeholder="How can we help you?"></textarea>
 
               <!-- <input class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
@@ -564,6 +564,9 @@
 
   <!-- Handle Submit action -->
   <script src="./assets/js/form-submit.js"></script>
+
+  <!-- Maintanance Alert  -->
+  <script src="./assets/js/maintentance-alert.js"></script>
 
   <!-- Handle Submit Dinner action -->
   <!-- <script src="./assets/js/form-submit-dinner.js"></script> -->
