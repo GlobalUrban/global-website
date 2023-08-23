@@ -1274,6 +1274,19 @@ header .selector-pressed {
   }
 }
 
+.required-message {
+  color: white;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 5px;
+  margin: 10px 0px;
+  align-self: flex-start;
+  display: none;
+}
+.required-message span {
+  color: rgb(177, 44, 44);
+}
+
 .services {
   width: 100%;
   height: 100vh;

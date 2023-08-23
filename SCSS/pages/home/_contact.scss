@@ -626,3 +626,17 @@
         }
     }
 }
+
+.required-message {
+    color:white;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    align-self: flex-start;
+    display: none;
+
+    span {
+        color: rgb(177, 44, 44);
+    }
+}

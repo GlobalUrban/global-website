@@ -71,15 +71,17 @@
           with us!
         </h3>
         <form id="form-mobile" action="https://global-website-backend.vercel.app/api/v2/messages" method="POST">
-          <input class="input" type="text" name="name" placeholder="Name..." id="" />
+          <input class="input" type="text" name="name" placeholder="Name..." id="f-name-mobile" />
           <div class="email-phone_container">
-            <input class="input input-secondary" type="email" name="email" placeholder="Email" id="" />
-            <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="" />
+            <input class="input input-secondary" type="email" name="email" placeholder="Email" id="f-email-mobile" />
+            <input class="input input-secondary" type="tel" name="phone" placeholder="Phone" id="f-phone-mobile" />
             <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token-m"
               style="display: none;" />
           </div>
-          <textarea required maxlength="500" name="messageSent" id="" rows="1"
+          <textarea required maxlength="500" name="messageSent" id="f-text-mobile" rows="1"
             placeholder="How can we help you?"></textarea>
+
+          <span class="required-message" id="required-fields-id-mobile"><span>*</span>All fiedls are required</span>
 
           <!-- <input id="contact-id-m-pop" class="g-recaptcha submit" type="submit" value="Submit" placeholder="Submit" /> -->
           <button class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
@@ -452,15 +454,19 @@
 
             <!-- Form // -->
             <form id="form-desk" action="https://global-website-backend.vercel.app/api/v2/messages/" method="POST">
-              <input class="input" type="text" name="name" placeholder="Name" id="f-name" />
+              <input required="true" class="input" type="text" name="name" placeholder="Name" id="f-name-desk" />
               <div class="email-phone_container">
-                <input class="input input-secondary" type="email" name="email" placeholder="Email" id="f-email" />
-                <input class="input input-secondary" type="tel" name="phone" placeholder="Phone Number" id="f-phone" />
+                <input required class="input input-secondary" type="email" name="email" placeholder="Email"
+                  id="f-email-desk" />
+                <input required class="input input-secondary" type="tel" name="phone" placeholder="Phone Number"
+                  id="f-phone-desk" />
                 <input class="input input-secondary" type="text" name="token" placeholder="Token" id="f-token"
                   style="display: none;" />
               </div>
-              <textarea required maxlength="500" name="messageSent" id="f-text" rows="1"
+              <textarea required maxlength="500" name="messageSent" id="f-text-desk" rows="1"
                 placeholder="How can we help you?"></textarea>
+
+              <span class="required-message" id="required-fields-id"><span>*</span>All fiedls are required</span>
 
               <!-- <input class="g-recaptcha submit" data-sitekey="6LfIfOsUAAAAAI7BrQSpGZ3IuKLQeHPxDhAnOt7j"
                 data-action='submit' id="contact-id-m" type="submit" value="Submit" /> -->
@@ -585,12 +591,47 @@
     // });
     function onSubmit(token) {
       document.getElementById('f-token').value = token;
+      const requiredMessage = document.getElementById('required-fields-id')
+      const name = document.getElementById('f-name-desk')
+      const email = document.getElementById('f-email-desk')
+      const phone = document.getElementById('f-phone-desk')
+      const textArea = document.getElementById('f-text-desk')
+      console.log(name.value)
+
+      if (!name.value || !email.value || !phone.value || !textArea.value) {
+        console.log('All fields must be filled in')
+        requiredMessage.style.display = 'flex'
+        requiredDisplayer(name, email, phone, textArea)
+        return
+      }
+
       document.getElementById("form-desk").submit();
     }
 
     function onSubmitMobile(token) {
       document.getElementById('f-token-m').value = token;
+      const name = document.getElementById('f-name-mobile')
+      const email = document.getElementById('f-email-mobile')
+      const phone = document.getElementById('f-phone-mobile')
+      const textArea = document.getElementById('f-text-mobile')
+      const requiredMessage = document.getElementById('required-fields-id-mobile')
+
+      console.log(name.value)
+
+      if (!name.value || !email.value || !phone.value || !textArea.value) {
+        console.log('All fields must be filled in')
+        requiredMessage.style.display = 'flex'
+        requiredDisplayer(name, email, phone, textArea)
+        return
+      }
       document.getElementById("form-mobile").submit();
+    }
+
+    function requiredDisplayer(name, email, phone, textArea) {
+      if (!name.value) name.style.border = '2px solid rgb(177, 44, 44)'
+      if (!email.value) email.style.border = '2px solid rgb(177, 44, 44)'
+      if (!phone.value) phone.style.border = '2px solid rgb(177, 44, 44)'
+      if (!textArea.value) textArea.style.border = '2px solid rgb(177, 44, 44)'
     }
   </script>
 
