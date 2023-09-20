@@ -30,7 +30,7 @@ let teamMembers = [
     { name: 'Cinthia Iniguez', charge: 'Program Manager' },
     { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
     { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
-    { name: 'Lauren Hernandez', charge: 'Associate Account Executive' },
+
 ]
 
 let teamMembers2 = [
@@ -43,7 +43,7 @@ let teamMembers2 = [
     { name: 'Ximena Morazan', charge: 'Associate Social Media Strategist' },
     { name: 'Andrea Franconi', charge: 'Graphic Designer and Illustration' },
     { name: 'Moises Vasconcelos', charge: 'Graphic Designer and Motion Graphics' },
-    {name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer'},
+    { name: 'Fernando Gonzalez', charge: 'Branding and Editorial Designer' },
     { name: 'Edgardo Valencia', charge: 'Front-End Web Developer' },
     { name: 'Francisco Ortiz', charge: 'Back-End Web Developer' },
 ]
