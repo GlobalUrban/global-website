@@ -12,6 +12,17 @@ let popUpDinnerSubmittedForm = document.getElementById('pop-up-dinner-submitted-
 let btnGetInTouch = document.getElementById('contact-form__mobile-btn')
 
 const handleSubmit = async (e) => {
+    const name = document.getElementById('f-name-desk')
+    const email = document.getElementById('f-email-desk')
+    const phone = document.getElementById('f-phone-desk')
+    const textArea = document.getElementById('f-text-desk')
+
+    console.log(name.value)
+
+    if (!name.value || !email.value || !phone.value || !textArea.value) {
+        console.log('All fields must be filled in')
+        return
+    }
     window.localStorage.setItem('form-submit', true)
 }
 
