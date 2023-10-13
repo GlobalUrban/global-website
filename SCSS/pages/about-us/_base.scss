@@ -160,7 +160,7 @@
         .team__cont-title {
             width: 100%;
             height: 200px;
-            
+
 
             @include flexx(row, flex-start, center);
 
@@ -227,6 +227,8 @@
                 .slider-automatic-container-slide {
                     height: 100%;
                     width: 25vw;
+                    max-width: 475px;
+
                     overflow: hidden;
                     display: flex;
                     justify-content: center;
