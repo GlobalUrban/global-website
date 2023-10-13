@@ -59,20 +59,21 @@ header {
         height: 100%;
         transition: all 0.5s;
         // z-index: 100000000000000000000000000000;
-        
+
         @include m.flex-center;
         position: relative;
 
         img {
             display: none;
             @include m.img-cover;
-            @include b.breakpoint("Phone-L"){
+
+            @include b.breakpoint("Phone-L") {
                 display: block;
             }
         }
 
-        video{
-            @include b.breakpoint("Phone-L"){
+        video {
+            @include b.breakpoint("Phone-L") {
                 display: none;
             }
         }
@@ -86,17 +87,17 @@ header {
             padding: 7% 4%;
             // z-index: 10000000000000000000;
 
-            @include b.breakpoint("Tablet-M"){
+            @include b.breakpoint("Tablet-M") {
                 padding: 25% 5%;
             }
-            
+
             .item-info {
                 color: white;
                 width: 50%;
                 font-size: 20px;
                 // z-index: 100000000000;
 
-                @include b.breakpoint("Tablet-M"){
+                @include b.breakpoint("Tablet-M") {
                     width: 90%;
                 }
 
@@ -104,31 +105,38 @@ header {
                     line-height: 1.3;
                     margin: 0;
                     position: static;
-                    @include b.breakpoint("Phone-L"){
+
+                    @include b.breakpoint("Phone-L") {
                         font-size: 28px;
                     }
                 }
 
-                h2{
-                    @include b.breakpoint("Phone-L"){
+                h2 {
+                    @include b.breakpoint("Phone-L") {
                         font-size: 22px;
                     }
                 }
 
-                
-                
+
+
                 p {
                     margin: 0;
-                    @include b.breakpoint("Phone-L"){
+
+                    @include b.breakpoint("Phone-L") {
                         font-size: 18px;
-                    };
+                    }
+
+                    ;
+
                     span {
                         cursor: pointer;
                     }
-                    .seemore-btn{
+
+                    .seemore-btn {
                         font-style: italic;
                     }
-                    .more{
+
+                    .more {
                         display: none;
                         cursor: pointer;
                     }
@@ -156,7 +164,7 @@ header {
             transform: scale(1.5);
             cursor: pointer;
         }
-        
+
 
     }
 
@@ -202,7 +210,7 @@ header {
         bottom: 50%;
     }
 
-  
+
 
     #ra {
         transform: rotate(180deg);
@@ -232,7 +240,8 @@ header {
         background-color: rgba(255, 255, 255, 0.426);
         border-radius: 5px;
     }
-    .selector-pressed{
+
+    .selector-pressed {
         background-color: rgba(255, 255, 255, 0.885);
     }
 }
@@ -241,4 +250,79 @@ header {
     width: 100%;
     height: 100vh;
     background-color: teal;
+}
+
+
+// maintenance Alert //
+.maintenance-alert {
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    width: 100%;
+    height: 100vh;
+    background-color: #00000070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5000000000000;
+
+    .alert {
+        position: relative;
+        width: 70%;
+        height: 80%;
+        min-width: 700px;
+
+        @include b.breakpoint("Phone-L") {
+            height: 90%;
+            width: 95%;
+            min-width: 300px;
+        }
+
+        @include m.flex-center;
+        // overflow: hidden;
+
+        button {
+            width: 100px;
+            height: 40px;
+            border: none;
+            align-self: center;
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+            border-radius: 3px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            color: black;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 800
+        }
+
+        .cont-img {
+            @include m.img(100%, 100%);
+
+            img {
+                object-fit: contain;
+            }
+
+            .desktop {
+                @include b.breakpoint("Phone-L") {
+                    display: none;
+                }
+            }
+
+            .mobile {
+                display: none;
+
+                @include b.breakpoint("Phone-L") {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.maintenance-alert--hide {
+    display: none;
 }
