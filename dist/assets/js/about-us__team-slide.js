@@ -24,13 +24,14 @@ let classMobile = 'slider-automatic-container-slide-mobile';
 let classToApply = undefined;
 
 let teamMembers = [
-    { name: 'Omar Hernandez', charge: 'President and CEO' },
+    { name: 'Omar Hernandez', charge: 'President & CEO' },
     { name: 'Nora Hernandez', charge: 'Administrative Manager' },
-    { name: 'Christa Leonard', charge: 'Director of Grant Acquisition' },
+    { name: 'Christa Leonard', charge: 'Director of Grant Acquisition & Administration' },
+    { name: 'Allyson Ragan', charge: 'Senior Grant Writer' },
     { name: 'Cinthia Iniguez', charge: 'Program Manager' },
-    { name: 'Domonique Dunnick', charge: 'Grant Writer & Program Administrator' },
     { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
-
+    { name: 'Domonique Dunnick', charge: 'Senior Program & Grant Administrator' },
+    { name: 'Taylor Pak', charge: 'Program Manager Assistant' },
 ]
 
 let teamMembers2 = [
@@ -251,7 +252,7 @@ const handleArrows2 = (right) => {
         slides2.style.transform = 'translate(' + amountMoved2 + 'vw, 0%)'
     } else {
         // 8
-        if (amountofmoves2 > (9 + mobileAmountLess)) return
+        if (amountofmoves2 > (9 + mobileAmountLess)) return // Only increment this number when adding member
         amountMoved2 += amountTomoveApply
         amountofmoves2 -= 1
         slides2.style.transform = 'translate(' + amountMoved2 + 'vw, 0%)'
@@ -276,7 +277,7 @@ const handleArrows1 = (right) => {
     if (amountofmoves < 1 && !right) {
         console.log('reached');
         amountMoved = amountTomoveApply * ((teamMembers.length - (3 - mobileAmountLess)) * (-1));
-        amountofmoves = (4 + mobileAmountLess)  // Only increment this number when adding member
+        amountofmoves = (5 + mobileAmountLess)  // Only increment this number when adding member
     }
 
     if (right) {
@@ -286,7 +287,7 @@ const handleArrows1 = (right) => {
         slides.style.transform = 'translate(' + amountMoved + 'vw, 0%)'
         console.log({ amountofmoves, amountMoved })
     } else {
-        if (amountofmoves > (4 + mobileAmountLess)) return
+        if (amountofmoves > (5 + mobileAmountLess)) return // Only increment this number when adding member
         amountMoved += amountTomoveApply
         amountofmoves -= 1
         slides.style.transform = 'translate(' + amountMoved + 'vw, 0%)'
