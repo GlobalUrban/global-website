@@ -27,18 +27,18 @@ let teamMembers = [
     { name: 'Omar Hernandez', charge: 'President & CEO' },
     { name: 'Nora Hernandez', charge: 'Administrative Manager' },
     { name: 'Christa Leonard', charge: 'Director of Grant Acquisition & Administration' },
+    { name: 'Domonique Dunnick', charge: 'Senior Program & Grant Administrator' },
     { name: 'Allyson Ragan', charge: 'Senior Grant Writer' },
     { name: 'Cinthia Iniguez', charge: 'Program Manager' },
-    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
-    { name: 'Domonique Dunnick', charge: 'Senior Program & Grant Administrator' },
     { name: 'Taylor Pak', charge: 'Program Manager Assistant' },
+    { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
 ]
 
 let teamMembers2 = [
     { name: 'Jackeline Landa', charge: 'Art Director' },
     { name: 'Kat Fuentes', charge: 'Creative Supervisor' },
-    { name: 'Angie Mejia', charge: 'Proposal Specialist' },
     { name: 'Hector Suarez', charge: 'Senior Web Developer' },
+    { name: 'Angie Mejia', charge: 'Proposal Specialist' },
     { name: 'Elena Mejia', charge: 'Social Media Strategist' },
     { name: 'Carolina Ramirez', charge: 'Motion Graphics & Press Production' },
     { name: 'Ximena Morazan', charge: 'Associate Social Media Strategist' },
