@@ -30,7 +30,7 @@ let teamMembers = [
     { name: 'Domonique Dunnick', charge: 'Senior Program & Grant Administrator' },
     { name: 'Allyson Ragan', charge: 'Senior Grant Writer' },
     { name: 'Cinthia Iniguez', charge: 'Program Manager' },
-    { name: 'Taylor Pak', charge: 'Program Manager Assistant' },
+    { name: 'Taylor Pak', charge: 'Assistant Program Manager' },
     { name: 'Daniela Espinoza', charge: 'Assistant Program Administrator' },
 ]
 
