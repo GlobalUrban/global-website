@@ -1,0 +1,86 @@
+/*custom fonts begin here*/
+@font-face {
+    font-family: 'Myriad-Pro';
+    src: url(https://global-urban.com/assets/fonts/Myriad-Pro-Regular.ttf);
+}
+/*custom fonts end here*/
+
+body {
+    font-family: 'Myriad-Pro', Arial, sans-serif;
+	text-align: justify;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/img/apply-here/apply-here-bg_Large.webp'); /* Replace with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+}
+
+li {
+            margin-bottom: 10px; /* Adjust the margin as needed */
+        }
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+button.apply-button {
+    font-size: 25px;
+	display: block;
+    background-color: #224684;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 20px auto;
+}
+
+button.apply-button:hover {
+    transform: scale(1.1);
+}
+
+.button-link{
+	text-decoration: none;
+}
+
+.disclaimer {
+	padding-top: 5%;
+	text-align: center;
+	color: #224684;
+	width: 70%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+.header-img{
+	display: none;
+}
+
+.disclaimer {
+	padding-top: 5%;
+	text-align: center;
+	color: #224684;
+	width: 85%;
+	margin: auto;
+}
+}
+
+@media only screen and (min-width: 600px) {
+.header-img-mob{
+	display: none;
+}
+}
